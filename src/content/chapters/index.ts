@@ -9,6 +9,7 @@ import { shadowsAndAccusations } from "./06-shadows-and-accusations";
 import { risingInfluence } from "./07-rising-influence";
 import { aDarkTurn } from "./08-a-dark-turn";
 import { shadowsClosingIn } from "./09-shadows-closing-in";
+import { theFlowerInHerHair } from "./10-the-flower-in-her-hair";
 
 /**
  * Chapter registry. Add a new chapter file, import it, and push it here.
@@ -25,6 +26,7 @@ export const chapters: Chapter[] = [
   risingInfluence,
   aDarkTurn,
   shadowsClosingIn,
+  theFlowerInHerHair,
 ].sort((a, b) => a.order - b.order);
 
 export function getChapter(slug: string): Chapter | undefined {

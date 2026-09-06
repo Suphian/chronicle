@@ -88,8 +88,11 @@ brothers each believe the other abandoned the family and both are right;
 Bakhtar is the graveyard of empires (Afghanistan by way of Bactria and
 Alexander); the Three Seats are a triumvirate that will turn on itself.
 The spine is "Dance with the Devil": the devil doesn't change, you do.
-The intended payoff is that Elysian Dust reaches someone Hanno loves
-before Adris reaches him.
+That payoff is written: Chapter Ten. Alethea, who loved the student, gets
+hooked on the Dust after Hanno comes back changed, and dies in the garden
+with the flower in her hair. Hanno looks in a mirror. Adris knocks. What
+Adris does at the door (arrest his brother or cover for him, his second
+choice) is deliberately unwritten.
 
 The Codex (`src/content/codex.ts`, page `/codex`) holds short reference
 entries for people, factions, places, substances, artifacts. Add an entry

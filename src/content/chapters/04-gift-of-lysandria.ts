@@ -49,6 +49,7 @@ export const giftOfLysandria: Chapter = {
         "In the celebration afterwards, Hanno notices a young woman standing apart from the crowd, serene and captivating. Her name is Alethea. She is a healer, and the Lysandrians speak of her wisdom with something close to reverence.",
         "Their conversation flows without effort: harmony, healing, the complexities of a life. He feels a connection unlike anything he has known.",
         "In the weeks that follow, it deepens into love. She teaches him that true strength is not in the spear or the vial, but in understanding and compassion.",
+        "What she fell in love with, she will say later, to no one, was a student. A man who worked through the night for a boy he did not know and wept when the fever broke. She would spend the rest of her life waiting for him to come back.",
       ],
     },
     {

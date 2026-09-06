@@ -54,6 +54,15 @@ export const shadowsClosingIn: Chapter = {
       ],
     },
     {
+      id: "alethea-watches",
+      heading: "Alethea",
+      mood: "dawn",
+      text: [
+        "Alethea has stopped asking about the harbor. She treats the city's new sickness in her clinic and comes home to a husband who is courteous and attentive and somewhere else.",
+        "She married a student. She is a healer, and she knows what a closed door in a body means, and she does not say it.",
+      ],
+    },
+    {
       id: "reckoning",
       heading: "Reckoning",
       mood: "ember",
@@ -62,7 +71,7 @@ export const shadowsClosingIn: Chapter = {
       text: [
         "Shadows close in around the brothers. Hanno's calculated cruelty and Adris's unwavering pursuit are two edges of the same spear.",
         "Zaharaz. Read it forwards, read it backwards. It is the same word.",
-        "The reckoning is coming. The next chapter has not been written yet.",
+        "The reckoning is coming. It will not come from where he is looking.",
       ],
     },
   ],
