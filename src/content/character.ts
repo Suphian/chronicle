@@ -31,7 +31,7 @@ export const character: CharacterProfile = {
   ],
   bonds: [
     "Amara, his mother. He cured her once. He could not save her twice.",
-    "Alethea, his wife, a healer of Lysandria. She knows everything about him except the one thing that matters.",
+    "Alethea, his wife, a healer of Lysandria. She fell in love with a student and waited for him to come back. She died in their garden with Elysian Dust on her lips and the flower in her hair.",
     "Adris, his younger brother, who stayed when Hanno left, and stepped aside when Numarius's men came to their mother's door. Now a captain in the city guard, hunting the man behind Elysian Dust without knowing it is him.",
     "Adil, his father, buried without a name in Lord Numarius's fields.",
   ],
@@ -44,11 +44,11 @@ export const character: CharacterProfile = {
     "He poisons the people whose love he needs, and he needs it more than he needs the poison.",
     "He believes everyone in power is corrupt, and so he has become what he hates.",
     "He cannot look in a mirror. He saw a stranger there once and never forgave him.",
-    "He is terrified of losing the people he loves to his own actions, and he is doing it anyway.",
+    "He was terrified of losing the people he loved to his own actions. He did it anyway.",
   ],
   lies: [
     "That vengeance balances the scales. He calls it equilibrium. It is a cycle, and he is inside it.",
-    "That the city deserves what he is doing to it. Some of it does. His wife does not.",
+    "That the city deserves what he is doing to it. Some of it does. His wife did not.",
     "That no one in power can be good. He has met Phylios. He has met Alethea. He does not count them.",
   ],
   timeline: [
@@ -62,6 +62,7 @@ export const character: CharacterProfile = {
     { when: "The Cure", what: "Returns to Carthara, cures Amara, ends the Ravash epidemic, and is named the city's savior.", chapter: "the-cure" },
     { when: "The Betrayal", what: "Virello poisons Amara and blames the cure. Hanno answers with a shipment that kills his old master.", chapter: "shadows-and-accusations" },
     { when: "The Banquet", what: "Numarius names his father as fertilizer in front of the elite. Hanno distills Elysian Dust.", chapter: "a-dark-turn" },
-    { when: "Now", what: "Elysian Dust hollows out Carthara. Adris closes in on a mastermind he does not know is his brother.", chapter: "shadows-closing-in" },
+    { when: "The Closing", what: "Elysian Dust hollows out Carthara. Adris closes in on a mastermind he does not know is his brother.", chapter: "shadows-closing-in" },
+    { when: "Now", what: "Alethea dies of the Dust in their garden. Hanno looks in a mirror. Adris knocks.", chapter: "the-flower-in-her-hair" },
   ],
 };
