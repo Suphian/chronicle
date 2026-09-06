@@ -1,26 +1,33 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-cinzel), "Cinzel", Georgia, serif;
+  --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --color-ink: #0b0a0f;
+  --color-parchment: #e8dcc4;
+  --color-gold: #d4a857;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-ink);
+  color: var(--color-parchment);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn-primary {
+  @apply font-display inline-block rounded-full border border-parchment/60 bg-parchment/10 px-7 py-3 text-xs tracking-[0.3em] text-parchment uppercase transition hover:bg-parchment hover:text-ink;
+}
+.btn-ghost {
+  @apply font-display inline-block text-xs tracking-[0.3em] text-parchment/50 uppercase transition hover:text-parchment;
+}
+
+::selection {
+  background: #d4a857;
+  color: #0b0a0f;
 }
