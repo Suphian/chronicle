@@ -71,6 +71,11 @@ export default function CharacterPage() {
             <List title="Ideals" items={c.ideals} />
             <List title="Flaws" items={c.flaws} />
           </div>
+          {c.lies?.length ? (
+            <div className="mt-12">
+              <List title="Lies he believes" items={c.lies} />
+            </div>
+          ) : null}
 
           <div className="mt-14">
             <p className="font-display text-xs tracking-[0.4em] text-parchment/50 uppercase">Timeline</p>

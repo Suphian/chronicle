@@ -49,7 +49,8 @@ export const theCure: Chapter = {
       mood: "gold",
       text: [
         "Word of the antidote spreads through the city like water through sand. The addicted seek him out in their hundreds. The discreet workshop becomes a thriving business, and the business becomes wealth, and the wealth becomes a name.",
-        "For the first time in years, Hanno feels he has done something that matters.",
+        "He recognizes them. The faces from the doorways. The vendors who out-shouted his father. They call him savior now, and he lets them.",
+        "For the first time in years, Hanno feels he has done something that matters. He does not examine why their gratitude tastes the way it does.",
       ],
     },
     {
@@ -58,7 +59,7 @@ export const theCure: Chapter = {
       mood: "storm",
       text: [
         "Virello watches his apprentice eclipse him, and envy curdles into something colder. Their encounters turn frosty, loaded with silent accusation.",
-        "Lord Numarius honors Hanno at banquets and ceremonies. In private, he and the city's elite have a problem: their hidden partnership with the Silkers made them rich, and the antidote is ruining it.",
+        "Lord Numarius honors Hanno at banquets and ceremonies. In private, the Three Seats of Carthara have a problem. Numarius's fields, Magistra Corvo's harbor, and General Vael's garrison all grew rich on Ravash, quietly, through the Silken Chain. The antidote is ruining it.",
         "Hanno, buoyed by admiration, sees none of it. The seeds have been sown.",
       ],
     },

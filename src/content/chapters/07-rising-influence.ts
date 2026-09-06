@@ -29,7 +29,7 @@ export const risingInfluence: Chapter = {
       mood: "void",
       text: [
         "Every courteous exchange with Numarius reminds Hanno of a man dragged to the fields at dawn. He has neither forgotten nor forgiven.",
-        "He conceals it beneath a composed exterior. He needs the relationship. He uses it to climb.",
+        "He conceals it beneath a composed exterior. He needs the relationship. He uses it to climb, until he is dining with all three Seats and can tell which of them fears the other two.",
       ],
     },
     {

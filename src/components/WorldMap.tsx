@@ -277,6 +277,17 @@ function Terrain() {
       ].map(([x, y], i) => (
         <path key={i} d={`M${x - 20} ${y + 16} L${x} ${y - 16} L${x + 20} ${y + 16} Z`} fill="#5b4f3d" stroke="#2e2619" strokeWidth="1.5" />
       ))}
+      {/* Bakhtar: highlands and cave mouths */}
+      {[
+        [590, 250], [630, 230], [670, 255], [710, 240], [610, 290], [650, 300], [690, 285], [730, 275],
+      ].map(([x, y], i) => (
+        <path key={`b${i}`} d={`M${x - 22} ${y + 18} L${x} ${y - 20} L${x + 22} ${y + 18} Z`} fill="#4a4034" stroke="#241d14" strokeWidth="1.5" />
+      ))}
+      {[
+        [612, 262], [655, 268], [700, 258],
+      ].map(([x, y], i) => (
+        <ellipse key={`c${i}`} cx={x} cy={y} rx="4" ry="6" fill="#120e0a" />
+      ))}
       {/* Sidrat Al Muntaha: Lake Siraj */}
       <ellipse cx="820" cy="180" rx="70" ry="40" fill="#3f6b7a" stroke="#1f3740" strokeWidth="2" />
       <ellipse cx="820" cy="180" rx="45" ry="22" fill="#6fb3c2" opacity="0.5" />

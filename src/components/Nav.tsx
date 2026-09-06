@@ -8,6 +8,7 @@ import { useAudio } from "@/lib/audio";
 const links = [
   { href: "/", label: "Chronicle" },
   { href: "/world", label: "World" },
+  { href: "/codex", label: "Codex" },
   { href: "/character", label: character.name.split(" ")[0] },
 ];
 

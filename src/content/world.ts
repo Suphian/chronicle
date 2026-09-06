@@ -55,6 +55,17 @@ export const world: WorldLocation[] = [
     appearsIn: [{ chapter: "journeys", scene: "lake-siraj", label: "The sword" }],
   },
   {
+    id: "bakhtar",
+    name: "Bakhtar",
+    tagline: "The graveyard of empires.",
+    description:
+      "Highlands north of the last road: villages cut into cliff faces, valleys that close like fists, caves that play flutes at night. Every empire that marched in broke here except one. Iskandar the conqueror is buried in a cave nobody will name. Amara came down from these mountains and never spoke of them.",
+    x: 640,
+    y: 270,
+    type: "wild",
+    appearsIn: [{ chapter: "the-conqueror", scene: "the-graveyard-of-empires", label: "The legend" }],
+  },
+  {
     id: "lysandria",
     name: "Lysandria",
     tagline: "Mountains, rare metals, and the phalanx.",

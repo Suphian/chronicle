@@ -40,6 +40,7 @@ export const shadowsClosingIn: Chapter = {
       text: [
         "Numarius notices the rot at last: instability among the ruling class, productivity falling, whispers he cannot silence. Indifferent no longer, he presses Adris to end it.",
         "In public he demands justice. In private he is afraid for his empire.",
+        "The other two Seats watch him press. Corvo and Vael have begun to speak of Numarius the way one speaks of a horse that has gone lame.",
       ],
     },
     {

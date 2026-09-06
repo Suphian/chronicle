@@ -1,4 +1,5 @@
 import type { Chapter } from "../types";
+import { theConqueror } from "./00-the-conqueror";
 import { marketAwnings } from "./01-market-awnings";
 import { bitterApprenticeship } from "./02-bitter-apprenticeship";
 import { journeys } from "./03-journeys";
@@ -14,6 +15,7 @@ import { shadowsClosingIn } from "./09-shadows-closing-in";
  * Ordering on the home page uses `chapter.order`.
  */
 export const chapters: Chapter[] = [
+  theConqueror,
   marketAwnings,
   bitterApprenticeship,
   journeys,

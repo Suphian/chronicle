@@ -74,9 +74,26 @@ protect the family from inside, then stepped aside at their mother's door;
 both brothers believe the other abandoned the family, and both are right), Adil (father, dead
 in Numarius's fields), Amara (mother, dead of a Ravash overdose engineered
 by Virello), Alethea (wife, Lysandrian healer), Master Virello (dead),
-Lord Numarius (antagonist), General Phylios, Chuluun (Leonin elder).
+Lord Numarius (First Seat, the fields), Magistra Ilvane Corvo (Second Seat,
+the harbor, secret head of the Silken Chain), General Tarquin Vael (Third
+Seat, the garrison, Adris's commander), General Phylios, Chuluun (Leonin
+elder), Iskandar (the conqueror, Hanno's ancestor), Rukhsana (his Bakhtari
+wife).
 Substances: Ravash (the old drug), Elysian Dust (Hanno's). Factions: the
 Silken Chain ("Silkers"). Weapon: Zaharaz, the double-bladed spear.
+
+Themes to keep in view: Hanno's verdict is on the whole city, not just
+Numarius (they watched and said nothing), yet he needs their adoration; the
+brothers each believe the other abandoned the family and both are right;
+Bakhtar is the graveyard of empires (Afghanistan by way of Bactria and
+Alexander); the Three Seats are a triumvirate that will turn on itself.
+The spine is "Dance with the Devil": the devil doesn't change, you do.
+The intended payoff is that Elysian Dust reaches someone Hanno loves
+before Adris reaches him.
+
+The Codex (`src/content/codex.ts`, page `/codex`) holds short reference
+entries for people, factions, places, substances, artifacts. Add an entry
+whenever a chapter introduces something new.
 
 Chapter `status` is "draft" for everything so far. The owner considers the
 nine chapters an outline, not finished prose; restructure freely, keep scene

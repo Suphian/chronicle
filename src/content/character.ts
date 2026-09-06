@@ -8,7 +8,7 @@ import type { CharacterProfile } from "./types";
 export const character: CharacterProfile = {
   name: "Hanno Averroes",
   epithet: "The Savior of Carthara",
-  race: "Half-Elf",
+  race: "Half-Elf (Bakhtari, on his mother's side)",
   class: "Alchemist Artificer / Fighter",
   alignment: "Neutral Evil",
   portrait: undefined, // e.g. "/images/character/portrait.jpg"
@@ -17,8 +17,9 @@ export const character: CharacterProfile = {
   bio: [
     "Hanno was born above a pottery shop in the market quarter of Carthara, the eldest son of Adil, who sold figs and pomegranates from a stall he could never quite pay for, and Amara, who shaped clay with rough, gentle hands.",
     "He was apprenticed to an apothecary as a boy and discovered a gift for alchemy that his master stole from him for years. He crossed the Tengeri Wastes with the Leonin, trained beneath the glowing waters of Lake Siraj, and spent five years among the spear-fighters of Lysandria, where he was given the spear Zaharaz and met his wife, Alethea.",
-    "He returned home, cured his mother, ended the Ravash epidemic, and was celebrated as the savior of Carthara. Then Lord Numarius reminded him, in front of the whole city, whose father was fertilizer in his fields.",
-    "Hanno keeps a garden. He avoids mirrors. He has never told his wife what is in the shipments.",
+    "He returned home, cured his mother, ended the Ravash epidemic, and was celebrated as the savior of Carthara by the same faces that had watched from doorways while his father was dragged away. Then Lord Numarius reminded him, in front of the whole city, whose father was fertilizer in his fields. The city laughed.",
+    "So Hanno passed a verdict on all of them. He sells the cure by day and the poison by night to the same people, and he needs both transactions: the poison is the sentence, and the adoration is the only version of himself he can stand to look at. That is why he is a merchant. That is why he cannot look in a mirror.",
+    "He keeps a garden. He has never told his wife what is in the shipments. Somewhere in his blood is a conqueror who was abandoned by fifty thousand men and stayed anyway.",
   ],
   traits: [
     { label: "Age", value: "115" },
@@ -40,11 +41,18 @@ export const character: CharacterProfile = {
     "The end justifies the means. He tells himself this every night.",
   ],
   flaws: [
+    "He poisons the people whose love he needs, and he needs it more than he needs the poison.",
     "He believes everyone in power is corrupt, and so he has become what he hates.",
     "He cannot look in a mirror. He saw a stranger there once and never forgave him.",
     "He is terrified of losing the people he loves to his own actions, and he is doing it anyway.",
   ],
+  lies: [
+    "That vengeance balances the scales. He calls it equilibrium. It is a cycle, and he is inside it.",
+    "That the city deserves what he is doing to it. Some of it does. His wife does not.",
+    "That no one in power can be good. He has met Phylios. He has met Alethea. He does not count them.",
+  ],
   timeline: [
+    { when: "Long before", what: "Iskandar the conqueror takes Bakhtar, marries Rukhsana of the cliffs, and is abandoned by his army. Amara descends from that line.", chapter: "the-conqueror" },
     { when: "Childhood", what: "Born in Carthara to Adil, a fruit-seller, and Amara, a potter. A younger brother, Adris, follows.", chapter: "market-awnings" },
     { when: "The Drought", what: "Adil defaults on his debts to Lord Numarius and is dragged to the fields. Hanno is apprenticed to Master Virello.", chapter: "market-awnings" },
     { when: "The Door", what: "Adris joins the guard to protect the family from inside, and steps aside when they come for Amara's rooms.", chapter: "market-awnings" },

@@ -29,7 +29,7 @@ export const marketAwnings: Chapter = {
       heading: "Above the Pottery Shop",
       mood: "dawn",
       text: [
-        "Home is two cramped rooms above a pottery shop, and they are warm. Amara, Hanno's mother, shapes clay with hands that are rough but gentle, humming as she works.",
+        "Home is two cramped rooms above a pottery shop, and they are warm. Amara, Hanno's mother, shapes clay with hands that are rough but gentle, humming as she works. The tune is strange and old and does not belong to Carthara. She never says where it is from.",
         "Hanno's younger brother, Adris, plays nearby. Despite everything, their humble life holds small joys and steady love.",
       ],
     },
@@ -53,7 +53,8 @@ export const marketAwnings: Chapter = {
       text: [
         "Numarius's agent stares coldly. \"Your debts are beyond mercy now, fruit-seller.\"",
         "In a moment etched forever into Hanno's memory, Adil is dragged away, condemned to servitude in the harsh fields outside the city.",
-        "He reaches out. His eyes lock with Hanno's, full of sorrowful apologies that are never spoken.",
+        "Along the awnings, the other vendors go on shouting their prices. Faces watch from doorways. Nobody says a word.",
+        "Adil reaches out. His eyes lock with Hanno's, full of sorrowful apologies that are never spoken.",
       ],
     },
     {
@@ -95,6 +96,7 @@ export const marketAwnings: Chapter = {
       text: [
         "At a crowded sentencing, Hanno watches helplessly as their father is formally condemned. Beside the magistrate, in a new guard's uniform, stands Adris, impassive.",
         "Adris's eyes fall to the ground. Ashamed, but unmoving. Hanno does not know about the door yet. He only knows his brother is wearing their colors.",
+        "The crowd is silent. It is a large crowd. Hanno will remember that too.",
         "That day marks the permanent fracture between the brothers. Their paths will collide again. Neither of them knows it yet.",
       ],
     },

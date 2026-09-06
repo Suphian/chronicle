@@ -6,7 +6,7 @@ export const aDarkTurn: Chapter = {
   title: "A Dark Turn",
   subtitle: "Chapter Eight",
   summary:
-    "At a banquet, Numarius tells the whole city what became of Hanno's father. That night, Hanno takes the flower from his wedding and begins turning it into Elysian Dust.",
+    "At a banquet, Numarius tells the whole city what became of Hanno's father, and the city laughs. That night Hanno passes a verdict on all of them, and begins turning the flower from his wedding into Elysian Dust.",
   mood: "ember",
   when: "The breaking point",
   status: "draft",
@@ -34,6 +34,18 @@ export const aDarkTurn: Chapter = {
         "The elite laugh politely. Hanno stands frozen. Before the evening ends, Numarius orders several debtor families punished: children taken into labor, parents sent to the fields. A cruel echo of a morning Hanno has never stopped living.",
       ],
       quote: { text: "His only lasting contribution was as fertilizer in my fields.", by: "Lord Numarius" },
+    },
+    {
+      id: "witnesses",
+      heading: "Witnesses",
+      mood: "void",
+      location: "carthara",
+      ambient: "/audio/ambient-market.wav",
+      text: [
+        "He walks home through the market. The vendors who out-shouted his father are old men now, and they bow to him. The faces in the doorways the morning of the stall are the faces that cheered him as savior. Not one of them spoke. Then, or since.",
+        "Somewhere along the seventh street he stops looking for Numarius in the crowd and starts seeing the crowd.",
+        "\"You are all dead to me,\" he says, quietly, to a city that loves him. He will keep their love. He needs it. But the verdict is passed.",
+      ],
     },
     {
       id: "elysian-dust",

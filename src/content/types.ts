@@ -94,6 +94,8 @@ export interface CharacterProfile {
   bonds: string[];
   ideals: string[];
   flaws: string[];
+  /** Things he believes that are not true. */
+  lies?: string[];
   /** Big beats of the character's life, oldest first. */
   timeline: { when: string; what: string; chapter?: string }[];
 }
