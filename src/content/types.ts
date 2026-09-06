@@ -58,6 +58,8 @@ export interface Chapter {
   cover?: string;
   /** Rough in-world date or age of the character; free text. */
   when?: string;
+  /** How finished the writing is. Drafts get a small tag on the home page. */
+  status?: "outline" | "draft" | "final";
   scenes: Scene[];
 }
 

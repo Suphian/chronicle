@@ -9,6 +9,7 @@ export const giftOfLysandria: Chapter = {
     "A general's son is dying. Hanno works through the night, and walks out of Lysandria with a spear called Zaharaz, a wife called Alethea, and a flower that can heal or kill.",
   mood: "storm",
   when: "Five years in the mountains",
+  status: "draft",
   music: "/audio/ambient-wind.wav",
   scenes: [
     { id: "title", kind: "title", heading: "The Gift of Lysandria", text: ["Chapter Four"], mood: "storm" },

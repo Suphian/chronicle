@@ -9,6 +9,7 @@ export const theCure: Chapter = {
     "Hanno comes home to a city drowning in Ravash and a mother who is barely there. He finds the antidote, becomes the savior of Carthara, and makes two very dangerous enemies without noticing.",
   mood: "forest",
   when: "The return",
+  status: "draft",
   music: "/audio/ambient-market.wav",
   scenes: [
     { id: "title", kind: "title", heading: "A Cure and Its Consequences", text: ["Chapter Five"], mood: "forest" },

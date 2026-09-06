@@ -9,6 +9,7 @@ export const shadowsAndAccusations: Chapter = {
     "Virello kills Amara with a dose disguised as her son's cure, then blames the cure. Hanno's answer is a shipment from Lysandria that his old master cannot resist stealing.",
   mood: "void",
   when: "The betrayal",
+  status: "draft",
   music: "/audio/ambient-night.wav",
   scenes: [
     { id: "title", kind: "title", heading: "Shadows and Accusations", text: ["Chapter Six"], mood: "void" },

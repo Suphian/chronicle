@@ -9,6 +9,7 @@ export const aDarkTurn: Chapter = {
     "At a banquet, Numarius tells the whole city what became of Hanno's father. That night, Hanno takes the flower from his wedding and begins turning it into Elysian Dust.",
   mood: "ember",
   when: "The breaking point",
+  status: "draft",
   music: "/audio/ambient-ember.wav",
   scenes: [
     { id: "title", kind: "title", heading: "A Dark Turn", text: ["Chapter Eight"], mood: "ember" },
