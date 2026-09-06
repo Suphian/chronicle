@@ -257,46 +257,53 @@ function Terrain() {
       <rect x={-W} y={-H} width={W * 3} height={H * 3} fill="url(#waves)" />
       {/* main continent */}
       <path
-        d="M180 90 C260 40 420 60 520 120 C640 100 760 160 860 220 C980 280 1020 420 960 540 C920 640 800 700 680 690 C560 720 460 660 400 580 C320 560 200 520 170 420 C120 320 110 180 180 90 Z"
+        d="M200 110 C300 50 460 70 560 120 C680 90 800 120 900 180 C1040 240 1100 400 1040 520 C990 640 860 700 700 690 C580 720 480 660 420 600 C330 590 230 540 190 440 C150 340 130 200 200 110 Z"
         fill="url(#land)"
         stroke="#3d3222"
         strokeWidth="3"
       />
-      {/* coastline highlight */}
       <path
-        d="M180 90 C260 40 420 60 520 120 C640 100 760 160 860 220 C980 280 1020 420 960 540 C920 640 800 700 680 690 C560 720 460 660 400 580 C320 560 200 520 170 420 C120 320 110 180 180 90 Z"
+        d="M200 110 C300 50 460 70 560 120 C680 90 800 120 900 180 C1040 240 1100 400 1040 520 C990 640 860 700 700 690 C580 720 480 660 420 600 C330 590 230 540 190 440 C150 340 130 200 200 110 Z"
         fill="none"
         stroke="#c9b48c"
         strokeWidth="1"
         opacity="0.5"
       />
-      {/* Grey Reaches: mountains */}
+      {/* the Moonlit Isle */}
+      <path d="M80 320 C95 300 130 305 140 330 C150 355 125 375 100 370 C80 365 70 340 80 320 Z" fill="url(#land)" stroke="#3d3222" strokeWidth="2" />
+      {/* Lysandria: mountains */}
       {[
-        [230, 120], [270, 100], [310, 130], [350, 110], [250, 160], [300, 170], [340, 150], [380, 140], [220, 200],
+        [250, 200], [290, 180], [330, 210], [370, 190], [270, 240], [320, 250], [360, 235], [400, 220], [240, 280], [300, 290],
       ].map(([x, y], i) => (
-        <path key={i} d={`M${x - 18} ${y + 14} L${x} ${y - 14} L${x + 18} ${y + 14} Z`} fill="#5b4f3d" stroke="#2e2619" strokeWidth="1.5" />
+        <path key={i} d={`M${x - 20} ${y + 16} L${x} ${y - 16} L${x + 20} ${y + 16} Z`} fill="#5b4f3d" stroke="#2e2619" strokeWidth="1.5" />
       ))}
-      {/* Thornmere: drowned forest */}
-      <ellipse cx="520" cy="430" rx="95" ry="60" fill="#1f2a24" opacity="0.9" />
+      {/* Sidrat Al Muntaha: Lake Siraj */}
+      <ellipse cx="820" cy="180" rx="70" ry="40" fill="#3f6b7a" stroke="#1f3740" strokeWidth="2" />
+      <ellipse cx="820" cy="180" rx="45" ry="22" fill="#6fb3c2" opacity="0.5" />
+      {/* Tengeri Wastes: canyons */}
       {[
-        [470, 410], [500, 445], [540, 400], [565, 440], [520, 470], [585, 415], [455, 445],
-      ].map(([x, y], i) => (
-        <circle key={i} cx={x} cy={y} r="10" fill="#2f4a37" stroke="#16241a" strokeWidth="1.5" />
+        [920, 270, 1000, 290], [930, 310, 1005, 330], [915, 350, 990, 360], [950, 240, 1010, 250],
+      ].map(([x1, y1, x2, y2], i) => (
+        <path key={i} d={`M${x1} ${y1} Q${(x1 + x2) / 2} ${y1 - 12} ${x2} ${y2}`} fill="none" stroke="#8a6a3f" strokeWidth="4" strokeLinecap="round" />
       ))}
-      {/* river from mountains to Vellmar */}
+      {/* river from the mountains to Carthara */}
       <path
-        d="M330 175 C380 260 430 300 470 360 C520 420 600 440 660 480 C720 520 780 540 820 560 C860 580 900 600 940 610"
+        d="M330 260 C400 340 470 380 520 440 C560 490 580 520 600 540"
         fill="none"
         stroke="#3d5665"
         strokeWidth="5"
         strokeLinecap="round"
         opacity="0.9"
       />
-      {/* Vellmar: bridges */}
-      <rect x="800" y="545" width="40" height="30" fill="#7a6247" stroke="#2e2619" strokeWidth="1.5" />
-      <rect x="812" y="530" width="16" height="16" fill="#8f7454" stroke="#2e2619" strokeWidth="1.5" />
+      {/* Carthara: walls and market */}
+      <rect x="575" y="520" width="50" height="36" fill="#7a6247" stroke="#2e2619" strokeWidth="1.5" />
+      <rect x="590" y="505" width="20" height="18" fill="#8f7454" stroke="#2e2619" strokeWidth="1.5" />
+      {/* Numarius's fields */}
+      {[0, 1, 2, 3].map((i) => (
+        <line key={i} x1={690} y1={590 + i * 10} x2={760} y2={585 + i * 10} stroke="#4f5a2c" strokeWidth="3" />
+      ))}
       {/* compass rose */}
-      <g transform="translate(1080 120)" opacity="0.7">
+      <g transform="translate(1080 680)" opacity="0.7">
         <circle r="34" fill="none" stroke="#c9b48c" strokeWidth="1" />
         <path d="M0 -40 L8 0 L0 40 L-8 0 Z" fill="#c9b48c" />
         <path d="M-40 0 L0 8 L40 0 L0 -8 Z" fill="#c9b48c" opacity="0.6" />

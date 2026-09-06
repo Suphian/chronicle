@@ -1,6 +1,7 @@
 # The Chronicle — working notes for Claude
 
-This is an interactive storytelling site for a single D&D character. The owner
+This is an interactive storytelling site for a single D&D character:
+Hanno Averroes, a half-elf alchemist from the city of Carthara. The owner
 drops in new ideas ("write a chapter about X", "add the swamp to the map",
 "give the tavern scene a song") and expects a finished, playable experience,
 not a plan. Build it, run the checks, commit, push.
@@ -16,7 +17,7 @@ not a plan. Build it, run the checks, commit, push.
 | What | Where |
 | --- | --- |
 | The hero (name, bio, bonds, timeline) | `src/content/character.ts` |
-| Chapters (one file each) | `src/content/chapters/<slug>.ts` |
+| Chapters (one file each) | `src/content/chapters/NN-<slug>.ts` |
 | Chapter registry + ordering | `src/content/chapters/index.ts` |
 | Map locations (pins) | `src/content/world.ts` |
 | Colour atmospheres ("moods") | `src/lib/moods.ts` |
@@ -29,7 +30,7 @@ not a plan. Build it, run the checks, commit, push.
 
 ## Adding a chapter (the daily workflow)
 
-1. Copy `src/content/chapters/prologue.ts` to a new slug. Fill in `title`,
+1. Copy the latest `src/content/chapters/NN-<slug>.ts` to the next number and slug. Fill in `title`,
    `summary`, `mood`, `order`, and the `scenes` array.
 2. Register it in `src/content/chapters/index.ts`.
 3. If the chapter visits somewhere new, add a pin to `src/content/world.ts`
@@ -58,6 +59,22 @@ with it. Prefer present tense, second-person-free, cinematic prose.
   `<Terrain/>`. When a painted map exists, replace it with
   `<image href="/images/world/map.jpg" width={1200} height={800} />` and
   keep pin coordinates on the same 1200x800 grid.
+
+## Canon
+
+The source of truth for the story is the owner's two Google Docs (the
+chapter narrative and the character sheet). Chapters 1–9 on the site are
+adapted from the narrative doc. Where the two docs disagree, the narrative
+doc wins (e.g. the Tengeri Wastes / Sidrat Al Muntaha / Lysandria names
+rather than the real-world places in the older sheet, and Virello dying by
+Hanno's poisoned shipment rather than by his hand).
+
+Cast: Hanno (hero), Dyia (younger brother, city guard), Adil (father, dead
+in Numarius's fields), Amara (mother, dead of a Ravash overdose engineered
+by Virello), Alethea (wife, Lysandrian healer), Master Virello (dead),
+Lord Numarius (antagonist), General Phylios, Chuluun (Leonin elder).
+Substances: Ravash (the old drug), Elysian Dust (Hanno's). Factions: the
+Silken Chain ("Silkers"). Weapon: Zaharaz, the double-bladed spear.
 
 ## Conventions
 

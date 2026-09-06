@@ -1,50 +1,58 @@
 import type { CharacterProfile } from "./types";
 
 /**
- * The protagonist of this chronicle.
- *
- * PLACEHOLDER: replace every field with your actual character. Everything in
- * the site that mentions the hero reads from this one file.
+ * The protagonist of this chronicle: Hanno Averroes.
+ * Source: the owner's character sheet. Everything on the site that mentions
+ * the hero reads from this one file.
  */
 export const character: CharacterProfile = {
-  name: "Corvin Ashvale",
-  epithet: "the Unburnt",
-  race: "Human (Variant)",
-  class: "Paladin — Oath of the Ancients",
-  level: 5,
-  alignment: "Neutral Good",
+  name: "Hanno Averroes",
+  epithet: "The Savior of Carthara",
+  race: "Half-Elf",
+  class: "Alchemist Artificer / Fighter",
+  alignment: "Neutral Evil",
   portrait: undefined, // e.g. "/images/character/portrait.jpg"
   tagline:
-    "A fire took his village, his name, and very nearly his faith. Everything that followed was the slow work of deciding what to rebuild.",
+    "He cured a city of one poison and then, quietly, gave it another. This is the story of how a fruit-seller's son became the most dangerous man in Carthara.",
   bio: [
-    "Corvin was raised in the highland hamlet of Ashvale, a place that no longer exists on any map but this one.",
-    "He does not talk about the night it burned. He talks about the morning after, when he walked out of the smoke carrying a sword that was not his and a promise he had not yet learned how to keep.",
-    "He has been keeping it, badly and then better, ever since.",
+    "Hanno was born above a pottery shop in the market quarter of Carthara, the eldest son of Adil, who sold figs and pomegranates from a stall he could never quite pay for, and Amara, who shaped clay with rough, gentle hands.",
+    "He was apprenticed to an apothecary as a boy and discovered a gift for alchemy that his master stole from him for years. He crossed the Tengeri Wastes with the Leonin, trained beneath the glowing waters of Lake Siraj, and spent five years among the spear-fighters of Lysandria, where he was given the spear Zaharaz and met his wife, Alethea.",
+    "He returned home, cured his mother, ended the Ravash epidemic, and was celebrated as the savior of Carthara. Then Lord Numarius reminded him, in front of the whole city, whose father was fertilizer in his fields.",
+    "Hanno keeps a garden. He avoids mirrors. He has never told his wife what is in the shipments.",
   ],
   traits: [
-    { label: "Age", value: "27" },
+    { label: "Age", value: "115" },
     { label: "Height", value: "6'1\"" },
-    { label: "Eyes", value: "Grey, one clouded" },
-    { label: "Deity", value: "None named; he swears by the old oaks" },
-    { label: "Weapon", value: "A longsword called Vigil" },
+    { label: "Eyes", value: "Deep green, flecked with gold" },
+    { label: "Weapon", value: "Zaharaz, a double-bladed spear" },
+    { label: "Faith", value: "Aetherium Harmonia" },
+    { label: "Hobby", value: "Gardening and herbalism" },
   ],
   bonds: [
-    "The people of Ashvale who did not make it out. He carries a list.",
-    "Mira Thorne, the hedge-witch who nursed him back and never asked for thanks.",
+    "Amara, his mother. He cured her once. He could not save her twice.",
+    "Alethea, his wife, a healer of Lysandria. She knows everything about him except the one thing that matters.",
+    "Dyia, his younger brother, captain in the city guard, who is hunting the man behind Elysian Dust without knowing it is him.",
+    "Adil, his father, buried without a name in Lord Numarius's fields.",
   ],
   ideals: [
-    "Light is a thing you carry, not a thing you find.",
-    "Nobody is beyond a second chance — including him.",
+    "Equilibrium. The universe seeks balance in all things, and so must he.",
+    "Duality. Every blade has two edges. Every flower can heal or kill. Both are necessary.",
+    "The end justifies the means. He tells himself this every night.",
   ],
   flaws: [
-    "He will walk into a burning building. Every time. Ask him why and he will change the subject.",
-    "He trusts too easily, then too little, and rarely in the right order.",
+    "He believes everyone in power is corrupt, and so he has become what he hates.",
+    "He cannot look in a mirror. He saw a stranger there once and never forgave him.",
+    "He is terrified of losing the people he loves to his own actions, and he is doing it anyway.",
   ],
   timeline: [
-    { when: "Age 0", what: "Born in Ashvale, a hamlet in the Grey Reaches." },
-    { when: "Age 19", what: "The burning of Ashvale.", chapter: "prologue" },
-    { when: "Age 19–21", what: "Two lost years in the wilds with Mira Thorne." },
-    { when: "Age 24", what: "Swears the Oath of the Ancients beneath the Old Oak at Thornmere." },
-    { when: "Age 27", what: "Arrives in the city of Vellmar. The chronicle begins." },
+    { when: "Childhood", what: "Born in Carthara to Adil, a fruit-seller, and Amara, a potter. A younger brother, Dyia, follows.", chapter: "market-awnings" },
+    { when: "The Drought", what: "Adil defaults on his debts to Lord Numarius and is dragged to the fields. Hanno is apprenticed to Master Virello.", chapter: "market-awnings" },
+    { when: "Apprenticeship", what: "His talent for alchemy outpaces his master. His mother turns to Ravash. He and Dyia come to blows, and Dyia joins the city guard.", chapter: "bitter-apprenticeship" },
+    { when: "The Journeys", what: "Archery among the Leonin of the Tengeri Wastes; the sword beneath Lake Siraj in Sidrat Al Muntaha.", chapter: "journeys" },
+    { when: "Lysandria", what: "Heals General Phylios's son, receives the spear Zaharaz, and marries Alethea beneath the Elysian flower.", chapter: "gift-of-lysandria" },
+    { when: "The Cure", what: "Returns to Carthara, cures Amara, ends the Ravash epidemic, and is named the city's savior.", chapter: "the-cure" },
+    { when: "The Betrayal", what: "Virello poisons Amara and blames the cure. Hanno answers with a shipment that kills his old master.", chapter: "shadows-and-accusations" },
+    { when: "The Banquet", what: "Numarius names his father as fertilizer in front of the elite. Hanno distills Elysian Dust.", chapter: "a-dark-turn" },
+    { when: "Now", what: "Elysian Dust hollows out Carthara. Dyia closes in on a mastermind he does not know is his brother.", chapter: "shadows-closing-in" },
   ],
 };

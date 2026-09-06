@@ -1,6 +1,6 @@
 # The Chronicle
 
-An interactive, cinematic "book" about one D&D character. Chapters play as
+An interactive, cinematic "book" about Hanno Averroes, a half-elf alchemist of Carthara. Chapters play as
 full-screen slideshows with music, sound effects, atmospheric visuals, optional
 video, and an explorable world map that links back into the story.
 
@@ -25,8 +25,8 @@ npm run build    # production build (also typechecks)
 
 ## Add a chapter
 
-See [CLAUDE.md](./CLAUDE.md) for the full workflow. Short version: copy
-`src/content/chapters/prologue.ts`, register it in `src/content/chapters/index.ts`,
+See [CLAUDE.md](./CLAUDE.md) for the full workflow. Short version: copy the latest
+`src/content/chapters/NN-<slug>.ts`, register it in `src/content/chapters/index.ts`,
 drop art into `public/images/<slug>/`, and build.
 
 ## Deploy

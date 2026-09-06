@@ -80,7 +80,15 @@ writeFileSync(
   "public/audio/ambient-night.wav",
   wav(drone({ seconds: 8, tones: [[65.4, 0.15], [98, 0.08], [196, 0.03]], noise: 0.9, lfoHz: 0.25, crackle: false })),
 );
+writeFileSync(
+  "public/audio/ambient-market.wav",
+  wav(drone({ seconds: 8, tones: [[110, 0.12], [165, 0.07], [220, 0.04]], noise: 1.1, lfoHz: 0.5, crackle: false })),
+);
+writeFileSync(
+  "public/audio/ambient-wind.wav",
+  wav(drone({ seconds: 8, tones: [[49, 0.12], [73.4, 0.05]], noise: 1.6, lfoHz: 0.125, crackle: false })),
+);
 writeFileSync("public/audio/sfx-ember.wav", wav(burst({ seconds: 0.7, decay: 6, tone: 0 })));
 writeFileSync("public/audio/sfx-page.wav", wav(burst({ seconds: 0.25, decay: 22, tone: 0 })));
 
-console.log("wrote public/audio/{ambient-ember,ambient-night,sfx-ember,sfx-page}.wav");
+console.log("wrote public/audio/{ambient-ember,ambient-night,ambient-market,ambient-wind,sfx-ember,sfx-page}.wav");

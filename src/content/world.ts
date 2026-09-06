@@ -7,57 +7,80 @@ import type { WorldLocation } from "./types";
  */
 export const world: WorldLocation[] = [
   {
-    id: "ashvale",
-    name: "Ashvale",
-    tagline: "A hamlet that survives only in memory.",
+    id: "carthara",
+    name: "Carthara",
+    tagline: "Markets, awnings, and a thousand quiet debts.",
     description:
-      "A highland village of forty souls in the Grey Reaches. Sheep, peat fires, and a small shrine to no god in particular. It burned in a single night. The ground there still refuses to grow anything but heather.",
-    x: 300,
-    y: 220,
-    type: "ruin",
-    appearsIn: [{ chapter: "prologue", scene: "the-fire", label: "The night it burned" }],
-  },
-  {
-    id: "thornmere",
-    name: "Thornmere",
-    tagline: "The Old Oak and the oath sworn beneath it.",
-    description:
-      "A drowned forest where the trees stand knee-deep in still black water. The Old Oak at its heart is older than any kingdom. Druids, hedge-witches, and the occasional lost paladin come here to make promises.",
-    x: 520,
-    y: 420,
-    type: "wild",
-    appearsIn: [{ chapter: "prologue", scene: "the-oath", label: "The oath" }],
-  },
-  {
-    id: "vellmar",
-    name: "Vellmar",
-    tagline: "The city of a thousand lanterns.",
-    description:
-      "A river-port and trade capital built on seven bridges. Its guilds are rich, its watch is tired, and its lantern-lighters know more than any spymaster. Corvin arrives here at the start of the chronicle.",
-    x: 820,
-    y: 560,
+      "A sun-scorched trade city on the southern coast, ruled by Lord Numarius and taxed to the bone. Its markets are loud, its alleys are quiet, and beneath both runs the Silken Chain. Hanno was born here, cured it once, and is now poisoning it.",
+    x: 600,
+    y: 540,
     type: "city",
-    appearsIn: [{ chapter: "prologue", scene: "vellmar", label: "Arrival" }],
+    appearsIn: [
+      { chapter: "market-awnings", scene: "the-fruit-stall", label: "The fruit stall" },
+      { chapter: "the-cure", scene: "return", label: "The return" },
+      { chapter: "a-dark-turn", scene: "fertilizer", label: "The banquet" },
+    ],
   },
   {
-    id: "grey-reaches",
-    name: "The Grey Reaches",
-    tagline: "Highlands of heather and old stone.",
+    id: "numarius-fields",
+    name: "The Fields of Numarius",
+    tagline: "Where debtors go, and do not come back.",
     description:
-      "Wind-scoured moors and broken hillforts. Few roads, fewer inns. The kind of country that makes people quiet.",
-    x: 260,
-    y: 130,
+      "Endless plantations east of the city walls, worked by the indentured. Adil Averroes was taken here the morning his stall was seized. He died here, and was buried where he fell, to feed the crop.",
+    x: 720,
+    y: 610,
+    type: "ruin",
+    appearsIn: [{ chapter: "market-awnings", scene: "the-fields", label: "Adil is taken" }],
+  },
+  {
+    id: "tengeri-wastes",
+    name: "The Tengeri Wastes",
+    tagline: "Wind-carved canyons and the Leonin clans.",
+    description:
+      "A barren country far to the east where the wind cuts canyons through jagged cliffs. The Leonin who live here taught Hanno to track, to survive, and to shoot arrows that sing.",
+    x: 980,
+    y: 300,
+    type: "wild",
+    appearsIn: [{ chapter: "journeys", scene: "tengeri-wastes", label: "Archery among the Leonin" }],
+  },
+  {
+    id: "sidrat-al-muntaha",
+    name: "Sidrat Al Muntaha",
+    tagline: "Lake Siraj and the glowing roads.",
+    description:
+      "A land of luminous landscapes and sacred lakes. Beneath the soft light of Lake Siraj, master swordsmen teach that the blade and the mind must be balanced. Bioluminescent plants line moss-covered bridges.",
+    x: 820,
+    y: 170,
     type: "landmark",
+    appearsIn: [{ chapter: "journeys", scene: "lake-siraj", label: "The sword" }],
   },
   {
-    id: "sundering-sea",
-    name: "The Sundering Sea",
-    tagline: "Nothing that sails west comes back the same.",
+    id: "lysandria",
+    name: "Lysandria",
+    tagline: "Mountains, rare metals, and the phalanx.",
     description:
-      "The great western ocean. Its storms are said to have opinions.",
-    x: 120,
-    y: 560,
-    type: "sea",
+      "A rugged mountain kingdom whose warriors prize balance above all. General Phylios rules here. Hanno trained with the spear for five years, healed the general's son, and was given Zaharaz.",
+    x: 300,
+    y: 210,
+    type: "landmark",
+    appearsIn: [
+      { chapter: "journeys", scene: "toward-lysandria", label: "The approach" },
+      { chapter: "gift-of-lysandria", scene: "the-spear", label: "Zaharaz" },
+    ],
+  },
+  {
+    id: "moonlit-isle",
+    name: "The Moonlit Isle",
+    tagline: "Where the Elysian flower grows.",
+    description:
+      "A secluded island off the Lysandrian coast. Hanno and Alethea were married here under moonlight. He placed a red-and-yellow flower behind her ear that night, and recognised at once what else it could be used for.",
+    x: 110,
+    y: 340,
+    type: "wild",
+    appearsIn: [
+      { chapter: "gift-of-lysandria", scene: "the-elysian-flower", label: "The wedding" },
+      { chapter: "a-dark-turn", scene: "elysian-dust", label: "Elysian Dust" },
+    ],
   },
 ];
 
