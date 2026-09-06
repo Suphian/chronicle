@@ -11,6 +11,7 @@ export const bitterApprenticeship: Chapter = {
   when: "Hanno's youth",
   status: "draft",
   music: "/audio/ambient-night.wav",
+  cover: "/images/chronicle/apothecary.webp",
   scenes: [
     { id: "title", kind: "title", heading: "The Bitter Apprenticeship", text: ["Chapter Two"], mood: "void" },
     {

@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import Image from "next/image";
+import { motion, useReducedMotion } from "framer-motion";
 import type { Mood, Scene } from "@/content/types";
 import { moods } from "@/lib/moods";
 import { Particles } from "./Particles";
@@ -9,8 +10,10 @@ import { Particles } from "./Particles";
  * Full-bleed background for a scene: video > image > mood gradient, always
  * with a vignette and (unless a video is playing) a particle overlay.
  */
-export function SceneBackdrop({ scene, fallbackMood }: { scene: Scene; fallbackMood: Mood }) {
+export function SceneBackdrop({ scene, fallbackMood, cover }: { scene: Scene; fallbackMood: Mood; cover?: string }) {
   const mood = moods[scene.mood ?? fallbackMood];
+  const reducedMotion = useReducedMotion();
+  const image = scene.image ?? (scene.kind === "title" ? cover : undefined);
 
   return (
     <div className="absolute inset-0 overflow-hidden" style={{ background: mood.background }}>
@@ -24,19 +27,21 @@ export function SceneBackdrop({ scene, fallbackMood }: { scene: Scene; fallbackM
           loop
           playsInline
         />
-      ) : scene.image ? (
-        <motion.img
-          key={scene.image}
-          src={scene.image}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover"
-          initial={{ scale: 1, opacity: 0 }}
-          animate={{ scale: 1.08, opacity: 1 }}
-          transition={{ scale: { duration: 24, ease: "linear" }, opacity: { duration: 1.4 } }}
-        />
+      ) : image ? (
+        <motion.div
+          key={image}
+          className="absolute inset-0"
+          initial={{ scale: 1, opacity: reducedMotion ? 1 : 0 }}
+          animate={{ scale: reducedMotion ? 1 : 1.06, opacity: 1 }}
+          transition={{ scale: { duration: 24, ease: "linear" }, opacity: { duration: reducedMotion ? 0 : 1.4 } }}
+        >
+          <Image src={image} alt="" fill sizes="100vw" className="object-cover" />
+        </motion.div>
       ) : null}
 
       {!scene.video && <Particles variant={mood.particles} color={mood.accent} />}
+
+      {image && <div className="pointer-events-none absolute inset-0 bg-black/45" />}
 
       {/* vignette + bottom fade so text stays legible over any art */}
       <div

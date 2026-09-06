@@ -11,7 +11,7 @@ export const character: CharacterProfile = {
   race: "Half-Elf (Bakhtari, on his mother's side)",
   class: "Alchemist Artificer / Fighter",
   alignment: "Neutral Evil",
-  portrait: undefined, // e.g. "/images/character/portrait.jpg"
+  portrait: "/images/chronicle/hanno.webp",
   tagline:
     "He cured a city of one poison and then, quietly, gave it another. This is the story of how a fruit-seller's son became the most dangerous man in Carthara.",
   bio: [

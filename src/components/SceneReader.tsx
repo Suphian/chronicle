@@ -82,7 +82,7 @@ export function SceneReader({ chapter, next, initialSceneId }: Props) {
 
   return (
     <div className="fixed inset-0 select-none" style={{ ["--accent" as string]: mood.accent }}>
-      <SceneBackdrop scene={scene} fallbackMood={chapter.mood} />
+      <SceneBackdrop scene={scene} fallbackMood={chapter.mood} cover={chapter.cover} />
 
       {/* Begin gate: needed so the browser lets us play audio. */}
       <AnimatePresence>

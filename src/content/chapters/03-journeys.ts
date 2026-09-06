@@ -11,6 +11,7 @@ export const journeys: Chapter = {
   when: "The years abroad",
   status: "draft",
   music: "/audio/ambient-wind.wav",
+  cover: "/images/chronicle/lysandria.webp",
   scenes: [
     { id: "title", kind: "title", heading: "Journeys into the Unknown", text: ["Chapter Three"], mood: "dawn" },
     {
@@ -53,6 +54,7 @@ export const journeys: Chapter = {
       heading: "Toward Lysandria",
       mood: "storm",
       location: "lysandria",
+      image: "/images/chronicle/lysandria.webp",
       text: [
         "Finally his path bends toward Lysandria, a rugged mountain kingdom of disciplined warriors devoted to harmony. As the peaks rise ahead of him, he feels an inexplicable sense of destiny.",
         "Thoughts of home never fade entirely. Guilt for his absences, for his blindness, travels with him. One day he will return, carrying enough skill and knowledge to mend what was broken.",
@@ -63,6 +65,7 @@ export const journeys: Chapter = {
       heading: "Nightly Patrols",
       mood: "void",
       location: "carthara",
+      image: "/images/chronicle/shadows.webp",
       text: [
         "In Carthara, Adris rises through the guard, solitary and relentless. He patrols the alleys alone, arresting the men who prey on the vulnerable. Every captured Silker brings satisfaction, and deepens the rage underneath it.",
         "Sometimes the rage wins. He dispenses justice swiftly and brutally, bypassing trials. Sometimes he takes lives.",

@@ -11,6 +11,7 @@ export const marketAwnings: Chapter = {
   when: "Hanno's childhood",
   status: "draft",
   music: "/audio/ambient-market.wav",
+  cover: "/images/chronicle/carthara.webp",
   scenes: [
     { id: "title", kind: "title", heading: "Beneath the Market Awnings", text: ["Chapter One"], mood: "gold" },
     {
@@ -18,6 +19,7 @@ export const marketAwnings: Chapter = {
       heading: "The Fruit Stall",
       mood: "gold",
       location: "carthara",
+      image: "/images/chronicle/carthara.webp",
       text: [
         "The markets of Carthara bustle beneath a scorching sun, awnings billowing as merchants shout to entice passersby. Amid the cacophony stands a modest fruit stall, piled high with figs, pomegranates, and dates.",
         "Adil Averroes, a thin but proud man with a warm, weary smile, calls out to customers. His voice is earnest, and it is drowned by louder vendors.",

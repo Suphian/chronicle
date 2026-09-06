@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { character } from "@/content/character";
 import { chapters } from "@/content/chapters";
 
@@ -26,10 +27,9 @@ export default function CharacterPage() {
     <main className="mx-auto max-w-5xl px-6 pt-28 pb-24">
       <div className="grid gap-12 md:grid-cols-[260px_1fr]">
         <div>
-          <div className="aspect-[3/4] w-full overflow-hidden rounded-xl border border-parchment/10 bg-gradient-to-b from-[#2a1f14] to-[#0b0a0f]">
+          <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl border border-parchment/10 bg-gradient-to-b from-[#2a1f14] to-[#0b0a0f]">
             {c.portrait ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={c.portrait} alt={c.name} className="h-full w-full object-cover" />
+              <Image src={c.portrait} alt={c.name} fill sizes="(min-width: 768px) 260px, 100vw" className="object-cover object-top" />
             ) : (
               <div className="flex h-full items-center justify-center">
                 <span className="font-display text-6xl text-parchment/20">{c.name[0]}</span>

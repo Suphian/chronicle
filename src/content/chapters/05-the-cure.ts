@@ -11,6 +11,7 @@ export const theCure: Chapter = {
   when: "The return",
   status: "draft",
   music: "/audio/ambient-market.wav",
+  cover: "/images/chronicle/apothecary.webp",
   scenes: [
     { id: "title", kind: "title", heading: "A Cure and Its Consequences", text: ["Chapter Five"], mood: "forest" },
     {
@@ -18,6 +19,7 @@ export const theCure: Chapter = {
       heading: "The Return",
       mood: "gold",
       location: "carthara",
+      image: "/images/chronicle/carthara.webp",
       text: [
         "Carthara looks unchanged. The markets bustle, the streets crowd. It is Hanno who is different.",
         "Master Virello welcomes him back with thinly veiled greed, counting the rare materials before he counts the years. Hanno is no longer blind. He begins, carefully, to pull away, and sets up a discreet workshop of his own with Alethea beside him.",

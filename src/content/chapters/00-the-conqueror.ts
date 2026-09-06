@@ -15,6 +15,7 @@ export const theConqueror: Chapter = {
   when: "Long before Hanno",
   status: "draft",
   music: "/audio/ambient-wind.wav",
+  cover: "/images/chronicle/bakhtar.webp",
   scenes: [
     { id: "title", kind: "title", heading: "The Conqueror", text: ["A Legend of the Highlands"], mood: "storm" },
     {
@@ -22,6 +23,7 @@ export const theConqueror: Chapter = {
       heading: "The Graveyard of Empires",
       mood: "storm",
       location: "bakhtar",
+      image: "/images/chronicle/bakhtar.webp",
       text: [
         "North of Carthara, past the last road, the land rises into Bakhtar. Villages are cut into the cliff faces. Valleys close like fists.",
         "Every empire that marched in broke there. The sea-kings. The horse-lords of the east. The Lysandrian phalanx, once, before Lysandria learned better.",
@@ -83,6 +85,7 @@ export const theConqueror: Chapter = {
       heading: "The Line",
       mood: "forest",
       location: "carthara",
+      image: "/images/chronicle/carthara.webp",
       text: [
         "His line went on in the cliffs through Rukhsana, and thinned, and scattered, and came down at last out of the mountains to a pottery shop in Carthara.",
         "There a woman named Amara hummed the cave songs over the clay, and never told her sons what they were.",

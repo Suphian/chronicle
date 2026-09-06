@@ -11,6 +11,7 @@ export const aDarkTurn: Chapter = {
   when: "The breaking point",
   status: "draft",
   music: "/audio/ambient-ember.wav",
+  cover: "/images/chronicle/apothecary.webp",
   scenes: [
     { id: "title", kind: "title", heading: "A Dark Turn", text: ["Chapter Eight"], mood: "ember" },
     {
@@ -27,6 +28,7 @@ export const aDarkTurn: Chapter = {
       heading: "Fertilizer in My Fields",
       mood: "ember",
       location: "carthara",
+      image: "/images/chronicle/carthara.webp",
       sfx: "/audio/sfx-ember.wav",
       text: [
         "The breaking point is a banquet. Numarius rises to celebrate Carthara's prosperity and, between compliments, belittles those he considers beneath him.",
@@ -40,6 +42,7 @@ export const aDarkTurn: Chapter = {
       heading: "Witnesses",
       mood: "void",
       location: "carthara",
+      image: "/images/chronicle/shadows.webp",
       ambient: "/audio/ambient-market.wav",
       text: [
         "He walks home through the market. The vendors who out-shouted his father are old men now, and they bow to him. The faces in the doorways the morning of the stall are the faces that cheered him as savior. Not one of them spoke. Then, or since.",

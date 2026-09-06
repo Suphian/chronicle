@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Chapter } from "@/content/types";
 import { moods } from "@/lib/moods";
 
@@ -14,10 +15,11 @@ export function ChapterCard({ chapter, index }: { chapter: Chapter; index: numbe
         style={{ background: chapter.cover ? undefined : mood.background }}
       >
         {chapter.cover && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <Image
             src={chapter.cover}
             alt=""
+            fill
+            sizes="(min-width: 1024px) 360px, (min-width: 768px) 50vw, 100vw"
             className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
           />
         )}
