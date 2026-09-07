@@ -446,5 +446,19 @@
     "caption": "Hemaris · location study",
     "width": 1672,
     "height": 941
+  },
+  "burg-44": {
+    "src": "/images/world/points/burg-44-v1.webp",
+    "alt": "Individual landscape and architecture study of Bingraleton",
+    "caption": "Bingraleton · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-45": {
+    "src": "/images/world/points/burg-45-v1.webp",
+    "alt": "Individual landscape and architecture study of Smyrneleu",
+    "caption": "Smyrneleu · location study",
+    "width": 1672,
+    "height": 941
   }
 }
