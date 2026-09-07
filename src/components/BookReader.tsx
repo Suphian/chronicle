@@ -57,21 +57,20 @@ export function BookReader({ chapter, prev, next, initialSceneId }: {
               {!prose && scene.location && worldById[scene.location] && <Link className="book-location" href={`/world?at=${scene.location}`}>Explore {worldById[scene.location].name} →</Link>}
             </section>)}
             <footer className="book-end">
-              <p className="book-eyebrow">End of {chapter.order === 0 ? "the prologue" : `chapter ${chapter.order}`}</p>
               <nav aria-label="Continue reading" className="book-adjacent">
                 {prev && <Link href={`/chapters/${prev.slug}`}><span>← Previous chapter</span>{prev.title}</Link>}
-                {next ? <Link href={`/chapters/${next.slug}`}><span>{isProse(next) ? "Next chapter" : "Next story sketch"} →</span>{next.title}</Link> : <p>You’ve reached the end of this first pass. The larger story remains open.</p>}
+                {next ? <Link href={`/chapters/${next.slug}`}><span>{isProse(next) ? "Next chapter" : "Next story sketch"} →</span>{next.title}</Link> : <p>End of the current draft.</p>}
               </nav>
               <Link className="book-location" href="/story">All chapters</Link>
             </footer>
           </article>
           <aside className="book-companion" aria-label="Chapter companion">
-            <h2>People & places in this chapter</h2>
-            <p>Reference entries describe the full story and may reveal later events.</p>
+            <details><summary>People & places <span>Full-story spoilers</span></summary>
             <div className="book-companion-grid">
               {people.length > 0 && <div><h3>People</h3>{people.map((person) => <Link key={person.id} href={`/library/characters/${person.id}`}>{person.name} →</Link>)}</div>}
               {places.length > 0 && <div><h3>Places</h3>{places.map((place) => <Link key={place.id} href={`/world?at=${place.id}`}>{place.name} →</Link>)}</div>}
             </div>
+            </details>
             <div className="book-reference">
               <Link href="/people">Character guide →</Link>
               <Link href="/world">World & places →</Link>
@@ -123,6 +122,6 @@ function PlateFigure({ plate }: { plate: BookPlate }) {
       sizes={plate.layout === "wide" ? "(min-width: 1300px) 900px, (min-width: 901px) 70vw, 95vw"
         : plate.layout === "vignette" ? "(min-width: 600px) 440px, 90vw"
         : "(min-width: 1300px) 500px, (min-width: 1101px) 40vw, (min-width: 600px) 430px, 90vw"} />
-    <figcaption><span>Plate {plate.number}</span>{plate.caption}<small>Ink & watercolor · The Chronicle</small></figcaption>
+    <figcaption>{plate.caption}</figcaption>
   </figure>;
 }

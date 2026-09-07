@@ -52,13 +52,13 @@ export function LivingLandscape({ artwork = "lysandria-terrace", title, headingL
 
   return <section className={`${styles.landscape}${art.night ? ` ${styles.night}` : ""}`} aria-labelledby={titleId} data-living-vignette={artwork} data-motion={running ? "running" : "paused"}>
     <div className={styles.heading}>
-      <div><p className={styles.eyebrow}>A living vignette</p><Heading className={styles.title} id={titleId}>{title ?? art.title}</Heading></div>
+      <div><Heading className={styles.title} id={titleId}>{title ?? art.title}</Heading></div>
       <button className={styles.control} type="button" aria-controls={pictureId} aria-pressed={wantsMotion} onClick={() => setUserChoice(!wantsMotion)}>
         <svg viewBox="0 0 20 20" aria-hidden="true">{wantsMotion ? <path d="M6 4v12M14 4v12" fill="none" stroke="currentColor" strokeWidth="2" /> : <path d="m6 3 11 7-11 7z" fill="currentColor" />}</svg>
         {wantsMotion ? "Pause motion" : "Play motion"}
       </button>
     </div>
-    {reducedMotion && userChoice === null && <p className={styles.motionNote}>Motion is off to match your device preference. Choose Play motion to animate this picture.</p>}
+    {reducedMotion && userChoice === null && <p className={styles.motionNote}>Motion paused for your device preference.</p>}
     <figure className={styles.figure}>
       <div id={pictureId} ref={picture} className={`${styles.window} ${running ? styles.running : ""}`} style={{ aspectRatio: `${art.width} / ${art.height}` }}>
         <Image src={art.src} alt={art.alt} fill sizes="(min-width: 1300px) 900px, (min-width: 901px) 70vw, 95vw" className={styles.painting} />
@@ -81,7 +81,7 @@ export function LivingLandscape({ artwork = "lysandria-terrace", title, headingL
         </svg>}
         <div className={styles.sill} aria-hidden="true" />
       </div>
-      <figcaption className={styles.caption}>{art.caption && <span>{art.caption}</span>}<span className={styles.study}>{art.note}</span></figcaption>
+      {art.caption && <figcaption className={styles.caption}>{art.caption}</figcaption>}
     </figure>
   </section>;
 }

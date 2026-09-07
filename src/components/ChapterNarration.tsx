@@ -217,7 +217,7 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rat
     <div className="narration-row">
       <button className="narration-play" onClick={listen} disabled={!tracks.length || (mode === "device" && !speechSupported)} aria-label={`${label} chapter narration`}><span aria-hidden="true">{status === "playing" ? "Ⅱ" : status === "loading" ? "×" : "▶"}</span> {label}</button>
       {active && <button className="narration-stop" onClick={stop}>Stop</button>}
-      <p className="narration-now" role="status">{status === "loading" ? loadingMessage : status === "ended" ? "End of chapter." : active ? `${status === "paused" ? "Paused" : "Playing"}${currentScene?.heading ? ` · ${currentScene.heading}` : ""}` : mode === "device" && !speechSupported ? "Device voices are unavailable." : "Listen to this chapter"}</p>
+      <p className={`narration-now${status === "stopped" && !(mode === "device" && !speechSupported) ? " sr-only" : ""}`} role="status">{status === "loading" ? loadingMessage : status === "ended" ? "End of chapter." : active ? `${status === "paused" ? "Paused" : "Playing"}${currentScene?.heading ? ` · ${currentScene.heading}` : ""}` : mode === "device" && !speechSupported ? "Device voices are unavailable." : ""}</p>
       <Link className="narration-settings-link" href="/settings" aria-label="Reading and narration settings">Settings</Link>
     </div>
     {mode === "ondemand" && <p className="narration-attribution">Voices by <a href="https://elevenlabs.io" target="_blank" rel="noreferrer">elevenlabs.io</a></p>}

@@ -32,13 +32,13 @@ export default async function NotebookPage({ params }: { params: Promise<{ path:
   return <main className="notebook-shell"><div className="notebook-page">
     <Link className="book-location" href={parent.href}>← {parent.label}</Link>
     <ResumeReading />
-    <p className="book-eyebrow notebook-label">Author’s notebook / {entry.group} · Full-story spoilers</p>
+    <p className="book-eyebrow notebook-label">Full-story spoilers</p>
     <article className="notebook-markdown"><Markdown remarkPlugins={[remarkGfm]} components={{
       h1: ({ children }) => portrait ? <header className="character-dossier-header">
         <div><h1>{children}</h1>{person && <p className="character-dossier-role">{person.role}</p>}</div>
         <figure className="character-dossier-portrait">
           <Image src={portrait.src} alt={portrait.alt} width={portrait.width} height={portrait.height} sizes="(max-width: 600px) 220px, 240px" />
-          <figcaption>Portrait study · Visual interpretation</figcaption>
+          <figcaption>Portrait study</figcaption>
         </figure>
       </header> : <h1>{children}</h1>,
       a: ({ href, children }) => <a href={href ? notebookHref(href, entry.slug, entries) : undefined}>{children}</a>,

@@ -11,10 +11,9 @@ export default function CodexPage() {
   const dossiers = getBibleEntries().filter((entry) => entry.group === "characters");
   return (
     <main className="mx-auto max-w-5xl px-6 pt-28 pb-24">
-      <p className="font-display text-xs tracking-[0.5em] text-parchment/50 uppercase">Reference</p>
       <h1 className="font-display mt-2 text-4xl text-parchment md:text-6xl">People & lore</h1>
       <p className="font-serif mt-4 max-w-2xl text-lg text-parchment/70">
-        Your companion to the chronicle: who people are, how they are connected, and the places and powers that shape their lives. Entries cover the full story and may reveal later events.
+        Entries contain full-story spoilers.
       </p>
 
       <nav className="mt-8 flex flex-wrap gap-4">
@@ -31,7 +30,7 @@ export default function CodexPage() {
         if (!entries.length) return null;
         return (
           <section key={k.kind} id={k.kind} className="mt-16 scroll-mt-24">
-            <h2 className="font-display border-b border-parchment/15 pb-3 text-xs tracking-[0.4em] text-parchment/50 uppercase">
+            <h2 className="font-display border-b border-parchment/15 pb-3 text-base tracking-[0.05em] text-parchment/50 uppercase">
               {k.label}
             </h2>
             <div className="mt-6 grid gap-x-10 gap-y-8 md:grid-cols-2">
@@ -43,8 +42,8 @@ export default function CodexPage() {
                     <h3 className="font-display text-xl text-parchment">{e.name}</h3>
                     <p className="font-serif text-parchment/60 italic">{e.role}</p>
                     <p className="font-serif mt-2 text-xl leading-relaxed text-parchment/90">{e.body}</p>
-                    {dossiers.find((entry) => entry.slug === `characters/${e.id}`) && <Link className="mt-3 inline-block text-base text-gold underline underline-offset-4" href={`/library/characters/${e.id}`}>History, motivations & relationships →</Link>}
-                    <p className="font-display mt-3 flex flex-wrap gap-4 text-[10px] tracking-[0.3em] uppercase">
+                    {dossiers.find((entry) => entry.slug === `characters/${e.id}`) && <Link className="mt-3 inline-block text-base text-gold underline underline-offset-4" href={`/library/characters/${e.id}`}>Full profile →</Link>}
+                    <p className="font-display mt-3 flex flex-wrap gap-4 text-sm">
                       {e.location && (
                         <Link href={`/world?at=${e.location}`} className="text-parchment/50 hover:text-parchment">
                           ◆ On the map
