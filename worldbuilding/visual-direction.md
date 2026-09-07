@@ -59,6 +59,8 @@ The current visual implementation begins with Idris, Hanno, Dyia, Alethea, and C
 
 ### Living vignettes across the site — 2026-09-07
 
+The author also requested motion in the full-width homepage picture. `HeroArtwork.tsx` adds a slow pan and shallow zoom, drifting sunlight, and sparse dust motes to the existing panoramic market painting. The title and links stay still. A picture-motion button pauses all layers at their current position; motion defaults to still for reduced-motion preferences and suspends offscreen or in a hidden tab. These are original project-authored CSS effects over the existing licensed asset, with no added media or story events.
+
 The author wants vignettes throughout the site, including the chapters. Each numbered chapter and the historical tale has a curated moving illustration, alongside placements on Home, Story, People, World, and Writing room. The chapter selection animates existing plates at their current paragraph positions; the terrace is inserted beside Hanno’s memory of the pottery bench. Captions remain visual interpretations, not new events.
 
 `src/content/living-vignettes.ts` records placement and reuses the image paths, alt text, and captions from `src/content/illustrations.ts`. Original artwork provenance and license records remain in `public/images/plates/prompts.json` and the existing terrace record. The added light and motes are project-authored CSS animation; night settings use a subdued warm glow, and the curtain is limited to the Lysandrian terrace. No third-party media or audio is added. Motion controls, reduced-motion defaults, and offscreen/background suspension apply to every vignette.

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import { HeroArtwork } from "@/components/HeroArtwork";
 import { chapters } from "@/content/chapters";
 import { isProse } from "@/lib/reading";
 import { ResumeReading } from "@/components/ResumeReading";
@@ -16,7 +16,7 @@ export default function Home() {
   const first = chapters.find((chapter) => chapter.order > 0 && isProse(chapter));
   return <main className="editorial-home">
     <section className="home-hero" aria-labelledby="home-heading">
-      <div className="home-art"><Image src="/images/plates/carthara-market-hero-v3.webp" alt="A panoramic ink and watercolor view of Carthara: Black families and traders beneath shaded market awnings, planted terraces, and intricate limestone arcades" fill sizes="(max-width: 700px) 1500px, 100vw" preload className="object-cover" /></div>
+      <HeroArtwork />
       <div className="home-title"><p className="book-eyebrow">An illustrated story · A world in the making</p><h1 id="home-heading"><span>The</span> Chronicle</h1></div>
       <div className="home-footer">
         <div className="home-intro"><p>Of Hanno Averroes, of Dyia, and of a city that remembers what its people try to forget.</p><div className="home-actions"><Link href={first ? `/chapters/${first.slug}` : "/story"} className="btn-primary">Read the opening <span aria-hidden="true">↗</span></Link><Link href="#chapters" className="btn-ghost">Explore the Chronicle ↓</Link></div></div>

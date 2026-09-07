@@ -64,7 +64,7 @@ body {
 .home-section-grid strong { display: block; font: 12px/1.7 system-ui, sans-serif; margin-top: 24px; color: #d1b780; }
 .editorial-home { background: #f3eddf; color: #302a22; }
 .editorial-home .home-hero { min-height: max(640px, calc(100svh - 64px)); margin-top: 64px; padding: clamp(48px, 9svh, 110px) clamp(24px, 4vw, 80px) 24px; flex-direction: column; justify-content: space-between; gap: 120px; isolation: isolate; overflow: hidden; }
-.home-art { position: absolute; inset: 0; z-index: -2; pointer-events: none; animation: home-art-arrive 1.3s ease-out both; }
+.home-art { position: absolute; inset: 0; z-index: -2; pointer-events: none; }
 .home-art img { object-position: center; }
 .editorial-home .home-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: radial-gradient(ellipse 45% 36% at 50% 26%, #f3eddf80, transparent), linear-gradient(0deg, #f3eddf 0%, #f3eddfed 9%, #f3eddf00 38%); }
 .editorial-home .home-title { max-width: 1480px; margin: 0 auto; text-align: center; }
@@ -89,7 +89,6 @@ body {
 .editorial-home .home-section-grid h2 { font: 42px/1.15 var(--font-serif); margin: 0; }
 .editorial-home .home-section-grid p { color: #635641; font-size: 16px; max-width: 480px; }
 .editorial-home .home-section-grid strong { color: #5a4931; margin: 0; font-weight: 400; text-align: right; }
-@keyframes home-art-arrive { from { opacity: .7; } to { opacity: 1; } }
 @media (max-width: 1000px) { .editorial-home .home-section-grid > a { grid-template-columns: 40px minmax(170px, 1fr) minmax(240px, 1.4fr); } .editorial-home .home-section-grid strong { grid-column: 2 / -1; text-align: left; } }
 @media (max-width: 700px) {
   .editorial-home .home-hero { min-height: max(680px, calc(100svh - 64px)); padding: 56px 24px 20px; gap: 200px; }
@@ -105,7 +104,6 @@ body {
   .editorial-home .home-section-grid h2 { font-size: 36px; }
   .editorial-home .home-section-grid p, .editorial-home .home-section-grid strong { grid-column: 2; }
 }
-@media (prefers-reduced-motion: reduce) { .home-art { animation: none; } }
 .story-list { margin-top: 24px; }
 .story-list li { border-top: 1px solid #cdbfa7; }
 .story-list li:last-child { border-bottom: 1px solid #cdbfa7; }
