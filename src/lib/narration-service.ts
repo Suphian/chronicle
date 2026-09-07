@@ -58,6 +58,24 @@ function subscribeToNarration(work: SharedNarration, signal: AbortSignal, onEmpt
 
 const digest = (text: string) => createHash("sha256").update(text).digest("hex");
 
+async function providerFailure(response: Response): Promise<NarrationError> {
+  const body = await response.json().catch(() => null);
+  const code = body?.detail?.status;
+  // Translate known reasons; never expose provider bodies or credentials to readers.
+  const reasons: Record<string, string> = {
+    invalid_api_key: "The site's ElevenLabs connection needs a valid API key.",
+    missing_permissions: "The site's ElevenLabs key does not have permission for narration.",
+    detected_unusual_activity: "ElevenLabs has restricted free-tier requests from this connection.",
+    paid_plan_required: "ElevenLabs requires a paid plan for this narration request.",
+    quota_exceeded: "The included ElevenLabs narration allowance is used up.",
+  };
+  const reason = typeof code === "string" && Object.hasOwn(reasons, code) ? reasons[code] : undefined;
+  const message = reason ?? (response.status === 429 ? "ElevenLabs is busy or its allowance is exhausted."
+    : response.status === 401 || response.status === 403 ? "ElevenLabs refused this narration request because of an account or permission restriction."
+    : "ElevenLabs could not finish this passage. It was not retried automatically.");
+  return new NarrationError(response.status === 429 ? 429 : 502, `${message} You can play with device voices instead.`);
+}
+
 async function smallJson(request: Request): Promise<Record<string, unknown>> {
   if (!request.headers.get("content-type")?.startsWith("application/json")) throw new NarrationError(415, "Use a JSON narration request.");
   const reader = request.body?.getReader();
@@ -81,7 +99,7 @@ async function smallJson(request: Request): Promise<Record<string, unknown>> {
 async function providerAudio(passage: NarrationPassage, apiKey: string, signal: AbortSignal, fetcher: typeof fetch): Promise<CachedNarration> {
   const headers = { "xi-api-key": apiKey };
   const allowance = await fetcher("https://api.elevenlabs.io/v1/user/subscription", { headers, signal, cache: "no-store" });
-  if (!allowance.ok) throw new NarrationError(allowance.status === 429 ? 429 : 503, "The narration account could not be checked. Try again later or choose device voices in Settings.");
+  if (!allowance.ok) throw await providerFailure(allowance);
   const subscription = await allowance.json();
   if (!Number.isFinite(subscription.character_limit) || !Number.isFinite(subscription.character_count)) throw new NarrationError(503, "Narration allowance is unavailable. Choose device voices in Settings for now.");
   if (subscription.character_limit - subscription.character_count < passage.characters) throw new NarrationError(402, "The included ElevenLabs allowance is used up. Saved passages still play. Device voices are available in Settings.");
@@ -89,12 +107,7 @@ async function providerAudio(passage: NarrationPassage, apiKey: string, signal: 
     method: "POST", headers: { ...headers, "Content-Type": "application/json" }, signal, cache: "no-store",
     body: JSON.stringify({ model_id: NARRATION_MODEL, inputs: providerInputs(passage), language_code: "en", seed: 42 }),
   });
-  if (!response.ok) {
-    const message = response.status === 429 ? "ElevenLabs is busy or its allowance is exhausted. Try again later or choose device voices in Settings."
-      : response.status === 401 || response.status === 403 ? "The narration account needs attention. Choose device voices in Settings for now."
-      : "ElevenLabs could not finish this passage. It was not retried automatically. Press Play to retry.";
-    throw new NarrationError(response.status === 429 ? 429 : 502, message);
-  }
+  if (!response.ok) throw await providerFailure(response);
   if (!response.headers.get("content-type")?.startsWith("audio/") || !response.body) throw new NarrationError(502, "The voice service returned no audio. The request was not retried.");
   const reader = response.body.getReader();
   const chunks: Uint8Array[] = [];

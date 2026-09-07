@@ -54,6 +54,8 @@ All roles now have explicit stock voice assignments. Additional named roles use 
 
 ## Server generation and replay
 
+If cloud narration fails, the reader offers **Play with device voices** without leaving the chapter. This explicit click restarts the affected paragraph and uses device voices for the rest of that open player; the saved narration preference stays unchanged. Known provider refusals distinguish invalid credentials, missing permissions, free-tier restrictions, plan requirements, and exhausted quota without exposing raw provider responses.
+
 `POST /api/narration` accepts only a canonical chapter slug, passage ID, and current request hash, which binds the exact passage IDs, packing schedule, text, voices, model, and output format. An older open page cannot resolve an obsolete passage ID to different prose after deployment. The server derives the text and cast from the manuscript; clients cannot supply arbitrary text or voice IDs. It checks included account allowance before each uncached request and does not enable upgrades or overage. Quota, missing configuration, and provider failures produce readable messages with device voices available in Settings.
 
 Successful MP3 data and generation metadata are stored using Next's Data Cache with no scheduled revalidation. On Vercel this persists across requests and deployments according to the host's cache policy. Replay reads that record rather than generating again. The player also keeps up to 24 passage recordings in memory for immediate replay while the chapter remains open. Cache removal, host eviction, or an API-key change can require regeneration; the cache is not a permanent editorial asset archive. Errors and incomplete audio are not saved as successful recordings.

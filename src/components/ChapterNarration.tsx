@@ -18,7 +18,8 @@ export function ChapterNarration(props: Props) {
   return <NarrationPlayer key={`${props.chapter.slug}/${props.initialSceneId ?? ""}/${preferences.narration}/${preferences.rate}`} {...props} mode={preferences.narration} rate={preferences.rate} />;
 }
 
-function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rate }: Props & { mode: Mode; rate: number }) {
+function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode: preferredMode, rate }: Props & { mode: Mode; rate: number }) {
+  const [mode, setMode] = useState(preferredMode);
   const segments = useMemo(() => getNarrationSegments(chapter), [chapter]);
   const previewTracks = useMemo(() => segments.flatMap((segment) => splitSpeechText(segment.text).filter((text) => text.trim()).map((text) => ({ ...segment, text }))), [segments]);
   const passages = useMemo(() => getNarrationPassages(chapter), [chapter]);
@@ -159,9 +160,9 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rat
     }
   }
 
-  function playTrack(at: number, token: number) {
+  function playTrack(at: number, token: number, playbackMode: Mode = mode) {
     if (token !== generation.current) return;
-    if (at >= tracks.length) {
+    if (at >= (playbackMode === "ondemand" ? passages : previewTracks).length) {
       ownsSpeech.current = false;
       utterance.current = null;
       setStatus("ended");
@@ -169,7 +170,7 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rat
     }
     position.current = at;
     setIndex(at);
-    if (mode === "ondemand") {
+    if (playbackMode === "ondemand") {
       void preparePassage(at, token);
     } else {
       setStatus("playing");
@@ -181,13 +182,24 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rat
       speaking.lang = speaking.voice?.lang ?? role.lang;
       speaking.pitch = role.pitch;
       speaking.rate = rate * role.rate;
-      speaking.onend = () => playTrack(at + 1, token);
+      speaking.onend = () => playTrack(at + 1, token, "device");
       speaking.onerror = () => fail("The device voice stopped. Press Play to retry or change narration in Settings.", token);
       utterance.current = speaking;
       ownsSpeech.current = true;
       window.speechSynthesis.resume();
       window.speechSynthesis.speak(speaking);
     }
+  }
+
+  function useDeviceVoices() {
+    const passage = passages[position.current];
+    // Restart the affected paragraph: cloud clips do not provide phrase timing.
+    const start = Math.max(0, previewTracks.findIndex((part) => part.sceneId === passage?.sceneId && part.paragraphIndex === passage?.paragraphIndex));
+    halt();
+    setError("");
+    setMode("device");
+    // Keep speech inside the click handler for browsers that require user activation.
+    playTrack(start, generation.current, "device");
   }
 
   function listen() {
@@ -221,6 +233,8 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rat
       <Link className="narration-settings-link" href="/settings" aria-label="Reading and narration settings">Settings</Link>
     </div>
     {mode === "ondemand" && <p className="narration-attribution">Voices by <a href="https://elevenlabs.io" target="_blank" rel="noreferrer">elevenlabs.io</a></p>}
+    {mode === "device" && <p className="narration-attribution">Reading with device voices.</p>}
     {error && <p className="narration-error" role="alert">{error}</p>}
+    {error && mode === "ondemand" && speechSupported && <button className="narration-stop" onClick={useDeviceVoices}>Play with device voices</button>}
   </section>;
 }

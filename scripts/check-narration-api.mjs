@@ -72,6 +72,28 @@ const noQuota = createNarrationHandler({...dependencies, cache:async (_,make)=>m
 assert.equal((await noQuota(request())).status,402);
 assert.equal(quotaGeneration,0,'insufficient included quota never initiates billed generation');
 
+for (const [stage, code, expected] of [
+  ['subscription', 'invalid_api_key', 'valid API key'],
+  ['generation', 'missing_permissions', 'permission for narration'],
+  ['generation', 'detected_unusual_activity', 'restricted free-tier requests'],
+  ['generation', 'paid_plan_required', 'requires a paid plan'],
+  ['generation', 'quota_exceeded', 'allowance is used up'],
+  ['generation', 'unknown', 'account or permission restriction'],
+]) {
+  let calls = 0;
+  const denied = createNarrationHandler({...dependencies, cache:async(_,make)=>make(), fetch:async url=> {
+    calls++;
+    if (stage === 'generation' && url.endsWith('/subscription')) return Response.json({character_limit:10000,character_count:0});
+    return Response.json({detail:{status:code,message:'private provider details'}},{status:403});
+  }});
+  const response = await denied(request());
+  assert.equal(response.status,502);
+  const error = (await response.json()).error;
+  assert(error.includes(expected), `${code}: useful recovery reason`);
+  assert(!error.includes('private provider details'), 'raw provider messages remain private');
+  assert.equal(calls, stage === 'subscription' ? 1 : 2, 'refusals are never retried');
+}
+
 const failedStore = new Map();
 let attempts = 0;
 const transient = createNarrationHandler({...dependencies, cache:async (key,make)=> {
