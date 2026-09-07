@@ -299,5 +299,40 @@
     "caption": "Egeleukemi · location study",
     "width": 1672,
     "height": 941
+  },
+  "burg-23": {
+    "src": "/images/world/points/burg-23-v1.webp",
+    "alt": "Individual landscape and architecture study of Paphidnapon",
+    "caption": "Paphidnapon · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-24": {
+    "src": "/images/world/points/burg-24-v1.webp",
+    "alt": "Individual landscape and architecture study of Zakra",
+    "caption": "Zakra · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-25": {
+    "src": "/images/world/points/burg-25-v1.webp",
+    "alt": "Individual landscape and architecture study of Redclesbury",
+    "caption": "Redclesbury · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-26": {
+    "src": "/images/world/points/burg-26-v1.webp",
+    "alt": "Individual landscape and architecture study of Castford",
+    "caption": "Castford · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-27": {
+    "src": "/images/world/points/burg-27-v1.webp",
+    "alt": "Individual landscape and architecture study of Byreum",
+    "caption": "Byreum · location study",
+    "width": 1672,
+    "height": 941
   }
 }

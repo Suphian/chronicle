@@ -90,3 +90,7 @@
 ## Mizan atlas adoption — September 2026
 
 The author adopted the November 2023 Mizan map for the whole World section, with zoom, full screen, climate and elevation layers, source lore, and distance measurement. The old Leonin region is now Tengeri, southwest of Cathara/Carthara; current refugee history supersedes the old homeland account. Import and exploration take priority; shared editing is deferred. Location pictures follow the Carthara panorama style. The eight new regional studies are visual proposals, not surveyed layouts or new plot events. Right-click travel estimates use the saved 5.11 miles per map unit and editable assumptions; driving is a comparison, not adopted story technology. See geography-reconciliation.md and sources/maps/README.md.
+
+## 2026-09-07 — Every map point has its own picture
+
+The author requires an individual picture for every map point and asks that completed artwork be added and pushed as work progresses. Include the 88 Mizan markers and nine story-place selections. Shared regional placeholders are superseded by explicit per-ID assignments; person markers use portraits. Preserve IDs, source geometry, and the distinction between visual proposals and chapter continuity. The Carthara panorama remains the common style reference.
