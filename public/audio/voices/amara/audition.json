@@ -1,0 +1,64 @@
+{
+  "provider": "ElevenLabs",
+  "file": "audition-f284aea3233afae4.mp3",
+  "inputHash": "f284aea3233afae4cacece732916a569b3db3d748118ca96f6b12fcac92f3575",
+  "title": "Amara voice audition · elevenlabs.io",
+  "generatedAt": "2026-09-07T16:19:28.631Z",
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "text": "[matter-of-fact] “Not yet,”",
+      "voice_id": "pFZP5JQG7iQjIQuC4Bku"
+    },
+    {
+      "text": "[matter-of-fact] “They haven't been fired.”",
+      "voice_id": "pFZP5JQG7iQjIQuC4Bku"
+    },
+    {
+      "text": "[matter-of-fact] “For which pot?”",
+      "voice_id": "pFZP5JQG7iQjIQuC4Bku"
+    },
+    {
+      "text": "[matter-of-fact] “Make it fit this one.”",
+      "voice_id": "pFZP5JQG7iQjIQuC4Bku"
+    },
+    {
+      "text": "[matter-of-fact] “A finger must go through. More than your finger. Someone might have large hands.”",
+      "voice_id": "pFZP5JQG7iQjIQuC4Bku"
+    }
+  ],
+  "language_code": "en",
+  "seed": 42,
+  "sources": [
+    {
+      "chapter": "market-awnings",
+      "scene": "above-the-pottery-shop",
+      "paragraphIndex": 1
+    },
+    {
+      "chapter": "market-awnings",
+      "scene": "above-the-pottery-shop",
+      "paragraphIndex": 1
+    },
+    {
+      "chapter": "market-awnings",
+      "scene": "above-the-pottery-shop",
+      "paragraphIndex": 4
+    },
+    {
+      "chapter": "market-awnings",
+      "scene": "above-the-pottery-shop",
+      "paragraphIndex": 6
+    },
+    {
+      "chapter": "market-awnings",
+      "scene": "above-the-pottery-shop",
+      "paragraphIndex": 6
+    }
+  ],
+  "characters": 242,
+  "bytes": 198156,
+  "tier": "free",
+  "license": "Noncommercial only; attribution elevenlabs.io in published title.",
+  "licenseSource": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform"
+}

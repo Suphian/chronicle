@@ -1,0 +1,64 @@
+{
+  "provider": "ElevenLabs",
+  "file": "audition-79f799b34a9130e3.mp3",
+  "inputHash": "79f799b34a9130e392f053d7a584909ae072e0339b3f07b1b5a06fde0fdb0ae8",
+  "title": "Hanno voice audition · elevenlabs.io",
+  "generatedAt": "2026-09-07T16:19:23.035Z",
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "text": "[curiously] “You said not to give credit.”",
+      "voice_id": "TX3LPaxmHKxFdv7VOQHJ"
+    },
+    {
+      "text": "[curiously] “It was less money.”",
+      "voice_id": "TX3LPaxmHKxFdv7VOQHJ"
+    },
+    {
+      "text": "[curiously] “You could have put it underneath.”",
+      "voice_id": "TX3LPaxmHKxFdv7VOQHJ"
+    },
+    {
+      "text": "[curiously] “She didn't open the others.”",
+      "voice_id": "TX3LPaxmHKxFdv7VOQHJ"
+    },
+    {
+      "text": "[curiously] “She might think it spoiled on the way.”",
+      "voice_id": "TX3LPaxmHKxFdv7VOQHJ"
+    }
+  ],
+  "language_code": "en",
+  "seed": 42,
+  "sources": [
+    {
+      "chapter": "market-awnings",
+      "scene": "the-fruit-stall",
+      "paragraphIndex": 7
+    },
+    {
+      "chapter": "market-awnings",
+      "scene": "the-fruit-stall",
+      "paragraphIndex": 9
+    },
+    {
+      "chapter": "market-awnings",
+      "scene": "the-fruit-stall",
+      "paragraphIndex": 11
+    },
+    {
+      "chapter": "market-awnings",
+      "scene": "the-fruit-stall",
+      "paragraphIndex": 11
+    },
+    {
+      "chapter": "market-awnings",
+      "scene": "the-fruit-stall",
+      "paragraphIndex": 13
+    }
+  ],
+  "characters": 214,
+  "bytes": 209859,
+  "tier": "free",
+  "license": "Noncommercial only; attribution elevenlabs.io in published title.",
+  "licenseSource": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform"
+}

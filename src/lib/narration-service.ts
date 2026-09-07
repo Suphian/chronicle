@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import type { Chapter } from "../content/types";
-import { getNarrationPassages, narrationPassageSource, narrationRequestHash, NARRATION_FORMAT, NARRATION_MODEL, type NarrationPassage } from "./narration-passages.ts";
+import { getNarrationPassages, narrationPassageSource, narrationRequestHash, providerInputs, NARRATION_FORMAT, NARRATION_MODEL, type NarrationPassage } from "./narration-passages.ts";
 
 export class NarrationError extends Error {
   status: number;
@@ -87,7 +87,7 @@ async function providerAudio(passage: NarrationPassage, apiKey: string, signal: 
   if (subscription.character_limit - subscription.character_count < passage.characters) throw new NarrationError(402, "The included ElevenLabs allowance is used up. Saved passages still play. Device voices are available in Settings.");
   const response = await fetcher(`https://api.elevenlabs.io/v1/text-to-dialogue/stream?output_format=${NARRATION_FORMAT}`, {
     method: "POST", headers: { ...headers, "Content-Type": "application/json" }, signal, cache: "no-store",
-    body: JSON.stringify({ model_id: NARRATION_MODEL, inputs: passage.inputs, language_code: "en", seed: 42 }),
+    body: JSON.stringify({ model_id: NARRATION_MODEL, inputs: providerInputs(passage), language_code: "en", seed: 42 }),
   });
   if (!response.ok) {
     const message = response.status === 429 ? "ElevenLabs is busy or its allowance is exhausted. Try again later or choose device voices in Settings."

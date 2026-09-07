@@ -1,0 +1,46 @@
+{
+  "provider": "ElevenLabs",
+  "file": "audition-4e9f6da482e5c08c.mp3",
+  "inputHash": "4e9f6da482e5c08cdf9ea2da4a35bf2642e5940714ce2c2c48fce20f5f454993",
+  "title": "Sinna voice audition · elevenlabs.io",
+  "generatedAt": "2026-09-07T16:19:39.314Z",
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "text": "[measured] “Letters?”",
+      "voice_id": "pqHfZKP75CvOlQylNhV4"
+    },
+    {
+      "text": "[measured] “They all do, at first.”",
+      "voice_id": "pqHfZKP75CvOlQylNhV4"
+    },
+    {
+      "text": "[measured] “Food here. A place to sleep when the work requires it. A household allowance, after the first month, if he's useful. Materials stay in the shop. So does anything made with them.”",
+      "voice_id": "pqHfZKP75CvOlQylNhV4"
+    }
+  ],
+  "language_code": "en",
+  "seed": 42,
+  "sources": [
+    {
+      "chapter": "market-awnings",
+      "scene": "the-apothecary",
+      "paragraphIndex": 4
+    },
+    {
+      "chapter": "market-awnings",
+      "scene": "the-apothecary",
+      "paragraphIndex": 7
+    },
+    {
+      "chapter": "market-awnings",
+      "scene": "the-apothecary",
+      "paragraphIndex": 7
+    }
+  ],
+  "characters": 246,
+  "bytes": 264612,
+  "tier": "free",
+  "license": "Noncommercial only; attribution elevenlabs.io in published title.",
+  "licenseSource": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform"
+}

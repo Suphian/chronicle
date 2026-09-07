@@ -1,0 +1,64 @@
+{
+  "provider": "ElevenLabs",
+  "file": "audition-8af629e4923fccdc.mp3",
+  "inputHash": "8af629e4923fccdc9178cdd39cc56070c3495336de04e4039d054467923ebda4",
+  "title": "Chuluun voice audition · elevenlabs.io",
+  "generatedAt": "2026-09-07T16:19:48.944Z",
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "text": "[patiently] ‘This row's,’",
+      "voice_id": "nPczCjzI2devNBz1zQrb"
+    },
+    {
+      "text": "[patiently] ‘The others have their own people.’",
+      "voice_id": "nPczCjzI2devNBz1zQrb"
+    },
+    {
+      "text": "[patiently] ‘You are allowed to leave again?’",
+      "voice_id": "nPczCjzI2devNBz1zQrb"
+    },
+    {
+      "text": "[patiently] ‘Wash that,’",
+      "voice_id": "nPczCjzI2devNBz1zQrb"
+    },
+    {
+      "text": "[patiently] ‘Find out before you defend it.’",
+      "voice_id": "nPczCjzI2devNBz1zQrb"
+    }
+  ],
+  "language_code": "en",
+  "seed": 42,
+  "sources": [
+    {
+      "chapter": "journeys",
+      "scene": "tengeri-wastes",
+      "paragraphIndex": 4
+    },
+    {
+      "chapter": "journeys",
+      "scene": "tengeri-wastes",
+      "paragraphIndex": 4
+    },
+    {
+      "chapter": "journeys",
+      "scene": "tengeri-wastes",
+      "paragraphIndex": 4
+    },
+    {
+      "chapter": "journeys",
+      "scene": "tengeri-wastes",
+      "paragraphIndex": 17
+    },
+    {
+      "chapter": "journeys",
+      "scene": "tengeri-wastes",
+      "paragraphIndex": 22
+    }
+  ],
+  "characters": 185,
+  "bytes": 140478,
+  "tier": "free",
+  "license": "Noncommercial only; attribution elevenlabs.io in published title.",
+  "licenseSource": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform"
+}

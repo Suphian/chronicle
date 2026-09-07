@@ -71,3 +71,8 @@
 - The author wants vignettes within chapters and throughout the website. Every numbered chapter and the optional historical tale now has a contextual living illustration. Home, Story, People, World, and Writing room also carry vignettes suited to their setting.
 - The Lysandrian pottery terrace appears after paragraph two of Chapter Four's stable `ancient-guardians` scene and on World. It remains an imagined terrace, not Amara's confirmed former workshop. Other chapter vignettes animate existing plates in their original positions, retaining their captions and all prose and scene links.
 - Existing project artwork receives subtle light and airborne motes; only the terrace has a moving curtain. Each vignette has an independent pause control, respects reduced-motion preferences, and stops offscreen or in background tabs. No audio is added.
+
+## 2026-09-07 — Voices shaped from character profiles
+
+- Every named character should have a distinct ElevenLabs voice molded from the character profiles, including Idris. Performance directions must affect generated delivery rather than exist only as notes.
+- The website now applies profile and scene cues to the distinct stock cast and provides thirteen short auditions in the Writing room. Custom identity briefs are prepared; API Voice Design was rejected on the connected free plan. Saving the full custom cast remains pending account support and sufficient slots. Existing unrelated account voices were preserved.

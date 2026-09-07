@@ -1,0 +1,55 @@
+{
+  "provider": "ElevenLabs",
+  "file": "audition-a67161ae695dfff5.mp3",
+  "inputHash": "a67161ae695dfff51c17463429b6c7aaa80523172b33fa335b7bf4573d3aedf1",
+  "title": "Phylios voice audition · elevenlabs.io",
+  "generatedAt": "2026-09-07T16:19:54.425Z",
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "text": "[worried] ‘The gardener wants the same weight when it is mended. The smith keeps offering her a better one.’",
+      "voice_id": "pNInz6obpgDQGcFmaJgB"
+    },
+    {
+      "text": "[solemnly] ‘Can you help?’",
+      "voice_id": "pNInz6obpgDQGcFmaJgB"
+    },
+    {
+      "text": "[solemnly] ‘For your next road,’",
+      "voice_id": "pNInz6obpgDQGcFmaJgB"
+    },
+    {
+      "text": "[solemnly] ‘And for what you restored to this house.’",
+      "voice_id": "pNInz6obpgDQGcFmaJgB"
+    }
+  ],
+  "language_code": "en",
+  "seed": 42,
+  "sources": [
+    {
+      "chapter": "gift-of-lysandria",
+      "scene": "ancient-guardians",
+      "paragraphIndex": 0
+    },
+    {
+      "chapter": "gift-of-lysandria",
+      "scene": "the-spear",
+      "paragraphIndex": 2
+    },
+    {
+      "chapter": "gift-of-lysandria",
+      "scene": "the-spear",
+      "paragraphIndex": 5
+    },
+    {
+      "chapter": "gift-of-lysandria",
+      "scene": "the-spear",
+      "paragraphIndex": 5
+    }
+  ],
+  "characters": 219,
+  "bytes": 185199,
+  "tier": "free",
+  "license": "Noncommercial only; attribution elevenlabs.io in published title.",
+  "licenseSource": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform"
+}

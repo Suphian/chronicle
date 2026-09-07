@@ -1,0 +1,55 @@
+{
+  "provider": "ElevenLabs",
+  "file": "audition-6322fad3b535d7f7.mp3",
+  "inputHash": "6322fad3b535d7f7953acfd83fce53b25b9999c5de8c1f289f0abd4b3b148378",
+  "title": "Alethea voice audition · elevenlabs.io",
+  "generatedAt": "2026-09-07T16:19:44.158Z",
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "text": "[gently] ‘You have had half the city tell you what a gift you possess,’",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL"
+    },
+    {
+      "text": "[gently] ‘Has anyone asked whether you have eaten?’",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL"
+    },
+    {
+      "text": "[gently] ‘I have asked about rent,’",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL"
+    },
+    {
+      "text": "[gently] ‘You have offered me a patron.’",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL"
+    }
+  ],
+  "language_code": "en",
+  "seed": 42,
+  "sources": [
+    {
+      "chapter": "gift-of-lysandria",
+      "scene": "alethea",
+      "paragraphIndex": 2
+    },
+    {
+      "chapter": "gift-of-lysandria",
+      "scene": "alethea",
+      "paragraphIndex": 2
+    },
+    {
+      "chapter": "gift-of-lysandria",
+      "scene": "alethea",
+      "paragraphIndex": 3
+    },
+    {
+      "chapter": "gift-of-lysandria",
+      "scene": "alethea",
+      "paragraphIndex": 3
+    }
+  ],
+  "characters": 197,
+  "bytes": 162212,
+  "tier": "free",
+  "license": "Noncommercial only; attribution elevenlabs.io in published title.",
+  "licenseSource": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform"
+}

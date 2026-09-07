@@ -1,3 +1,6 @@
+import { designedVoices } from "./designed-voices.ts";
+import { voiceDesigns, sceneVoiceCues } from "./voice-designs.ts";
+
 /** Performance choices, not additional biography. Manuscript remains in chapters/. */
 export interface CastVoice {
   name: string;
@@ -26,10 +29,20 @@ export const voiceCast: Record<string, CastVoice> = {
   woman: { name: "Supporting woman", direction: "Natural conversational delivery for unnamed women; each scene retains its own speaker.", lang: "en-GB", pitch: 1.13, rate: 1, elevenLabsVoiceId: "Xb7hH8MSUJpSbSDYk0k2" },
   man: { name: "Supporting man", direction: "Plain conversational delivery for unnamed men; do not imply they are one recurring character.", lang: "en-GB", pitch: 1, rate: 1, elevenLabsVoiceId: "iP95p4xoKVk53GoZ742B" },
   child: { name: "Young supporting speaker", direction: "Young, natural delivery for the messenger, junior guard, and apprentice; let urgency or hesitation follow the scene without comic exaggeration.", lang: "en-GB", pitch: 1.2, rate: 1.03, elevenLabsVoiceId: "bIHbv24MWmeRgasZH58o" },
-  guard: { name: "Guard / sergeant", direction: "Practical official delivery; individual orders and doubts, not a constant shout.", lang: "en-GB", pitch: 0.91, rate: 1, elevenLabsVoiceId: "cjVigY5qzO86Huf0OWal" },
+  guard: { name: "Guard / sergeant", direction: "Practical official delivery; individual orders and doubts, not a constant shout.", lang: "en-GB", pitch: 0.91, rate: 1, elevenLabsVoiceId: "iP95p4xoKVk53GoZ742B" },
   clerk: { name: "Clerk / collector", direction: "Matter-of-fact administrative certainty. No elaborate villain performance.", lang: "en-GB", pitch: 0.98, rate: 0.96, elevenLabsVoiceId: "SAz9YHcvj6GT2YYXdXww" },
   broker: { name: "Broker", direction: "A clear negotiator conscious of risk and the limits of promises.", lang: "en-GB", pitch: 0.96, rate: 1, elevenLabsVoiceId: "N2lVS1w4EtoT3dr4eOWO" },
 };
+
+// Saved character designs supersede stock auditions while preserving stable story IDs.
+for (const [speaker, saved] of Object.entries(designedVoices)) {
+  if (voiceCast[speaker]) voiceCast[speaker].elevenLabsVoiceId = saved.voiceId;
+}
+
+export function dialogueCue(chapterSlug: string, sceneId: string, speaker: string): string {
+  const cue = sceneVoiceCues[`${chapterSlug}/${sceneId}`]?.[speaker] ?? voiceDesigns[speaker]?.cue;
+  return cue ? `[${cue}] ` : "";
+}
 
 /** One cast ID per quoted span, in scene order; narration between quotes is preserved. */
 export const dialogueSpeakers: Record<string, string[]> = Object.fromEntries(Object.entries({

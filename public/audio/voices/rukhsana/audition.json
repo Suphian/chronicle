@@ -1,0 +1,64 @@
+{
+  "provider": "ElevenLabs",
+  "file": "audition-44de050ac810b247.mp3",
+  "inputHash": "44de050ac810b247e7ddfb2bb8ada15b93fd244dc6e51336e7c25d4fce014de2",
+  "title": "Rukhsana voice audition · elevenlabs.io",
+  "generatedAt": "2026-09-07T16:20:15.421Z",
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "text": "[confidently] “Then we will need the wood.”",
+      "voice_id": "hpp4J3VqNfWAUOO0d1Us"
+    },
+    {
+      "text": "[confidently] “They heard it.”",
+      "voice_id": "hpp4J3VqNfWAUOO0d1Us"
+    },
+    {
+      "text": "[confidently] “With this?”",
+      "voice_id": "hpp4J3VqNfWAUOO0d1Us"
+    },
+    {
+      "text": "[confidently] “I watched you.”",
+      "voice_id": "hpp4J3VqNfWAUOO0d1Us"
+    },
+    {
+      "text": "[confidently] “Your men are waiting for you to start.”",
+      "voice_id": "hpp4J3VqNfWAUOO0d1Us"
+    }
+  ],
+  "language_code": "en",
+  "seed": 42,
+  "sources": [
+    {
+      "chapter": "the-conqueror",
+      "scene": "the-graveyard-of-empires",
+      "paragraphIndex": 3
+    },
+    {
+      "chapter": "the-conqueror",
+      "scene": "the-flutes",
+      "paragraphIndex": 2
+    },
+    {
+      "chapter": "the-conqueror",
+      "scene": "the-flutes",
+      "paragraphIndex": 4
+    },
+    {
+      "chapter": "the-conqueror",
+      "scene": "iskandar",
+      "paragraphIndex": 1
+    },
+    {
+      "chapter": "the-conqueror",
+      "scene": "rukhsana",
+      "paragraphIndex": 2
+    }
+  ],
+  "characters": 183,
+  "bytes": 118744,
+  "tier": "free",
+  "license": "Noncommercial only; attribution elevenlabs.io in published title.",
+  "licenseSource": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform"
+}

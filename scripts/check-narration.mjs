@@ -7,7 +7,28 @@ import { createHash } from 'node:crypto';
 
 const { getNarrationSegments, narrationText, narrationSourceHash, dialogueSignature, splitSpeechText, validateNarrationManifest } = await import('../src/lib/narration.ts');
 const { voiceCast, dialogueSpeakers, dialogueRevisions } = await import('../src/content/narration.ts');
-const { getNarrationPassages, OPENING_PASSAGE_CHARACTER_LIMIT, PASSAGE_CHARACTER_LIMIT } = await import('../src/lib/narration-passages.ts');
+const { getNarrationPassages, providerInputs, narrationPassageSource, narrationRequestHash, OPENING_PASSAGE_CHARACTER_LIMIT, PASSAGE_CHARACTER_LIMIT } = await import('../src/lib/narration-passages.ts');
+const { voiceDesigns } = await import('../src/content/voice-designs.ts');
+const { codex: codexEntries } = await import('../src/content/codex.ts');
+
+const namedIds = Object.keys(voiceDesigns);
+assert.equal(namedIds.length, 13);
+for (const id of namedIds) {
+  assert(voiceCast[id]?.elevenLabsVoiceId, `${id}: missing voice`);
+  assert(fs.existsSync(`worldbuilding/characters/${voiceDesigns[id].profile}.md`));
+  assert(voiceDesigns[id].description.length <= 1000, `${id}: design exceeds provider limit`);
+}
+assert.equal(new Set(['narrator', ...namedIds].map(id => voiceCast[id].elevenLabsVoiceId)).size, namedIds.length + 1, 'every named character must have a distinct voice, separate from narrator');
+for (const id of namedIds) assert(!Object.entries(voiceCast).some(([other, voice]) => other !== id && voice.elevenLabsVoiceId === voiceCast[id].elevenLabsVoiceId), `${id}: named voice must not be reused by supporting roles`);
+for (const id of namedIds) {
+  const folder = path.resolve('public/audio/voices', id);
+  const audition = JSON.parse(fs.readFileSync(path.join(folder, 'audition.json'), 'utf8'));
+  assert(audition.inputs.every(input => input.voice_id === voiceCast[id].elevenLabsVoiceId), `${id}: stale audition voice`);
+  assert.equal(createHash('sha256').update(JSON.stringify({model_id:audition.model_id,inputs:audition.inputs,language_code:audition.language_code,seed:audition.seed})).digest('hex'), audition.inputHash);
+  assert(fs.statSync(path.join(folder, audition.file)).size === audition.bytes && audition.bytes > 1000);
+  assert(audition.licenseSource && audition.tier && audition.sources.length, `${id}: provenance missing`);
+}
+assert(codexEntries.filter(entry => entry.kind === 'person').every(entry => voiceDesigns[entry.id]), 'every named profile needs a voice design');
 
 let paragraphCount = 0;
 let characterParts = 0;
@@ -19,6 +40,7 @@ for (const file of fs.readdirSync('src/content/chapters').filter((file) => /^\d.
   chapters.push(chapter);
   const segments = getNarrationSegments(chapter);
   const passages = getNarrationPassages(chapter);
+  for (const part of passages) assert.equal(part.characters, providerInputs(part).reduce((sum, input) => sum + input.text.length, 0), 'allowance includes performance tags');
   let previousParagraph = '';
   const canonicalText = segments.map(segment => {
     const paragraph = `${segment.sceneId}:${segment.paragraphIndex}`;
@@ -60,6 +82,20 @@ for (const file of fs.readdirSync('src/content/chapters').filter((file) => /^\d.
   }
 }
 assert(characterParts > 0, 'cast must include character dialogue');
+const openingChapter = chapters.find(chapter => chapter.slug === 'market-awnings');
+const idrisPart = getNarrationPassages(openingChapter).find(part => part.inputs.some(input => input.voice_id === voiceCast.adil.elevenLabsVoiceId));
+assert(providerInputs(idrisPart).some(input => input.voice_id === voiceCast.adil.elevenLabsVoiceId && input.text.startsWith('[warmly] ')), 'Idris receives his performance cue in the provider request');
+const oldPassageSource = narrationPassageSource(idrisPart);
+const newDirection = structuredClone(idrisPart);
+newDirection.inputs.find(input => input.cue).cue = '[firmly] ';
+assert.notEqual(narrationPassageSource(newDirection), oldPassageSource, 'delivery changes invalidate cached audio');
+const oldVoice = voiceCast.adil.elevenLabsVoiceId;
+const oldRecordingHash = await narrationSourceHash(openingChapter);
+const oldRequestHash = await narrationRequestHash(openingChapter);
+voiceCast.adil.elevenLabsVoiceId = 'test-recast-idris';
+assert.notEqual(await narrationSourceHash(openingChapter), oldRecordingHash, 'recasting invalidates prepared recordings');
+assert.notEqual(await narrationRequestHash(openingChapter), oldRequestHash, 'recasting invalidates open-page schedules');
+voiceCast.adil.elevenLabsVoiceId = oldVoice;
 const sentenceFixture = structuredClone(chapters[0]);
 sentenceFixture.scenes = [{ id: 'quick-start', kind: 'prose', text: ['A short opening sentence. ' + 'The rest of the account continues with ordinary words and a clear ending. '.repeat(15)] }];
 const fixturePassages = getNarrationPassages(sentenceFixture);

@@ -5,7 +5,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
-import { voiceCast, dialogueSpeakers, dialogueRevisions } from '../src/content/narration.ts';
+import { voiceCast, dialogueSpeakers, dialogueRevisions, dialogueCue } from '../src/content/narration.ts';
 import { getNarrationSegments, narrationSourceHash, dialogueSignature, splitSpeechText } from '../src/lib/narration.ts';
 
 const args = process.argv.slice(2);
@@ -39,8 +39,10 @@ let batch;
 for (const segment of selected) {
   const voice = voiceCast[segment.speaker];
   assert(voice?.elevenLabsVoiceId, `Choose an ElevenLabs voice for ${voice?.name ?? segment.speaker} before generating.`);
-  for (const text of splitSpeechText(segment.text, 1750)) {
-    if (!text.trim()) continue;
+  const cue = dialogueCue(slug, segment.sceneId, segment.speaker);
+  for (const prose of splitSpeechText(segment.text, 1750 - cue.length)) {
+    if (!prose.trim()) continue;
+    const text = cue + prose;
     if (!batch || batch.sceneId !== segment.sceneId || batch.characters + text.length > 1800 || (!batch.voices.has(voice.elevenLabsVoiceId) && batch.voices.size === 10)) {
       batch = { inputs: [], sceneId: segment.sceneId, paragraphIndex: segment.paragraphIndex, characters: 0, voices: new Set() };
       batches.push(batch);

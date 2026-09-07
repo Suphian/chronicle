@@ -1,0 +1,64 @@
+{
+  "provider": "ElevenLabs",
+  "file": "audition-899691c7741f2db4.mp3",
+  "inputHash": "899691c7741f2db44bf8ec1655bdd8bc73b494dadcb60e3c6c601cb4244e825d",
+  "title": "Numarius voice audition · elevenlabs.io",
+  "generatedAt": "2026-09-07T16:20:00.864Z",
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "text": "[smoothly] ‘It was your training,’",
+      "voice_id": "CwhRBWXzGAHq8TQ4Fs17"
+    },
+    {
+      "text": "[smoothly] ‘Do you now wish me to distrust it?’",
+      "voice_id": "CwhRBWXzGAHq8TQ4Fs17"
+    },
+    {
+      "text": "[smoothly] \"A dangerous thing,\"",
+      "voice_id": "CwhRBWXzGAHq8TQ4Fs17"
+    },
+    {
+      "text": "[smoothly] \"to know another man's habits so well.\"",
+      "voice_id": "CwhRBWXzGAHq8TQ4Fs17"
+    },
+    {
+      "text": "[smoothly] \"And the grain will be moved when I have an assurance about its price,\"",
+      "voice_id": "CwhRBWXzGAHq8TQ4Fs17"
+    }
+  ],
+  "language_code": "en",
+  "seed": 42,
+  "sources": [
+    {
+      "chapter": "the-cure",
+      "scene": "seeds-of-conflict",
+      "paragraphIndex": 2
+    },
+    {
+      "chapter": "the-cure",
+      "scene": "seeds-of-conflict",
+      "paragraphIndex": 2
+    },
+    {
+      "chapter": "shadows-and-accusations",
+      "scene": "a-public-demise",
+      "paragraphIndex": 10
+    },
+    {
+      "chapter": "shadows-and-accusations",
+      "scene": "a-public-demise",
+      "paragraphIndex": 10
+    },
+    {
+      "chapter": "rising-influence",
+      "scene": "courtesies",
+      "paragraphIndex": 4
+    }
+  ],
+  "characters": 244,
+  "bytes": 218636,
+  "tier": "free",
+  "license": "Noncommercial only; attribution elevenlabs.io in published title.",
+  "licenseSource": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform"
+}

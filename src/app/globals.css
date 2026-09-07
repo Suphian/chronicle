@@ -39,6 +39,13 @@ body {
 .section-subnav { display: flex; flex-wrap: wrap; gap: 14px 25px; padding: 24px 0; margin: 28px 0; border-top: 1px solid #cdbfa7; border-bottom: 1px solid #cdbfa7; font: 14px/1.6 system-ui, sans-serif; }
 .section-subnav a { text-decoration: underline; text-underline-offset: 6px; }
 .section-block { margin: 48px 0; scroll-margin-top: 100px; }
+.voice-cast { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 28px; }
+.voice-cast > section { margin: 0; padding: 28px; border: 1px solid #cdbfa7; background: #f5efe3; min-width: 0; }
+.voice-cast audio { width: 100%; margin-top: 12px; }
+.voice-cast figcaption { font: 13px/1.6 system-ui, sans-serif; color: #716049; margin: 10px 0 20px; }
+.voice-cast details { font: 16px/1.8 Georgia, serif; margin: 20px 0; }
+.voice-cast summary { cursor: pointer; text-decoration: underline; text-underline-offset: 4px; }
+.voice-cast details p { margin-top: 12px; }
 .section-block > h2, .section-note h2 { font: 30px/1.4 var(--font-display); margin: 12px 0 20px; }
 .section-block > p, .section-note p { font: 18px/1.85 Georgia, serif; max-width: 800px; margin: 16px 0 24px; }
 .section-footnote { font: 14px/1.85 system-ui, sans-serif; color: #716049; margin: 24px 0; max-width: 850px; }

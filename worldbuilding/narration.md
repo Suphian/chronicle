@@ -12,9 +12,37 @@ The player buffers one short recording before playing it and shows **Preparing y
 
 Full manuscript playback with the browser's available voices remains an explicit **Device voices** option in Settings. Casting is automatic; installed voices and accents differ between devices. Resuming device playback repeats the current short phrase. The reader has no cast, scene, source, or speed configuration panel. The saved opening sample remains a review asset rather than a reader playback option.
 
-The opening fruit-stall scene also has an **ElevenLabs cast sample**. Its title credits **elevenlabs.io**. It is a sample of the current text, not a complete audiobook. The connected account was on the free plan with 10,000 available characters before generation; a full recording of the draft requires substantially more allowance. No upgrade or overage has been purchased.
+The opening fruit-stall scene also has an **ElevenLabs cast sample**. Its title credits **elevenlabs.io**. It is an archived stock audition predating the new performance cues, not a complete audiobook. The connected account was on the free plan with 10,000 available characters before generation; a full recording of the draft requires substantially more allowance. No upgrade or overage has been purchased.
 
-## Performance proposals
+## Profile-directed cast — 2026-09-07
+
+The author requests a distinct ElevenLabs identity for every character, molded from the profiles. Previously the website assigned stock IDs but did not send its written performance directions to ElevenLabs. Idris had Daniel's ID, separate from the narrator's George; no custom Idris voice had been designed.
+
+**Implemented:** all thirteen named characters have separate provider IDs. The guard no longer shares Vael's identity, using Chris, shared only with unnamed supporting men. `src/content/voice-designs.ts` contains thirteen individual briefs linked to their profiles, plus v3 delivery cues and scene-specific overrides. Cues now reach both the on-demand service and recording generator. They are never inserted into visible prose or device speech. Request limits and allowance checks include the tags; cache keys and prepared-recording hashes include the voices and delivery choices.
+
+Idris's proposed original voice is a warm, lightly weathered baritone with a merchant's welcome, earned pride, affectionate stubbornness and persuasive rhythm. His actual dialogue cues shift from warmth at the stall to persuasion at home, insistence in the drought, strain at the seizure and firmness at the hearing. Sinna retains a credible teaching voice, Chuluun the patience and limits of a working teacher, and Alethea professional authority. These are **performance interpretations**, not additional biography or resolutions of open motives. The future British-English accents and vocal ages are casting choices. Current stock voices retain their provider accents. Childhood delivery is lighter in the opening family scenes, not a completed child/adult recast.
+
+**Available for review:** `/workshop/voices` has manually playable auditions for all thirteen named characters, made from selected existing dialogue. Files and exact request/provenance records live in `public/audio/voices/<stable-id>/`. These are directed stock auditions, not custom-designed voices or approved final performances. Listen for natural delivery, pronunciation and whether tags are applied rather than spoken. Nothing autoplays or generates just by opening that page.
+
+**Blocked:** the API returned HTTP 403 for Idris's Voice Design request, stating that API voice creation requires a paid plan. The account also reports three saved-voice slots, two occupied by unrelated existing voices. Those voices were preserved. No custom character identity was created; `src/content/designed-voices.ts` is intentionally empty until creation succeeds. More capacity is required for the full cast. The web app was signed out during this check, so web-based Voice Design remains unverified for this account. No plan change or overage was purchased.
+
+`scripts/design-character-voices.mjs` checks plan, slots and allowance before creating previews from the profile brief and reviewed manuscript lines. It records provenance and saves a selected preview under the stable character ID. It recovers a matching saved voice after an interrupted save; uncertain billed design requests are not automatically retried. Short roles repeat their existing lines to meet the preview minimum. Review alternatives before choosing a preview number.
+
+```powershell
+node scripts/design-character-voices.mjs
+node scripts/design-character-voices.mjs idris
+# Once the account supports API Voice Design:
+node --env-file=.env.local scripts/design-character-voices.mjs idris --generate
+node --env-file=.env.local scripts/design-character-voices.mjs idris --save 1
+# A short audition of the currently assigned voice:
+node --env-file=.env.local scripts/generate-voice-audition.mjs adil --generate
+```
+
+Saved names include a design fingerprint; stable IDs remain `adil` for Idris and `virello` for Sinna. A profile revision should trigger review of the brief; editing prose cannot silently remodel a saved voice. The earlier opening recording is archived as `stock-audition-manifest.json`, with its original provenance intact. It is not the new directed performance.
+
+Sources: [Voice Design API](https://elevenlabs.io/docs/api-reference/text-to-voice/design), [save a designed voice](https://elevenlabs.io/docs/api-reference/text-to-voice/create), and [Eleven v3 performance guidance](https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices). The specific plan and slot limits above were checked through the connected account, rather than inferred from general documentation.
+
+## Original stock auditions
 
 The editable casting directions and dialogue assignments live in [`src/content/narration.ts`](../src/content/narration.ts). Directions are interpretations of the character profiles for a performance, not new biographical facts or canonical accents. The sample uses George for the British narrator, Daniel for Idris, Liam for Hanno, Charlie for Dyia, and Alice for the customer. Liam is labelled American and Charlie Australian by the voice provider; this initial cast is an audition, not a claim that every character has a British accent. Childhood/adult voice development deserves a later casting pass.
 
@@ -22,7 +50,7 @@ The narrator reads the prose between dialogue. Explicit speaker assignments keep
 
 Prepared sample files are checked against the current manuscript and speaker assignments by the validation script. On-demand passage cache keys include the exact text, voice IDs, model, output format, and an API-key namespace; changed passages cannot reuse the old audio. Unchanged passages can still be reused when their content and casting match. Rotating the API key starts a new cache namespace.
 
-All roles now have explicit stock voice assignments. Additional named roles use Bill (Sinna), Sarah (Alethea), Brian (Chuluun), Adam (Phylios), Roger (Numarius), Matilda (Corvo), Eric (Vael), Bella (Rukhsana), and Harry (Iskandar). Supporting men use Chris, young supporting speakers Will, guards Eric, clerks River, and brokers Callum. Supporting actors may be reused; they are not silently replaced by the narrator. These are editable audition choices based on the profile directions. The narrator is British; the wider cast includes other English accents. Provider names and availability were checked through the account's premade-voice list on 2026-09-07.
+All roles now have explicit stock voice assignments. Additional named roles use Bill (Sinna), Sarah (Alethea), Brian (Chuluun), Adam (Phylios), Roger (Numarius), Matilda (Corvo), Eric (Vael), Bella (Rukhsana), and Harry (Iskandar). Supporting men use Chris, young supporting speakers Will, guards Chris, clerks River, and brokers Callum. Supporting actors may be reused; they are not silently replaced by the narrator. These are editable audition choices based on the profile directions. The narrator is British; the wider cast includes other English accents. Provider names and availability were checked through the account's premade-voice list on 2026-09-07.
 
 ## Server generation and replay
 

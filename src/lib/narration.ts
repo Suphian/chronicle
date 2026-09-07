@@ -1,5 +1,5 @@
 import type { Chapter, Scene } from "../content/types";
-import { dialogueRevisions, dialogueSpeakers, voiceCast } from "../content/narration.ts";
+import { dialogueRevisions, dialogueSpeakers, voiceCast, dialogueCue } from "../content/narration.ts";
 
 const quotedSpeech = /“[^”]*”|‘[^’]*’|"[^"\n]*"/gu;
 
@@ -58,7 +58,10 @@ export function getNarrationSegments(chapter: Chapter): NarrationSegment[] {
 }
 
 export function narrationText(chapter: Chapter): string {
-  return JSON.stringify(getNarrationSegments(chapter));
+  return JSON.stringify(getNarrationSegments(chapter).map(segment => ({ ...segment,
+    voiceId: voiceCast[segment.speaker]?.elevenLabsVoiceId,
+    cue: dialogueCue(chapter.slug, segment.sceneId, segment.speaker),
+  })));
 }
 
 export async function narrationSourceHash(chapter: Chapter): Promise<string> {

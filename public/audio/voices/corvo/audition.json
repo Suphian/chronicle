@@ -1,0 +1,46 @@
+{
+  "provider": "ElevenLabs",
+  "file": "audition-183ed76ec48e17f1.mp3",
+  "inputHash": "183ed76ec48e17f1bb325d4ff22fe975ed7e4c14d50120021fe3e894ce30fdaf",
+  "title": "Corvo voice audition · elevenlabs.io",
+  "generatedAt": "2026-09-07T16:20:07.378Z",
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "text": "[precisely] \"An answer I can schedule around. How long before you know?\"",
+      "voice_id": "XrExE9yKIg1WjnnlVkGX"
+    },
+    {
+      "text": "[precisely] \"If your men delay every cart for a jar they cannot identify,\"",
+      "voice_id": "XrExE9yKIg1WjnnlVkGX"
+    },
+    {
+      "text": "[precisely] \"the ordinary cargo will rot while the unusual cargo finds another day. Tell customs what you can actually distinguish.\"",
+      "voice_id": "XrExE9yKIg1WjnnlVkGX"
+    }
+  ],
+  "language_code": "en",
+  "seed": 42,
+  "sources": [
+    {
+      "chapter": "rising-influence",
+      "scene": "courtesies",
+      "paragraphIndex": 8
+    },
+    {
+      "chapter": "shadows-closing-in",
+      "scene": "numarius-stirs",
+      "paragraphIndex": 9
+    },
+    {
+      "chapter": "shadows-closing-in",
+      "scene": "numarius-stirs",
+      "paragraphIndex": 9
+    }
+  ],
+  "characters": 278,
+  "bytes": 237862,
+  "tier": "free",
+  "license": "Noncommercial only; attribution elevenlabs.io in published title.",
+  "licenseSource": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform"
+}

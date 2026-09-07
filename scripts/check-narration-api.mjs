@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { marketAwnings } from '../src/content/chapters/01-market-awnings.ts';
 import { getNarrationSegments, narrationSourceHash } from '../src/lib/narration.ts';
-import { getNarrationPassages, narrationRequestHash, NARRATION_MODEL, NARRATION_FORMAT, PASSAGE_CHARACTER_LIMIT } from '../src/lib/narration-passages.ts';
+import { getNarrationPassages, narrationRequestHash, providerInputs, NARRATION_MODEL, NARRATION_FORMAT, PASSAGE_CHARACTER_LIMIT } from '../src/lib/narration-passages.ts';
 import { createNarrationHandler } from '../src/lib/narration-service.ts';
 
 const chapter = marketAwnings;
@@ -12,7 +12,7 @@ const hash = await narrationRequestHash(chapter);
 assert(passages.length > 1);
 for (const part of passages) {
   assert(part.characters <= PASSAGE_CHARACTER_LIMIT);
-  assert.equal(part.characters, part.inputs.reduce((total, input) => total + input.text.length, 0));
+  assert.equal(part.characters, providerInputs(part).reduce((total, input) => total + input.text.length, 0));
   assert(new Set(part.inputs.map(input => input.voice_id)).size <= 10);
   assert(part.inputs.every(input => input.voice_id));
 }
@@ -32,7 +32,7 @@ const provider = async (url, options) => {
   if (url.endsWith('/subscription')) { checks++; return Response.json({character_limit:10000,character_count:0,tier:'free'}); }
   generations++;
   const sent = JSON.parse(options.body);
-  assert.deepEqual(sent.inputs, passages[0].inputs, 'provider receives only canonical manuscript/cast');
+  assert.deepEqual(sent.inputs, providerInputs(passages[0]), 'provider receives canonical manuscript/cast with performance cues');
   assert.equal(sent.model_id, 'eleven_v3');
   return audio();
 };

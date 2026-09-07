@@ -1,0 +1,73 @@
+{
+  "provider": "ElevenLabs",
+  "file": "audition-fd321accdb7e0921.mp3",
+  "inputHash": "fd321accdb7e0921f3d1ab47c0e7d00ac915fffd01a5b20735c019c3bf53e9d4",
+  "title": "Idris voice audition · elevenlabs.io",
+  "generatedAt": "2026-09-07T16:18:48.368Z",
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "text": "[warmly] “These for eating today,”",
+      "voice_id": "onwK4e9ZLuTAKqWW03F9"
+    },
+    {
+      "text": "[warmly] “Those will keep.”",
+      "voice_id": "onwK4e9ZLuTAKqWW03F9"
+    },
+    {
+      "text": "[warmly] “Then bring them back. My son will eat them.”",
+      "voice_id": "onwK4e9ZLuTAKqWW03F9"
+    },
+    {
+      "text": "[warmly] “That wasn't credit.”",
+      "voice_id": "onwK4e9ZLuTAKqWW03F9"
+    },
+    {
+      "text": "[warmly] “Yes.”",
+      "voice_id": "onwK4e9ZLuTAKqWW03F9"
+    },
+    {
+      "text": "[warmly] “Eat it or don't. But don't hide one again.”",
+      "voice_id": "onwK4e9ZLuTAKqWW03F9"
+    }
+  ],
+  "language_code": "en",
+  "seed": 42,
+  "sources": [
+    {
+      "chapter": "market-awnings",
+      "scene": "the-fruit-stall",
+      "paragraphIndex": 3
+    },
+    {
+      "chapter": "market-awnings",
+      "scene": "the-fruit-stall",
+      "paragraphIndex": 3
+    },
+    {
+      "chapter": "market-awnings",
+      "scene": "the-fruit-stall",
+      "paragraphIndex": 5
+    },
+    {
+      "chapter": "market-awnings",
+      "scene": "the-fruit-stall",
+      "paragraphIndex": 8
+    },
+    {
+      "chapter": "market-awnings",
+      "scene": "the-fruit-stall",
+      "paragraphIndex": 10
+    },
+    {
+      "chapter": "market-awnings",
+      "scene": "the-fruit-stall",
+      "paragraphIndex": 10
+    }
+  ],
+  "characters": 213,
+  "bytes": 219890,
+  "tier": "free",
+  "license": "Noncommercial only; attribution elevenlabs.io in published title.",
+  "licenseSource": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform"
+}
