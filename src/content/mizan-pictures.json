@@ -145,5 +145,61 @@
     "caption": "Zeon · location study",
     "width": 1672,
     "height": 941
+  },
+  "region-7": {
+    "src": "/images/world/points/region-7-v1.webp",
+    "alt": "Individual landscape and architecture study of Yáolán",
+    "caption": "Yáolán · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "region-12": {
+    "src": "/images/world/points/region-12-v1.webp",
+    "alt": "Individual landscape and architecture study of Fairy",
+    "caption": "Fairy · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "region-15": {
+    "src": "/images/world/points/region-15-v1.webp",
+    "alt": "Individual landscape and architecture study of Heretics",
+    "caption": "Heretics · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "region-18": {
+    "src": "/images/world/points/region-18-v1.webp",
+    "alt": "Individual landscape and architecture study of V B",
+    "caption": "V B · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "region-19": {
+    "src": "/images/world/points/region-19-v1.webp",
+    "alt": "Individual landscape and architecture study of V W",
+    "caption": "V W · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-1": {
+    "src": "/images/world/points/burg-1-v1.webp",
+    "alt": "Individual landscape and architecture study of Aegis",
+    "caption": "Aegis · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-5": {
+    "src": "/images/world/points/burg-5-v1.webp",
+    "alt": "Individual landscape and architecture study of Telheiro",
+    "caption": "Telheiro · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-6": {
+    "src": "/images/world/points/burg-6-v1.webp",
+    "alt": "Individual landscape and architecture study of Deleurias",
+    "caption": "Deleurias · location study",
+    "width": 1672,
+    "height": 941
   }
 }
