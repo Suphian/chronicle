@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ChapterContents } from "./ChapterContents";
 
 const links = [
   { href: "/story", label: "Story" },
@@ -20,6 +21,7 @@ export function Nav() {
         {inReader ? "← Chronicle" : "The Chronicle"}
       </Link>
       <nav aria-label="Main navigation" className="flex items-center gap-5">
+        {inReader && <ChapterContents key={path} slug={path.split("/")[2]} />}
         {links.map((l) => (
             <Link
               key={l.href}

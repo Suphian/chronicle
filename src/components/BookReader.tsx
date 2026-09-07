@@ -2,10 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Fragment, useEffect, useRef, useState, type ReactNode } from "react";
+import { Fragment, useEffect, useState, type ReactNode } from "react";
 import type { Chapter, Scene } from "@/content/types";
 import { bookPlates, type BookPlate } from "@/content/illustrations";
-import { chapters } from "@/content/chapters";
 import { codex } from "@/content/codex";
 import { worldById } from "@/content/world";
 import { saveReadingPlace } from "./ResumeReading";
@@ -18,28 +17,11 @@ export function BookReader({ chapter, prev, next, initialSceneId }: {
 }) {
   const { largeText } = useReaderPreferences();
   const [narrating, setNarrating] = useState<string | null>(null);
-  const contents = useRef<HTMLDetailsElement>(null);
   const prose = isProse(chapter);
   const scenes = chapter.scenes.filter((scene) => scene.kind !== "title");
   const text = scenes.flatMap((scene) => [scene.heading, ...(scene.text ?? []), scene.quote?.text]).join(" ");
   const people = codex.filter((entry) => entry.kind === "person" && text.includes(entry.name.split(" ").filter((word) => !["Master", "Lord", "General", "Magistra"].includes(word))[0]));
   const places = [...new Set(scenes.map((scene) => scene.location).filter(Boolean))].map((id) => worldById[id!]).filter(Boolean);
-  const numberedChapters = chapters.filter((entry) => entry.order > 0);
-  const historicalTales = chapters.filter((entry) => entry.order === 0);
-
-  useEffect(() => {
-    const compact = window.matchMedia("(max-width: 900px)");
-    const update = () => { if (contents.current) contents.current.open = !compact.matches; };
-    update();
-    compact.addEventListener("change", update);
-    return () => compact.removeEventListener("change", update);
-  }, []);
-
-  useEffect(() => {
-    const frame = requestAnimationFrame(() => { if (contents.current) revealCurrentChapter(contents.current); });
-    return () => cancelAnimationFrame(frame);
-  }, [chapter.slug]);
-
   useEffect(() => {
     if (initialSceneId) document.getElementById(initialSceneId)?.scrollIntoView();
     saveReadingPlace(chapter.slug, initialSceneId && chapter.scenes.some((scene) => scene.id === initialSceneId) ? initialSceneId : chapter.scenes[0].id);
@@ -53,23 +35,6 @@ export function BookReader({ chapter, prev, next, initialSceneId }: {
   return (
     <main className="book-shell book-folio">
       <div className="book-layout">
-        <aside className="book-sidebar" aria-label="Book navigation">
-          <Link href="/story" className="book-eyebrow">The Chronicle / Story</Link>
-          <details ref={contents} className="book-contents" open onToggle={(event) => revealCurrentChapter(event.currentTarget)}>
-            <summary>Contents <span>{chapter.order === 0 ? "Historical tale" : `Chapter ${chapter.order} of ${numberedChapters.length}`}</span></summary>
-            <nav aria-label="Chapters">
-              <ol className="book-chapter-list">{numberedChapters.map((entry) => <li key={entry.slug}><ChapterContentsLink chapter={entry} current={entry.slug === chapter.slug} /></li>)}</ol>
-              {historicalTales.length > 0 && <div className="book-historical-tales"><p>Optional historical tale</p>{historicalTales.map((entry) => <ChapterContentsLink key={entry.slug} chapter={entry} current={entry.slug === chapter.slug} />)}</div>}
-            </nav>
-          </details>
-          <div className="book-reference">
-            <p className="book-eyebrow">Beside the story</p>
-            <Link href="/people">Character guide →</Link>
-            <Link href="/world">World & places →</Link>
-            <Link href="/settings">Reading settings →</Link>
-          </div>
-        </aside>
-
         <div className="book-page">
           {!prose && <div className="sketch-notice"><strong>This is a story sketch.</strong><p>These are planned beats awaiting narrative development. <Link href="/story">Read available prose drafts →</Link></p></div>}
           <article className={`book-prose${largeText ? " book-prose-large" : ""}${prose ? " book-narrative" : ""}`}>
@@ -104,30 +69,16 @@ export function BookReader({ chapter, prev, next, initialSceneId }: {
               {people.length > 0 && <div><h3>People</h3>{people.map((person) => <Link key={person.id} href={`/library/characters/${person.id}`}>{person.name} →</Link>)}</div>}
               {places.length > 0 && <div><h3>Places</h3>{places.map((place) => <Link key={place.id} href={`/world?at=${place.id}`}>{place.name} →</Link>)}</div>}
             </div>
+            <div className="book-reference">
+              <Link href="/people">Character guide →</Link>
+              <Link href="/world">World & places →</Link>
+              <Link href="/settings">Reading settings →</Link>
+            </div>
           </aside>
         </div>
       </div>
     </main>
   );
-}
-
-function ChapterContentsLink({ chapter, current }: { chapter: Chapter; current: boolean }) {
-  return <Link href={`/chapters/${chapter.slug}`} aria-current={current ? "page" : undefined}>
-    <span className="book-chapter-number" aria-hidden="true">{chapter.order > 0 ? String(chapter.order).padStart(2, "0") : "✦"}</span>
-    <span className="book-chapter-label"><span className="sr-only">{chapter.order > 0 ? `Chapter ${chapter.order}: ` : "Historical tale: "}</span><span className="book-chapter-title">{chapter.title}</span>{!isProse(chapter) && <span className="book-chapter-stage">Story sketch</span>}{current && <span className="book-chapter-current">Reading now</span>}</span>
-  </Link>;
-}
-
-/** Keep the active link inside the contents scrollport without moving the manuscript. */
-function revealCurrentChapter(details: HTMLDetailsElement) {
-  if (!details.open) return;
-  const list = details.querySelector("nav");
-  const current = list?.querySelector('[aria-current="page"]');
-  if (!list || !current) return;
-  const listBounds = list.getBoundingClientRect();
-  const currentBounds = current.getBoundingClientRect();
-  if (currentBounds.bottom > listBounds.bottom) list.scrollTop += currentBounds.bottom - listBounds.bottom + 6;
-  else if (currentBounds.top < listBounds.top) list.scrollTop += currentBounds.top - listBounds.top - 6;
 }
 
 function SceneProse({ scene, plates = [], narrating }: { scene: Scene; plates?: BookPlate[]; narrating: string | null }) {
