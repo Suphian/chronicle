@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-07",
+  "tool": "Built-in image_gen.imagegen",
+  "asset": "carthara-market-hero-v3.webp",
+  "source": "C:/Users/suphi/.codex/generated_images/01a07c94-0b38-7460-a6a2-85628a132cb6/exec-eabea117-7a07-4d88-8cf1-b14ad7e2680e.png",
+  "reference": "public/images/plates/carthara-market-v2.webp",
+  "prompt": "Use case: illustration-story. Asset: full-bleed landscape homepage hero artwork, wide 16:9 composition, 2560x1440 if possible. Input image is a style and subject reference: original Chronicle Carthara market plate. Recompose this fictional market into a complete panoramic ink and mineral-watercolor painting that reaches EVERY edge, no paper border, no vignette fading into blank paper, no isolated portrait illustration. Preserve the intricate Mediterranean and Middle Eastern limestone arcades, extraordinary inhabited domes and planted terraces, red patterned market awnings, brasswork, figs and pomegranates, warm ivory and muted jade with rich terracotta. Architecture frames BOTH sides and extends across the composition, with a sunlit open market square and distant limestone facades at center. Central upper-middle 30 percent should have lighter atmospheric architectural detail to accommodate large dark serif HTML title, but NOT a blank rectangle or empty half of the image. Architecture rises high at left and right, abundant precise hand-drawn details and visible ink hatching, elegant editorial illustration, NOT photoreal CGI. Foreground lower left and right contain Black neighbors, fruit traders and families, expressive distinct faces, varied everyday clothes, a father with a child and a woman trading with a merchant. Keep humans at visible natural scale, no central hero figure. A complete immersive wide scene with detail distributed all the way to the edges, composed for a desktop screen like an illustrated book cover. No text, typography, logos, watermarks, UI or buttons. No new named institutions, narrative event or geography claims.",
+  "width": 1672,
+  "height": 941,
+  "conversion": "Sharp WebP quality 90; format conversion only.",
+  "provenance": "Original AI-generated panoramic adaptation of Chronicle artwork. Twitter layout reference viewed for composition only; no third-party artwork distributed.",
+  "license": "AI-generated project artwork; generating service terms apply. No separate stock license or exclusive copyright asserted.",
+  "continuity": "Visual study of the existing market; no new named people, institutions or mapped geography.",
+  "use": "Full-width homepage hero. Existing chapter plates preserved."
+}

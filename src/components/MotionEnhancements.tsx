@@ -14,7 +14,7 @@ const subscribe = (notify: () => void) => {
 const snapshot = () => window.matchMedia(query).matches;
 const serverSnapshot = () => true;
 
-const artwork = ".home-art img, .character-dossier-portrait img, .people-portrait img, .materials-images img, [data-motion-art]";
+const artwork = ".character-dossier-portrait img, .people-portrait img, .materials-images img, [data-motion-art]";
 const cards = ".notebook-cards > a, .home-section-grid > a, .story-list a, [data-motion-card]";
 const entrances = ".section-block > h2, .section-inner > h1, .world-page > h1, .atlas-detail-body, [data-motion-reveal]";
 const selector = `${artwork}, ${cards}, ${entrances}, .atlas-pin, .atlas-detail`;
