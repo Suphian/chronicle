@@ -1,10 +1,7 @@
 # Tengeri Uul
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (source lore):** A high mountain stronghold associated with the Tsast-Urmai Tribe, with steep cliffs, deep ravines, and narrow approaches.
+- **Control (source lore):** The earlier account links the stronghold to the Mergen dynasty and Batmunkh's continued resistance. It does not supply a settled present-day sovereign.
+- **Present claim (proposal):** Treat it as a disputed ancestral Mergen stronghold rather than an unchallenged possession. The map places it in Yáolán's region; current occupation and access remain open outline questions.
 
-- **The remembered path:** Dispersed households could preserve route songs whose verses disagree after years away.
-- **The guide's caution:** A proposed climbing account describes broken steps and resting shelters, resisting the source's claim of an almost unapproachable fortress.
-- **A place still contested:** The map's Yáolán affiliation and its Tsast-Urmai homeland story require reconciliation; no present occupation or lost tribe's fate is settled here.
-
-Basis: [Recovered map note](../mizan/marker17.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker17#atlas).
-
+Basis: [Recovered map note](../mizan/marker17.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker17#atlas). [Areas to think about](../story/area-development.md#tengeri-uul).

@@ -1,10 +1,7 @@
 # Stanskirk
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** An icebound northern settlement, with buildings sunk into protective stone walls and roofed passages connecting communal stores.
+- **Control (proposal):** Warden Edda Voss leads an independent winter council. The unnamed source region does not establish allegiance to another known kingdom.
+- **Importance (proposal):** A refuge and resupply station at the edge of the frozen country, sustained by stored provisions and seasonal expeditions.
 
-- **The hired rooms:** Builders arriving for seasonal work share kitchens with longtime residents and leave their tool marks on repaired houses.
-- **The assembly bell:** A common court announces meetings with a bell owned by several streets together.
-- **The missing vote:** Tenants fund the court's upkeep but are excluded from choosing its officers.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-28#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-28#atlas). [Areas to think about](../story/area-development.md#stanskirk).

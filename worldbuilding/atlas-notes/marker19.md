@@ -1,12 +1,7 @@
 # Commander Boldsaikhan
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters. The early person marker does not establish a current residence.
+- **Role (source lore):** Leader of nine descendants in the older Mergen resistance account, committed to recovering the dynasty's lost position.
+- **Authority (source lore):** Commands a resistance faction rather than the kingdom of Zorig or all Leonin. The old account describes harsh leadership; a precise record of actions remains unwritten.
+- **Base (proposal):** A mobile command in Zorig's northern uplands, dependent on local support and refuges. The map marker identifies an association, not a surveyed fortress or owned province.
 
-- **The supply complaint:** A proposed commander discovers that ceremonial readiness has been purchased with overdue wages.
-- **A household obligation:** An old comrade's family expects support after years of service, drawing him into a dispute that rank cannot simply settle.
-- **The inconvenient witness:** He could preserve a quartermaster's truthful report at political cost, without becoming either a faultless reformer or a secret ally of Hanno.
-
-**Open continuity:** The older Mergen/Jirgal refuge history is source material; its chronology and connection to current Leonin displacement remain open.
-
-Basis: [Recovered map note](../mizan/marker19.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker19#atlas).
-
+Basis: [Recovered map note](../mizan/marker19.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker19#atlas). [Areas to think about](../story/area-development.md#commander-boldsaikhan).

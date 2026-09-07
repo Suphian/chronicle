@@ -1,10 +1,7 @@
 # V W
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A cold southern territory of tundra, conifer woodland, and compact settlements built around protected storehouses. Bingraleton is its principal mapped town.
+- **Control (proposal):** Warden Veyra Sen leads a compact of local households responsible for winter reserves and regional defense. Town councils retain their own land and civil courts.
+- **Wealth (proposal):** Timber, preserved food, hides, and seasonal overland trade. The source initials “V W” remain unexpanded.
 
-- **The unfinished name:** The letters remain a source label. One possible direction is a league of towns that shares storage reserves without sharing a sovereign.
-- **The exchange feast:** Households cook from one another's preserved foods after the annual stock inspection.
-- **A missing contribution:** A poorer member asks for its full allotment after a bad season; prosperous towns dispute whether mutual aid carries conditions.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=region-19#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=region-19#atlas). [Areas to think about](../story/area-development.md#v-w).

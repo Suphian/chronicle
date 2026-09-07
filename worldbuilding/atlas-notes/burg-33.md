@@ -1,10 +1,7 @@
 # Juklena
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A high forest settlement of terraced timber houses, workshops, and protected caravan yards.
+- **Control (proposal):** Duchess Mara Velen's reeve administers the town from Lenaicorint; local households elect representatives for market and water affairs.
+- **Importance (proposal):** A provisioning and woodworking center linking the proposed district's northern and eastern settlements.
 
-- **The traveling kitchen:** Cooks pool carts and utensils to serve weddings across several streets.
-- **Recipes that travel:** New neighbors introduce their own dishes without surrendering the names and customs that accompany them.
-- **The exclusive caterer:** A patron's contract would stabilize wages but prevent the cooks from serving smaller celebrations on the same dates.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-33#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-33#atlas). [Areas to think about](../story/area-development.md#juklena).

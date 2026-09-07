@@ -1,10 +1,7 @@
 # Smyrneleu
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A humid forest city in western Zeon, with deep-roofed houses, timber depots, and enclosed garden courts.
+- **Control (proposal):** A city council belongs to the Zeon republic led by First Syndic Leora Venn; a republican customs office oversees outgoing cargo.
+- **Importance (proposal):** Zeon's principal forest exchange, supplying timber, plant products, and worked goods to the grassland markets around Telheiro.
 
-- **The reflected street:** Mirror-menders hang repaired glass among brass lamps, multiplying the light under narrow awnings.
-- **The salvage auction:** Households bid on useful pieces from dismantled interiors before merchants purchase the remainder.
-- **An inconvenient maker's mark:** A prestigious shop resells repaired work as new; an apprentice recognizes the original craftsman's signature.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-45#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-45#atlas). [Areas to think about](../story/area-development.md#smyrneleu).

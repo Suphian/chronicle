@@ -1,10 +1,7 @@
 # Bilegt Mergen
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters. The early person marker does not establish a current residence.
+- **Role (source lore):** A later Mergen figure marked beside Paphidnapon. The marker title says the Fifth, while the recovered note says the Third.
+- **Authority (proposal):** Ruler of the Paphidnapon upland district as a Zorig vassal, responsible for its defenses and winter stores.
+- **Seat (proposal):** Paphidnapon's northern citadel. The ordinal, inheritance, and exact limits of the fief remain undecided.
 
-- **A possible responsibility:** Bilegt helps administer a lending pool for displaced craftspeople seeking their own tools.
-- **The first refusal:** A prosperous relative requests the best terms, arguing that family success benefits everyone.
-- **An uncertain title:** The marker says “the Fifth” and its recovered note says “the Third”; this proposed role leaves that numbering conflict unresolved.
-
-Basis: [Recovered map note](../mizan/marker30.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker30#atlas).
-
+Basis: [Recovered map note](../mizan/marker30.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker30#atlas). [Areas to think about](../story/area-development.md#bilegt-mergen).

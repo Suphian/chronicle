@@ -1,10 +1,7 @@
 # Dioscusai
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A humid forest city with two adjoining civic quarters, shaded markets, and raised storehouses.
+- **Control (proposal):** Two elected magistrates share civil government, each representing one quarter. Its unnamed source region has no adopted ruler.
+- **Importance (proposal):** An exchange for forest products, preserved foods, and goods carried between neighboring settlements.
 
-- **The paired courts:** Two adjoining markets take turns hosting musicians, giving each neighborhood a different evening to stay open late.
-- **The marriage workshop:** A tailor combines the preferred dress details of both households rather than imposing one ceremonial style.
-- **The disputed boundary:** A stall straddles the markets' fee districts, and both collectors insist on the full payment.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-31#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-31#atlas). [Areas to think about](../story/area-development.md#dioscusai).

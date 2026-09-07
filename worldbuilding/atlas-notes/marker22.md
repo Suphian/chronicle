@@ -1,12 +1,7 @@
 # Brother Erkhemsaikhan
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters. The early person marker does not establish a current residence.
+- **Role (source lore):** One of Boldsaikhan's eight fellow descendants in the older resistance account.
+- **Authority (proposal):** Commander of a southern border contingent, with military responsibility for its members but no general authority over nearby towns.
+- **Base (proposal):** The wooded southern approaches to Zorig. The exact border, number of fighters, and relationship to Jirgal's officers remain open.
 
-- **A possible responsibility:** Erkhemsaikhan hears disputes over shared work yards, where several trades depend on the same expensive equipment.
-- **The patient walk:** He visits each workplace before a hearing, often learning facts absent from the written complaint.
-- **A familiar defendant:** A trusted colleague breaks a rule he helped establish; consistent judgment would cost a friendship.
-
-**Open continuity:** The source's “Brother” title is retained without deciding kinship, religious office, or a shared biography. These roles are invented possibilities.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker22#atlas).
-
+Basis: [Mergen resistance source](../mizan/marker19.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker22#atlas). [Areas to think about](../story/area-development.md#brother-erkhemsaikhan).

@@ -15,7 +15,7 @@ The current material already has a strong tragedy: a healer who needs a city's l
 - [Characters](characters/hanno.md): individual profiles for all thirteen named people in the codex. Follow their relationship links.
 - [Places](places/carthara.md) and [factions](factions/the-three-seats.md): existing geography and institutions, with explicit questions for development.
 - [Visual direction](visual-direction.md): the reference aesthetic translated into world and interface choices.
-- [Invented atlas notes](atlas-notes/region-5.md): three proposed bullets for each of the 88 Mizan entries, covering everyday life, livelihoods, and tensions. The map renders these Markdown files directly alongside the preserved source lore.
+- [Atlas descriptions](atlas-notes/region-5.md): geography, control, ownership, and landmarks for the 88 Mizan entries and nine current story places. Current draft, source lore, proposals, and open questions are labeled separately. Every new proposal is recorded under [areas to think about](story/area-development.md) in the outline.
 - [Sound cues](sound-cues.md): an intake ledger for future audio.
 - [Narration](narration.md): optional chapter playback, character casting, and the ElevenLabs opening sample.
 - [Pitch template](templates/pitch.md), [character template](templates/character.md), [place template](templates/place.md), and [faction template](templates/faction.md): small formats that preserve both evidence and possibility.

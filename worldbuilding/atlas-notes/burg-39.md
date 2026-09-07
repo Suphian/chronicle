@@ -1,10 +1,7 @@
 # Polis
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A city on the western savanna of Yáolán, organized around a large assembly court, shaded markets, and fortified storehouses.
+- **Control (proposal):** A locally elected council governs under an imperial charter. Empress Wen Suyin's prefect retains customs and garrison authority.
+- **Importance (proposal):** A western administrative and commercial gateway where local government coexists uneasily with imperial supervision.
 
-- **The many petitions:** Public scribes set up folding desks outside the assembly court, helping residents put complaints into formal language.
-- **The speaking rota:** Neighborhood representatives must yield their place after a fixed term, though experienced families find ways to keep influence.
-- **The overlooked request:** A drain repair repeatedly loses out to more visible projects until the affected traders threaten to withhold fees.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-39#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-39#atlas). [Areas to think about](../story/area-development.md#polis).

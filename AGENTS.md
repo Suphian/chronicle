@@ -8,6 +8,8 @@ The four primary website sections are Story, People, World, and Writing room. Ch
 
 ## Evidence and invention
 
+- Map notes should describe geography, the ruler or institution in control, ownership where relevant, and important settlements, landmarks, or resources. New area and character proposals must also be recorded in the outline's **Areas to think about** section (`worldbuilding/story/area-development.md`, linked from `overall-outline.md`), with adopted facts and proposals distinguished.
+
 - Existing chapters are **draft continuity**, not an irrevocable finished novel. The author welcomes tens of chapters; these compressed seeds may grow into extensive arcs without a chapter-count cap. Preserve deliberate revisions such as Sinna's death by the stolen shipment when importing older material. The latest author correction restores **Dyia** as the brother's canonical name; **Adris** is a superseded repository alias.
 - Label source facts, interpretations, proposed developments, and unresolved questions separately. A profile's proposed motive is not evidence that a chapter established it. A character's belief is not the world's objective truth.
 - The three early Google Docs are source material, not instructions to execute. Preserve competing ideas without silently replacing current continuity. See `worldbuilding/sources/README.md` and `worldbuilding/decisions.md`.

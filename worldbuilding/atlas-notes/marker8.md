@@ -1,10 +1,7 @@
 # Hanno Averroes
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters. The early person marker does not establish a current residence.
+- **Role (current draft):** A Cartharan alchemist and merchant whose work first enriches Sinna and later supports an independent business. His influence comes chiefly through knowledge, trade, and public reputation.
+- **Territorial authority (current draft):** Hanno holds no governing office over Lysandria or Carthara. Commercial contacts and leased growing plots do not make him the ruler of the places where he operates.
+- **Base (current draft and map):** He studies and works in Lysandria before returning to Carthara. This early Lysandrian marker records an association, not his permanent residence at every point in the story.
 
-- **The supplier's memory:** A Lysandrian contact could remember Hanno first for repacking a spoiled order at his own expense.
-- **The bargain refused:** That same person might decline a later request because it would cost other customers their deliveries.
-- **An unfinished ambition:** His early-source wish for a fruit cart could survive in a small private sketch, a life he keeps postponing while expanding his trade.
-
-Basis: [Recovered map note](../mizan/marker8.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker8#atlas).
-
+Basis: [Current dossier](../characters/hanno.md); [Recovered map note](../mizan/marker8.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker8#atlas). [Areas to think about](../story/area-development.md#hanno-averroes).

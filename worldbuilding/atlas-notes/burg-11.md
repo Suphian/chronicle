@@ -1,10 +1,7 @@
 # Sipopos
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A lush eastern city of Yáolán, with densely planted courtyards, tiled administrative halls, and broad warehouse districts.
+- **Control (proposal):** Governor Ren Tal administers the eastern province on behalf of Empress Wen Suyin, collecting customs and maintaining the provincial garrison.
+- **Importance (proposal):** A center of paper making, printing, and provincial record keeping, supplying the empire's courts and schools.
 
-- **The paper balconies:** Sheets dry behind pierced railings, filling whole lanes with pale fluttering rectangles.
-- **The rejected edition:** Printers debate whether to recopy an official notice containing a mistake everyone can see.
-- **The apprentice's evening:** A young binder saves discarded paper for a neighborhood reading circle; a merchant wants the scraps sold instead.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-11#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-11#atlas). [Areas to think about](../story/area-development.md#sipopos).

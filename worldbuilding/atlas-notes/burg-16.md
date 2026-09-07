@@ -1,12 +1,7 @@
 # Lustria
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (source lore):** The capital of Volupta, the Isle of Delights, associated with gardens, flowering vegetation, beaches, baths, and performance halls.
+- **Control (proposal):** Lady Cassia Meret governs the city with a council representing residential districts, bathhouses, and performance companies.
+- **Landmark (source lore):** The Pavilion of Pleasures is its best-known complex. The map groups Lustria with Lysandria, while the source gives it a separate island setting.
 
-- **Before the music:** Performers rehearse while bath attendants scrub the floors and food sellers carry in the day's supplies.
-- **A night of their own:** Workers organize a modest festival after the visiting patrons leave, choosing songs the fashionable stages overlook.
-- **The cost of pleasure:** A pavilion manager can lower admission only by shortening the paid rehearsal week; musicians propose a different bargain.
-
-**Open continuity:** The source note describes Volupta as an island; the atlas label is Lustria. Their relationship remains open.
-
-Basis: [Recovered map note](../mizan/burg16.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-16#atlas).
-
+Basis: [Recovered map note](../mizan/burg16.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-16#atlas). [Areas to think about](../story/area-development.md#lustria).

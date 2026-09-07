@@ -1,12 +1,7 @@
 # Brother Enkhjargal
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters. The early person marker does not establish a current residence.
+- **Role (source lore):** A member of the older Mergen resistance group led by Boldsaikhan.
+- **Authority (proposal):** Civilian liaison for northern displaced households, coordinating negotiated shelter and aid independently of battlefield command.
+- **Base (proposal):** The northern conifer uplands near Boldsaikhan's marker. Neither the map nor this role establishes command over all displaced Leonin.
 
-- **A possible responsibility:** Enkhjargal mediates between lodging households and displaced newcomers seeking work.
-- **The evening game:** Shared board games let neighbors meet before every conversation becomes a negotiation.
-- **An unequal agreement:** A sponsor calls restrictive lodging terms generous; Enkhjargal must decide whether an available bad arrangement deserves public endorsement.
-
-**Open continuity:** The source's “Brother” title is retained without deciding kinship, religious office, or a shared biography. These roles are invented possibilities.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker26#atlas).
-
+Basis: [Mergen resistance source](../mizan/marker19.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker26#atlas). [Areas to think about](../story/area-development.md#brother-enkhjargal).

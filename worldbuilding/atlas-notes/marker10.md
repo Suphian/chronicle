@@ -1,10 +1,7 @@
 # Chuluun
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters. The early person marker does not establish a current residence.
+- **Role (current draft):** A displaced Leonin elder, teacher, and resistance leader living under enforced labor obligations in the Tengeri camps.
+- **Authority (current draft):** Some households ask him to represent them, and former pupils and fighters recognize his leadership. He does not govern every camp, command all factions, or own Tengeri.
+- **Base (current draft and map):** His narrated work centers on a camp shelter row. The old map places his marker at Erdene Zuu; that does not establish the exact site of the current camp.
 
-- **The lesson object:** A repaired chair could become an arithmetic exercise, a place for an injured neighbor, and an argument over who has time to mend it.
-- **A former pupil:** Someone he taught might now manage diaspora aid and challenge his assumptions about what residents need.
-- **Authority with limits:** A proposed gathering could require him to earn support household by household, preserving disagreement instead of restoring the old prince-to-Khan destiny.
-
-Basis: [Recovered map note](../mizan/marker10.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker10#atlas).
-
+Basis: [Current dossier](../characters/chuluun.md); [Recovered map note](../mizan/marker10.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker10#atlas). [Areas to think about](../story/area-development.md#chuluun).

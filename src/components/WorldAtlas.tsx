@@ -51,7 +51,9 @@ export function WorldAtlas({ initialAt, sourceNotes = {}, atlasNotes = {} }: { i
   const title = selected && worldById[selected] ? worldById[selected].name : sourcePlace ? mapName(sourcePlace) : "";
   const art = locationArt(selected);
   const note = sourcePlace?.loreSlug ? sourceNotes[sourcePlace.loreSlug] : undefined;
-  const atlasNote = sourceId ? atlasNotes[sourceId] : undefined;
+  const atlasNoteId = selected && atlasNotes[selected] ? selected : sourceId;
+  const atlasNote = atlasNoteId ? atlasNotes[atlasNoteId] : undefined;
+  const outlineAnchor = atlasNote?.match(/\[Areas to think about\]\(\.\.\/story\/area-development\.md(#[^)]+)\)/)?.[1] ?? "";
   const linkedCharacter = sourceId ? sourceCharacters[sourceId] : undefined;
   const measuredMiles = measurePoints.length === 2 ? distanceMiles(measurePoints[0], measurePoints[1]) : null;
   const probeValue = probe && probeData ? terrainAt(probeData, probe) : null;
@@ -144,7 +146,7 @@ export function WorldAtlas({ initialAt, sourceNotes = {}, atlasNotes = {} }: { i
   return <div ref={atlasRoot} className={`atlas ${styles.atlas} ${fullScreenFallback ? styles.fullWindow : ""}`} onKeyDown={(e) => { if (e.key === "Escape") { if (panelOpen) { e.preventDefault(); close(); } else if (fullScreenFallback) setFullScreenFallback(false); } }}>
     <div className={styles.intro}>
       <div><p className="book-eyebrow">An atlas to build a world around</p><p>From coastlines to the lives within them. Choose a region, zoom into its settlements, or search the map notes and recovered lore.</p></div>
-      <div className={styles.stats}><strong>{mizan.places.length}<span>mapped entries</span></strong><strong>{Object.keys(atlasNotes).length}<span>new map notes</span></strong><strong>{Object.keys(sourceNotes).length}<span>source lore notes</span></strong></div>
+      <div className={styles.stats}><strong>{mizan.places.length}<span>mapped entries</span></strong><strong>{Object.keys(atlasNotes).length}<span>atlas descriptions</span></strong><strong>{Object.keys(sourceNotes).length}<span>source lore notes</span></strong></div>
     </div>
     <div className="atlas-toolbar"><p>Zoom and drag to explore. Right-click twice to plan a journey.</p><div className={styles.toolbarActions}><button aria-pressed={route} onClick={() => setRoute(!route)}>{route ? "Hide" : "Show"} Hanno’s travels</button><button onClick={toggleFullScreen}>{fullScreen || fullScreenFallback ? "Exit full screen" : "Full screen"}</button></div></div>
     <div className={styles.layerBar}><div className={styles.layers} aria-label="Map layers">{[["geography", "Regions"], ["elevation", "Elevation"], ["temperature", "Temperature"], ["precipitation", "Precipitation"], ["biomes", "Biomes"]].map(([id, label]) => <button key={id} aria-pressed={layer === id} onClick={() => setLayer(id)}>{label}</button>)}</div><button className={styles.modeButton} aria-pressed={measuring} onClick={() => { setMeasuring(!measuring); setPanelOpen(false); }}>{measuring ? "Stop selecting" : "Measure a journey"}</button></div>
@@ -187,7 +189,7 @@ export function WorldAtlas({ initialAt, sourceNotes = {}, atlasNotes = {} }: { i
         <div className="atlas-detail-body" key={selected}>
           <h2 id="atlas-place-title">{title}</h2>
           {panelOpen && art && <figure className={styles.locationArt}><a href={art.src} target="_blank" rel="noreferrer" aria-label={`Open full picture: ${art.alt}`}><Image key={art.src} src={art.src} alt={art.alt} width={art.width} height={art.height} sizes="(max-width: 700px) 90vw, 480px" /></a><figcaption>{art.caption}. Select the picture to open it full size.</figcaption></figure>}
-          {atlasNote && <div className={styles.atlasNotes}><h3>Map notes</h3><ReactMarkdown>{atlasNote.replace(/^# .+\r?\n+/, "").replace(/^Basis: .+$/m, "")}</ReactMarkdown><Link href={`/library/atlas-notes/${sourceId}`}>Open these map notes →</Link></div>}
+          {atlasNote && <div className={styles.atlasNotes}><h3>{sourcePlace?.kind === "person" ? "Role & authority" : "Area & control"}</h3><ReactMarkdown>{atlasNote.replace(/^# .+\r?\n+/, "").replace(/^Basis: .+$/m, "")}</ReactMarkdown><p><Link href={`/library/atlas-notes/${atlasNoteId}`}>Open these map notes →</Link></p><p><Link href={`/library/story/area-development${outlineAnchor}`}>Areas to think about in the outline →</Link></p></div>}
           {sourcePlace?.terrain && <div className={styles.terrainStats}><p className={styles.badge}>Saved terrain & climate</p><dl><dt>Elevation / depth</dt><dd>{elevationFeet(sourcePlace.terrain.height).toLocaleString()} ft</dd><dt>Model temperature</dt><dd>{Math.round(sourcePlace.terrain.temperatureC * 9 / 5 + 32)}°F / {sourcePlace.terrain.temperatureC}°C</dd><dt>Model precipitation</dt><dd>{sourcePlace.terrain.precipitationMm.toLocaleString()} mm</dd><dt>Biome</dt><dd>{terrain.biomes[sourcePlace.terrain.biome]}</dd></dl><p>Nearest source cell to this marker. Regional anchors do not summarize the climate of an entire region.</p></div>}
           {storyPlace && <><p className={styles.badge}>Current story</p><p className="atlas-tagline">{storyPlace.tagline}</p><p>{storyPlace.description}</p><Link href={`/library/places/${storyPlace.id}`}>Open the current place dossier →</Link>
             {storyPlace.appearsIn && <><h3>Read the story here</h3>{storyPlace.appearsIn.map((ref, i) => { const chapter = getChapter(ref.chapter); return chapter && <Link key={i} href={`/chapters/${chapter.slug}${ref.scene ? `?scene=${ref.scene}` : ""}`}>{ref.label ?? chapter.title} →</Link>; })}</>}

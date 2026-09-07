@@ -1,10 +1,7 @@
 # Spear of Poseidon Peak
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (source lore):** A towering Lysandrian mountain in the Phalanx Peaks, revered as a sacred landmark and associated with a sea-god origin legend.
+- **Control (proposal):** Phylios's mountain wardens administer the lower approaches; shrine custodians maintain pilgrimage shelters. Neither office owns the entire mountain.
+- **Identity (open question):** Its relationship to Lysandria's two principal mountains and its exact summit height remain unresolved. The divine origin is a local belief.
 
-- **The approach shelter:** A proposed lower-path refuge offers hot food and dry wraps without making the summit safe or easy.
-- **The pilgrim's carving:** Travelers commission small representations of the peak, and craftspeople disagree over its proper outline.
-- **The name and the mountain:** The source's divine origin is a local legend; identifying this named peak with either of Lysandria's two principal mountains remains open.
-
-Basis: [Recovered map note](../mizan/marker5.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker5#atlas).
-
+Basis: [Recovered map note](../mizan/marker5.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker5#atlas). [Areas to think about](../story/area-development.md#spear-of-poseidon-peak).

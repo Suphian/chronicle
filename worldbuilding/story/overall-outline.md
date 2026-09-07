@@ -72,6 +72,21 @@ The highland legend of Iskandar and Rukhsana is an optional historical tale, ava
 
 The pilgrimage-ship atrocity inspired by Islamic history remains a [researched proposal](../ideas/the-pilgrim-ship.md). A future thread could involve a missing voyage, survivors, charitable relief, competing testimony, and the costs of protecting trade. Its placement is not decided. Recovered regional material is collected in the [geography reconciliation](../geography-reconciliation.md).
 
+## Areas to think about
+
+The atlas should explain **what an area is like, who controls it, and its important places or resources**. Newly invented geography, rulers, offices, and ownership arrangements belong in the outline for consideration before becoming established story material.
+
+The [area development inventory](area-development.md) records every new proposal from the revised map notes, with links to all 88 source-map entries and the nine current story places. Its main decisions are:
+
+- **Ruhania:** consider Queen Samira Daran, the two provincial administrations at Al-Rutbah and Qalb Al-Sahra, and their relationship to local water councils.
+- **Sidrat:** consider Queen Safiya Nural, district Keepers, and Jibreel as Warden of the Sidrat Web; define who governs roads, sacred lakes, and frontier defenses.
+- **Cathara, Carthara, and Yáolán:** reconcile inland Tijara and Numarius's Elarion estate with the coastal Three Seats. Empress Wen Suyin and the new provincial offices are proposals, not settled imperial history.
+- **Zorig and the Mergen districts:** consider Jirgal's crown and the proposed Melameaion, Chalcis, Paphidnapon, and Zakra holdings. Keep the refuge chronology and present Leonin territorial claims open.
+- **Lysandria and the older island capitals:** preserve Phylios's rule while deciding Titanus, Pallas, and Lustria's geography and allegiance. The Moonlit Isle still has no established owner.
+- **Other mapped regions:** consider Zeon's merchant republic, Hikari's proposed sovereign, the woodland compact, the Free Houses, and the southern wardens; all named candidates and individual settlement proposals are recorded in the inventory.
+
+These proposals do not add chapter events or decide Hanno's response at Dyia's door. When we adopt one, update its area and character profiles, political relationships, map notes, and any affected narrative references together.
+
 ## The decisions for our next editing pass
 
 The former [teacher of the uplands proposal](../ideas/the-teacher-of-the-uplands.md), inspired by Omar Mukhtar, now develops **Chuluun's adopted role** within the Leonin strand above; its earlier separate Bakhtari character is superseded. The wider sequence remains to be written. [The Surety Quarter](../ideas/the-surety-quarter.md) still proposes a diverse migrant community whose residence and livelihood are constrained by sponsors. Its clinic, labor, and testimony conflicts could enter the return and rise sequences. This proposed Cartharan extension need not share one origin, enemy, or conspiracy with every other strand.

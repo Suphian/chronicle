@@ -1,10 +1,7 @@
 # Sidrat Al Muntaha
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (source lore):** A mountainous kingdom threaded by luminous roads, moss-covered bridges, and seven sacred lakes. The Veins of Sidrat divide wooded valleys and high settlements.
+- **Control (proposal):** Queen Safiya Nural holds the crown, while the Keepers administer the lake districts. The crown commands the frontier fortress at Jabal Al-Hifaz; lake custodians regulate access to sacred shorelines.
+- **Notable places (source lore):** Lake Siraj glows with bioluminescent algae. Al-Fajr, Hikma, Salam, Amal, Wadood, and Baraka have distinct pilgrimage traditions; Jabal Al-Nur bears a summit temple.
 
-- **Keepers of the light:** Road gardeners trade cuttings and tend the luminous verges of the Sidrat Web; a dark stretch calls for maintenance before it inspires a legend.
-- **At Lake Siraj:** Cultivators reserve part of each harvest for regrowth, setting their obligations to the lake against export buyers' demands.
-- **The sanctuary table:** A guesthouse offers travelers meals under vine-covered arches. Its keeper must persuade prosperous visitors to help pay for strangers who arrive hungry.
-
-Basis: [Recovered map note](../mizan/stateLabel3.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=region-3#atlas).
-
+Basis: [Current dossier](../places/sidrat-al-muntaha.md); [Recovered map note](../mizan/stateLabel3.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=region-3#atlas). [Areas to think about](../story/area-development.md#sidrat-al-muntaha-region).

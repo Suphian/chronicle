@@ -1,10 +1,7 @@
 # Hemaris
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** The chief city of V B, set in rainy woodland with covered trading streets, timber yards, and a fortified administrative quarter.
+- **Control (proposal):** Governor Sava Orun resides here and administers the wider territory through district stewards.
+- **Importance (proposal):** Regional government, timber trade, and workshops supplying tools and building materials.
 
-- **The demonstration hall:** Mechanics show households how to maintain purchased tools before collecting the final payment.
-- **The spare-part drawers:** A public workshop keeps salvaged fittings sorted for people repairing old equipment.
-- **The membership rule:** Skilled newcomers can use the benches only under a sponsor; the established workers disagree over opening admission.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-43#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-43#atlas). [Areas to think about](../story/area-development.md#hemaris).

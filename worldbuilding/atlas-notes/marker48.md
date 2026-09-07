@@ -1,10 +1,7 @@
 # The Hall of Scales
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (source lore):** A monumental commercial courthouse with multiple hearing rooms, iron gates, and a great marble scale at its entrance.
+- **Control (source lore):** The Arbiters of Scales judge commercial disputes with the aid of investigative clerks. Their powers are institutional rather than a private merchant's authority.
+- **Jurisdiction (proposal):** Place it within the Majlis Gate commercial district, as suggested by the map, with authority over cavern-market contracts and measures. Its relationship to present Cartharan courts remains open.
 
-- **The public balance:** Traders can compare their weights in the entrance court before committing themselves to a hearing.
-- **The waiting benches:** Porters, household buyers, and wealthy agents share a room but arrive with very different time and money to spare.
-- **The price of proof:** A proposed copying fee makes a sound claim too expensive for a small seller; a clerk must choose whether helping warrants angering the office.
-
-Basis: [Recovered map note](../mizan/marker48.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker48#atlas).
-
+Basis: [Recovered map note](../mizan/marker48.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker48#atlas). [Areas to think about](../story/area-development.md#the-hall-of-scales).

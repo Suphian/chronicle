@@ -1,10 +1,7 @@
 # Erdene Zuu · the gathering place
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (source lore):** The monolith square and Golden Yurt precinct associated with Erdene Zuu, formerly a meeting place for the Leonin tribes.
+- **Control (proposal):** A civilian assembly of resident households holds the gathering ground in common. Ceremonial claims to the old Khanate do not automatically confer present government.
+- **Present condition (open question):** Whether the original precinct survives, has been rebuilt, or persists chiefly in memory remains to be decided within the refugee-camp history.
 
-- **At the monolith:** Families could use a sheltered meeting space for music, mourning, and announcements, retaining ordinary life alongside political debate.
-- **The empty seat:** The source's Golden Yurt might survive as a remembered symbol contested by people who prefer accountable camp councils.
-- **A question of placement:** Whether the source square survives, has been rebuilt, or is recalled elsewhere remains open; these notes do not move it into a particular camp.
-
-Basis: [Recovered map note](../mizan/marker11.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker11#atlas).
-
+Basis: [Recovered map note](../mizan/marker11.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker11#atlas). [Areas to think about](../story/area-development.md#erdene-zuu--the-gathering-place).

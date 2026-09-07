@@ -1,10 +1,7 @@
 # Qal'a Ruins
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (source lore):** The remains of Al Qal'a, the former capital of Safara, associated with powerful fortifications, Suraj Stones, and advanced astronomy and irrigation.
+- **Control (proposal):** A Catharan antiquities ward claims custodianship of the central ruins, while surrounding access routes remain under local guards. No living royal descendant is established as owner.
+- **Landmarks (source lore):** Broken fortifications and the remnants of the old capital. Stories of the city's fall belong to the earlier Safara, Anket, and Majis traditions, not automatically the current Three Seats.
 
-- **The borrowed stone:** Nearby builders could reuse fallen blocks while custodians try to preserve inscriptions still legible on them.
-- **A history in fragments:** Visitors buy rubbings whose confident captions conceal disagreement about the ruined city's past.
-- **The missing wages:** A restoration patron wants a splendid ceremonial wall, while the masons ask to stabilize the less impressive structure that threatens their work.
-
-Basis: [Recovered map note](../mizan/marker4.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker4#atlas).
-
+Basis: [Recovered map note](../mizan/marker4.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker4#atlas). [Areas to think about](../story/area-development.md#qala-ruins).

@@ -1,10 +1,7 @@
 # Shogunate of Zorig
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (source lore):** A forested kingdom associated with King Jirgal and Mergen communities granted refuge in its northwest. The map also contains cold mountain districts, so its rainforest description should not cover every province.
+- **Control (proposal):** King Jirgal the Fifth holds the crown. Hereditary Mergen lords administer several upland districts in return for service; the map's “Shogunate” label is treated as a military administration beneath the monarchy.
+- **Notable places (map and proposal):** Zorig is the principal mapped city. Melameaion, Chalcis, Paphidnapon, and Zakra are proposed Mergen district seats; the precise refuge chronology remains open.
 
-- **The many-roofed court:** Galleries connect shaded courts where petitioners, messengers, cooks, and visiting households wait on different schedules.
-- **The maintenance levy:** A timber repair assessment would bring provincial officers into conflict with the communities supplying both materials and labor.
-- **Conditional refuge:** Older Mergen settlement traditions could underpin disputes over service and protection, without fixing their generations or making every descendant loyal to the same ruler.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=region-8#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=region-8#atlas). [Areas to think about](../story/area-development.md#shogunate-of-zorig).

@@ -1,12 +1,7 @@
 # Fairy
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A wooded enclave of dense seasonal forest, wetland gardens, and settlements built around living trees and raised walkways. Menos is its main mapped town.
+- **Control (proposal):** Lady Neris Thale serves as the elected Keeper of the Groves, coordinating woodland councils and access to cultivated clearings.
+- **Identity (open question):** “Fairy” is the old map label. It does not yet establish the inhabitants' species or their own name for the region; neither is changed by this proposed government.
 
-- **A name from outside:** One possibility is a region whose visitors use “Fairy” indiscriminately, while residents introduce themselves by household and town.
-- **Borrowed beauty:** Artisans grow miniature hanging gardens for export; maintaining them pays less than foreign merchants charge for their supposed enchantments.
-- **The visiting collector:** A buyer seeks an exclusive pattern, and its maker refuses to sell a design that several families regard as shared.
-
-**Open continuity:** The source label does not establish species, shared culture, or a single government.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=region-12#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=region-12#atlas). [Areas to think about](../story/area-development.md#fairy).

@@ -1,10 +1,7 @@
 # Elarion
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (source lore):** A city in Cathara's green rolling hills, overlooking cultivated countryside and a distant coastline.
+- **Control (source lore):** Lord Numarius serves as protector under Yáolán's claimed authority. That source-era arrangement remains distinct from his established role as Carthara's First Seat.
+- **Estate (source lore):** Numarius owns Serenissima, a hilltop villa with gardens, fountains, galleries, a library, and a private theater. The estate is his property; the entire city is not described as his personal estate.
 
-- **The gardeners' steps:** Fruit trees shade service paths below wealthy terraces, tended by people who rarely enter the reception rooms.
-- **The patron's fountain:** A proposed water allocation dispute pits a prestigious estate against workshops requesting a reliable supply.
-- **A city's name:** Residents debate the source-era claim that Numarius “protects” Elarion; its relation to his current Cartharan office remains unresolved.
-
-Basis: [Recovered map note](../mizan/burg17.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-17#atlas).
-
+Basis: [Recovered map note](../mizan/burg17.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-17#atlas). [Areas to think about](../story/area-development.md#elarion).

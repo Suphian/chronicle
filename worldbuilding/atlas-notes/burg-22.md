@@ -1,10 +1,7 @@
 # Egeleukemi
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A town on wooded high ground in central Zorig, with timber-framed houses, stone retaining walls, and cloth-working courts.
+- **Control (proposal):** Provincial Steward Saran Del answers directly to King Jirgal the Fifth. Local councils administer water, workshops, and residential streets.
+- **Importance (proposal):** A textile and administrative center serving the upland provinces.
 
-- **The washerwomen's arcade:** Cloth hangs above tiled channels while children carry folded bundles home.
-- **Color by agreement:** Dye crews share equipment on a strict rota, leaving each workshop room for its own patterns.
-- **A stained delivery:** A wealthy customer blames the washers for defective dye; settling the claim could divide two trades that depend on each other.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-22#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-22#atlas). [Areas to think about](../story/area-development.md#egeleukemi).

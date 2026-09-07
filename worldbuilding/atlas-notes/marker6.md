@@ -1,10 +1,7 @@
 # The Elysium Fields
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (source lore):** Flower-rich plains in Lysandria's heartland, associated with traditional herbal remedies and the Elysium Blossom.
+- **Control (proposal):** A chartered growers' commons manages gathering and cultivation under Phylios's authority, with protected plots reserved for regrowth.
+- **Identity (open question):** The source Elysium Blossom has not been established as the same plant as the novel's Elysian flower. This site is not automatically Hanno's Dust supply.
 
-- **The harvest cloths:** Gatherers sort blossoms by condition under portable shade, returning damaged plants to the soil.
-- **The reserved patch:** A proposed tending cooperative keeps some ground unharvested, provoking buyers who want every flowering stem.
-- **Similar names:** The source Elysium Blossom is not automatically the novel's Elysian flower; a dispute over mislabeled purchases could explore that uncertainty.
-
-Basis: [Recovered map note](../mizan/marker6.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker6#atlas).
-
+Basis: [Recovered map note](../mizan/marker6.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker6#atlas). [Areas to think about](../story/area-development.md#the-elysium-fields).

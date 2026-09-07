@@ -1,10 +1,7 @@
 # Lenaicorint
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A northern town among conifer woods, built around a hill court and enclosed timber markets.
+- **Control (proposal):** Duchess Mara Velen holds this town and the proposed Juklena–Esmos district. This is a new government for the map's unnamed region, not an established dynasty.
+- **Importance (proposal):** The district's administrative seat, with courts, granaries, and storeyards supporting its colder outlying towns.
 
-- **The plaster gardens:** Builders embed colored fragments in courtyard walls, making repaired surfaces more elaborate than the originals.
-- **The public shade:** A neighborhood funds a climbing trellis one section at a time.
-- **A prestigious demolition:** A patron offers to replace the old court with a monument, requiring its current workers to find somewhere else to sell.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-32#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-32#atlas). [Areas to think about](../story/area-development.md#lenaicorint).

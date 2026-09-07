@@ -1,10 +1,7 @@
 # Telheiro
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A grassland market city in Zeon, with tiled roofs, livestock yards, grain stores, and broad courts for caravan traffic.
+- **Control (proposal):** First Syndic Leora Venn chairs Zeon's republican council here. Local guild representatives administer the city market and workshops.
+- **Importance (proposal):** The political center of Zeon and its chief exchange for livestock, ceramics, and goods arriving from the forest districts.
 
-- **Roof season:** Tile makers display samples on long racks; neighbors inspect the colors while discussing whose leaking roof should be repaired first.
-- **The shared firing:** Small workshops pool a kiln load, marking every tile so that faults can be traced to clay, glaze, or firing.
-- **The contractor's shortcut:** A wealthy buyer offers immediate payment for a cheaper batch, forcing the kiln keeper to weigh wages against a guarantee.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-5#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-5#atlas). [Areas to think about](../story/area-development.md#telheiro).

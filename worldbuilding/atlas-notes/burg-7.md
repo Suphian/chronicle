@@ -1,10 +1,7 @@
 # Erdene Zuu
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (source lore):** A settlement deep in a Tengeri canyon, organized around a gathering monolith and the empty Golden Yurt, the remembered seat of the Khanate.
+- **Control (proposal):** In the present-day setting, civilian camp councils administer its inhabited quarters under external labor and movement restrictions. Chuluun has influence through teaching and resistance, not ownership of the city.
+- **Present condition (open question):** Its buildings and civic institutions need reconciliation with the adopted refugee history; the old freely roaming homeland account is superseded.
 
-- **A place for the records:** As a proposed camp-era use of the source settlement, a sheltered copying room preserves household lists with each family's permission.
-- **The repair square:** Chair-menders, cooks, and teachers share a courtyard whose timetable changes around enforced work and damaged shelters.
-- **Representation contested:** Residents could ask whether a remembered capital should speak for scattered camps; its name would confer no automatic authority.
-
-Basis: [Recovered map note](../mizan/burg7.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-7#atlas).
-
+Basis: [Recovered map note](../mizan/burg7.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-7#atlas). [Areas to think about](../story/area-development.md#erdene-zuu).

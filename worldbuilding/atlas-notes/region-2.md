@@ -1,10 +1,7 @@
 # Zeon
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A trading realm of open grasslands around Telheiro, reaching toward the wooded country around Smyrneleu. Walled market towns and caravan estates link its contrasting districts.
+- **Control (proposal):** A merchant republic led by First Syndic Leora Venn. Town councils manage their own streets and markets; the republic controls customs, intercity roads, and common defense.
+- **Wealth (proposal):** Livestock, roof tiles, timber, and manufactured goods. Telheiro is the administrative center; Smyrneleu supplies the forest trade.
 
-- **The colored lintels:** Households set glazed tiles above their doors to mark completed apprenticeships; some doorways record several unrelated trades.
-- **The repair economy:** Town workshops buy worn mechanisms, lamps, and balances, rebuilding expensive goods for customers who could never afford them new.
-- **A disputed guarantee:** Merchants want one regional quality seal; independent repairers fear the membership fees will price them out.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=region-2#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=region-2#atlas). [Areas to think about](../story/area-development.md#zeon).

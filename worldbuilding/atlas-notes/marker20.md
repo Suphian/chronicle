@@ -1,12 +1,7 @@
 # Brother Altangerel
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters. The early person marker does not establish a current residence.
+- **Role (source lore):** One of the nine descendants named in the older Mergen resistance account led by Boldsaikhan.
+- **Authority (proposal):** Liaison for western supply routes, responsible for agreements with villages and carriers. This is influence through a resistance network, not civil rule over Eleusis.
+- **Base (proposal):** The uplands near Eleusis, suggested by the source marker. Kinship details, service obligations, and the generational chronology still require reconciliation.
 
-- **A possible responsibility:** Altangerel oversees a guesthouse attached to a Zorig public institution, learning more from arrivals than from court dispatches.
-- **A practiced welcome:** He remembers travelers' preferred meals but forgets the names of the cooks who prepare them.
-- **A test of generosity:** Overflow lodging would require opening rooms usually reserved for patrons; his hospitality meets its first expensive limit.
-
-**Open continuity:** The source's “Brother” title is retained without deciding kinship, religious office, or a shared biography. These roles are invented possibilities.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker20#atlas).
-
+Basis: [Mergen resistance source](../mizan/marker19.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker20#atlas). [Areas to think about](../story/area-development.md#brother-altangerel).

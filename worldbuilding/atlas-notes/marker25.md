@@ -1,12 +1,7 @@
 # Brother Togtokh
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters. The early person marker does not establish a current residence.
+- **Role (source lore):** One of the nine descendants connected with the Mergen resistance.
+- **Authority (proposal):** Responsible for agreements along the central upland corridors, including the upkeep and provisioning of shared refuges.
+- **Base (proposal):** High grassland north of Zorig city, following the source marker's broad setting. This is a proposed operating area, not a private fief.
 
-- **A possible responsibility:** Togtokh coordinates maintenance crews for public galleries and meeting courts.
-- **The quiet pride:** He can recognize a well-made joint through layers of paint and remembers who repaired it.
-- **An expensive delay:** A ceremonial opening requires hiding an unfinished repair; postponing it would protect workers while humiliating his sponsor.
-
-**Open continuity:** The source's “Brother” title is retained without deciding kinship, religious office, or a shared biography. These roles are invented possibilities.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker25#atlas).
-
+Basis: [Mergen resistance source](../mizan/marker19.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker25#atlas). [Areas to think about](../story/area-development.md#brother-togtokh).

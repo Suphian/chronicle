@@ -1,10 +1,7 @@
 # Henekionti
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A market town in open grassland, with livestock enclosures, grain stores, and a stone commercial court.
+- **Control (proposal):** Lady Orena Vask governs a small territory shared with Suriris. Its place in a larger state remains unspecified.
+- **Importance (proposal):** The territory's main agricultural exchange and customs seat, connecting grassland produce with northern forest goods.
 
-- **The balancing trade:** Shops assemble scales for ordinary sellers, with open demonstrations that let customers challenge a measure.
-- **The children's market:** Young apprentices practice sums with damaged goods sold for tiny prices.
-- **A costly correction:** A respected maker finds an error in an older batch and must decide how to pay for recalling it.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-36#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-36#atlas). [Areas to think about](../story/area-development.md#henekionti).

@@ -1,10 +1,7 @@
 # Esmos
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A conifer-country town with resin stores, sheltered gardens, and compact trading courts.
+- **Control (proposal):** An eastern steward governs on behalf of Duchess Mara Velen, with civil appeals heard at Lenaicorint.
+- **Importance (proposal):** Resin, timber, aromatic oils, and preserved goods are collected here for regional trade.
 
-- **The quiet trade:** Perfumers invite customers to compare scents beneath vine shade rather than from sealed bottles alone.
-- **The return vessel:** Small glass containers pass repeatedly between households and workshops, with deposits set low enough to keep them circulating.
-- **A changed ingredient:** A supplier's shortage forces a maker to choose between announcing a different blend and quietly selling it under the familiar name.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-34#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-34#atlas). [Areas to think about](../story/area-development.md#esmos).

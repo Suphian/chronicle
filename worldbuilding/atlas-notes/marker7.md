@@ -1,10 +1,7 @@
 # Harmony Lagoon
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (source lore):** A sheltered body of clear water beside Aegis, edged by sandy shore and the city's waterfront buildings.
+- **Control (proposal):** The Aegis harbor council regulates landings, fishing access, and shore construction under the city government.
+- **Importance (source lore and proposal):** The lagoon defines Aegis's waterfront identity. A protected inner anchorage and communal shore are proposed uses; its sacred origin remains folklore.
 
-- **The working morning:** Before visitors arrive, nets dry along the railings and boat crews exchange repair tools.
-- **The shared shore:** Families picnic beside tradespeople unloading supplies, competing for the same narrow places to reach the water.
-- **A promised quiet:** A guesthouse advertises undisturbed views and asks the council to move the people whose work makes the waterfront livable.
-
-Basis: [Recovered map note](../mizan/marker7.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker7#atlas).
-
+Basis: [Recovered map note](../mizan/marker7.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker7#atlas). [Areas to think about](../story/area-development.md#harmony-lagoon).

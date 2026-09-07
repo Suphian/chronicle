@@ -1,10 +1,7 @@
 # Zakra
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A cold mountain town in northern Zorig, with fortified storage courts and houses clustered behind windbreak walls.
+- **Control (proposal):** Adiyabold Mergen the Fifth holds the district under the Zorig crown, exercising local civil and military authority.
+- **Importance (proposal):** A caravan staging point and northern border supply center; the exact border and named roads still need surveying.
 
-- **The pack yard:** Saddlers and harness-menders inspect loaded animals before caravans depart.
-- **The travelers' kitchen:** New arrivals exchange news over lentils and bread while hosts check what fodder remains.
-- **A delayed departure:** The well-paid convoy wants to leave before a carrier's animal recovers; companions must choose between solidarity and a lost contract.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-24#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-24#atlas). [Areas to think about](../story/area-development.md#zakra).

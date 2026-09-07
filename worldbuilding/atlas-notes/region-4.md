@@ -1,10 +1,7 @@
 # Tengeri Wastes
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (current draft):** A region of steep canyons and refugee camps southwest of Carthara. Displaced Leonin live in crowded shelters, with classrooms, treatment spaces, and communal facilities repeatedly damaged by bombardment.
+- **Control (current draft):** Numarius's power is responsible for dispossession and coercive labor. Camp councils manage parts of civilian life under that pressure; Chuluun is a teacher and resistance leader with limited local authority, not sovereign of all Tengeri.
+- **Notable places (source lore):** Erdene Zuu is the old map's canyon capital, associated with a gathering monolith and the empty Golden Yurt. Its precise relationship to today's camps remains open.
 
-- **A roof that can be carried:** A shelter-maker stitches family emblems into removable ceiling cloths, making something beautiful that can survive another forced move.
-- **The kitchen rota:** Neighbors trade cooking and childcare around compulsory shifts; an extra ration must serve a patient, a visitor, or tomorrow's meal.
-- **Across the diaspora:** Remittances could support a shared repair shop, but contributors and residents disagree over who should decide its purchases.
-
-Basis: [Recovered map note](../mizan/stateLabel4.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=region-4#atlas).
-
+Basis: [Current dossier](../places/tengeri-wastes.md); [Recovered map note](../mizan/stateLabel4.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=region-4#atlas). [Areas to think about](../story/area-development.md#tengeri-wastes).

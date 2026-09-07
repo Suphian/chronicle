@@ -1,10 +1,7 @@
 # Oreos
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A grassland city in Yáolán's eastern districts, with broad stockyards, merchants' compounds, and road depots.
+- **Control (proposal):** An imperial prefect administers the city for Empress Wen Suyin, with a separate treasury office collecting duties.
+- **Importance (proposal):** A collection point for provincial produce and overland cargo, supporting the nearby imperial cities.
 
-- **The sorting tables:** Proposed mineral dealers let buyers inspect samples in daylight before bargaining beneath the arcades.
-- **Dust and dinner:** Workers wash and change in a shared court before entering the food market.
-- **The unpaid precaution:** A workshop owner praises careful handling while refusing to pay for the time it takes.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-38#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-38#atlas). [Areas to think about](../story/area-development.md#oreos).

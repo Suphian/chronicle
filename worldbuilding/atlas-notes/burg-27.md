@@ -1,10 +1,7 @@
 # Byreum
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A wooded lowland town in Hikari no Kuni, with pale stone courts, glass workshops, and screened gardens.
+- **Control (proposal):** The sovereign's eastern steward governs civil affairs; independent workshop associations supervise training and commercial standards.
+- **Importance (proposal):** A center for optical glass, lamps, and measuring instruments, supplying both scholarly and religious institutions.
 
-- **The lens-makers:** Small workshops polish glass for readers, surveyors, and shrine lamps.
-- **A window of colors:** Rejected pieces become dazzling courtyard mosaics in households that could never afford the finished instruments.
-- **An uncomfortable finding:** A measuring instrument contradicts a prestigious patron's survey, and its maker is asked to call the fault her own.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-27#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-27#atlas). [Areas to think about](../story/area-development.md#byreum).

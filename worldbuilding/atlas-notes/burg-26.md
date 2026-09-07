@@ -1,10 +1,7 @@
 # Castford
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A compact settlement in Hikari no Kuni's conifer belt, laid out around a covered crossing and an adjoining market.
+- **Control (proposal):** Bridge Warden Toma Seki administers the crossing for the sovereign. The town council manages surrounding streets and workshops.
+- **Importance (proposal):** Its crossing concentrates local trade and gives the warden control over toll collection and passage. The waterway itself is proposed, not a surveyed source river.
 
-- **The joined streets:** A proposed covered crossing gives stallholders sheltered frontage and neighbors a place to meet.
-- **The spanning craft:** Masons display small models of joints and arches to explain why repairs cannot be postponed.
-- **The toll debate:** Charging carts would fund maintenance while raising the price of nearly everything sold nearby.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-26#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-26#atlas). [Areas to think about](../story/area-development.md#castford).

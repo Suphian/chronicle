@@ -1,10 +1,7 @@
 # Melameaion
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (proposal):** A high, cold, sparsely vegetated town in northwestern Zorig, with thick-walled houses and a citadel above sheltered workshops.
+- **Control (proposal):** Tserendorj Mergen the Fifth holds the district as a vassal of King Jirgal the Fifth. The nearby source person marker inspires this assignment; it does not itself prove ownership.
+- **Importance (proposal):** A fortified administrative seat controlling local upland roads, tool production, and the storage of imported food.
 
-- **The carved shutters:** Joiners turn household stories into patterned woodwork; marriages often bring two styles onto the same facade.
-- **Material with a history:** Reused beams carry older makers' marks, and buyers pay for a visible chain of sound repairs.
-- **The court commission:** A grand order offers steady wages but would exhaust the workshops' stock for local repairs.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-19#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=burg-19#atlas). [Areas to think about](../story/area-development.md#melameaion).

@@ -1,10 +1,7 @@
 # Aegis · the lagoon quarter
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters.
+- **Area (source lore):** The waterfront portion of Aegis beside Harmony Lagoon, with stone-and-timber buildings along clear water and sandy shore.
+- **Control (proposal):** The Aegis harbor council administers quays and shore access under the city's governor and General Phylios.
+- **Landmarks (proposal):** Landing stairs, boatyards, a covered fish market, and terraces rising toward the capital's civic center.
 
-- **The first light:** Residents lower baskets from upper galleries to buy breakfast before the lagoon-side lanes grow crowded.
-- **The boat repairers:** A proposed common slip lets small crews repair vessels without renting a wealthy merchant's yard.
-- **The perfect view:** A new terrace would improve a patron's outlook while cutting off the repairers' access to the water.
-
-Basis: [Recovered map note](../mizan/marker0.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker0#atlas).
-
+Basis: [Recovered map note](../mizan/marker0.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker0#atlas). [Areas to think about](../story/area-development.md#aegis--the-lagoon-quarter).

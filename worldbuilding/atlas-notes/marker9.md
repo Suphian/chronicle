@@ -1,12 +1,7 @@
 # Jibreel
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters. The early person marker does not establish a current residence.
+- **Role (proposal):** Warden of the Sidrat Web, responsible for inspecting the roads and bridges that connect Sidrat's lake districts.
+- **Authority (proposal):** Appointed by Queen Safiya Nural, with authority over maintenance crews and route closures. The office does not govern the lake communities or command the kingdom's frontier army.
+- **Base (proposal):** A road wardens' hall at Deleurias, serving the surrounding wooded valleys. The original map supplies Jibreel's name and regional marker, not this office.
 
-- **A possible occupation:** A Sidrat nursery inspector travels with a box of labeled cuttings and checks whether public roads are receiving the plants they paid for.
-- **A private pleasure:** Jibreel trades seeds with hosts and enjoys hearing different arguments over what makes a good garden.
-- **A difficult report:** A failing nursery belongs to the household that financed Jibreel's training; honest findings would hurt people to whom a real debt is owed.
-
-**Open continuity:** The source supplies a name and marker, not this occupation or a theological identity.
-
-Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker9#atlas).
-
+Basis: [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker9#atlas). [Areas to think about](../story/area-development.md#jibreel).

@@ -1,10 +1,7 @@
 # King Jirgal the Fifth
 
-Status: **Proposed development · September 2026**. Invented map notes inspired by the author's geography and Mizan source material; these are possibilities for the world, not events established in the chapters. The early person marker does not establish a current residence.
+- **Role (source lore):** A later ruler in the Jirgal line associated with Zorig. The source identifies the earlier Jirgal as the monarch who received Mergen refugees.
+- **Authority (proposal):** King of Zorig, commanding crown lands and receiving service from provincial and Mergen vassal lords. The map's “Shogunate” terminology is proposed as a subordinate military administration.
+- **Seat (proposal):** The palace in the mapped city of Zorig. The exact generations connecting the kings, the Mergen families, and the present Leonin displacement remain unresolved.
 
-- **The ceremonial burden:** A ruler taught to repeat ancestral promises might discover that every provincial delegation remembers a different promise.
-- **The unglamorous expense:** Repairing workers' housing competes with restoring a reception hall needed for public ceremonies.
-- **A conditional audience:** Jirgal could admit petitioners without their sponsors, alarming courtiers who profit by controlling access; his historical relationship to the earlier Jirgal remains unresolved.
-
-Basis: [Recovered map note](../mizan/marker16.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker16#atlas).
-
+Basis: [Recovered map note](../mizan/marker16.md); [geography and current decisions](../geography-reconciliation.md). [Return to this map entry](/world?at=marker16#atlas). [Areas to think about](../story/area-development.md#king-jirgal-the-fifth).

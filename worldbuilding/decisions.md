@@ -1,5 +1,12 @@
 # Author decisions
 
+## 2026-09-07 — Atlas descriptions and areas to think about
+
+- The author clarified that map notes should describe **the area, who controls or owns it, and its significant places**, rather than small scenes, workshop disputes, or character vignettes. Existing regional and character material should supply the foundation.
+- The author also requires anything newly introduced to appear in the outline's **Areas to think about** section. The [complete area development inventory](story/area-development.md), linked from the [overall outline](story/overall-outline.md#areas-to-think-about), records every new area, ruler, office, holding, layout, and economic role proposed in this revision.
+- The 88 map descriptions are rewritten, with nine specific story-place descriptions added so Corvo's harbor and Vael's garrison show their own area and authority. Individual bullets identify current draft, source lore, proposals, and open questions. Governing authority is not automatically personal ownership.
+- Proposed rulers and offices in the inventory are candidates for discussion, not adopted canon. No source borders, source snapshots, or chapter events change. The earlier vignette-style atlas bullets below describe the superseded first attempt.
+
 ## 2026-09-07 — Invented map bullets
 
 - The author requested invented notes for the map points and supplied the early geography Google Doc as inspiration. The preserved text in `worldbuilding/sources/early-geography.md` informs the work; a fresh online read was unavailable during this pass.
