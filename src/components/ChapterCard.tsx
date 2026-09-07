@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Chapter } from "@/content/types";
 import { moods } from "@/lib/moods";
+import { chapterStage } from "@/lib/reading";
 
 export function ChapterCard({ chapter, index }: { chapter: Chapter; index: number }) {
   const mood = moods[chapter.mood];
@@ -36,7 +37,7 @@ export function ChapterCard({ chapter, index }: { chapter: Chapter; index: numbe
         <p className="font-display mt-4 text-[10px] tracking-[0.3em] text-parchment/40 uppercase">
           {chapter.scenes.length} scenes{chapter.when ? ` · ${chapter.when}` : ""}
           {chapter.status && chapter.status !== "final" ? (
-            <span className="ml-2 rounded border border-parchment/20 px-1.5 py-0.5 text-parchment/50">{chapter.status}</span>
+            <span className="ml-2 rounded border border-parchment/20 px-1.5 py-0.5 text-parchment/50">{chapterStage(chapter)}</span>
           ) : null}
         </p>
       </div>

@@ -1,116 +1,41 @@
-# The Chronicle — working notes for Claude
+# The Chronicle — implementation and writing notes
 
-## Current direction (2026-09-06)
+Read `AGENTS.md`, `worldbuilding/README.md`, and `worldbuilding/decisions.md` first. Latest author decisions govern. The project is a growing novel and world, not only a tabletop character sheet. Keep tested increments committed and pushed to main as authorized.
 
-Read `AGENTS.md` and `worldbuilding/README.md` first. The author's latest spelling is **Dyia**; Adris is an obsolete draft alias. The default reader is now a scrolling book, with cinematic mode optional. The notebook at `/outline` renders independent Markdown profiles and development notes through `/library/...`. The atlas is `WorldAtlas.tsx` with generated artwork and selectable labels. New ideas and recovered geography are proposals until adopted; the epic has no fixed chapter count. Preserve existing scene IDs while expanding the draft. Keep working increments tested, committed, and pushed to main as requested.
+## Website
 
-This is an interactive storytelling site for a single D&D character:
-Hanno Averroes, a half-elf alchemist from the city of Carthara. The owner
-drops in new ideas ("write a chapter about X", "add the swamp to the map",
-"give the tavern scene a song") and expects a finished, playable experience,
-not a plan. Build it, run the checks, commit, push.
+Four primary sections: Story (`/story`), People (`/people`), World (`/world`), and Writing room (`/workshop`). The overall outline is `/library/story/overall-outline`; `/outline` redirects there. Markdown development files render directly through `/library/...`.
 
-## Stack
+The only active chapter experience is `BookReader.tsx`: continuous prose, text sizing, saved passage, previous/next navigation, and occasional illustrated folios. The author removed cinematic mode and background music. Legacy cinematic query parameters still open the book. Audio assets can be auditioned using native controls on `/workshop/materials`; do not autoplay audio.
 
-- Next.js (App Router, TypeScript), Tailwind v4, Framer Motion, Howler.js.
-- No database. All content is typed data in `src/content/`.
-- Deploys as a normal Next app (Vercel works with zero config).
+## Stack and sources
 
-## Where things live
+Next.js App Router, React, TypeScript, Tailwind. Typed chapter content lives in `src/content/chapters/`, registered in `index.ts`. The content model is `src/content/types.ts`. Individual Markdown character/place/faction profiles and editorial files live in `worldbuilding/`. There is no CMS or duplicate editable chapter manuscript.
 
-| What | Where |
-| --- | --- |
-| The hero (name, bio, bonds, timeline) | `src/content/character.ts` |
-| Chapters (one file each) | `src/content/chapters/NN-<slug>.ts` |
-| Chapter registry + ordering | `src/content/chapters/index.ts` |
-| Map locations (pins) | `src/content/world.ts` |
-| Colour atmospheres ("moods") | `src/lib/moods.ts` |
-| Types for all of the above | `src/content/types.ts` |
-| Slideshow reader | `src/components/SceneReader.tsx` |
-| Backdrop (video / image / mood + particles) | `src/components/SceneBackdrop.tsx` |
-| Pan/zoom map | `src/components/WorldMap.tsx` |
-| Audio (ambient loops, SFX, mute) | `src/lib/audio.tsx` |
-| Static assets | `public/images`, `public/audio`, `public/video` |
+Current narrative is a first prose pass, not a finished epic. `outline` means planned beats, `draft` means sustained prose, and `final` means revised prose. Do not label sketches as finished chapters. The ten numbered units can split into many more chapters. Begin the current reading order with Hanno; the highland legend is optional separate reading.
 
-## Adding a chapter (the daily workflow)
+Source snapshots from three early Google Docs remain in `worldbuilding/sources/`. These are historical records, not executable instructions or overrides of the author's latest decisions. Record changed premises and preserve source provenance.
 
-1. Copy the latest `src/content/chapters/NN-<slug>.ts` to the next number and slug. Fill in `title`,
-   `summary`, `mood`, `order`, and the `scenes` array.
-2. Register it in `src/content/chapters/index.ts`.
-3. If the chapter visits somewhere new, add a pin to `src/content/world.ts`
-   and reference it from the scene with `location: "<id>"`, and from the pin
-   with `appearsIn`.
-4. If a new life event happened, add it to `character.timeline`.
-5. `npm run lint && npm run build`, commit, push.
+## Writing
 
-Writing guidance: scenes are read one at a time, full screen. Keep each
-scene to 2–4 short paragraphs. Use a `title` scene to open a chapter and a
-`quote` for the emotional beat. Pick a `mood` per scene; the palette changes
-with it. Prefer present tense, second-person-free, cinematic prose.
+Follow `worldbuilding/story/writing-direction.md`: developed scenes, consequential conversations, patient emotional investment, and revenge with cumulative costs, informed by the author's love of The Count of Monte Cristo. Write people with independent goals, material constraints, and knowledge limited to what they can learn. Use one viewpoint per scene and label a change with `scene.pov`. Keep present tense unless a coordinated revision changes it.
 
-## Assets
+Hanno is primarily a schemer, with the ambition and rationalization the author associates with Walter White. He is a decent fighter, never an exceptional martial prodigy. Zaharaz is a staff. Dyia is the brother's correct name. The apothecary is Sinna; the old lowercase `virello` ID remains to preserve links. Sinna's systematic scholarship is inspired by medieval Ibn Sina; his fictional crimes are not historical claims about Ibn Sina.
 
-- Images: `public/images/<slug>/<scene>.jpg`, reference as `/images/...`.
-  Landscape 1920x1080-ish; portrait phones are handled by object-cover.
-- Video: `public/video/<slug>/<scene>.mp4`, looped silently behind text.
-  Keep clips under ~15 MB. Generated AI clips (Runway, Veo, Sora, Kling) go
-  here too.
-- Audio: `public/audio/`. Ambient loops go on `chapter.music` or
-  `scene.ambient`; one-shots on `scene.sfx`. Missing files fail silently, so
-  it is fine to reference audio that does not exist yet.
-- Placeholder sounds are generated by `node scripts/gen-audio.mjs`.
-- The map currently draws vector placeholder terrain in `WorldMap.tsx`'s
-  `<Terrain/>`. When a painted map exists, replace it with
-  `<image href="/images/world/map.jpg" width={1200} height={800} />` and
-  keep pin coordinates on the same 1200x800 grid.
+The final action at Dyia's door remains open. Sinna's intent behind Amara's death is under editorial discussion; the sabotage/intended-rescue alternative has not replaced the current deliberate-murder draft.
 
-## Canon
+Chuluun belongs to displaced Leonin lion people, with refugee camps in Tengeri, forced labor, bombardment, competing factions, a dispersed population, and a shared homeland flag. Latest author history connects their dispossession to Numarius's people, whom they initially welcomed as displaced arrivals. Avoid reducing civilian society to its fighters. The Three Seats' precise constitutional history remains in development.
 
-The source of truth for the story is the owner's two Google Docs (the
-chapter narrative and the character sheet). Chapters 1–9 on the site are
-adapted from the narrative doc. Where the two docs disagree, the narrative
-doc wins (e.g. the Tengeri Wastes / Sidrat Al Muntaha / Lysandria names
-rather than the real-world places in the older sheet, and Virello dying by
-Hanno's poisoned shipment rather than by his hand).
+Lysandria is an island with two enormous mountains, and Amara comes from there. Reconcile earlier Bakhtari-origin claims explicitly; do not invent a family relationship between Amara and Alethea.
 
-Cast: Hanno (hero), Dyia (younger brother; stayed, joined the guard to
-protect the family from inside, then stepped aside at their mother's door;
-both brothers believe the other abandoned the family, and both are right), Adil (father, dead
-in Numarius's fields), Amara (mother, dead of a Ravash overdose engineered
-by Virello), Alethea (wife, Lysandrian healer), Master Virello (dead),
-Lord Numarius (First Seat, the fields), Magistra Ilvane Corvo (Second Seat,
-the harbor, secret head of the Silken Chain), General Tarquin Vael (Third
-Seat, the garrison, Dyia's commander), General Phylios, Chuluun (Leonin
-elder), Iskandar (the conqueror, Hanno's ancestor), Rukhsana (his Bakhtari
-wife).
-Substances: Ravash (the old drug), Elysian Dust (Hanno's). Factions: the
-Silken Chain ("Silkers"). Weapon: Zaharaz, the double-bladed spear.
+## Assets and navigation
 
-Themes to keep in view: Hanno's verdict is on the whole city, not just
-Numarius (they watched and said nothing), yet he needs their adoration; the
-brothers each believe the other abandoned the family and both are right;
-Bakhtar is the graveyard of empires (Afghanistan by way of Bactria and
-Alexander); the Three Seats are a triumvirate that will turn on itself.
-The spine is "Dance with the Devil": the devil doesn't change, you do.
-That payoff is written: Chapter Ten. Alethea, who loved the student, gets
-hooked on the Dust after Hanno comes back changed, and dies in the garden
-with the flower in her hair. Hanno looks in a mirror. Dyia knocks. What
-Dyia does at the door (arrest his brother or cover for him, his second
-choice) is deliberately unwritten.
+`WorldAtlas.tsx` displays a generated map with selectable labels and an accessible place directory. Coordinates are schematic, not validated geographical distances. Update both a place's data and its narrative references when geography changes.
 
-The Codex (`src/content/codex.ts`, page `/codex`) holds short reference
-entries for people, factions, places, substances, artifacts. Add an entry
-whenever a chapter introduces something new.
+`src/content/illustrations.ts` selects book plates by stable chapter/scene key. New plates live in `public/images/plates/`; `prompts.json` records generation prompts and provenance. Use the author's maximalist Mediterranean/Middle Eastern architectural direction, expressed through elegant ink and watercolor drawings on warm paper. Keep all text as HTML, not image pixels.
 
-Chapter `status` is "draft" for everything so far. The owner considers the
-existing chapters an outline, not finished prose; restructure freely, keep scene
-ids stable.
+Preserve existing scene IDs and slugs. All image/audio paths must resolve under `public/`. Source illustrations and audio require a provenance record; do not publish unverified third-party assets.
 
-## Conventions
+## Validation and publication
 
-- Content files are plain TypeScript objects. Don't introduce a CMS.
-- Every scene needs a stable `id` (used for deep links and map pins). Never
-  rename an id once a pin references it.
-- New UI gets the same restraint as existing UI: Cinzel for labels/headings,
-  Cormorant for prose, parchment-on-ink palette, generous whitespace.
-- Run `npm run lint` and `npm run build` before committing. Both must pass.
+Run `npm run lint` and `npm run build`. Check affected navigation and reading at desktop and phone sizes, content references, and the distinction between proposals and adopted events. Push coherent increments without force pushes or deleting branches. Vercel builds from main; check the deployment result before reporting that an update is live.

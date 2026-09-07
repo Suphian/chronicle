@@ -8,6 +8,10 @@ ID: `adil` · Draft endpoint: Chapter Ten · Dead
 
 Sources: Chapter [One](../../src/content/chapters/01-market-awnings.ts), scenes `the-fruit-stall`, `the-drought`, `the-fields`, and `the-sentencing`; Chapter [Eight](../../src/content/chapters/08-a-dark-turn.ts), `fertilizer`; [`codex.ts`](../../src/content/codex.ts).
 
+## Draft developments — 2026-09-06
+
+[Chapter One](../../src/content/chapters/01-market-awnings.ts) now distinguishes provisional debt recovery from a later hearing. Postponements and maintenance charges extend the family's bind; the hearing eventually confirms the labor assignment. In [Five](../../src/content/chapters/05-the-cure.ts), Amara gives the returning Hanno a notice closing Adil's labor account by death. Word she sent missed him on the journey. It specifies no cause, grave, or final words; Dyia's request for more was refused. Thus the banquet's cruelty concerns the particular degrading account of Adil's fate, not Hanno first learning that his father died. The world bible's unnamed burial remains supporting draft continuity, not knowledge supplied by that notice.
+
 ## Interpretation
 
 Pride and the plea for another season suggest a man who thinks reliability can secure a place in an unfair market. His tragedy is not simply a failure to earn enough: the creditor also controls punishment. His sons inherit different images of his helplessness and build lives around disproving them.
@@ -18,4 +22,4 @@ Give him a meaningful relationship with another vendor and a disagreement with A
 
 ## Open questions and continuity
 
-The questionnaire describes overleveraging; the current chapter foregrounds drought and taxation. Do not quietly turn structural coercion into proof of personal irresponsibility. His death's date and the evidence Hanno has for its circumstances are unspecified. Did letters or witnesses reach the family? Was the debt legally inherited, and why did labor not discharge it?
+The questionnaire describes overleveraging; the current chapter foregrounds drought and taxation. Do not quietly turn structural coercion into proof of personal irresponsibility. His death's date, cause, and witness evidence remain unspecified despite the notice. Did any personal message survive? Maintenance charges now partly explain why labor failed to discharge the account; the complete law of family debt and its inheritance remains open.

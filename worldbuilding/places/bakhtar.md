@@ -4,7 +4,7 @@ ID: `bakhtar` · Existing draft location
 
 ## Established in current draft
 
-Highlands north of Carthara beyond the last road, with cliff villages, closed valleys, cave acoustics, and flute traditions. The prologue describes repeated invasions, Iskandar's conquest and marriage, and his disputed death. Amara came from here; Hanno has never visited. The story says the Bakhtari have built no cities and lacked long periods of peace.
+Highlands north of Carthara beyond the last road, with cliff villages, closed valleys, cave acoustics, and flute traditions. The optional legend describes invasions, Iskandar's settlement and marriage, and his disputed death. Hanno has never visited. Amara's adopted home is Lysandria; the older highland ancestry claim remains unresolved. The first prose pass treats absolute claims about conquest as storytelling rather than a complete account of every community.
 
 Sources: Chapter [Zero](../../src/content/chapters/00-the-conqueror.ts); [`world.ts`](../../src/content/world.ts), `bakhtar`.
 
@@ -18,4 +18,4 @@ Develop terrace cultivation, stored water, winter supplies, craft exchange, and 
 
 ## Open questions
 
-What does conquest control when settlements can disperse? Is “no cities” a literal world fact or the narrator's inherited shorthand? Who maintains the villages' sophisticated architecture? Why did Amara leave? The futuristic cliff architecture references are a design direction, not a settled claim that the Bakhtari possess unlimited construction technology.
+What does conquest control when settlements can disperse? Who maintains the villages' sophisticated architecture? How does the claimed highland lineage relate to Amara's Lysandrian origin? The futuristic cliff architecture references are a design direction, not a settled claim of unlimited construction technology.

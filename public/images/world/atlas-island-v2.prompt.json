@@ -1,0 +1,8 @@
+{
+  "generated": "2026-09-06",
+  "tool": "Built-in image_gen",
+  "asset": "atlas-island-v2.webp",
+  "reference": "atlas.webp",
+  "prompt": "Edit this existing illustrated fantasy atlas. Preserve its Persian/Mediterranean illuminated manuscript cartography, aged parchment, teal sea, decorative frame, all major eastern desert/canyon and northeastern lake geography, middle mountain region, southern coastal trade city, eastern agricultural fields, small southwestern offshore island, ships and compass. IMPORTANT GEOGRAPHY CORRECTION: The large northwestern snowy mountain-and-city region must become one clearly distinct offshore island, with TWO enormous dominant mountain peaks. Create a continuous visible teal-water strait separating that northwestern region from the middle/eastern mainland and give the island a visible northern coastline, with water separating it from the decorative border. Keep its ornate city and principal island center near the same place around x400 y260 on this1536x1024 map. Its mountains should read as two great summits, with much smaller foothills, not a wide field of equally tall peaks. This is Lysandria, but do not add any words/labels/text. The rest of the map remains materially unchanged so existing interactive place pins still make sense. No new political borders, no labels, no invented place names. Landscape3:2 shape exactly like reference.",
+  "notes": "Edited generated map to express author-adopted Lysandria island/two mountains; original artwork retained. Coordinates remain schematic."
+}

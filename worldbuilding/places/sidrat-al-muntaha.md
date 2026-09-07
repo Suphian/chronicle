@@ -4,7 +4,7 @@ ID: `sidrat-al-muntaha` · Existing draft location
 
 ## Established in current draft
 
-A luminous land with sacred lakes, Lake Siraj, moss-covered bridges, and roads edged with bioluminescent plants. Hanno studies the sword alongside philosophy and buys glowing plants and minerals for Virello.
+A luminous land with sacred lakes, Lake Siraj, moss-covered bridges, and roads edged with bioluminescent plants. Hanno studies the sword alongside philosophy and buys glowing plants and minerals for Sinna.
 
 Sources: Chapter [Three](../../src/content/chapters/03-journeys.ts), `lake-siraj`; [`world.ts`](../../src/content/world.ts); [`codex.ts`](../../src/content/codex.ts).
 

@@ -10,7 +10,7 @@ The futurism can emerge through engineering and alchemy: sophisticated water man
 
 ## Regional distinction
 
-**Carthara:** dense port neighborhoods, layered courts, busy shaded streets, public display and unequal access to comfort. **Bakhtar:** architecture fitted to cliffs and routes, local materials, spaces with acoustic significance. **Lysandria:** mountain settlements, metals and disciplined construction, rooms for healing as well as training. **Sidrat Al Muntaha:** planted light, water, bridges, and an economy of cultivation. **Tengeri:** wind, rock, craft, and the visible work of habitation rather than empty exotic wilderness.
+**Carthara:** dense port neighborhoods, layered courts, busy shaded streets, public display and unequal access to comfort. **Bakhtar:** architecture fitted to cliffs and routes, local materials, spaces with acoustic significance. **Lysandria:** an island with two enormous mountains, sea-facing settlements, potters, and rooms for healing. **Sidrat Al Muntaha:** planted light, water, bridges, and an economy of cultivation. **Tengeri:** inhabited refugee camps, repaired shelter, records, flags, and civilian craft under the threat of bombardment; show the lives being constrained, not empty wilderness or spectacle alone.
 
 These are directions for new work. Retain established geography and scenes; do not invent a modern capital, palace, or religious institution merely to match an attractive reference.
 
@@ -21,6 +21,8 @@ The new **House of Measures** concept is an architectural visual proposal. It is
 A world atlas should privilege distinct terrain, legible coastlines, and useful labels. The existing place IDs and scene links are the navigation system; decorative map detail must not silently establish borders, distances, routes, or new settlements. Preserve keyboard access and a readable location list alongside the map.
 
 ## Reading surface
+
+The author added a hand-drawn architectural folio reference. Selected chapter passages now sit beside ink-and-watercolor plates, with warm paper, delicate crosshatching, muted mineral color, and captions outside the image. The first two plates show the market and an apothecary. Wide screens place prose left and art right; phones stack them. The world remains visually maximalist; every paragraph does not need a picture. Generation prompts and provenance are in [`public/images/plates/prompts.json`](../public/images/plates/prompts.json). The atlas's Lysandria revision is recorded in [`atlas-island-v2.prompt.json`](../public/images/world/atlas-island-v2.prompt.json).
 
 Make the artwork rich and the reading surface calm: warm light paper or sufficiently contrasted dark pages, generous line spacing, a comfortable text width, and persistent chapter orientation. Reserve ornamental typography for short headings. Character and place context should be available without losing the reader's position. Long prose should not require clicking through a succession of small fragments.
 

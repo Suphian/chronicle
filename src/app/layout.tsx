@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Cinzel, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
-import { AudioProvider } from "@/lib/audio";
 import { Nav } from "@/components/Nav";
 import { character } from "@/content/character";
 
@@ -29,10 +28,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${cinzel.variable} ${cormorant.variable} h-full antialiased`}>
       <body className="min-h-full">
-        <AudioProvider>
-          <Nav />
-          {children}
-        </AudioProvider>
+        <Nav />
+        {children}
       </body>
     </html>
   );

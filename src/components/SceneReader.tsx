@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Chapter } from "@/content/types";
 import { worldById } from "@/content/world";
 import { useAudio } from "@/lib/audio";
@@ -27,6 +27,9 @@ export function SceneReader({ chapter, next, initialSceneId }: Props) {
   const startIndex = Math.max(0, scenes.findIndex((s) => s.id === initialSceneId));
   const [index, setIndex] = useState(startIndex);
   const [started, setStarted] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => { contentRef.current?.scrollTo(0, 0); }, [index]);
 
   const atEnd = index >= scenes.length;
   const scene = atEnd ? scenes[scenes.length - 1] : scenes[index];
@@ -44,7 +47,7 @@ export function SceneReader({ chapter, next, initialSceneId }: Props) {
     if (!started) return;
     const onKey = (e: KeyboardEvent) => {
       if ((e.target as Element)?.closest("a, button, input, textarea, select, summary, [contenteditable]")) return;
-      if (e.key === "ArrowRight" || e.key === " " || e.key === "Enter") {
+      if (e.key === "ArrowRight") {
         e.preventDefault();
         go(1);
       } else if (e.key === "ArrowLeft") {
@@ -112,7 +115,7 @@ export function SceneReader({ chapter, next, initialSceneId }: Props) {
                 Begin
               </button>
               <p className="mt-6 text-xs text-parchment/40">
-                Headphones recommended · → or tap to advance · ← to go back
+                Optional sound · Scroll to read · Use the arrows to change scenes
               </p>
             </div>
           </motion.div>
@@ -121,14 +124,16 @@ export function SceneReader({ chapter, next, initialSceneId }: Props) {
 
       {/* Scene content */}
       <div
-        className="absolute inset-0 z-10 flex cursor-pointer items-end justify-center px-6 pb-28 pt-24 md:items-center md:pb-24"
-        onClick={() => started && go(1)}
+        ref={contentRef}
+        tabIndex={started ? 0 : -1}
+        aria-label="Scene text"
+        className="absolute inset-x-0 top-36 bottom-24 z-10 overflow-y-auto px-6"
       >
         <AnimatePresence mode="wait">
           {atEnd ? (
             <motion.div
               key="end"
-              className="max-w-xl text-center"
+              className="mx-auto my-10 max-w-xl text-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
@@ -156,7 +161,7 @@ export function SceneReader({ chapter, next, initialSceneId }: Props) {
           ) : (
             <motion.article
               key={scene.id}
-              className={isTitle ? "max-w-3xl text-center" : "w-full max-w-2xl"}
+              className={isTitle ? "mx-auto my-10 max-w-3xl text-center" : "mx-auto my-6 w-full max-w-2xl"}
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -16, transition: { duration: 0.5 } }}
@@ -186,7 +191,7 @@ export function SceneReader({ chapter, next, initialSceneId }: Props) {
                   }
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5 + i * 0.7, duration: 1 }}
+                  transition={{ delay: 0.15 + Math.min(i, 3) * 0.1, duration: 0.4 }}
                 >
                   {p}
                 </motion.p>
@@ -196,7 +201,7 @@ export function SceneReader({ chapter, next, initialSceneId }: Props) {
                   className="mt-8 border-l-2 border-[var(--accent)]/60 pl-5"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ delay: 0.5 + (scene.text?.length ?? 0) * 0.7 + 0.4, duration: 1 }}
+                  transition={{ delay: 0.5, duration: 0.4 }}
                 >
                   <p className="font-serif text-lg italic text-parchment/80">“{scene.quote.text}”</p>
                   {scene.quote.by && (

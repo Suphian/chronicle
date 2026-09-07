@@ -10,6 +10,10 @@ Sources: [`codex.ts`](../../src/content/codex.ts); Chapters [Five](../../src/con
 
 ## Interpretation
 
+The author explicitly wants to explore Julius Caesar and triumvirate politics through this group. The useful current question is how powerful allies depend on one another while building the means to escape that dependency. No direct Roman biography or predetermined assassination is adopted.
+
+The latest Leonin history gives Numarius's power an external past: his displaced people were welcomed by the Leonin, followed by Leonin dispossession. The precise generation, territorial reach, and responsibility of Corvo's and Vael's predecessors remain open. Do not assume that every Seat gave every order or shared one motive.
+
 Their arrangement is mutual dependency with the potential for betrayal. Land needs markets and force; the harbor needs supplies and security; soldiers need food and pay. That logic is a development framework, not yet a written constitution.
 
 ## Proposed development

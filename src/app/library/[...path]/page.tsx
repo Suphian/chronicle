@@ -23,8 +23,9 @@ export default async function NotebookPage({ params }: { params: Promise<{ path:
   const entries = getBibleEntries();
   const entry = entries.find((entry) => entry.slug === path.join("/"));
   if (!entry) notFound();
+  const parent = entry.group === "characters" ? { href: "/people", label: "People" } : ["places", "factions", "history", "cultures"].includes(entry.group) ? { href: "/world", label: "World" } : { href: "/workshop", label: "Writing room" };
   return <main className="notebook-shell"><div className="notebook-page">
-    <Link className="book-location" href="/outline">← Story outline & notebook</Link>
+    <Link className="book-location" href={parent.href}>← {parent.label}</Link>
     <ResumeReading />
     <p className="book-eyebrow notebook-label">Author’s notebook / {entry.group} · Full-story spoilers</p>
     <article className="notebook-markdown"><Markdown remarkPlugins={[remarkGfm]} components={{

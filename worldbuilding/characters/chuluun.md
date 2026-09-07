@@ -1,23 +1,29 @@
 # Chuluun
 
-ID: `chuluun` · Leonin elder of the Tengeri Wastes · Alive in his last narrated appearance
+ID: `chuluun` · Displaced Leonin elder · Under enforced labor obligations in the Tengeri camps · Alive in his last narrated appearance
 
-## Established in current draft
+## Established by the author's latest revision
 
-Chuluun teaches [Hanno](hanno.md) that strength must be balanced with wisdom and compassion. The Leonin accept Hanno and train him in survival, tracking, and archery; he trades for herbs, artifacts, and minerals sent back to Virello. The codex specifically associates Chuluun with teaching the bow.
+Chuluun is a lion-person and a member of the displaced, largely enslaved Leonin community. He lives in the Tengeri Wastes' refugee camps, which endure repeated bombardment and restricted movement. He is not a free outsider helping refugees: his own labor account compels him to work and limits his choices. He carries the flag of the lost Leonin homeland, as every Leonin does.
 
-Sources: Chapter [Three](../../src/content/chapters/03-journeys.ts), `tengeri-wastes`; [`codex.ts`](../../src/content/codex.ts), `chuluun` and `the-leonin`.
+The Leonin originally received Numarius's people as refugees after the destruction of those people's homeland. Their guests later dispossessed them; Lord Numarius now leads the hostile power. Whether the original arrival belongs to the incumbent lord's lifetime or an earlier generation is unresolved. The camps are not the Leonin's freely chosen ancestral homeland. Displaced communities also exist throughout the world.
+
+## Established in the current prose
+
+In [Chapter Three](../../src/content/chapters/03-journeys.ts), Chuluun keeps missing-person and transfer records for one shelter row and helps the [Return Councils](../factions/the-return-councils.md). He repairs equipment, works compulsory shifts, participates in emergency care after bombardment, and teaches Hanno limited bow and survival skills. He has fought; he does not make fighting the only form of useful action. His hosts retain authority over medicine, plant purchases, and what Hanno may record.
+
+He holds false propaganda accountable without pretending that every allegation against every fighter is necessarily false. When a claim about detained children arises, he demands evidence before anyone defends the act. This does not make him neutral about dispossession, slavery, or bombardment. His own freedom and community are at stake. He asks Hanno to report what he actually witnessed and obtain consent before copying families' names.
 
 ## Interpretation
 
-The instruction links practical competence to responsibility toward others. It becomes a standard Hanno can quote without obeying. Chuluun has little narrated life beyond that teaching, so assigning him universal wisdom or authority over every clan would invent depth rather than establish it.
+His finite responsibility is to people whose names he can keep and obligations he cannot escape. The experience of fighting and caring for displaced households can pull him in different directions. He is capable of fear, anger, and mistaken judgment; “elder” does not make him the conscience or ruler of all Leonin.
 
-## Proposed development
+## Political relationships and open questions
 
-Give him responsibility for something finite—an apprenticeship, a seasonal route, or a household—not the conscience of an entire people. Let another Leonin disagree with him about selling medicinal plants to outsiders. Hanno's successful extraction of valuable materials can then carry obligations that outlast his departure.
+The [Open Hand](../factions/the-open-hand.md) pursues peace with Numarius; the [Last Standard](../factions/the-last-standard.md) rejects surrender and favors resistance to the death; the [Scattered Hearths](../factions/the-scattered-hearths.md) organize diaspora care and testimony. Chuluun hears their disagreements without a settled allegiance on every question. His personal limits on armed action, family history, prior losses, and the exact powers of a camp elder remain open.
 
-## Open questions and continuity
+The author's Palestinian-refugee analogy is a creative source for this fictional displacement and dehumanization story. These fictional particulars are not assertions about every real Palestinian or a disguised statement that any real population has one politics. The opposing fictional power is associated with Numarius, not literally called Israel in the world.
 
-What does “elder” authorize him to decide? Does he know how exported ingredients are used? What did Hanno give in exchange for training and hospitality? His family, political position, and present knowledge are unspecified. Avoid the stock mentor who exists only to provide an outsider with mastery and a proverb.
+## Superseded and unresolved source material
 
-The recovered [early geography](../sources/early-geography.md) presents **Chuluun as prince of the Altan Tribe**, drawn back toward Erdene Zuu and the responsibilities of a fragmented Khanate. That is author-created source material, not a new invention in this profile. It is an unresolved alternative or extension to the elder biography. Options include the same person later in life, a deliberate revision to a younger political protagonist, or two separately named characters; none is adopted here. Establish chronology, relationship to Hanno, and what “prince” and “elder” mean before combining them.
+The previous freely travelling mentor/native-homeland premise is superseded. The [early geography](../sources/early-geography.md) still records Chuluun as an Altan prince and describes a fragmented Khanate. Those source snapshots remain intact. His title, age, and the relationship of that political past to the lost homeland require reconciliation; neither a new relative nor a completed reunification is invented here. “Chitun” and “Chelune” in the conversational pitch refer provisionally to this existing character; no explicit rename was requested.

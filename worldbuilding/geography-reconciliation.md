@@ -1,10 +1,18 @@
 # Geography reconciliation
 
-Status: recovered author source with unresolved integration. This document separates what the source actually supplies from placement decisions, contradictions, and proposed story uses. Nothing here silently changes the map or establishes a new canonical event.
+Status: recovered author source with unresolved integration, followed by explicitly recorded author revisions. This document separates what the source actually supplies from adopted decisions, contradictions, and proposed story uses. Source recovery alone does not silently change the map or establish a new canonical event.
 
 Source: [DnD Geo Descriptions, local preserved copy](sources/early-geography.md), recovered from [the author's Google document](https://docs.google.com/document/d/17GuiNGxrj65hMPzSFAR1PYv3F1-WAHSl24aUPNK4uJ0/edit). Compared with the early narrative, questionnaire, current chapter drafts, codex, and map data.
 
 The prose includes legends and universal claims that require a narrator or rule, not automatic factual endorsement. Its appended image-generation prompts are archived source material, not current instructions to generate imagery. Image placeholders alone do not supply additional geographic evidence.
+
+## Latest adopted geography — Lysandria
+
+The author clarified that **Lysandria is an island with two enormous mountains, and Amara comes from there**. The immediately preceding name “Jira” was corrected to Lysandria; it does not establish another place. Keep the existing `lysandria` ID and links. The decision preserves Phylios's rule, the local spear-training tradition, rare metals, and Alethea's Lysandrian origin. It establishes no kinship between Amara and Alethea.
+
+This supersedes any claim that Amara's place of origin was Bakhtar. Earlier Bakhtari ancestry and the Rukhsana–Iskandar legend remain recorded draft material whose relationship to Amara's Lysandrian upbringing is unresolved. Do not invent migration generations, a shared coastline, or Lysandria's inclusion in Bakhtar to resolve the difference. The preserved source documents remain unchanged.
+
+The island's coordinates, size, mountain names and heights, harbor locations, and sea-route distances remain open. Any atlas position is provisional. [Chapter Three](../src/content/chapters/03-journeys.ts) now brings Hanno to Lysandria by sea: he sees the two mountains from the vessel, recalls Amara's pottery-bench memory, lands, and joins carts on the road above the harbor. There is no established road all the way from Sidrat. Moonlit Isle remains a separate island near Lysandria's coast. See the [place profile](places/lysandria.md) and [Amara's profile](characters/amara.md) for adopted facts, limited new draft memories, and proposed personal ties.
 
 ## Recovered regions and institutions
 
@@ -63,6 +71,6 @@ Three named mountains add religious and military places: **Jabal Al-Nur**, descr
 2. **Resolve identities and relations:** Decide Chuluun's status, the three religious contexts, Ruhania's relationship to the current map, and the greater sovereign question. These choices materially affect profiles and routes.
 3. **Build regional maps:** Expand Sidrat around its existing anchor, map Ruhania from its own river and capitals, and add an internal Tengeri diagram. Do not use an attractive image as evidence for new borders.
 4. **Develop independent character files:** Chuluun has an existing named source basis. Propose other regional viewpoint characters only with explicit draft status and objectives that survive without Hanno. No new protagonist is established here.
-5. **Intertwine through consequences:** Use the [expandable arc structure](story-options.md) to test knowledge exchange, water and transport obligations, Leonin autonomy, and sanctuary policy as potential story threads. Any link to Dust, the Seats, or a historical maritime atrocity remains a proposal until supported by the chosen chronology and relationships.
+5. **Intertwine through consequences:** Use the [expandable arc structure](story-options.md) to test knowledge exchange, water and transport obligations, Leonin autonomy, and sanctuary policy. The author has now adopted Numarius's people's connection to Leonin hospitality and subsequent dispossession; Chapter Three introduces it. Links to Dust or the historical maritime atrocity remain proposals. The original fragmented Khanate and prince biography require reconciliation with the later refugee-camp premise rather than automatic restoration.
 
 The most useful next integration is to expand **Sidrat and the Leonin** from already shared source anchors while preserving **Ruhania as a substantial recovered region awaiting placement**. This avoids losing the author's early work and gives the epic independent centers of power without pretending the incomplete world map is settled.

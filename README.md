@@ -1,40 +1,33 @@
 # The Chronicle
 
-A growing fantasy story and world about Hanno Averroes, his brother Dyia, and the people whose lives intersect with theirs. Read continuous chapters, explore a painted atlas, or use the author’s notebook to develop characters, institutions, and future arcs. Cinematic scenes and audio are optional.
+A growing fantasy novel and world about Hanno, his brother Dyia, and the people whose lives intersect with theirs. Read sustained prose, explore the world, and develop the next draft in a connected Markdown writing room.
 
-The existing prologue and ten chapters are draft material, not a chapter limit. The epic can expand into many chapters and viewpoints. Start a writing session with [the collaboration prompt](worldbuilding/PROMPT.md) and [the story bible](worldbuilding/README.md).
+The ten current numbered units have a first prose pass. They can expand into many more chapters and viewpoints. Start a writing session with the [collaboration prompt](worldbuilding/PROMPT.md), [overall outline](worldbuilding/story/overall-outline.md), and [writing direction](worldbuilding/story/writing-direction.md).
 
-## Run it
+## Run and check
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000
-```
-
-```bash
+npm run dev
 npm run lint
-npm run build    # production build (also typechecks)
+npm run build
 ```
 
 ## Pages
 
-- `/` — hero, chapter list, links to the character and world.
-- `/chapters/<slug>` — continuous book reader with text sizing, contents, previous/next chapters, and a saved reading place. `?scene=<id>` deep-links to a passage; `?mode=cinematic` opens the slideshow.
-- `/world` — painted atlas and readable place directory. `?at=<location>` selects a place.
-- `/character` — profile, bonds/ideals/flaws, timeline.
-- `/codex` — people and lore, linked to deeper character dossiers.
-- `/outline` — chapter outline, proposed ideas, character dossiers, story options, and the writing room.
-- `/library/<entry>` — renders the Markdown story bible directly. The original files in `worldbuilding/` remain the single editing source.
+- `/story` — reading order, draft stages, lengths, and saved reading place. Begin with Hanno; the highland legend is optional.
+- `/chapters/<slug>` — continuous illustrated book reader with text sizing and previous/next chapters. `?scene=<id>` opens a passage. Cinematic mode and background music have been removed.
+- `/people` — searchable character directory linked to individual Markdown dossiers.
+- `/world` — atlas, place directory, history, institutions, and everyday life. `?at=<location>` selects a place.
+- `/workshop` — overall story outline, architecture, chapter/scene plans, author decisions, continuity reviews, and ideas.
+- `/workshop/materials` — original documents, researched influences, visual development, and an optional sound shelf.
+- `/library/<entry>` — renders `worldbuilding/` Markdown directly. `/outline` redirects to the overall story outline.
+- `/character` and `/codex` — existing reference pages remain available.
 
-The three early Google Docs are preserved in [the source register](worldbuilding/sources/README.md). Recovered material, established draft events, and new proposals are distinguished in the notebook. Original snapshots and reusable templates are kept in the repository; they are not listed as reader-facing notebook pages.
+Profiles and planning pages contain full-story spoilers. Author decisions, established draft events, recovered sources, and proposed additions are distinguished. The [source register](worldbuilding/sources/README.md) preserves the three early Google Docs.
 
-## Add a chapter
+## Content
 
-See [AGENTS.md](./AGENTS.md) and [CLAUDE.md](./CLAUDE.md) for the workflow. Short version: copy the latest
-`src/content/chapters/NN-<slug>.ts`, register it in `src/content/chapters/index.ts`,
-drop art into `public/images/<slug>/`, and build.
+The [story bible](worldbuilding/README.md) describes how new ideas become scenes and how continuity is tracked. Chapters are typed data in `src/content/chapters/`; register new files in `index.ts`. Character, place, faction, and editorial profiles are Markdown. Curated illustration placements live in `src/content/illustrations.ts`, with art and generation prompts under `public/images/plates/`.
 
-## Deploy
-
-It's a stock Next.js app. Import the repo into Vercel and it deploys on every
-push, giving you a URL that works on any device.
+See [AGENTS.md](AGENTS.md) and [CLAUDE.md](CLAUDE.md) before editing. Keep stable chapter/scene IDs and existing source snapshots. Run lint, build, and relevant browser checks before pushing. Vercel deploys this Next.js project from main.

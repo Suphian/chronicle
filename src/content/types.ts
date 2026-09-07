@@ -1,7 +1,7 @@
 /**
  * Core content model for the Chronicle.
  *
- * A Chapter is a sequence of Scenes shown one at a time, slideshow-style.
+ * A Chapter is a sequence of Scenes read as continuous illustrated prose.
  * Each Scene can carry text, an image, a video, ambient music, a sound effect,
  * and a link to a location on the world map.
  */
@@ -24,7 +24,9 @@ export interface Scene {
   /** Layout hint. Defaults to "text"; "title" renders a big centred heading. */
   kind?: SceneKind;
   heading?: string;
-  /** Body paragraphs. Keep each paragraph short; the reader reveals them one by one. */
+  /** Viewpoint label when a narrative scene changes perspective. */
+  pov?: string;
+  /** Narrative paragraphs. Full prose scenes may contain many paragraphs and dialogue. */
   text?: string[];
   /** Optional pull-quote shown beneath the text. */
   quote?: { text: string; by?: string };
@@ -58,7 +60,7 @@ export interface Chapter {
   cover?: string;
   /** Rough in-world date or age of the character; free text. */
   when?: string;
-  /** How finished the writing is. Drafts get a small tag on the home page. */
+  /** outline = sketch; draft = sustained prose; final = revised chapter. */
   status?: "outline" | "draft" | "final";
   scenes: Scene[];
 }

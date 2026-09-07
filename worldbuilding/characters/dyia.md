@@ -10,6 +10,12 @@ Younger brother of [Hanno](hanno.md), son of [Adil](adil.md) and [Amara](amara.m
 
 Sources: Chapters [One](../../src/content/chapters/01-market-awnings.ts), [Two](../../src/content/chapters/02-bitter-apprenticeship.ts), [Three](../../src/content/chapters/03-journeys.ts), [Nine](../../src/content/chapters/09-shadows-closing-in.ts), [Ten](../../src/content/chapters/10-the-flower-in-her-hair.ts); [`codex.ts`](../../src/content/codex.ts).
 
+## Draft developments — 2026-09-06
+
+[Chapter One](../../src/content/chapters/01-market-awnings.ts) allows years to pass before recruitment; he is grown when he joins, and the formal hearing comes after a provisional assignment and postponements. In [Six](../../src/content/chapters/06-shadows-and-accusations.ts), he must distinguish the family's evidence against Sinna from what a protected suspect could overturn. In Seven, a man he killed leaves a sister seeking missing property. His own methods have damaged the old inquiry, and her claim remains an obligation independent of his ambition. Hanno gives him one of Amara's five bowls.
+
+In [Nine](../../src/content/chapters/09-shadows-closing-in.ts), he releases wrongly detained carriers, records testimony, pursues restricted payment accounts, and accepts Alethea's limits on clinic disclosures. A sergeant contributes reasoning and retains copies. By the end he suspects the circle financing remedies and private experiments, but still imagines someone using Hanno's work rather than Hanno making Dust. He accepts a meeting with a patient witness. What he learns before Chapter Ten's door is unwritten; improvement in his methods neither erases his killings nor predetermines the final choice.
+
 ## Interpretation
 
 He wants to become the person who intervenes, because he remembers choosing not to. The guard offers status, a daily task, and a way to call shame service. He is effective at finding individual perpetrators and vulnerable to overlooking institutions that employ him. His untried killings repeat the principle he resents in the Seats: the powerful may decide whose suffering counts.
@@ -18,7 +24,7 @@ The brothers' accusations both have substance. Staying did not make him an adequ
 
 ## Proposed development
 
-Give a junior guard a conscience and leverage of their own: someone who insists on recording an arrest Dyia would prefer to omit. Let Dyia protect a witness who dislikes him. Make his investigation advance through ordinary evidence and costly cooperation, so reaching the final door has an intelligible cause. An arrest, a cover-up, or a third choice must each carry institutional and personal consequences; none is chosen here.
+Develop the sergeant's own loyalties and the dead man's sister beyond their present scenes. Her property claim and the patient witness provide opportunities for protection that may not earn affection. Carry the existing account evidence and witness appointment forward so reaching the final door has an intelligible cause. An arrest, a cover-up, or a third choice must each carry institutional and personal consequences; none is chosen here.
 
 ## Open questions and continuity
 

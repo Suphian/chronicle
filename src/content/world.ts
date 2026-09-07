@@ -35,13 +35,13 @@ export const world: WorldLocation[] = [
   {
     id: "tengeri-wastes",
     name: "The Tengeri Wastes",
-    tagline: "Wind-carved canyons and the Leonin clans.",
+    tagline: "Leonin refugee camps beneath the bombardment.",
     description:
-      "A barren country far to the east where the wind cuts canyons through jagged cliffs. The Leonin who live here taught Hanno to track, to survive, and to shoot arrows that sing.",
+      "Canyon camps far east of Carthara shelter lion-folk driven from their homeland by the power now ruled under Numarius's name. Enslavement, enforced labor transfers, restricted movement, and repeated bombardment shape daily life. Displaced Leonin also live across the world, each carrying the lost home's flag. Camp councils, peace advocates, armed resistance, and diaspora networks disagree about the future. Chuluun is a displaced elder under a labor account himself; Hanno learns limited practical skills while helping his hosts.",
     x: 1000,
     y: 300,
-    type: "wild",
-    appearsIn: [{ chapter: "journeys", scene: "tengeri-wastes", label: "Archery among the Leonin" }],
+    type: "landmark",
+    appearsIn: [{ chapter: "journeys", scene: "tengeri-wastes", label: "Chuluun and the refugee camps" }],
   },
   {
     id: "sidrat-al-muntaha",
@@ -59,7 +59,7 @@ export const world: WorldLocation[] = [
     name: "Bakhtar",
     tagline: "The graveyard of empires.",
     description:
-      "Highlands north of the last road: villages cut into cliff faces, valleys that close like fists, caves that play flutes at night. Every empire that marched in broke here except one. Iskandar the conqueror is buried in a cave nobody will name. Amara came down from these mountains and never spoke of them.",
+      "Highland cliff settlements, difficult routes, and caves with distinctive acoustics. Iskandar and Rukhsana's story survives in conflicting tellings. Earlier notes connect Amara's ancestry to Bakhtar, but her home is now established as the island of Lysandria; that lineage relationship remains unresolved.",
     x: 640,
     y: 215,
     type: "wild",
@@ -68,11 +68,11 @@ export const world: WorldLocation[] = [
   {
     id: "lysandria",
     name: "Lysandria",
-    tagline: "Mountains, rare metals, and the phalanx.",
+    tagline: "An island beneath two enormous mountains.",
     description:
-      "A rugged mountain kingdom whose warriors prize balance above all. General Phylios rules here. Hanno trained with the spear for five years, healed the general's son, and was given Zaharaz.",
-    x: 315,
-    y: 205,
+      "Amara's island home, dominated by two massive mountain peaks. Its settlements connect harbors, potters, healing rooms, and the households of General Phylios's soldiers. Hanno spends years studying here, gains modest self-defense skills, helps save the general's son, and receives Zaharaz, a travelling staff. He meets Alethea here. Map placement remains schematic.",
+    x: 285,
+    y: 285,
     type: "landmark",
     appearsIn: [
       { chapter: "journeys", scene: "toward-lysandria", label: "The approach" },

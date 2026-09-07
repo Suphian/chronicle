@@ -1,23 +1,36 @@
 # The Leonin Clans
 
-ID: `the-leonin` · Existing draft communities
+ID: `the-leonin` · Displaced lion-people and a worldwide diaspora
 
-## Established in current draft
+## Established by the author's latest revision
 
-Lion-folk of the Tengeri Wastes who accept Hanno, teach survival and archery, and trade herbs, artifacts, and minerals. Chuluun is an elder. Current descriptions emphasize pride, compassion, and respect for nature.
+The Leonin are literally lion-people. They have martial traditions and fighters, alongside children, workers, teachers, healers, and households whose lives cannot be reduced to war. They were driven from their homeland; many are enslaved or held under enforced labor obligations. The Tengeri Wastes contain refugee camps under repeated bombardment. Displaced Leonin also live throughout the world, and every Leonin carries the flag of their lost home. Its presence does not imply agreement about politics, faith, or how to return.
 
-Sources: [`codex.ts`](../../src/content/codex.ts); Chapter [Three](../../src/content/chapters/03-journeys.ts).
+Leonin communities originally welcomed Numarius's people as refugees after those people's homeland was destroyed. Dispossession followed their consolidation of power. Lord Numarius is the current enemy; the precise founding generation, chronology, borders, and relation between his overseas power and Carthara's Three Seats remain open. The refugees' original catastrophe does not justify what their successors do to their former hosts.
 
-## Interpretation
+Powerful institutions circulate false and dehumanizing accounts of the Leonin. The terrorist label is applied across the population and used to discredit resistance. This is established fictional oppression, not merely an idea awaiting approval. It does not determine the truth of every individual report or excuse every combatant's action.
 
-“Clans” already permits more than one political unit. The current collective adjectives do not establish a uniform temperament, government, profession, or religion for every Leonin person.
+## Current narrative evidence
 
-## Proposed development
+[Chapter Three](../../src/content/chapters/03-journeys.ts) shows compulsory labor accounts, denied family visits, repeated bombardment, missing-person records, ordinary care, and diaspora support. Hanno witnesses an inhabited shelter row attacked, then reads an official claim that no civilians were present and labor transfers were voluntary. He also hears a fighter acknowledge an attack on an armed convoy, and residents demand evidence about a separate allegation involving children. Actual events, propaganda, and unresolved allegations remain distinguishable.
 
-Choose a specific host community for Hanno. Define reciprocal obligations, land access, and who may authorize exports. Let different households disagree over scarcity and commerce. Develop medicine, education, and craft alongside martial skill.
+## Political organizations
 
-## Open questions
+The author's adoption of internal political diversity is implemented with these working organizational names:
 
-How do clans settle disputes, admit guests, or form alliances? Does Chuluun speak for a household or a larger council? What did Hanno promise and subsequently neglect? Species should not predetermine political beliefs or remove internal diversity.
+- [Return Councils](the-return-councils.md): camp representation, missing people, household claims, and collective decisions about aid and return.
+- [Open Hand](the-open-hand.md): negotiated peace with Numarius, releases, movement, and terms under which return could become possible.
+- [Last Standard](the-last-standard.md): armed resistance, rejection of surrender, and willingness to fight to the death.
+- [Scattered Hearths](the-scattered-hearths.md): diaspora aid, employment, testimony, reunion, and disagreements about obligations to the homeland.
 
-The [early geography](../sources/early-geography.md) answers some of these at the concept level: a former Khan arbitrated among fifteen autonomous tribes; fourteen remain after one disappeared; the Golden Yurt stands empty at Erdene Zuu. The Altan and Tsetseg are named, and Chuluun is an Altan prince. These details are recovered author material, not yet reconciled current chapter facts. Define the political basis of reunification and who opposes it before assuming all tribes want a restored ruler.
+These networks overlap. They are not four hereditary kinds of Leonin, nor a complete list of their politics. A shared flag does not erase their conflicts.
+
+## Development questions
+
+Who commands the bombardment, finances forced labor, profits from transfers, and can issue or revoke passage? How do councils gain authority, and can dependents refuse the risks chosen by fighters? “Illegal warfare” in the initial pitch does not establish a particular attack, a complete legal code, or a blanket justification. Decide whose rules are invoked and examine specific acts, targets, coercion, and civilian consequences before applying the term as narrator fact.
+
+The Palestinian-refugee analogy belongs to the author's creative provenance. No real government or people is inserted into the fictional geography, and no claim about a real population's uniform behavior follows from it.
+
+## Earlier material
+
+The former freely nomadic/native-Tengeri premise is superseded. The [early geography](../sources/early-geography.md) preserves the fifteen-tribe Khanate, missing tribe, Altan and Tsetseg, Erdene Zuu, and Golden Yurt. These may inform a political past but are not automatically a chronology of the displacement. Chuluun's prince/elder roles remain to be reconciled. Source snapshots are unchanged.

@@ -1,0 +1,24 @@
+{
+  "generated": "2026-09-06",
+  "tool": "Built-in image_gen",
+  "assets": [
+    {
+      "file": "carthara-market.webp",
+      "prompt": "Use case: illustration-story. Create ONE portrait architectural book plate for The Chronicle's opening market scene. Reference image 1 is STYLE ONLY: use the small hand-drawn architectural vignette on its RIGHT side, not the photograph, not the two-panel layout. Reference image 2 supplies Carthara's dense Mediterranean / Middle Eastern harbor-city vocabulary, not its framing or evening. New scene: morning in a richly ornamented market arcade beneath tiered ivory stone terraces, patterned red fabric awnings, fig and pomegranate baskets on a simple fruit stall with brass balance scales, minuscule anonymous traders, glazed green domes and intricate elevated water channels in the background. Maximalist futuristic Mediterranean and Middle Eastern fantasy: extraordinary architectural density, layered arches, carved stone screens, hanging gardens, discreet ingenious water engineering; believable craft and daily life, no science fiction machinery. Medium: highly accomplished hand-drawn pen and ink, intricate etched crosshatching, delicate mineral watercolor washes in terracotta, faded teal, brass ochre and warm charcoal on pale ivory paper. Elegant illustrated novel / architectural travel folio. Build the entire illustration as a richly detailed irregular vignette whose outer edges softly dissolve into untouched pale warm paper (#eee7d8); no rectangular painted background or frame. Portrait composition, tall arches, detailed center, generous paper margin, readable silhouette at 500px. No text, no lettering, no caption, no logo, no watermark. No photorealism or 3D render. Image itself only; website adds prose and caption separately.",
+      "references": [
+        "Author-supplied architectural folio reference (style only)",
+        "Existing generated Carthara artwork"
+      ],
+      "source": "exec-f6b446cd-5727-4bf3-a0f1-62156cea0386.png"
+    },
+    {
+      "file": "apothecary.webp",
+      "prompt": "Use case: illustration-story. Generate ONE portrait architectural illustrated-book plate showing the interior of a Cartharan apothecary. Reference image 1 is only a STYLE reference: match its intricate hand-drawn ink etching, faded teal / terracotta / brass watercolor, irregular vignette on pale warm ivory paper, extraordinary Mediterranean Middle Eastern architectural density. New view: human-scale workbench with glazed ceramic vessels and a balance, wooden drawers and many herb jars, a patched stool, windows with finely carved mashrabiya screens, tall horseshoe arches overhead, shelves ascending a richly patterned chamber, a small courtyard with a fountain visible beyond. Morning filtered light, richly textured daily craft and useful instruments; subtly futuristic water engineering woven into historic craft, no science fiction machinery. Maximalist world, elegant folio art. Small anonymous apprentice silhouette in background optional, no specified real person. Portrait composition, intricate center dissolving into untouched pale warm paper at irregular outer edges, no rectangular border. Restrained washed color and fine ink crosshatching, not photorealism or 3D. No text, letters, labels, logo, watermark, or page mockup. Website adds prose and caption separately.",
+      "references": [
+        "carthara-market plate (style only)"
+      ],
+      "source": "exec-40075b11-b3e5-49aa-a4b7-c9f3e5198208.png"
+    }
+  ],
+  "notes": "New AI-generated illustrations, not licensed photographs or scanned historical plates. Source PNGs retained in Codex generated_images. Workspace WebP copies use format conversion only; caption and chapter prose remain HTML. Reference image is not redistributed."
+}
