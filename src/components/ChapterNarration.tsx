@@ -7,6 +7,7 @@ import { voiceCast } from "@/content/narration";
 import { getNarrationSegments, splitSpeechText } from "@/lib/narration";
 import { getNarrationPassages, narrationRequestHash } from "@/lib/narration-passages";
 import { useReaderPreferences } from "@/lib/reader-preferences";
+import styles from "./ChapterNarration.module.css";
 
 type Status = "stopped" | "loading" | "playing" | "paused" | "ended";
 type Mode = "ondemand" | "device";
@@ -27,6 +28,8 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rat
   const [status, setStatus] = useState<Status>("stopped");
   const [loadingMessage, setLoadingMessage] = useState("Preparing your narration…");
   const [error, setError] = useState("");
+  const [controlsOffscreen, setControlsOffscreen] = useState(false);
+  const controls = useRef<HTMLElement>(null);
   const audio = useRef<HTMLAudioElement | null>(null);
   const utterance = useRef<SpeechSynthesisUtterance | null>(null);
   const ownsSpeech = useRef(false);
@@ -40,6 +43,23 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rat
   const castIds = [...new Set(segments.map((segment) => segment.speaker))];
   const englishVoices = voices.filter((voice) => /^en\b/i.test(voice.lang));
   const availableVoices = englishVoices.length ? englishVoices : voices;
+
+  useEffect(() => {
+    const player = controls.current;
+    if (!player) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      setControlsOffscreen(!entry.isIntersecting);
+    }, { rootMargin: "-112px 0px 0px 0px" });
+    observer.observe(player);
+    return () => observer.disconnect();
+  }, []);
+
+  function returnToControls() {
+    const player = controls.current;
+    if (!player) return;
+    player.focus({ preventScroll: true });
+    player.scrollIntoView({ block: "start", behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
+  }
 
   useEffect(() => {
     const synth = window.speechSynthesis;
@@ -212,7 +232,7 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rat
   const active = status === "playing" || status === "paused";
   const currentScene = chapter.scenes.find((scene) => scene.id === track?.sceneId);
   const label = status === "loading" ? "Cancel" : status === "playing" ? "Pause" : status === "paused" ? "Resume" : status === "ended" ? "Play again" : "Play";
-  return <section className="chapter-narration" aria-label="Chapter narration">
+  return <><section ref={controls} id="chapter-audio-controls" tabIndex={-1} className={`chapter-narration ${styles.controls}`} aria-label="Chapter narration">
     <div className="narration-row">
       <button className="narration-play" onClick={listen} disabled={!tracks.length || (mode === "device" && !speechSupported)} aria-label={`${label} chapter narration`}><span aria-hidden="true">{status === "playing" ? "Ⅱ" : status === "loading" ? "×" : "▶"}</span> {label}</button>
       {active && <button className="narration-stop" onClick={stop}>Stop</button>}
@@ -221,5 +241,7 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rat
     </div>
     {mode === "ondemand" && <p className="narration-attribution">Voices by <a href="https://elevenlabs.io" target="_blank" rel="noreferrer">elevenlabs.io</a></p>}
     {error && <p className="narration-error" role="alert">{error}</p>}
-  </section>;
+  </section>
+    {controlsOffscreen && <button type="button" className={styles.returnButton} onClick={returnToControls} aria-controls="chapter-audio-controls">Audio controls</button>}
+  </>;
 }

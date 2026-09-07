@@ -1,0 +1,33 @@
+.controls {
+  scroll-margin-top: 120px;
+}
+
+.controls:focus-visible {
+  outline: 2px solid #806039;
+  outline-offset: 6px;
+}
+
+.returnButton {
+  position: fixed;
+  right: max(20px, env(safe-area-inset-right));
+  bottom: max(20px, env(safe-area-inset-bottom));
+  z-index: 40;
+  min-height: 44px;
+  padding: 12px 18px;
+  border: 1px solid #ae9c7b;
+  border-radius: 4px;
+  background: #50452f;
+  color: #fff7e9;
+  box-shadow: 0 3px 14px #302a2226;
+  font: 14px/1.4 system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.returnButton:hover {
+  background: #6a5734;
+}
+
+.returnButton:focus-visible {
+  outline: 2px solid #806039;
+  outline-offset: 4px;
+}
