@@ -390,5 +390,33 @@
     "caption": "Braurias · location study",
     "width": 1672,
     "height": 941
+  },
+  "burg-36": {
+    "src": "/images/world/points/burg-36-v1.webp",
+    "alt": "Individual landscape and architecture study of Henekionti",
+    "caption": "Henekionti · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-37": {
+    "src": "/images/world/points/burg-37-v1.webp",
+    "alt": "Individual landscape and architecture study of Suriris",
+    "caption": "Suriris · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-38": {
+    "src": "/images/world/points/burg-38-v1.webp",
+    "alt": "Individual landscape and architecture study of Oreos",
+    "caption": "Oreos · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-39": {
+    "src": "/images/world/points/burg-39-v1.webp",
+    "alt": "Individual landscape and architecture study of Polis",
+    "caption": "Polis · location study",
+    "width": 1672,
+    "height": 941
   }
 }
