@@ -5,7 +5,8 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { world } from '../src/content/world.ts';
 import { codex } from '../src/content/codex.ts';
-import { bookPlates } from '../src/content/illustrations.ts';
+import sharp from 'sharp';
+import { bookPlates, plateArtwork } from '../src/content/illustrations.ts';
 import { getBibleEntries } from '../src/lib/worldbuilding.ts';
 
 const directory = path.resolve('src/content/chapters');
@@ -44,10 +45,30 @@ for (const entry of codex) {
   assert(!entry.location || locationIds.has(entry.location), `${entry.id}: unknown place`);
   if (entry.kind === 'person') assert(fs.existsSync(`worldbuilding/characters/${entry.id}.md`), `${entry.id}: missing profile`);
 }
-for (const [key, plate] of Object.entries(bookPlates)) {
-  const [chapter, scene] = key.split('/');
-  assert(chapterBySlug[chapter]?.scenes.some(s => s.id === scene), `Unknown plate placement ${key}`);
-  asset(plate.src);
+for (const [id, artwork] of Object.entries(plateArtwork)) {
+  asset(artwork.src);
+  const metadata = await sharp(path.join('public', artwork.src)).metadata();
+  assert.equal(artwork.width, metadata.width, `${id}: incorrect image width`);
+  assert.equal(artwork.height, metadata.height, `${id}: incorrect image height`);
+  assert(artwork.alt && artwork.caption, `${id}: missing accessible description`);
+}
+for (const [key, plates] of Object.entries(bookPlates)) {
+  const [chapter, sceneId] = key.split('/');
+  const scene = chapterBySlug[chapter]?.scenes.find(s => s.id === sceneId);
+  assert(scene && scene.kind !== 'title', `Unknown plate placement ${key}`);
+  unique(plates.map(p => p.artwork), `${key} illustration`);
+  let previous = -1;
+  for (const plate of plates) {
+    assert(Number.isInteger(plate.afterParagraph) && plate.afterParagraph >= 0 && plate.afterParagraph <= (scene.text?.length ?? 0), `${key}: image falls outside its passage`);
+    assert(plate.afterParagraph > previous, `${key}: illustrations must be in reading order`);
+    if (plate.layout === 'folio') assert(plate.afterParagraph < scene.text.length, `${key}: folio needs accompanying prose`);
+    previous = plate.afterParagraph;
+  }
+}
+for (const chapter of chapters) {
+  const plates = chapter.scenes.flatMap(s => bookPlates[`${chapter.slug}/${s.id}`] ?? []);
+  assert(plates.length >= (chapter.order === 0 ? 2 : 3), `${chapter.slug}: needs more illustrations`);
+  unique(plates.map(p => p.artwork), `${chapter.slug} illustration`);
 }
 const entries = getBibleEntries();
 const notebookPaths = new Set(entries.map(e => `/library/${e.slug}`));
@@ -59,4 +80,4 @@ for (const entry of entries) {
     else if (!href.startsWith('/')) assert(fs.existsSync(path.resolve('worldbuilding', path.dirname(entry.slug), href)), `${entry.slug}: missing local link ${href}`);
   }
 }
-console.log(`Verified ${chapters.length} chapters, ${world.length} places, ${entries.length} notebook pages, ${Object.keys(bookPlates).length} plates; ${total.toLocaleString()} total words including the optional legend.`);
+console.log(`Verified ${chapters.length} chapters, ${world.length} places, ${entries.length} notebook pages, ${Object.keys(plateArtwork).length} artworks across ${Object.values(bookPlates).flat().length} placements; ${total.toLocaleString()} total words including the optional legend.`);

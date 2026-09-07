@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState, type ReactNode } from "react";
 import type { Chapter, Scene } from "@/content/types";
 import { bookPlates, type BookPlate } from "@/content/illustrations";
 import { chapters } from "@/content/chapters";
@@ -88,7 +88,7 @@ export function BookReader({ chapter, prev, next, initialSceneId }: {
               {prose && sceneIndex > 0 && <div className="scene-divider" aria-hidden="true">✦</div>}
               {scene.pov && (sceneIndex === 0 || scene.pov !== scenes[sceneIndex - 1].pov) && <p className="scene-pov">{scene.pov}</p>}
               {scene.heading && <h2 className={prose ? "sr-only" : undefined}>{scene.heading}</h2>}
-              <SceneProse scene={scene} plate={bookPlates[`${chapter.slug}/${scene.id}`]} />
+              <SceneProse scene={scene} plates={bookPlates[`${chapter.slug}/${scene.id}`]} />
               {scene.quote && <blockquote><p>“{scene.quote.text}”</p>{scene.quote.by && <cite>— {scene.quote.by}</cite>}</blockquote>}
               {!prose && scene.location && worldById[scene.location] && <Link className="book-location" href={`/world?at=${scene.location}`}>Explore {worldById[scene.location].name} →</Link>}
             </section>)}
@@ -116,25 +116,42 @@ export function BookReader({ chapter, prev, next, initialSceneId }: {
   );
 }
 
-function SceneProse({ scene, plate }: { scene: Scene; plate?: BookPlate }) {
+function SceneProse({ scene, plates = [] }: { scene: Scene; plates?: BookPlate[] }) {
   const paragraphs = scene.text ?? [];
-  if (!plate) return paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>);
-
-  // A continuous passage beside the plate; remaining prose returns to the reading column.
-  let wordCount = 0;
-  let split = 0;
-  while (split < paragraphs.length && wordCount < 190) {
-    wordCount += paragraphs[split].split(/\s+/).length;
-    split++;
+  const passage = (start: number, end: number) => paragraphs.slice(start, end).map((paragraph, i) =>
+    <p key={start + i} data-prose-id={`${scene.id}:${start + i}`}>{paragraph}</p>);
+  let cursor = 0;
+  const blocks: ReactNode[] = [];
+  for (let index = 0; index < plates.length; index++) {
+      const plate = plates[index];
+      const before = passage(cursor, plate.afterParagraph);
+      cursor = plate.afterParagraph;
+      if (plate.layout !== "folio") {
+        blocks.push(<Fragment key={plate.artwork}>{before}<PlateFigure plate={plate} /></Fragment>);
+        continue;
+      }
+      // Never split a paragraph or consume text belonging to the next illustration.
+      const start = cursor;
+      const limit = plates[index + 1]?.afterParagraph ?? paragraphs.length;
+      let words = 0;
+      while (cursor < limit && words < 190) {
+        words += paragraphs[cursor].split(/\s+/).length;
+        cursor++;
+      }
+      blocks.push(<Fragment key={plate.artwork}>{before}<div className="illustrated-spread">
+        <div className="spread-prose">{passage(start, cursor)}</div>
+        <PlateFigure plate={plate} />
+      </div></Fragment>);
   }
-  return <>
-    <div className="illustrated-spread">
-      <div className="spread-prose">{paragraphs.slice(0, split).map((paragraph, i) => <p key={i}>{paragraph}</p>)}</div>
-      <figure className="book-plate">
-        <Image src={plate.src} alt={plate.alt} width={1024} height={1536} sizes="(min-width: 1300px) 500px, (min-width: 1000px) 40vw, 90vw" />
-        <figcaption><span>Plate {plate.number}</span>{plate.caption}<small>Ink & watercolor · The Chronicle</small></figcaption>
-      </figure>
-    </div>
-    {paragraphs.slice(split).map((paragraph, i) => <p key={i}>{paragraph}</p>)}
-  </>;
+  return <>{blocks}{passage(cursor, paragraphs.length)}</>;
+}
+
+function PlateFigure({ plate }: { plate: BookPlate }) {
+  return <figure className={`book-plate book-plate-${plate.layout}`}>
+    <Image src={plate.src} alt={plate.alt} width={plate.width} height={plate.height} loading="lazy"
+      sizes={plate.layout === "wide" ? "(min-width: 1300px) 900px, (min-width: 901px) 70vw, 95vw"
+        : plate.layout === "vignette" ? "(min-width: 600px) 440px, 90vw"
+        : "(min-width: 1300px) 500px, (min-width: 1101px) 40vw, (min-width: 600px) 430px, 90vw"} />
+    <figcaption><span>Plate {plate.number}</span>{plate.caption}<small>Ink & watercolor · The Chronicle</small></figcaption>
+  </figure>;
 }

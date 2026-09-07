@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-09-07 04:59:58 UTC",
+  "tool": "image_gen.imagegen (built-in)",
+  "intent": "Four original illustrated chapter plates using existing generated plates as style references only",
+  "assets": [
+    {
+      "file": "three-seats-hall.webp",
+      "requestedAspectRatio": "3:2 landscape",
+      "prompt": "Use case: illustration-story. Create ONE landscape 3:2 illustrated architectural book plate for The Chronicle: the civic chamber of Carthara's Three Seats. The two supplied images are STYLE REFERENCES ONLY. Match their accomplished hand-drawn pen-and-ink etching, meticulous crosshatching, faded mineral watercolor, and intricate Mediterranean / Middle Eastern architecture on pale warm ivory paper. Entirely new interior, not a copy of the reference composition: broad vaulted civic chamber, richly carved horseshoe arches and mashrabiya screens, tiered galleries, muted teal glazed detail, pale stone and restrained brass water channels. At the far side, EXACTLY THREE equivalent official chairs sit at the SAME HEIGHT on ONE low shared dais, arranged beside one another, equal in scale; no towering throne or dominant fourth seat. These represent the fields, harbor, and garrison through modest material evidence on separate working tables: a grain measure, a small harbor chart with NO readable writing, and a plain closed military ledger. Small anonymous clerks bend over papers at lower desks; other tiny anonymous petitioners convey actual civic work rather than an imperial ceremony. The composition is mainly architectural, with clear three-chair silhouette. Morning filtered light, sober institutional wealth, elaborate ornament, potted greenery; no literal Roman Caesars, laurel crowns, modern office equipment, guns, holograms, or Roman state iconography. Muted terracotta, washed teal, brass ochre, warm charcoal. Fine delicate linework, visible paper grain, elegant illustrated novel / architectural travel folio, irregular outer edges dissolving into untouched warm ivory paper (#eee7d8), generous paper margins. No 3D rendering, no photorealism. No readable text, letters, captions, logos, watermarks, frames, or page mockup. Image only; website supplies captions.",
+      "source": "C:\\Users\\suphi\\.codex\\generated_images\\01a079fd-da61-74b3-a2db-4fcb2ac02b43\\exec-e558adf5-7342-4f06-b06c-b8659175ecc1.png",
+      "references": [
+        "C:/Users/suphi/OneDrive/Documents/ChatGPT/chronicle/public/images/plates/carthara-market.webp",
+        "C:/Users/suphi/OneDrive/Documents/ChatGPT/chronicle/public/images/plates/apothecary.webp"
+      ],
+      "sourceRetained": true,
+      "inspection": "Inspected generated PNG: exactly three comparable chairs share one dais; grain measure, chart and closed ledger distinguish offices; anonymous clerks, richly etched civic architecture, no legible text.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 613738,
+      "originalFormat": "png",
+      "sourceSha256": "83449685fdbf36e77dad5f8f8ad34eefb28a9a57b959a5388ed4eb8122d4d774",
+      "fileSha256": "f30a0e23ee070ab9cadc18ed4dceb2448f4b182a42ab335a70ef0eda6fa44ef7"
+    },
+    {
+      "file": "banquet-court.webp",
+      "requestedAspectRatio": "3:2 landscape",
+      "prompt": "Use case: illustration-story. Generate ONE landscape 3:2 illustrated book plate showing an opulent evening banquet court in Lord Numarius's Cartharan residence. Both input images are STYLE REFERENCES ONLY: retain their fine hand-drawn ink etching, crosshatched stone and wood detail, restrained faded teal / terracotta / ochre watercolors on pale warm ivory paper. New scene: a long richly laid dining table within a maximalist Mediterranean and Middle Eastern colonnaded courtyard, intricate pale stone arches, carved geometric screens, discreet brass channels and ornamental still water visible beyond the table, planted terraces above, glazed ceramic dishes, figs and pomegranates, ordinary drinking vessels and folded cloth. Small anonymous guests in richly layered robes sit in conversation; distant simplified faces, no locked portrait or identifiable main character, no central triumphant emperor. Soft lamplight reflected in ornamental water; beauty, cultivated wealth, slightly formal social tension rather than violent action. The architecture and tableware supply the narrative. Layered structural complexity matching the reference art, exceptional craft without modern machinery. Wide composition, a detailed central vignette with irregular soft edges fading into untouched pale ivory paper (#eee7d8). No photographic realism, 3D, glossy digital concept render, Roman Caesars, weapons, gore, modern table settings, text, captions, logos, watermarks, or border. This is a finished plate for a novel, not a page mockup.",
+      "source": "C:\\Users\\suphi\\.codex\\generated_images\\01a079fd-da61-74b3-a2db-4fcb2ac02b43\\exec-686ce51f-44bd-4d51-a2b9-5d105e2dc09e.png",
+      "references": [
+        "C:/Users/suphi/OneDrive/Documents/ChatGPT/chronicle/public/images/plates/carthara-market.webp",
+        "C:/Users/suphi/OneDrive/Documents/ChatGPT/chronicle/public/images/plates/apothecary.webp"
+      ],
+      "sourceRetained": true,
+      "inspection": "Inspected generated PNG: anonymous robed guests, richly set banquet table, colonnades and ornamental water; no depicted named character or violence; matches etched watercolor style.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 608648,
+      "originalFormat": "png",
+      "sourceSha256": "ad0d67d6550f97e3b8369c089754bac30553d38515fae3a5c9d7d6f02238b39e",
+      "fileSha256": "a78325ec357a36003eeb2b7ed5dcaeb36cdce0a46df8b9edaae2466a8c52cab2"
+    },
+    {
+      "file": "moonlit-wedding.webp",
+      "requestedAspectRatio": "3:2 landscape",
+      "prompt": "Use case: illustration-story. Create ONE landscape 3:2 illustrated novel plate: a quiet wedding moment on the Moonlit Isle, a small island near the separate island of Lysandria. Two supplied images are STYLE REFERENCES ONLY. Match their fine etched pen-and-ink lines, intricate crosshatching, subtle watercolor over warm ivory paper, ornamented Mediterranean and Middle Eastern architecture, and softly irregular vignette edges. New shoreline garden at night: a small pale stone arch, a few low planted terraces, intricate restrained brass railing, still sea reflecting the moon; across the water in the far distance are TWO enormous mountain silhouettes belonging to Lysandria, clearly separated by water from the foreground garden. A couple stands together beneath the arch, seen from behind at a modest distance, faces completely hidden and details understated. Their clothing is simple layered travel-era robes, not modern bridalwear, no crowns. A single small red-and-yellow flower is tucked beside the woman's hair and is a delicate relevant color accent, not huge or glowing. No other identifiable people; leave any event guests out of frame. Quiet intimacy and ordinary promises within extraordinary surroundings. Faded deep teal, warm charcoal ink, ochre lamplight, restrained terracotta with natural pale moonlight, no saturated blue photographic night. Fine hand-drawn illustration, architectural folio density, irregular outer edges dissolving into untouched warm ivory paper (#eee7d8), generous paper margins. No photorealism or 3D rendering. No readable text, letters, captions, logos, watermarks, decorative frame, or page mockup.",
+      "source": "C:\\Users\\suphi\\.codex\\generated_images\\01a079fd-da61-74b3-a2db-4fcb2ac02b43\\exec-25c414e5-bb9c-442f-b235-7d1ed4657305.png",
+      "references": [
+        "C:/Users/suphi/OneDrive/Documents/ChatGPT/chronicle/public/images/plates/carthara-market.webp",
+        "C:/Users/suphi/OneDrive/Documents/ChatGPT/chronicle/public/images/plates/apothecary.webp"
+      ],
+      "sourceRetained": true,
+      "inspection": "Inspected generated PNG: couple viewed from behind, small red/yellow hair flower, foreground island terrace and water separating distant mountain silhouettes; no locked face portrait.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 503808,
+      "originalFormat": "png",
+      "sourceSha256": "a532c232dcff97e7f5fbe445c5a204d60eef612fbdf1ac247dc3dfa0fc01e351",
+      "fileSha256": "6e8c99ca8f946f41dc075ac02f95261294b635b6e7b2ce833e8776c6cd26cc86"
+    },
+    {
+      "file": "zaharaz-staff.webp",
+      "requestedAspectRatio": "square",
+      "prompt": "Use case: illustration-story. Generate ONE square illustrated still-life plate for an epic novel. Both supplied images are STYLE REFERENCES ONLY: match their meticulous hand-drawn pen and ink, etched crosshatching, faded teal / terracotta / ochre watercolor washes on warm ivory paper, rich Mediterranean and Middle Eastern architectural craft. Main subject MUST be an ORDINARY straight wooden traveling staff called Zaharaz. It is a plain walking staff approximately a person's height, with simple natural wood grain, a smooth worn handgrip and ONE short BLUNT metal ferrule capping its ground end. The TOP is plain rounded wood. Absolutely NO pointed tip, no blade, no spearhead at either end, no crystal, no magic, no glow, no horns, no ornate crown or weapon fittings. Do not write its name or any letters on it. Lean the full staff against a pale carved stone bench so both ends are visible, beside a practical worn travel satchel and two closed working notebooks with blank unlettered covers. A corner of carved screen, a restrained water channel, and potted greenery can place this ordinary travel equipment in the same sophisticated Mediterranean/Middle Eastern world as the reference images. The staff should read as useful equipment owned by a traveling alchemist, NOT a heroic weapon, even though the surrounding craftsmanship is beautiful. Human-scale quiet morning still life, no people, no laboratory recipe, no readable writing. Full object comfortably contained in a square irregular vignette, soft outer edges dissolve into untouched pale warm ivory paper (#eee7d8); highly detailed center, generous margins. No photorealism, no 3D, no polished fantasy prop render, no text, caption, logo, watermark, or border.",
+      "source": "C:\\Users\\suphi\\.codex\\generated_images\\01a079fd-da61-74b3-a2db-4fcb2ac02b43\\exec-b2bb8fda-1b35-4af3-8cc5-85270794f97d.png",
+      "references": [
+        "C:/Users/suphi/OneDrive/Documents/ChatGPT/chronicle/public/images/plates/carthara-market.webp",
+        "C:/Users/suphi/OneDrive/Documents/ChatGPT/chronicle/public/images/plates/apothecary.webp"
+      ],
+      "sourceRetained": true,
+      "inspection": "Inspected generated PNG: ordinary full wooden staff, rounded wooden top and short blunt metal end ferrule; no blades, spearhead, jewel, magic or glow; travel bag and blank books.",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 448750,
+      "originalFormat": "png",
+      "sourceSha256": "c3b67e0c7b7e011c44da11975402479aa89195a7a4e2282786a8a9bcd06f43ae",
+      "fileSha256": "3dbd90eafab757ce39e75de25511cb529619a21a4e4edde348dea7fc321ecb8f"
+    }
+  ],
+  "conversion": {
+    "library": "sharp",
+    "format": "WebP",
+    "quality": 88,
+    "effort": 6,
+    "operations": "Format conversion only. No resize, crop, composite, paint, color transformation, or retouching."
+  },
+  "provenance": "Original AI-generated illustrations for Chronicle. Referenced images are existing project-generated plates used for visual style, not scanned historical illustrations. Original generated PNGs remain at their recorded Codex paths; final WebP copies are project assets.",
+  "notes": "Artwork proposes visual staging only; architectural details do not establish map scale, new institutional powers, character identities, or weapon capabilities. No chapter data or master image registry is edited by this manifest."
+}

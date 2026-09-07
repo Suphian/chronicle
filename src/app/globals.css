@@ -235,6 +235,8 @@ body {
 .spread-prose { padding-top: 24px; }
 .spread-prose p { margin-bottom: 1.3em; }
 .book-plate { margin: 0; min-width: 0; }
+.book-plate-wide { max-width: 900px; margin: 40px auto 48px; }
+.book-plate-vignette { max-width: 440px; margin: 36px auto 44px; }
 .book-plate img { display: block; width: 100%; height: auto; mix-blend-mode: multiply; mask-image: linear-gradient(black, black), linear-gradient(to right, transparent, black 4%, black 96%, transparent), linear-gradient(transparent, black 4%, black 96%, transparent); mask-composite: intersect; }
 .book-plate figcaption { margin: 12px 24px 0; padding-top: 16px; border-top: 1px solid #cdbfa7; font: 13px/1.8 ui-monospace, monospace; color: #66563f; }
 .book-plate figcaption span { display: block; text-transform: uppercase; letter-spacing: .15em; font-size: 10px; margin-bottom: 4px; }
@@ -243,7 +245,7 @@ body {
   .book-folio .book-layout { grid-template-columns: 180px minmax(0, 1fr); gap: 28px; }
   .illustrated-spread { display: block; }
   .spread-prose { max-width: 660px; margin: auto; padding-top: 0; }
-  .book-plate { max-width: 430px; margin: 28px auto; }
+  .book-plate-folio { max-width: 430px; margin: 28px auto; }
 }
 @media (max-width: 900px) {
   .book-layout { display: block; max-width: 720px; }

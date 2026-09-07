@@ -1,0 +1,50 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "date": "2026-09-07",
+  "references": [
+    "public/images/plates/apothecary.webp (style only)"
+  ],
+  "conversion": "Sharp WebP quality 88, format conversion only. No cropping or editing. Originals retained.",
+  "assets": [
+    {
+      "id": "lantern-alley",
+      "src": "/images/plates/lantern-alley.webp",
+      "source": "C:\\Users\\suphi\\.codex\\generated_images\\01a079e4-87ab-7ce3-ae6c-673b671d5409\\exec-a3da7e78-2e3c-4c12-abc1-e2a8c642e633.png",
+      "prompt": "Use case: illustration-story. Create one original book illustration. Reference image is STYLE ONLY: match fine ink linework and etched crosshatching with muted mineral watercolor teal, terracotta, ochre on pale ivory paper. Rich maximalist futuristic Mediterranean and Middle Eastern fantasy architecture with human craft and lived detail. Elegant folio drawing, soft irregular vignette edges fading into warm ivory paper, no hard frame. Not a photograph or 3D render. No lettering, captions, logos, watermarks, panels or text. Wide landscape 1536x1024. A narrow winding Cartharan alley at night, layered carved stone arcades and pale plaster homes, intricate projecting wooden screens, amber lanterns, dark blue shadows, quiet distant anonymous pedestrian silhouettes. Small plants and hanging fabric under the arcades. Intimate and inhabited, no violence, no identifiable main character.",
+      "review": "Visually inspected: etched ink and muted watercolor, no lettering, no depicted plot outcome.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 547470
+    },
+    {
+      "id": "sealed-cargo",
+      "src": "/images/plates/sealed-cargo.webp",
+      "source": "C:\\Users\\suphi\\.codex\\generated_images\\01a079e4-87ab-7ce3-ae6c-673b671d5409\\exec-151ef042-844f-4843-ad77-46b5b749170c.png",
+      "prompt": "Use case: illustration-story. Create one original book illustration. Reference image is STYLE ONLY: match fine ink linework and etched crosshatching with muted mineral watercolor teal, terracotta, ochre on pale ivory paper. Rich maximalist futuristic Mediterranean and Middle Eastern fantasy architecture with human craft and lived detail. Elegant folio drawing, soft irregular vignette edges fading into warm ivory paper, no hard frame. Not a photograph or 3D render. No lettering, captions, logos, watermarks, panels or text. Landscape 1536x1024 intimate still life inside a Cartharan harbor warehouse: an open rope-tied wooden shipping crate with several plain sealed ceramic bottles cushioned in straw and folded cloth, small brass scale and sealing cord. Carved arch and hazy harbor masonry in background. No readable labels or recipes, no modern objects. Focus on material texture and ambiguous ordinary cargo.",
+      "review": "Visually inspected: etched ink and muted watercolor, no lettering, no depicted plot outcome.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 579560
+    },
+    {
+      "id": "courtyard-garden",
+      "src": "/images/plates/courtyard-garden.webp",
+      "source": "C:\\Users\\suphi\\.codex\\generated_images\\01a079e4-87ab-7ce3-ae6c-673b671d5409\\exec-b90478cb-ec3d-418c-815a-9864c0e20cf8.png",
+      "prompt": "Use case: illustration-story. Create one original book illustration. Reference image is STYLE ONLY: match fine ink linework and etched crosshatching with muted mineral watercolor teal, terracotta, ochre on pale ivory paper. Rich maximalist futuristic Mediterranean and Middle Eastern fantasy architecture with human craft and lived detail. Elegant folio drawing, soft irregular vignette edges fading into warm ivory paper, no hard frame. Not a photograph or 3D render. No lettering, captions, logos, watermarks, panels or text. Landscape 1536x1024. A quiet enclosed domestic Cartharan garden at dusk: small old fountain, pots and vines, a red-and-yellow flowering plant near a stone bench, pale carved walls and one modest wooden garden gate. Warm lamp beside the door. Delicate botanical drawing combined with dense architectural lines. No people, bodies, weapons, funerary imagery or depiction of any ending.",
+      "review": "Visually inspected: etched ink and muted watercolor, no lettering, no depicted plot outcome.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 629914
+    },
+    {
+      "id": "threshold",
+      "src": "/images/plates/threshold.webp",
+      "source": "C:\\Users\\suphi\\.codex\\generated_images\\01a079e4-87ab-7ce3-ae6c-673b671d5409\\exec-7fdedd3c-e7ce-49cf-ad9f-cf82212842a2.png",
+      "prompt": "Use case: illustration-story. Create one original book illustration. Reference image is STYLE ONLY: match fine ink linework and etched crosshatching with muted mineral watercolor teal, terracotta, ochre on pale ivory paper. Rich maximalist futuristic Mediterranean and Middle Eastern fantasy architecture with human craft and lived detail. Elegant folio drawing, soft irregular vignette edges fading into warm ivory paper, no hard frame. Not a photograph or 3D render. No lettering, captions, logos, watermarks, panels or text. Portrait 1024x1536. A modest partly open dark wooden domestic door in a carved pale plaster and weathered limestone doorway, warm light on the worn stone threshold. A narrow strip of the interior visible, otherwise quiet shadow, understated botanical sprig at the base. Rich carved detail but domestic scale. No people, weapons, arrest, corpse or implied specific final outcome.",
+      "review": "Visually inspected: etched ink and muted watercolor, no lettering, no depicted plot outcome.",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 510786
+    }
+  ]
+}

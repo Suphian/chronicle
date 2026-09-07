@@ -1,0 +1,88 @@
+{
+  "generatedDateUTC": "2026-09-07",
+  "tool": "Built-in image_gen",
+  "useCase": "illustration-story",
+  "assets": [
+    {
+      "file": "pottery-room.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 524188,
+      "prompt": "Use case: illustration-story. Create ONE standalone illustrated novel plate, never a contact sheet. Input images 1 and 2 are STYLE REFERENCES ONLY: match their fine hand-drawn ink, etched crosshatching, restrained mineral watercolor and warm ivory paper. Maximalist Mediterranean and Middle Eastern fantasy craftsmanship, lived and materially believable. Dense accomplished linework, terracotta, faded teal, brass ochre, warm charcoal. Irregular soft vignette edges dissolve into untouched pale warm ivory paper; no rectangular border. No photorealism, 3D rendering, readable writing, captions, letters, logos or watermarks. The website adds text separately.\nSubject: Amara's small pottery room above a shop BEFORE eviction. Her simple working pottery wheel stands close to a narrow window, clay basin and a damp board within reach, six narrow blue-banded clay jugs waiting on a shelf above folded bedding, room for people to pass only by turning sideways. A handworked cup and a spare handle on the wooden board. Worn plaster carries clay smudges. Beautiful but modest carved timber window screen, patterned old tiled sill, glimpses of layered Cartharan arches and roof gardens through the window. Warm daylight illuminates honest ongoing work. No person or identifiable portrait is needed. Do not turn this poor family's room into a palace or commercial factory. Compose a landscape 3:2 intimate architectural interior plate, wheel and blue-banded jugs clearly readable.",
+      "references": [
+        {
+          "file": "carthara-market.webp",
+          "role": "style reference only"
+        },
+        {
+          "file": "apothecary.webp",
+          "role": "style reference only"
+        }
+      ],
+      "originalPng": "C:/Users/suphi/.codex/generated_images/01a079fd-9a6f-79c0-b181-2db67334e377/exec-bc355377-3978-46f0-ab9f-459c07d75d60.png",
+      "conversion": "Sharp WebP quality 88, effort 6; format conversion only, no resizing, cropping, recoloring, compositing, or retouching.",
+      "inspection": "Visual check: wheel close to window, six blue-banded jugs above folded bedding, cup and spare handle, small worn workroom."
+    },
+    {
+      "file": "petition-court.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 550518,
+      "prompt": "Use case: illustration-story. Create ONE standalone illustrated novel plate, never a contact sheet. Input images 1 and 2 are STYLE REFERENCES ONLY: match their fine hand-drawn ink, etched crosshatching, restrained mineral watercolor and warm ivory paper. Maximalist Mediterranean and Middle Eastern fantasy craftsmanship, lived and materially believable. Dense accomplished linework, terracotta, faded teal, brass ochre, warm charcoal. Irregular soft vignette edges dissolve into untouched pale warm ivory paper; no rectangular border. No photorealism, 3D rendering, readable writing, captions, letters, logos or watermarks. The website adds text separately.\nSubject: an imposing Cartharan petition court beneath a deep ornate arcade, cool shade and a narrow blade of daylight on worn paving. A modest queue of ordinary petitioners holding folded papers waits before a seated clerk at a wooden writing desk. Show the clerk's low practical seat, bundles of petitions, patient tired postures, and architecture that makes waiting feel small: layered pointed arches, richly carved stone screens, patterned glazed tiles, a carefully maintained narrow water channel. Faces are small and anonymous, people in simple woven robes, no hero portrait, no punishments or violence. This is a fictional Mediterranean/Middle Eastern civic bureaucracy, not a modern courthouse: no courtroom benches, gavels, modern uniforms or flags. Landscape 3:2 composition with the queue and clerk clearly readable beneath the richly detailed arches.",
+      "references": [
+        {
+          "file": "carthara-market.webp",
+          "role": "style reference only"
+        },
+        {
+          "file": "apothecary.webp",
+          "role": "style reference only"
+        }
+      ],
+      "originalPng": "C:/Users/suphi/.codex/generated_images/01a079fd-9a6f-79c0-b181-2db67334e377/exec-1b358fb3-3f37-4148-9325-5cabf64276f6.png",
+      "conversion": "Sharp WebP quality 88, effort 6; format conversion only, no resizing, cropping, recoloring, compositing, or retouching.",
+      "inspection": "Visual check: anonymous petition queue and seated clerk beneath ornate shaded arches; no modern court equipment or legible signage."
+    },
+    {
+      "file": "unfinished-bowls.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 489486,
+      "prompt": "Use case: illustration-story. Create ONE standalone illustrated novel plate, never a contact sheet. Input images 1 and 2 are STYLE REFERENCES ONLY: match their fine hand-drawn ink, etched crosshatching, restrained mineral watercolor and warm ivory paper. Maximalist Mediterranean and Middle Eastern fantasy craftsmanship, lived and materially believable. Dense accomplished linework, terracotta, faded teal, brass ochre, warm charcoal. Irregular soft vignette edges dissolve into untouched pale warm ivory paper; no rectangular border. No photorealism, 3D rendering, readable writing, captions, letters, logos or watermarks. The website adds text separately.\nSubject: intimate still life of EXACTLY FIVE hand-formed clay bowls on a worn wooden pottery bench, separate clearly countable silhouettes, slightly uneven rims and a subtle thumbprint visible in the nearest bowl. These are ordinary earthenware bowls at different modest stages of drying, not jeweled or gilded treasures. A folded work cloth beside them; a softly indicated carved courtyard screen and sliver of old tile behind the bench, warm courtyard sunlight grazing clay texture. No people, no corpse, no grief symbolism, no extra pots or bowls anywhere. Let the illustration emphasize capable patient handwork and the value of useful things. Square composition, fine ink detail concentrated on the bowls and wood, architecture only lightly suggested; generous irregular ivory paper edges. Vignette suitable between passages of a novel.",
+      "references": [
+        {
+          "file": "carthara-market.webp",
+          "role": "style reference only"
+        },
+        {
+          "file": "apothecary.webp",
+          "role": "style reference only"
+        }
+      ],
+      "originalPng": "C:/Users/suphi/.codex/generated_images/01a079fd-9a6f-79c0-b181-2db67334e377/exec-d069a996-ddb2-4c3a-ac14-1cfa3085b92a.png",
+      "conversion": "Sharp WebP quality 88, effort 6; format conversion only, no resizing, cropping, recoloring, compositing, or retouching.",
+      "inspection": "Visual check: five separate earthenware bowls with uneven rims, cloth and workbench; no people or grief imagery."
+    },
+    {
+      "file": "case-notebook.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 552902,
+      "prompt": "Use case: illustration-story. Create ONE standalone illustrated novel plate, never a contact sheet. Input images 1 and 2 are STYLE REFERENCES ONLY: match their fine hand-drawn ink, etched crosshatching, restrained mineral watercolor and warm ivory paper. Maximalist Mediterranean and Middle Eastern fantasy craftsmanship, lived and materially believable. Dense accomplished linework, terracotta, faded teal, brass ochre, warm charcoal. Irregular soft vignette edges dissolve into untouched pale warm ivory paper; no rectangular border. No photorealism, 3D rendering, readable writing, captions, letters, logos or watermarks. The website adds text separately.\nSubject: a healer's lived-in worktable viewed from a high oblique angle. An open handmade stitched notebook with thick uneven paper is the focus, containing only faint abstract pen strokes and loose page divisions, absolutely no legible text, numbers, formulae, recipes or instructions. Nearby a few modest glazed ceramic vessels, small brass balance weights, a folded cloth and a simple pen. Fine carved woodwork and the shadow of an intricate mashrabiya screen quietly establish the Mediterranean/Middle Eastern setting. Filtered morning light, evidence of careful repeated observation and useful teaching, not magical spectacle. No recognizable drug substances, no syringes, no modern lab equipment, no flames. Landscape 3:2 close still life, richly hand-drawn textures and softly fading warm ivory paper edges.",
+      "references": [
+        {
+          "file": "carthara-market.webp",
+          "role": "style reference only"
+        },
+        {
+          "file": "apothecary.webp",
+          "role": "style reference only"
+        }
+      ],
+      "originalPng": "C:/Users/suphi/.codex/generated_images/01a079fd-9a6f-79c0-b181-2db67334e377/exec-97e44059-3c45-40da-83b1-f0e92951708d.png",
+      "conversion": "Sharp WebP quality 88, effort 6; format conversion only, no resizing, cropping, recoloring, compositing, or retouching.",
+      "inspection": "Visual check: handmade notebook, illegible abstract marks, ceramic vessels and brass weights; no readable medical recipe."
+    }
+  ],
+  "provenance": "New AI-generated project illustrations. Source PNGs remain in Codex generated_images. References are existing AI-generated Chronicle plates. No third-party stock photographs or scanned illustrations were added; no separate stock license applies."
+}

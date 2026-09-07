@@ -1,0 +1,28 @@
+{
+  "generatedDateUTC": "2026-09-07",
+  "tool": "Built-in image_gen",
+  "useCase": "illustration-story",
+  "assets": [
+    {
+      "file": "clinic-courtyard.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 581638,
+      "prompt": "Use case: illustration-story. Create ONE standalone landscape illustrated novel plate, 1536x1024 composition, never a contact sheet. Both provided images are STYLE REFERENCES ONLY: match their rich hand-drawn fine ink, etched crosshatching, delicate mineral watercolor in faded teal, terracotta, brass ochre and warm charcoal on warm ivory paper. Soft irregular vignette edges fade into untouched paper, no rectangular border. Subject: a working neighborhood clinic in Carthara, an airy but modest domestic courtyard adapted for care. A carved courtyard arcade gives shade to a few ordinary waiting people of varied ages seated on worn wooden benches. Clean folded cloths and simple ceramic water jugs sit within reach. Modest domestic room entrances open onto the court and a small shaded fountain. A distant anonymous healer seen from behind carries a bowl toward a room. Human-scale useful space, patched surfaces, light and air, fine old stone carving and timber screens, ordinary repeated work. Mediterranean and Middle Eastern fantasy craftsmanship, humane and practical; do not turn the clinic into a palace. Wide composition with the people small enough for the courtyard and circulation to remain the subject. No identifiable main character, modern medical machinery, uniforms or badges, readable writing, signage, lettering, captions, logos, watermarks, surgery or gore. No photorealism or 3D rendering.",
+      "references": [
+        {
+          "file": "carthara-market.webp",
+          "role": "style reference only"
+        },
+        {
+          "file": "apothecary.webp",
+          "role": "style reference only"
+        }
+      ],
+      "originalPng": "C:/Users/suphi/.codex/generated_images/01a079fd-9a6f-79c0-b181-2db67334e377/exec-4622cc27-4dcb-46ca-a955-57dc4d45c8ef.png",
+      "conversion": "Sharp WebP quality 88, effort 6; format conversion only, no resizing, cropping, recoloring, compositing, or retouching.",
+      "inspection": "Visual check: modest working courtyard, anonymous waiting adults and children, older person, clean folded cloths and ceramic water jugs, healer seen from behind carrying a bowl, shaded fountain. No legible text or modern medical equipment."
+    }
+  ],
+  "provenance": "New AI-generated project illustration. Source PNG remains in Codex generated_images. References are existing AI-generated Chronicle plates. No third-party stock photograph or scanned illustration was added; no separate stock license applies."
+}

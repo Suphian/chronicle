@@ -1,0 +1,93 @@
+{
+  "generated": "2026-09-07",
+  "tool": "Built-in image_gen",
+  "format_conversion": "sharp WebP encoding only; no resizing, cropping, recoloring, or other image edits.",
+  "notes": "New AI-generated plates using the existing project-generated Carthara plate as style reference. Source PNG files remain unchanged in Codex generated_images. Architecture and incidental figures are illustrative interpretations; the images do not establish new heraldry, named buildings, borders, or character identities.",
+  "assets": [
+    {
+      "file": "bakhtar-cliffs.webp",
+      "source_png": "C:\\Users\\suphi\\.codex\\generated_images\\01a079fe-10fc-7a10-b89c-3e414442bb10\\exec-eef8f593-ac49-4679-8dbc-33c4bcef0195.png",
+      "prompt": "Use case: illustration-story. Create ONE landscape 3:2 illustrated-novel plate for The Chronicle, a new scene using the referenced Carthara plate for STYLE ONLY. Scene: Bakhtar's immense pale limestone cliffs, inhabited cliff homes carved into the rock, slender stairways crossing beneath high stone arcades, terraces and modest water channels, small anonymous highland residents carrying household bundles and grain baskets up the stairs. Intimate civilian lives within breathtaking architectural scale, not a palace spectacle. Mediterranean and Middle Eastern futuristic fantasy expressed through elaborate stone craftsmanship and ingenious water engineering, no modern machinery. Rich hand-drawn pen-and-ink etching, extremely fine crosshatching, muted teal, terracotta and ochre watercolor washes on pale ivory paper. Match the reference's accomplished architectural travel-folio drawing and soft irregular vignette edges, leaving a visible quiet paper margin. Clear silhouette and layered vertical cliff depth inside a horizontal composition. Anonymous human inhabitants only; no unestablished fantasy species. No text, letters, captions, labels, signage, logos, watermark, photorealism, 3D rendering, rectangular border, giant weapons, or war spectacle. Image itself only; the website adds the caption.",
+      "references": [
+        {
+          "path": "public/images/plates/carthara-market.webp",
+          "role": "Style reference only; existing project-generated artwork"
+        }
+      ],
+      "suggested_mapping": "The Conqueror — cliff households and stairs",
+      "license": "AI-generated for this project; no third-party stock asset used.",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 646140
+    },
+    {
+      "file": "highland-council.webp",
+      "source_png": "C:\\Users\\suphi\\.codex\\generated_images\\01a079fe-10fc-7a10-b89c-3e414442bb10\\exec-d4d40d1d-7af3-4181-a04f-5c0b4998535e.png",
+      "prompt": "Use case: illustration-story. Create ONE landscape 3:2 illustrated-novel plate in the style of the referenced Carthara book illustration, STYLE REFERENCE ONLY. New scene in Bakhtar: an intimate highland gathering beneath a vast carved limestone cliff arcade overlooking a terraced valley. Several small anonymous human women and men sit or stand around grain baskets, folded household textiles and water jars, discussing the return of grain and restoration of a damaged watercourse. A woman actively gestures toward the baskets while another person listens and counts them; everyday civic agency, no throne, no king as central hero, no battle. Carved cliff homes and stairways frame the gathering, layered Middle Eastern/Mediterranean stone screens and weathered craft, grand scale but lived-in. Highly detailed hand-drawn pen and ink, fine etched hatching and restrained teal, ochre and terracotta watercolor over pale warm ivory paper. Landscape vignette, atmospheric depth, richly detailed center dissolving into soft irregular paper edges and quiet margin. Anonymous human inhabitants only, no unestablished fantasy species. No writing, letters, labels, banners with symbols, captions, logos, watermark, photo look, CGI or 3D render. Image itself only.",
+      "references": [
+        {
+          "path": "public/images/plates/carthara-market.webp",
+          "role": "Style reference only; existing project-generated artwork"
+        }
+      ],
+      "suggested_mapping": "The Conqueror — grain negotiations and household return",
+      "license": "AI-generated for this project; no third-party stock asset used.",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 630512
+    },
+    {
+      "file": "tengeri-shelters.webp",
+      "source_png": "C:\\Users\\suphi\\.codex\\generated_images\\01a079fe-10fc-7a10-b89c-3e414442bb10\\exec-b1f999ab-767d-45fe-9791-794304032ffd.png",
+      "prompt": "Use case: illustration-story. Create ONE landscape 3:2 illustrated-novel plate using the referenced Carthara plate for art STYLE ONLY, entirely different environment. Scene: a refugee camp in the immense wind-carved canyons of the Tengeri Wastes, a quiet moment of civilian work and mutual care. CRITICAL SUBJECT: every visible resident is a Leonin, a literal anthropomorphic lion-person: unmistakable lion muzzles, feline ears, tawny fur, lion faces, some adults with manes, hands suited to craft. Adults, elders and children, varied clothing and roles. They are NOT humans in lion masks and NOT ordinary lions on four legs. Put several clearly recognizable lion-folk in the foreground: an elder repairing a waterskin, an adult mending a worn folded flag cloth with only indistinct abstract marks, a child carrying a small bowl, another resident repairing a shelter. Keep features readable rather than tiny silhouettes. Background: densely inhabited shelters made of patched cloth, salvaged timber and modest stone under colossal canyon walls, a weathered blue doorway, shared cooking pots, simple classroom boards without writing. Dignified ordinary lives, resourcefulness, no warrior tableau, no weapons, no active explosions, injuries or gore, no glorification of war. Maximalist Mediterranean/Middle Eastern fantasy craft adapted to material scarcity, not luxurious palaces. Fine hand-drawn pen and ink, etched crosshatching, soft muted teal, terracotta and ochre watercolor on pale ivory; match the reference's accomplished architectural travel-folio illustration and irregular softly fading paper edges. No actual Palestinian or Israeli flags; no fixed new heraldry, no readable text, labels, caption, watermark, photorealism, CGI or 3D. Preserve all visible people as genuine lion-folk.",
+      "references": [
+        {
+          "path": "public/images/plates/carthara-market.webp",
+          "role": "Style reference only; existing project-generated artwork"
+        }
+      ],
+      "suggested_mapping": "Journeys — Chuluun and civilian life in the Tengeri camps",
+      "license": "AI-generated for this project; no third-party stock asset used.",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 699956
+    },
+    {
+      "file": "lake-siraj.webp",
+      "source_png": "C:\\Users\\suphi\\.codex\\generated_images\\01a079fe-10fc-7a10-b89c-3e414442bb10\\exec-6d599843-9ae3-425e-82c1-8613ff15ed2a.png",
+      "prompt": "Use case: illustration-story. Generate ONE landscape 3:2 illustrated-novel plate. The provided Carthara plate is a STYLE REFERENCE ONLY: intricate pen-and-ink etching, fine hatching, translucent muted teal, ochre and terracotta watercolor, pale warm ivory paper and irregular vignette edges. New setting: Lake Siraj in Sidrat Al Muntaha at dusk. A broad luminous teal lake sits among terraced stone settlements and steep planted slopes. Bioluminescent algae give a soft living glow in the water; small cultivated luminous plants trace the edges of an elegant curved stone bridge and paths. In the foreground, anonymous keepers in simple working robes tend shallow nursery vessels and clear a channel; living light has visible human care. Refined Mediterranean and Middle Eastern fantasy architecture: stone arches, carved screens, planted courtyards, bridges, modest distant white domed structures, extraordinary water engineering. No East Asian pagodas, no floating science-fiction city, no lasers or machinery, no skyborne islands. Atmosphere of patient work, reflected dusk and delicate luminous water, not horror or neon spectacle. Deep but legible landscape composition; rich drawing in the center fading softly into paper margins. No words, writing, labels, map symbols, captions, logo, watermark, photo effect or 3D rendering. Match the visual collection while depicting this distinct lake scene.",
+      "references": [
+        {
+          "path": "public/images/plates/carthara-market.webp",
+          "role": "Style reference only; existing project-generated artwork"
+        }
+      ],
+      "suggested_mapping": "Journeys — Lake Siraj and the labor maintaining its light",
+      "license": "AI-generated for this project; no third-party stock asset used.",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 649886
+    },
+    {
+      "file": "lysandria-harbor.webp",
+      "source_png": "C:\\Users\\suphi\\.codex\\generated_images\\01a079fe-10fc-7a10-b89c-3e414442bb10\\exec-9432b924-21bf-43c7-b6c8-54435ac873d9.png",
+      "prompt": "Use case: illustration-story. Generate ONE landscape 3:2 illustrated-novel plate, using the supplied Carthara illustration ONLY to match fine hand-drawn ink etching, intricate hatching, mineral watercolor and pale ivory paper vignette style. Canon-critical new scene: Lysandria is an ISLAND dominated by EXACTLY TWO enormous mountains. View from a small sailing vessel at sea approaching the island harbor. Clearly show open blue water wrapping both ends of the island; the twin mountains are the only giant peaks, with a low saddle between them, and no mainland connection. Two unmistakable massive mountain silhouettes command the entire composition. At their feet, a white-limestone harbor town climbs in stepped courtyards, intricate arcades, carved stone screens and planted terraces, threaded with carefully engineered narrow water channels. Mediterranean/Middle Eastern maximalist futuristic fantasy through extraordinary craft and civil engineering; no futuristic machines. Foreground corner may show a small anonymous traveler at the vessel's rail and rigging for scale, not a character portrait. Muted teal sea, warm ochre rock, restrained terracotta roofs, pale warm paper, richly detailed drawing dissolving into soft irregular margins. No third giant mountain, no long mainland range, no modern ships, no battle, no text, captions, lettering, labels, logos or watermark. No photorealism or 3D. A coherent horizontal illustrated-book plate, not a map or diagram.",
+      "references": [
+        {
+          "path": "public/images/plates/carthara-market.webp",
+          "role": "Style reference only; existing project-generated artwork"
+        }
+      ],
+      "suggested_mapping": "Journeys / The Gift of Lysandria — arrival by sea",
+      "license": "AI-generated for this project; no third-party stock asset used.",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 554558
+    }
+  ]
+}
