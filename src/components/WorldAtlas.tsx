@@ -16,7 +16,12 @@ import { MizanTravel } from "./MizanTravel";
 const W = mizan.width;
 const H = mizan.height;
 const categories = [["all", "Everything"], ["region", "Regions"], ["settlement", "Settlements"], ["landmark", "Landmarks"], ["person", "People"]] as const;
-const labelOffsets: Record<string, [number, number]> = { "region-3": [-60, -18], "region-4": [-35, 20], "region-5": [0, 26], "region-6": [25, 0] };
+const labelOffsets: Record<string, [number, number]> = {
+  "region-1": [35, 28], "region-2": [-25, -44], "region-3": [-115, -15],
+  "region-4": [-60, 25], "region-5": [0, 26], "region-6": [55, 12],
+  "region-7": [105, 8], "region-8": [0, -25], "region-9": [65, -25],
+  "region-12": [-50, 10], "region-15": [-45, -20], "region-18": [80, -15], "region-19": [30, 25],
+};
 const travel = ["carthara", "tengeri-wastes", "sidrat-al-muntaha", "lysandria"];
 function bounded(v: { x: number; y: number; k: number }) {
   return { ...v, x: Math.min(0, Math.max(W * (1 - v.k), v.x)), y: Math.min(0, Math.max(H * (1 - v.k), v.y)) };
@@ -30,7 +35,7 @@ export function WorldAtlas({ initialAt, sourceNotes = {}, atlasNotes = {} }: { i
   const [route, setRoute] = useState(false);
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<"all" | MizanKind>("all");
-  const [layer, setLayer] = useState("elevation");
+  const [layer, setLayer] = useState("illustrated");
   const [measuring, setMeasuring] = useState(false);
   const [measurePoints, setMeasurePoints] = useState<MapPoint[]>([]);
   const [probeData, setProbeData] = useState<Uint8Array | null>(null);
@@ -149,7 +154,7 @@ export function WorldAtlas({ initialAt, sourceNotes = {}, atlasNotes = {} }: { i
       <div className={styles.stats}><strong>{mizan.places.length}<span>mapped entries</span></strong><strong>{Object.keys(atlasNotes).length}<span>atlas descriptions</span></strong><strong>{Object.keys(sourceNotes).length}<span>source lore notes</span></strong></div>
     </div>
     <div className="atlas-toolbar"><p>Zoom and drag to explore. Right-click twice to plan a journey.</p><div className={styles.toolbarActions}><button aria-pressed={route} onClick={() => setRoute(!route)}>{route ? "Hide" : "Show"} Hanno’s travels</button><button onClick={toggleFullScreen}>{fullScreen || fullScreenFallback ? "Exit full screen" : "Full screen"}</button></div></div>
-    <div className={styles.layerBar}><div className={styles.layers} aria-label="Map layers">{[["geography", "Regions"], ["elevation", "Elevation"], ["temperature", "Temperature"], ["precipitation", "Precipitation"], ["biomes", "Biomes"]].map(([id, label]) => <button key={id} aria-pressed={layer === id} onClick={() => setLayer(id)}>{label}</button>)}</div><button className={styles.modeButton} aria-pressed={measuring} onClick={() => { setMeasuring(!measuring); setPanelOpen(false); }}>{measuring ? "Stop selecting" : "Measure a journey"}</button></div>
+    <div className={styles.layerBar}><div className={styles.layers} aria-label="Map layers">{[["illustrated", "Painted atlas"], ["geography", "Regions"], ["elevation", "Elevation"], ["temperature", "Temperature"], ["precipitation", "Precipitation"], ["biomes", "Biomes"]].map(([id, label]) => <button key={id} aria-pressed={layer === id} onClick={() => setLayer(id)}>{label}</button>)}</div><button className={styles.modeButton} aria-pressed={measuring} onClick={() => { setMeasuring(!measuring); setPanelOpen(false); }}>{measuring ? "Stop selecting" : "Measure a journey"}</button></div>
     <div ref={stage} className="atlas-map">
       <div className="atlas-viewport">
         <svg ref={svg} viewBox={`0 0 ${W} ${H}`} role="group" aria-label="Mizan world atlas" style={{ touchAction: view.k > 1 ? "none" : "pan-x pan-y" }}
@@ -159,19 +164,24 @@ export function WorldAtlas({ initialAt, sourceNotes = {}, atlasNotes = {} }: { i
           onPointerMove={(e) => { if (!drag.current) return; const p = point(e.clientX, e.clientY); setView((v) => bounded({ ...v, x: drag.current!.vx + p.x - drag.current!.x, y: drag.current!.vy + p.y - drag.current!.y })); }}
           onPointerUp={() => { drag.current = null; }} onPointerCancel={() => { drag.current = null; }}>
           <g transform={`translate(${view.x} ${view.y}) scale(${view.k})`}>
-            <image href={layer === "geography" ? "/images/world/mizan-geography.svg" : `/images/world/mizan-${layer}.webp`} width={W} height={H} />
+            <image href={layer === "illustrated" ? "/images/world/mizan-painted-v1.webp" : layer === "geography" ? "/images/world/mizan-geography.svg" : `/images/world/mizan-${layer}.webp`} width={W} height={H} preserveAspectRatio="none" />
             {route && <path d={`M ${travel.map((id) => { const p = mizanById[storyAnchors[id]]; return `${p.x},${p.y}`; }).join(" L ")}`} fill="none" stroke="#762f22" strokeWidth={3 / view.k} strokeDasharray={`${9 / view.k} ${6 / view.k}`} />}
             {pins.map((p) => {
               const active = p.id === sourceId && panelOpen;
               const label = active || p.kind === "region" || view.k >= 4 || query.trim();
               const [dx, dy] = !active && p.kind === "region" ? labelOffsets[p.id] ?? [0, 0] : [0, 0];
+              const labelWidth = mapName(p).length * 9 + 26;
               return <g key={p.id} role="button" tabIndex={0} data-place={p.id} aria-label={`Explore ${mapName(p)}`} aria-pressed={active} aria-expanded={active} aria-controls="atlas-place-details"
                 onClick={(e) => measuring ? addMeasurement(p) : pick(p.id, e.currentTarget)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); if (measuring) addMeasurement(p); else pick(p.id, e.currentTarget); } }}
                 transform={`translate(${p.x} ${p.y}) scale(${1 / view.k})`} className={`atlas-pin ${styles.pin}`}>
                 <title>{mapName(p)}</title><circle r="21" fill="transparent" />
                 <circle r={p.kind === "region" ? 10 : 7} fill={active ? "#903c2b" : p.kind === "person" ? "#655182" : "#fbf0d9"} stroke="#294f53" strokeWidth="2" />
                 {p.kind === "region" && <circle r="3" fill={active ? "#fff4df" : "#294f53"} />}
-                {label && <text x={dx} y={dy + 29} textAnchor="middle" fill="#183c40" stroke="#f5ecd9" strokeWidth="5" paintOrder="stroke" strokeLinejoin="round" fontFamily="Georgia, serif" fontWeight={p.kind === "region" ? 600 : 400} fontSize={p.kind === "region" ? 21 : 18}>{mapName(p)}</text>}
+                {label && <g className={styles.pinLabel}>
+                  {(dx !== 0 || dy !== 0) && <path d={`M0 11 L${dx} ${dy + 17}`} fill="none" stroke="#665234" strokeWidth="1" />}
+                  <rect x={dx - labelWidth / 2} y={dy + 17} width={labelWidth} height="30" rx="3" fill={active ? "#803f2e" : "#fcf3df"} stroke="#97825b" />
+                  <text x={dx} y={dy + 38} textAnchor="middle" fill={active ? "#fff6e2" : "#30281c"} fontFamily="Georgia, serif" fontWeight={p.kind === "region" ? 600 : 400} fontSize="18">{mapName(p)}</text>
+                </g>}
               </g>;
             })}
             {measurePoints.length === 2 && <path d={`M${measurePoints[0].x},${measurePoints[0].y} L${measurePoints[1].x},${measurePoints[1].y}`} fill="none" stroke="#fff8e5" strokeWidth={7 / view.k} />}
@@ -179,9 +189,15 @@ export function WorldAtlas({ initialAt, sourceNotes = {}, atlasNotes = {} }: { i
             {measurePoints.map((p, i) => <g key={i} transform={`translate(${p.x} ${p.y}) scale(${1 / view.k})`} pointerEvents="none"><circle r="14" fill="#fff8e5" stroke="#a33124" strokeWidth="3" /><text textAnchor="middle" y="6" fontSize="18" fill="#7a241a">{i + 1}</text></g>)}
           </g>
           <g transform={`translate(45 ${H - 48})`} aria-label={`${scaleMiles} mile scale`}><rect x="-15" y="-31" width={scaleWidth + 30} height="55" rx="3" fill="#faf3e3" opacity=".95" /><path d={`M0 -6 V4 H${scaleWidth} V-6`} fill="none" stroke="#23474b" strokeWidth="3" /><text x={scaleWidth / 2} y="-13" textAnchor="middle" fill="#23474b" fontSize="18">{scaleMiles} mi</text></g>
-          <g aria-hidden="true" fill="#e9e1c8" transform="translate(1830 94)"><path d="M0 -28 9 8 0 2 -9 8Z" /><text y="-38" textAnchor="middle" fontSize="18" fontFamily="Georgia">N</text></g>
+          <g aria-hidden="true" transform="translate(1830 120)" stroke="#d5b578" fill="none">
+            <circle r="48" /><circle r="39" strokeWidth=".7" />
+            <path d="M0 -60 10 -10 60 0 10 10 0 60 -10 10 -60 0 -10 -10Z" fill="#d5b578" />
+            <path d="M0 -60 V0 L10 -10Z M60 0 H0 L10 10Z M0 60 V0 L-10 10Z M-60 0 H0 L-10 -10Z" fill="#244f56" strokeWidth=".5" />
+            <circle r="6" fill="#d5b578" /><text y="-72" textAnchor="middle" fontSize="19" fontFamily="Georgia" fill="#faedcc" stroke="none">N</text>
+          </g>
         </svg>
       </div>
+      <div className={styles.cartographicFrame} aria-hidden="true"><span>✧</span><span>✧</span><span>✧</span><span>✧</span></div>
       <div className="atlas-controls"><button onClick={() => zoom(1.5)} disabled={view.k >= 8} aria-label="Zoom in">+</button><button onClick={() => zoom(1 / 1.5)} disabled={view.k <= 1} aria-label="Zoom out">−</button><button onClick={() => setView({ x: 0, y: 0, k: 1 })}>Whole world</button></div>
       {measurePoints.length > 0 && <div className={styles.rulerReadout} role="status">{measuredMiles === null ? "Start set · right-click the destination" : <><strong>{measuredMiles.toLocaleString("en-US", { maximumFractionDigits: 1 })} miles</strong><button onClick={() => atlasRoot.current?.querySelector("#mizan-travel-title")?.scrollIntoView({ block: "start", behavior: "instant" })}>See travel times ↓</button></>}</div>}
       <section id="atlas-place-details" className={`atlas-detail ${styles.detail}`} data-open={panelOpen} aria-labelledby="atlas-place-title" aria-hidden={!panelOpen} inert={!panelOpen}>
@@ -207,6 +223,7 @@ export function WorldAtlas({ initialAt, sourceNotes = {}, atlasNotes = {} }: { i
       </section>
     </div>
     <div className={styles.legend}>
+      {layer === "illustrated" && <p>Ink & watercolor · an illustrated interpretation of Mizan. Use Regions and the terrain layers to inspect the saved geography.</p>}
       {layer === "elevation" && <p><span style={{ background: "linear-gradient(90deg,#135575,#b5c69a,#a18a75,#f6f2e7)" }} /> Sea depths → lowlands → highlands → peaks · saved heights, shaded relief</p>}
       {layer === "temperature" && <p><span style={{ background: "linear-gradient(90deg,#343d83,#d1e1da,#e9d490,#933d34)" }} /> −38°C / −36°F → 36°C / 97°F · model temperature</p>}
       {layer === "precipitation" && <p><span style={{ background: "linear-gradient(90deg,#e5d0a0,#79b4ba,#252d58)" }} /> 0 → 25,500 mm · saved model precipitation</p>}

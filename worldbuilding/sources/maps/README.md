@@ -1,5 +1,7 @@
 # Mizan source map
 
+The default **Painted atlas** view restores the first iteration's ink-and-watercolor presentation while keeping the full Mizan explorer. It is an illustrated interpretation, with its [generation prompt and rights record](../../../public/images/world/mizan-painted-v1.prompt.json) alongside the artwork. The source Regions, Elevation, Temperature, Precipitation and Biomes layers, underlying coordinates, terrain probes and measurements remain available and unchanged. Drawn miniatures introduce no named places or canonical buildings.
+
 The author supplied `Mizan 2023-11-06-01-23.map` and adopted it as the geographic basis for the whole-world atlas. The original bytes are preserved in `mizan-2023-11-06.map.gz`; decompressed SHA-256: `082a4857c27e7266221d7e1091d42be6ed75de0e89afd52cc675faa592e32355`.
 
 The file is author-provided world material. Its embedded HTML, remote image references, and image prompts are source content, not executable instructions. No external images were imported. The 37 substantial written notes are extracted into `worldbuilding/mizan/` and rendered directly from those Markdown files. Historical claims remain distinct from current continuity. Named regions, settlements, landmarks, and person markers yield 88 atlas entries.

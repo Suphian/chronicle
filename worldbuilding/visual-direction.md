@@ -1,5 +1,11 @@
 # Visual direction
 
+## Painted atlas with the full explorer — 2026-09-07
+
+The author prefers the first atlas's illustrated design and wants that presentation combined with the current atlas's information and flexibility. The default **Painted atlas** layer uses the original atlas's ink, mineral watercolor, warm parchment, and teal water, with framed SVG labels, a brass-colored compass and an ornamental frame. The Mizan file remains the geographic data source; its imported elevation view is no longer the default artwork.
+
+All 88 source entries and nine story-place descriptions, their individual pictures, outline links, search and filters, region and climate layers, terrain probing, zoom, fullscreen, journey measurement and editable travel estimates remain available. The painting interprets the source layout; it does not replace exact source shapes, measurements or climate values. Small drawn buildings and terrain details are decorative studies, not newly established areas or institutions. This styling change adds no story proposals. See the [artwork and full generation prompt](../public/images/world/mizan-painted-v1.prompt.json).
+
 ## Latest author preference — the harbor as the shared reference
 
 On 2026-09-07 the author singled out **the Carthara city panorama** as their favorite and confirmed it as the shared style reference: [view the selected artwork](../public/images/world/carthara-grand-study-v1.webp). Use this image as the primary reference for future visual work and revisions, including the homepage, places, chapter illustrations, and portraits. Match its medium, palette, lighting, texture, and level of detail while retaining regional differences, individual character designs, and each scene's circumstances.

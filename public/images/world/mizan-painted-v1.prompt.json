@@ -1,0 +1,20 @@
+{
+  "generated": "2026-09-07",
+  "tool": "Built-in image_gen",
+  "file": "mizan-painted-v1.webp",
+  "source": "C:/Users/suphi/.codex/generated_images/01a07d3f-88df-70d1-85c7-b60ad5d57b20/exec-59deec03-69a9-4116-a4a6-cfbef178d6e2.png",
+  "references": [
+    {
+      "file": "mizan-elevation.webp",
+      "role": "Source geography and framing"
+    },
+    {
+      "file": "atlas.webp",
+      "role": "First-iteration painted atlas style"
+    }
+  ],
+  "prompt": "Use case: style-transfer. Asset: the default interactive fantasy atlas background for The Chronicle website. Image 1 is the edit target and GEOMETRY MASTER: a 1920 by 969 top-down world elevation map. Image 2 is a STYLE REFERENCE ONLY: the beloved first painted atlas. Redraw Image 1 in Image 2's exquisite hand-inked cartography, fine mountain crosshatching, delicate mineral watercolor, warm ivory parchment land, deep muted turquoise and teal seas with engraved wave lines, small elegant Mediterranean and Middle Eastern architectural miniatures. Preserve Image 1's exact flat top-down map projection, framing, world extent, coastline positions, separate islands, lakes, channels, and mainland silhouette. Do not adopt Image 2's geography or perspective or crop. No printed text, labels, pins, region colors, border lines, routes, compass or frame: those are interactive website overlays. This is a beautiful drawn atlas, not a satellite render and not a generic terrain color map. Represent mountain ranges with rich hand-drawn peaks at the high ridges in Image 1. Keep woodland clusters, dry rolling land, little fields and tiny architectural vignettes carefully scaled to the whole world. Pay close attention to the large western mainland and all small southeastern islands; do not omit them. The little island at x1072 y583 in original 1920x969 coordinates (56% across,60% down) is Lysandria and must contain TWO enormous illustrated mountains with tiny terraced settlements. The very large eastern landmass is a DIFFERENT place: keep its silhouette and inland sea, with quiet lightly drawn terrain. On the western mainland show small luminous lake gardens near x570 y556, canyon shelters near x590 y609, dry ochre sands and wetland patches around x692 y688, and a tiny ivory inland city around x785 y512. These are visual interpretations only: no invented names, political symbols, battle scenes, large roads, or dominant new landmarks. Preserve every coastline and lake against the first image, keeping map coordinates aligned for clickable pins. Rich but legible, exquisite hand-painted manuscript quality, warm paper and teal water as in Image 2. Edge-to-edge 2:1 landscape, high-resolution final atlas artwork.",
+  "rights": "AI-generated artwork for this project, using the author's map and existing project-generated art. No third-party artwork added.",
+  "status": "Illustrated interpretation, not a replacement for saved source geometry. Coastline brushwork, terrain miniatures and buildings are schematic. Data layers, coordinates, probing and measurements continue to use the original source; illustrated buildings establish no new locations or political facts.",
+  "processing": "Converted to WebP at quality 92; original generated PNG retained."
+}
