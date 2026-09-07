@@ -586,5 +586,54 @@
     "caption": "Brother Erkhemsaikhan (meaning \"mighty and wise\") · portrait study",
     "width": 1672,
     "height": 941
+  },
+  "marker23": {
+    "src": "/images/world/points/marker23-v1.webp",
+    "alt": "Portrait study of Brother Orgilmaa (meaning \"sovereign beauty\") in a richly detailed regional setting",
+    "caption": "Brother Orgilmaa (meaning \"sovereign beauty\") · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker24": {
+    "src": "/images/world/points/marker24-v1.webp",
+    "alt": "Portrait study of Brother Oyuunchimeg (meaning \"wisdom ornament\") in a richly detailed regional setting",
+    "caption": "Brother Oyuunchimeg (meaning \"wisdom ornament\") · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker25": {
+    "src": "/images/world/points/marker25-v1.webp",
+    "alt": "Portrait study of Brother Togtokh (meaning \"enduring\") in a richly detailed regional setting",
+    "caption": "Brother Togtokh (meaning \"enduring\") · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker26": {
+    "src": "/images/world/points/marker26-v1.webp",
+    "alt": "Portrait study of Brother Enkhjargal (meaning \"peace and happiness\") in a richly detailed regional setting",
+    "caption": "Brother Enkhjargal (meaning \"peace and happiness\") · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker27": {
+    "src": "/images/world/points/marker27-v1.webp",
+    "alt": "Portrait study of Brother Munkhbat (meaning \"eternal firmness\") in a richly detailed regional setting",
+    "caption": "Brother Munkhbat (meaning \"eternal firmness\") · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker28": {
+    "src": "/images/world/points/marker28-v1.webp",
+    "alt": "Portrait study of Tserendorj Mergen the Fifth in a richly detailed regional setting",
+    "caption": "Tserendorj Mergen the Fifth · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker29": {
+    "src": "/images/world/points/marker29-v1.webp",
+    "alt": "Portrait study of Erdenechimeg Mergen the Fifth in a richly detailed regional setting",
+    "caption": "Erdenechimeg Mergen the Fifth · portrait study",
+    "width": 1672,
+    "height": 941
   }
 }
