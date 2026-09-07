@@ -10,7 +10,7 @@ Sources: [`world.ts`](../../src/content/world.ts), `numarius-fields`; Chapters [
 
 ## Interpretation
 
-The fields turn an abstract debt into control over bodies and food. They are a working institution in the draft, even though the map currently gives their pin the type `ruin`.
+The fields turn an abstract debt into control over bodies and food. They are a working institution in the draft, shown as a landmark on the atlas rather than an abandoned ruin.
 
 ## Proposed development
 

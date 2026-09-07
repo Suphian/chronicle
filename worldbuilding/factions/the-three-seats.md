@@ -4,7 +4,7 @@ ID: `the-three-seats` · Existing draft institution
 
 ## Established in current draft
 
-Numarius holds the fields, Corvo the harbor, and Vael the garrison. They govern Carthara and all profit from Ravash through the Silken Chain. The cure damages that revenue; the Dust later frightens all three. Corvo and Vael begin regarding Numarius as expendable.
+Numarius holds [the fields](../places/numarius-fields.md), Corvo [the harbor](../places/carthara-harbor.md), and Vael [the garrison](../places/carthara-garrison.md). They govern Carthara and all profit from Ravash through the Silken Chain. The cure damages that revenue; the Dust later frightens all three. Corvo and Vael begin regarding Numarius as expendable.
 
 Sources: [`codex.ts`](../../src/content/codex.ts); Chapters [Five](../../src/content/chapters/05-the-cure.ts), [Seven](../../src/content/chapters/07-rising-influence.ts), and [Nine](../../src/content/chapters/09-shadows-closing-in.ts).
 

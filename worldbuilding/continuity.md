@@ -91,7 +91,7 @@ Recommended revision, not established fact: keep alchemy his strongest craft; ma
 
 Dyia's extrajudicial killings already complicate his protective mission. Track witnesses, records, discipline, loyalty, and victims' families. His final choice should endanger something tangible beyond his feelings about Hanno.
 
-Numarius, Corvo, and Vael hold useful sources of power: food and debt, harbor and trade, armed force. Give each a constituency that can withdraw support, an expense they must meet, a rule they sometimes obey, and someone whose cooperation they need. Otherwise the triumvirate becomes three interchangeable villains. The current map's single-ruler summary of Carthara underrepresents the newer three-seat arrangement.
+Numarius, Corvo, and Vael hold useful sources of power: food and debt, harbor and trade, armed force. Give each a constituency that can withdraw support, an expense they must meet, a rule they sometimes obey, and someone whose cooperation they need. Otherwise the triumvirate becomes three interchangeable villains. The atlas now names all three holders and marks their fields, harbor, and garrison separately; its city positions remain schematic.
 
 ## World depth before world size
 

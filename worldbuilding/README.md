@@ -63,4 +63,4 @@ The first prose pass repairs several earlier defects: adult recruitment follows 
 - Date the Leonin's welcome to Numarius's displaced people and subsequent dispossession, distinguishing the present rulers from earlier generations.
 - Develop the limits of Corvo's customs authority and the evidence surviving Hanno's trade. The first pass now gives the network fallible records and intermediaries; it is not untraceable.
 - Review Sinna's escalation to Amara's death, the treatment's limits, and Alethea's dependence as sustained character developments. The sabotage/intended-rescue alternative remains a proposal.
-- The map now names all Three Seats consistently with the codex. Carthara's relationship to an unnamed larger empire and the precise balance of power among its Seats remain unresolved.
+- The atlas now gives Numarius's fields, Corvo's harbor, and Vael's garrison separate selectable markers. City placement remains schematic. Carthara's relationship to an unnamed larger empire and the precise balance of power among its Seats remain unresolved.

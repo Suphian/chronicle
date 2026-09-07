@@ -4,7 +4,7 @@ ID: `carthara` · Existing draft location
 
 ## Established in current draft
 
-A southern coastal trade city with crowded markets, a harbor, a garrison, and debt plantations to its east. The [Three Seats](../factions/the-three-seats.md) rule it. The Averroes family lives above a pottery shop before dispossession. Hanno's cure brings prosperity; his Dust then damages the city's influential families. Alethea's clinic and their garden are here.
+A southern coastal trade city with crowded markets, [Corvo's harbor](carthara-harbor.md), [Vael's garrison](carthara-garrison.md), and [Numarius's debt plantations](numarius-fields.md) to its east. The [Three Seats](../factions/the-three-seats.md) rule it. The Averroes family lives above a pottery shop before dispossession. Hanno's cure brings prosperity; his Dust then damages the city's influential families. Alethea's clinic and their garden are here.
 
 Sources: [`world.ts`](../../src/content/world.ts), `carthara`; Chapters [One](../../src/content/chapters/01-market-awnings.ts), [Five](../../src/content/chapters/05-the-cure.ts), [Seven](../../src/content/chapters/07-rising-influence.ts), and [Ten](../../src/content/chapters/10-the-flower-in-her-hair.ts).
 

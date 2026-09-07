@@ -22,6 +22,7 @@ export function WorldAtlas({ initialAt }: { initialAt?: string }) {
     setPanelOpen(true);
     const url = new URL(window.location.href);
     url.searchParams.set("at", id);
+    url.hash = "";
     window.history.replaceState(null, "", url);
     stage.current?.scrollIntoView({ block: "start", behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
     // Also focus when choosing the already-open location again.
@@ -29,11 +30,11 @@ export function WorldAtlas({ initialAt }: { initialAt?: string }) {
   };
   const close = () => {
     setPanelOpen(false);
-    const url = new URL(window.location.href);
-    url.searchParams.delete("at");
-    window.history.replaceState(null, "", url);
+    // Keep the selected place in the shareable URL; dismissal is local UI state.
     const trigger = opener.current ?? svg.current?.querySelector<SVGElement>(`[data-place="${selected}"]`);
-    trigger?.focus({ preventScroll: trigger instanceof SVGElement });
+    const fromPin = trigger instanceof SVGElement;
+    trigger?.focus({ preventScroll: fromPin });
+    if (fromPin) requestAnimationFrame(() => stage.current?.scrollIntoView({ block: "start", behavior: "instant" }));
   };
   useEffect(() => {
     if (panelOpen && opener.current) closeButton.current?.focus({ preventScroll: true });
@@ -96,6 +97,6 @@ export function WorldAtlas({ initialAt }: { initialAt?: string }) {
     <div className="atlas-directory">
       <nav aria-label="Places"><h2>Place directory</h2><div className="atlas-place-list">{world.map((location) => <button key={location.id} aria-pressed={panelOpen && selected === location.id} aria-expanded={panelOpen && selected === location.id} aria-controls="atlas-place-details" onClick={(e) => pick(location.id, e.currentTarget)}>{location.name}<span>{location.type}</span></button>)}</div></nav>
     </div>
-    <p className="atlas-caption">This atlas covers the current story’s locations. <Link className="book-location" href="/library/geography-reconciliation">Explore the recovered geography of Ruhania, Sidrat, and the Leonin Khanate →</Link></p>
+    <p className="atlas-caption"><Link href="/library/factions/the-three-seats">Carthara’s Three Seats</Link>: Numarius’s fields, Corvo’s harbor, and Vael’s garrison. City markers are schematic; street layout and distances remain open. <Link className="book-location" href="/library/geography-reconciliation">Explore the recovered geography of Ruhania, Sidrat, and the Leonin Khanate →</Link></p>
   </div>;
 }

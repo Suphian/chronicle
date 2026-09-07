@@ -2,8 +2,8 @@ import type { WorldLocation } from "./types";
 
 /**
  * Locations on the world map. Coordinates are on a 1200 x 800 canvas
- * (see src/components/WorldMap.tsx). Add new places here and they appear
- * as pins automatically.
+ * (see src/components/WorldAtlas.tsx). Add new places here and they appear
+ * as pins automatically. Positions are schematic, including city districts.
  */
 export const world: WorldLocation[] = [
   {
@@ -29,8 +29,33 @@ export const world: WorldLocation[] = [
       "Endless plantations east of the city walls, worked by the indentured. Idris Averroes was taken here the morning his stall was seized. He died here, and was buried where he fell, to feed the crop.",
     x: 720,
     y: 420,
-    type: "ruin",
+    type: "landmark",
     appearsIn: [{ chapter: "market-awnings", scene: "the-fields", label: "Idris is taken" }],
+  },
+  {
+    id: "carthara-harbor",
+    name: "Corvo’s Harbor",
+    tagline: "The Second Seat · Docks, customs, and the price of passage.",
+    description:
+      "Carthara's harbor and customs house are held by Magistra Ilvane Corvo, the Second Seat. Hanno leaves through these docks on Sinna's commission and returns with Alethea to a clerk's schedule of duties. Ships need working berths, carriers need wages, and repairs depend on levies the Seats dispute. Corvo's control does not mean she knows every cargo. This marker shows a part of Carthara; its exact layout remains open.",
+    x: 550,
+    y: 555,
+    type: "landmark",
+    appearsIn: [
+      { chapter: "journeys", scene: "sent-away", label: "Hanno sails" },
+      { chapter: "the-cure", scene: "return", label: "The customs charge" },
+    ],
+  },
+  {
+    id: "carthara-garrison",
+    name: "Vael’s Garrison",
+    tagline: "The Third Seat · The guard, its records, and the people at its door.",
+    description:
+      "General Tarquin Vael holds the Third Seat and commands Carthara's city guard, including Dyia. At the garrison, a woman asks Dyia to return her dead brother's belongings, forcing him to face what his methods have cost her. Soldiers need food and pay; officers keep records that can preserve a claim or conceal an abuse. The garrison belongs to Carthara, and its precise position and internal layout remain unwritten.",
+    x: 705,
+    y: 500,
+    type: "landmark",
+    appearsIn: [{ chapter: "rising-influence", scene: "patient-vigilance", label: "The missing belongings" }],
   },
   {
     id: "tengeri-wastes",
