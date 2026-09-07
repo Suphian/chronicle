@@ -6,7 +6,7 @@ import Image from "next/image";
 import { getBibleEntries } from "@/lib/worldbuilding";
 import styles from "./WorldStudy.module.css";
 
-export const metadata: Metadata = { title: "World" };
+export const metadata: Metadata = { title: "Mizan · World" };
 
 export default async function WorldPage({
   searchParams,
@@ -15,13 +15,16 @@ export default async function WorldPage({
 }) {
   const { at } = await searchParams;
   const entries = getBibleEntries();
+  const lore = entries.filter((entry) => entry.group === "mizan");
+  const sourceNotes = Object.fromEntries(lore.map((entry) => [entry.slug, entry.content]));
   return (
     <main className="world-page">
-      <h1>World</h1>
-      <nav className="section-subnav" aria-label="World sections"><a href="#atlas">Atlas</a><a href="#history">History</a><a href="#institutions">Institutions & power</a><a href="#everyday">Everyday life</a><Link href="/codex#substance">Beliefs, substances & artifacts</Link></nav>
+      <h1>Mizan</h1>
+      <nav className="section-subnav" aria-label="World sections"><a href="#atlas">Atlas</a><a href="#world-lore">Recovered lore</a><a href="#history">History</a><a href="#institutions">Institutions & power</a><a href="#everyday">Everyday life</a><Link href="/codex#substance">Beliefs & artifacts</Link></nav>
       <section id="atlas" className="section-block world-atlas-section"><h2 className="sr-only">Atlas</h2>
-      <WorldAtlas key={typeof at === "string" ? at : "default"} initialAt={typeof at === "string" ? at : undefined} />
+      <WorldAtlas key={typeof at === "string" ? at : "default"} initialAt={typeof at === "string" ? at : undefined} sourceNotes={sourceNotes} />
       </section>
+      <section id="world-lore" className="section-block"><h2>Early world notes</h2><p>Ideas and legends from the 2023 map. Later story decisions take precedence.</p><div className="notebook-cards">{lore.map((entry) => <Link key={entry.slug} href={`/library/${entry.slug}`}><h3>{entry.title}</h3></Link>)}</div></section>
       <section className={styles.study} aria-labelledby="carthara-study-title">
         <figure>
           <a className={styles.artwork} href="/images/world/carthara-grand-study-v1.webp" target="_blank" rel="noreferrer" aria-label="Open the Carthara architectural study at full size">

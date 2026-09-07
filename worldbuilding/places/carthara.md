@@ -21,3 +21,7 @@ The reference aesthetic supports white stone, shaded arcades, elaborate brasswor
 ## Open questions
 
 How large is the city, and can people walk between these locations in a scene? Who owns water and housing? What powers do the Seats share? Is Carthara independent or subject to a larger empire? Decorative map coordinates do not establish a scale or street plan.
+
+## Mizan source distinction
+
+The old source map records Cathara as a region with inland oasis capital Tijara. Current Carthara remains a coastal city. The atlas uses the old region as a broad anchor while leaving the exact current city and district sites unresolved. The harbor panorama remains the primary visual reference.

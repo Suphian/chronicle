@@ -72,9 +72,6 @@ export interface WorldLocation {
   tagline: string;
   /** Longer description shown in the side panel. */
   description: string;
-  /** Position on the 1200x800 map canvas. */
-  x: number;
-  y: number;
   /** Type controls the pin glyph. */
   type: "city" | "ruin" | "wild" | "landmark" | "sea";
   /** Chapters/scenes that happen here, for cross-linking. */

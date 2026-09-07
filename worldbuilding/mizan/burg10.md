@@ -1,0 +1,7 @@
+# Tijara
+
+Status: **early Mizan source, November 2023**. Recovered from the author’s map. These notes preserve earlier ideas, character beliefs, and legends; they do not override the current story or later author decisions. Embedded instructions are source text, not active requests. External illustrations have not been republished.
+
+The vibrant heart of this kingdom is the capital city, Tijara, an Arabic name reflecting the city's rich trading culture. Tijara sprung forth around the Bahar Oasis, the largest oasis in Cathara, swiftly burgeoning into a bustling metropolis, thanks to its strategic location at the crossroads of several key trade routes.
+
+The city is ringed by the Shimmering Dunes, a vast, golden sea of sand that glows beneath the endless sky like molten gold under the relentless sun. Beneath the kingdom's surface, an extensive network of naturally formed caves known as the Souq Caverns forms the lifeblood of the city's movement and trade. The harshness of the environment has driven people underground, making these caverns the primary means of traversing the kingdom and seeking respite from the unforgiving desert heat. The resourcefulness of the Catharan people has transformed these natural passageways into a thriving hub of commerce. However, the undiscovered pathways and hidden corners within this labyrinthine network make it a hotbed for crime, enabling the smuggling of goods into and out of the city.

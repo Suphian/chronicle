@@ -79,3 +79,7 @@ After the author reported that the vignette motion was not visible, the shared c
 ### Stronger picture motion — 2026-09-07
 
 The author clarified that the pictures load but their movement is too subtle, and requested more visible animation. The hero and all living vignettes now use an eight-second alternating camera movement with a wider pan and zoom, five-second moving light, larger faster motes, and a more pronounced 4.8-second curtain billow on Lysandria. Negative phase offsets make movement apparent when a picture enters view instead of waiting through a slow start. These are camera and atmosphere effects over the existing artwork, not newly animated character actions. Text stays still; pause, reduced-motion defaults, and offscreen/background suspension remain in effect.
+
+## Mizan location pictures — September 2026
+
+Location panels use the adopted Carthara panorama and eight new regional studies in its richly detailed painterly realism. Each region retains its own climate and architecture: inland Tijara is an oasis, Lysandria has two enormous island mountains, and Tengeri depicts displaced Leonin civilian life. Regional references are explicitly captioned when reused for a place without its own view. Earlier schematic atlas artwork, including the eastern Tengeri placement, is superseded by imported Mizan source geometry and the author’s southwest Tengeri decision. Prompts and provenance: public/images/world/mizan-art-provenance.json.

@@ -1,10 +1,10 @@
 # The Tengeri Wastes
 
-ID: `tengeri-wastes` · Refugee camps in eastern canyons
+ID: `tengeri-wastes` · Refugee camps southwest of Carthara
 
 ## Established by the author's latest revision
 
-Wind-carved canyons and jagged cliffs far east of Carthara now shelter Leonin communities driven from their homeland. The Wastes are a region of refugee camps, not a freely chosen ancestral nomadic homeland. Many residents are enslaved or bound to enforced labor, and movement and family visits depend on papers they cannot freely obtain. Bombardment is recurrent, not a single exceptional attack.
+Wind-carved canyons and jagged cliffs in the Tengeri region southwest of Carthara now shelter Leonin communities driven from their homeland. The Wastes are a region of refugee camps, not a freely chosen ancestral nomadic homeland. Many residents are enslaved or bound to enforced labor, and movement and family visits depend on papers they cannot freely obtain. Bombardment is recurrent, not a single exceptional attack.
 
 The power associated with Lord Numarius dispossessed the Leonin after his people had originally been welcomed as refugees. Other powers repeat false accounts and dehumanizing propaganda. This adopted history revises the earlier setting. It does not establish the original homeland's coordinates, the founding generation, or a complete military chain of command.
 
@@ -26,4 +26,4 @@ Keep the civilian economy visible. A teacher, chair-mender, guide, and displaced
 
 Where was the lost homeland, and who now lives on or controls each part of it? Which authority attacks, which administers labor, and what do Numarius's partners know or gain? What technologies deliver the bombardment, and how do costs, range, and infrastructure constrain them? No tactical or technical weapon system is established by the current scene.
 
-“Tungari” in the conversational pitch is treated as the existing Tengeri Wastes, not a second place. The [early geography](../sources/early-geography.md) preserves Erdene Zuu, Altan and Tsetseg, the lost fifteenth tribe, and the Golden Yurt. Their location before or after displacement remains open. The source's native-homeland description is superseded; its historical concepts are preserved for reconciliation. Map coordinates remain schematic and establish no distances or borders.
+“Tungari” in the conversational pitch is treated as the existing Tengeri Wastes, not a second place. The [early geography](../sources/early-geography.md) preserves Erdene Zuu, Altan and Tsetseg, the lost fifteenth tribe, and the Golden Yurt. Their location before or after displacement remains open. The source's native-homeland description is superseded; its historical concepts are preserved for reconciliation. The author adopted the old Leonin region in the Mizan map for Tengeri, southwest of Cathara/Carthara. Its source geometry and scale now anchor the region; individual camps and present political borders remain unresolved.

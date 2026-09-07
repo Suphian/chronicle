@@ -1,0 +1,66 @@
+{
+  "width": 1920,
+  "height": 969,
+  "probeWidth": 960,
+  "probeHeight": 485,
+  "probeStep": 2,
+  "gridCells": 100125,
+  "packedCells": 41745,
+  "distanceUnit": "mi",
+  "distanceScale": 5.11,
+  "heightUnit": "ft",
+  "heightExponent": 1.8,
+  "temperatureUnit": "\u00b0F",
+  "coordinates": {
+    "latT": 180,
+    "latN": 90,
+    "latS": -90,
+    "lonT": 356,
+    "lonW": -178,
+    "lonE": 178
+  },
+  "biomes": [
+    "Marine",
+    "Hot desert",
+    "Cold desert",
+    "Savanna",
+    "Grassland",
+    "Tropical seasonal forest",
+    "Temperate deciduous forest",
+    "Tropical rainforest",
+    "Temperate rainforest",
+    "Taiga",
+    "Tundra",
+    "Glacier",
+    "Wetland"
+  ],
+  "biomeColors": [
+    "#466eab",
+    "#fbe79f",
+    "#b5b887",
+    "#d2d082",
+    "#c8d68f",
+    "#b6d95d",
+    "#29bc56",
+    "#7dcb35",
+    "#409c43",
+    "#4b6b32",
+    "#96784b",
+    "#d5e7eb",
+    "#0b9131"
+  ],
+  "temperatureRange": [
+    -38,
+    36
+  ],
+  "heightRange": [
+    0,
+    100
+  ],
+  "precipitationRange": [
+    0,
+    25500
+  ],
+  "savedRulers": "Ruler: 72,86 974,307; Ruler: 72,86 860.1,746.9",
+  "rivers": 0
+}

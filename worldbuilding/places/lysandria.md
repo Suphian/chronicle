@@ -27,3 +27,7 @@ An island economy offers useful questions about harbor labor, imported food, ore
 Who governs beside the general? How are soldiers supplied and recruited? Where are the harbors, settlements, and training courts relative to the two mountains? What are the mountains called? Their height, geology, and exact shape are not fixed. Neither are the island's world coordinates, distance from Carthara, or sailing time to the wedding island; atlas placement remains schematic.
 
 Chapter Three now shows Hanno arriving by sea, remembering Amara's description of the mountains, and taking the ledge road inland after landing. The crossing's duration and departure port are not fixed. Amara's earlier Bakhtari lineage claim requires reconciliation separately from her adopted Lysandrian origin. Is harmony a shared philosophy, a state ideal, a religion, or several competing traditions? Do not automatically equate it with Hanno's Aetherium Harmonia.
+
+## Adopted Mizan anchor
+
+The November 2023 source map now places Lysandria on its island east of the mainland. Its mapped extent and source elevation are preserved. The two enormous mountains and Amara’s home remain current direction; individual summit heights and harbor sites remain open.

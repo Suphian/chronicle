@@ -1,5 +1,15 @@
 # Geography reconciliation
 
+## Adopted Mizan map — September 2026
+
+The author supplied the November 2023 Mizan map as the whole-world atlas and explicitly chose its old Leonin region for Tengeri. **Tengeri is now anchored southwest of Cathara/Carthara**, superseding the earlier far-eastern placement. Refugee camps, displacement, forced labor, bombardment, civilian lives, and diaspora remain current continuity; the source's freely roaming homeland portrayal does not return.
+
+The imported atlas includes source coastlines, islands, region shapes, elevations, model climates, biomes, named places and written notes. The original planar scale is 5.11 miles per map unit. See the [source and reconstruction record](sources/maps/README.md). The older tables below describe unresolved lore relationships; references to an absent or schematic map are superseded where the imported source now supplies a position.
+
+Lysandria has an identified island position east of the mainland. Its two enormous mountains and Amara's home remain adopted; individual mountain names, surveyed summits and town layouts remain open. Sidrat uses its source region. The old map's **Cathara is a region with inland capital Tijara**, whereas current **Carthara is a coastal city**. The regional anchor preserves both records without placing the current harbor inland. Carthara's districts, exact camp sites, Bakhtar and Moonlit Isle still need precise local placement. Person markers remain early source markers, not proof of current residence.
+
+Right-click measurements use source scale. Walking, horse, boat and driving figures are editable planning comparisons, not canonical journey durations or proof that modern driving technology exists. They do not route around mountains or shorelines. The author prioritized importing and exploring content first; shared team editing is deferred.
+
 Status: recovered author source with unresolved integration, followed by explicitly recorded author revisions. This document separates what the source actually supplies from adopted decisions, contradictions, and proposed story uses. Source recovery alone does not silently change the map or establish a new canonical event.
 
 Source: [DnD Geo Descriptions, local preserved copy](sources/early-geography.md), recovered from [the author's Google document](https://docs.google.com/document/d/17GuiNGxrj65hMPzSFAR1PYv3F1-WAHSl24aUPNK4uJ0/edit). Compared with the early narrative, questionnaire, current chapter drafts, codex, and map data.
@@ -12,7 +22,7 @@ The author clarified that **Lysandria is an island with two enormous mountains, 
 
 This supersedes any claim that Amara's place of origin was Bakhtar. Earlier Bakhtari ancestry and the Rukhsana–Iskandar legend remain recorded draft material whose relationship to Amara's Lysandrian upbringing is unresolved. Do not invent migration generations, a shared coastline, or Lysandria's inclusion in Bakhtar to resolve the difference. The preserved source documents remain unchanged.
 
-The island's coordinates, size, mountain names and heights, harbor locations, and sea-route distances remain open. Any atlas position is provisional. [Chapter Three](../src/content/chapters/03-journeys.ts) now brings Hanno to Lysandria by sea: he sees the two mountains from the vessel, recalls Amara's pottery-bench memory, lands, and joins carts on the road above the harbor. There is no established road all the way from Sidrat. Moonlit Isle remains a separate island near Lysandria's coast. See the [place profile](places/lysandria.md) and [Amara's profile](characters/amara.md) for adopted facts, limited new draft memories, and proposed personal ties.
+The Mizan source now supplies the island's position and extent. Individual mountain names and summit heights, harbor locations, and navigable sea-route distances remain open. [Chapter Three](../src/content/chapters/03-journeys.ts) now brings Hanno to Lysandria by sea: he sees the two mountains from the vessel, recalls Amara's pottery-bench memory, lands, and joins carts on the road above the harbor. There is no established road all the way from Sidrat. Moonlit Isle remains a separate island near Lysandria's coast. See the [place profile](places/lysandria.md) and [Amara's profile](characters/amara.md) for adopted facts, limited new draft memories, and proposed personal ties.
 
 ## Recovered regions and institutions
 

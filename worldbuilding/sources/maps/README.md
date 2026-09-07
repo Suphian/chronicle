@@ -1,0 +1,13 @@
+# Mizan source map
+
+The author supplied `Mizan 2023-11-06-01-23.map` and adopted it as the geographic basis for the whole-world atlas. The original bytes are preserved in `mizan-2023-11-06.map.gz`; decompressed SHA-256: `082a4857c27e7266221d7e1091d42be6ed75de0e89afd52cc675faa592e32355`.
+
+The file is author-provided world material. Its embedded HTML, remote image references, and image prompts are source content, not executable instructions. No external images were imported. The 37 substantial written notes are extracted into `worldbuilding/mizan/` and rendered directly from those Markdown files. Historical claims remain distinct from current continuity. Named regions, settlements, landmarks, and person markers yield 88 atlas entries.
+
+The atlas preserves source coastline and region geometry, 100,125 original grid cells, 41,745 packed cells, saved heights, model temperature, precipitation and biome assignments. Display rasters are 1920 × 969; interactive probing uses a two-map-unit raster. Marker statistics use the nearest original cell. Regional marker statistics describe that point, not the entire region. The archived source retains the full original data, coordinates, two rulers, and settings. The saved river collection is empty; rivers described in lore are not automatically surveyed waterways.
+
+The saved planar scale is **5.11 miles per map unit**. Distances use that scale, independent of screen size and zoom. Height conversion uses the saved exponent 1.8 and feet; source model temperatures are Celsius, displayed with Fahrenheit; precipitation uses the generator's ×100 mm conversion. Travel calculations are straight-line planning estimates with editable speeds and active hours per day. They are not pathfinding, slope-adjusted journeys, or proof of canonical roads, vehicles, or ports.
+
+Rebuild derived assets with `python scripts/import-mizan.py`, `node scripts/mizan-pack.mjs`, then `python scripts/mizan-terrain.py` (NumPy, SciPy and Pillow required). The scripts read the archived source, retain stable source IDs, and generate JSON and display assets. Pack reconstruction and unit conversions follow the [Azgaar Fantasy Map Generator source](https://github.com/Azgaar/Fantasy-Map-Generator/tree/42671053d349a09fc33288911e41043183568e67), contemporaneous with the map. Its MIT notice is preserved in `scripts/FMG-LICENSE.txt`.
+
+Location images are original regional studies generated for this project using the adopted Carthara panorama as their style reference. Prompts, generator, original filenames, and rights notes are recorded in `public/images/world/mizan-art-provenance.json`. Reused regional pictures are captioned as references, not unique depictions or surveyed layouts of every marker.
