@@ -1,6 +1,6 @@
-# The teacher of the uplands
+# Chuluun: the teacher and resistance leader
 
-Status: **author-requested strand in development**. Historical inspiration researched; fictional name, community, occupying power, chronology, and outcome remain proposed. This note adds a concrete place for the idea to grow without silently installing a finished biography or changing chapter events.
+Status: **role adopted for Chuluun, 2026-09-07**. The author explicitly assigns the Omar Mukhtar-inspired older teacher and resistance-leader strand to the existing Leonin character. The earlier separate, unnamed upland character is superseded. This stable filename preserves links and the original historical research. Chuluun remains fictional; his full military chronology, capture, and eventual fate remain open.
 
 ## Original pitch
 
@@ -24,68 +24,43 @@ The named historical reference is **Omar al-Mukhtar**, also written ʿUmar al-Mu
 
 The TDV entry is a scholarly biographical reference; Arielli's peer-reviewed article draws on military records and historical research. The TIME piece is contemporary reporting with colonial language and framing, useful as evidence of contemporary presentation rather than unquestioned authority. No dialogue or famous quotation has been attributed to al-Mukhtar in this note.
 
-## Interpretation: what makes this valuable to Chronicle
+## Adopted fictional fit: Chuluun and the Leonin
 
-The useful contrast is between an empire's image of command and the relationships that actually sustain resistance. An officer expects a physically imposing strategist because reports keep attaching setbacks to one name. The prisoner is an older teacher whose influence began with work the officer's records dismissed: settling disputes, teaching, maintaining trust, and remembering obligations. His age can surprise an individual captor without requiring the entire government to have forgotten what its principal opponent looks like.
+[Chuluun](../characters/chuluun.md) is the older teacher and resistance leader the author intends for this strand. He remains a Leonin living under enforced labor obligations in the Tengeri camps, within the adopted history of displacement by the power now led by Numarius. His teaching and leadership complement his existing work keeping missing-person records and helping households survive; they do not turn him into a human historical figure or erase that work.
 
-The teacher's achievement should be limited and consequential: preventing secure occupation of a region, keeping several communities supplied and politically connected, or making an annexation far more costly than promised. He does not personally fight every battle or nearly conquer the enemy's capital. The communities matter before his arrival and continue to make choices after his capture.
+[Chapter Three](../../src/content/chapters/03-journeys.ts), scene **tengeri-wastes**, now begins the role in prose. Chuluun teaches children arithmetic and adults letters between compulsory shifts. The guide explains that some fighters were his students and some served under him before a transfer dispersed them. A limited group of households has asked him to represent their interests when armed groups seek supplies or recruits. The Last Standard has its own commanders. When he promises a pack animal needed to carry water for the injured, the shelter's account keeper refuses; he withdraws the promise and works with her on what can actually be spared.
 
-This strand can also give religious life an institutional presence: study, hospitality, charity, obligations to neighbors, debate about authority. A fictional school or lodge must have its own defined tradition. It should not turn real Sanusi practice into invented doctrine or equate every existing faith in Chronicle with Islam.
+These are initial draft developments, not a complete resistance biography. Chuluun's influence has a source, his obligations compete, and his decisions can be corrected by people who live with the consequences. His compulsory shifts and restricted freedom remain practical constraints. No scene adopts a historical battle, capture, execution, exact age, faith, or date for him.
 
-## Recommended fictional fit — a contemporary Bakhtari upland strand
+## Interpretation and performance direction
 
-**Working designation:** the teacher of the uplands. Leave his personal name open until the community's language and naming conventions are settled.
+The useful connection to the historical reference is authority built through teaching, long relationships, organized resistance, and service to a community. Age does not make Chuluun infallible. Former pupils may trust him, oppose his decisions, or refuse the risks he asks them to take. His military experience does not entitle him to speak for every civilian.
 
-**Proposed place and era:** a cluster of inhabited foothill valleys in [Bakhtar](../places/bakhtar.md), during the years in which Hanno's Cartharan practice grows. This is a new proposed campaign, distinct from [Iskandar's ancient legend](../../src/content/chapters/00-the-conqueror.ts). The earlier claim that Bakhtar defeats empires should remain a contested saying, not an enchantment guaranteeing victory.
+For illustration and narration, portray an older Leonin teacher with dignity, weariness, attention, and the capacity for anger. Keep his lion muzzle, mane, and other established anatomy. This is an original fictional character, not a portrait or impersonation of Omar Mukhtar. Specific historical clothing, quotations, or religious practice should not be assigned to him without a separate creative decision.
 
-**Proposed conflict:** an external power claims control of a pass and the right to register land, collect transit revenue, and determine who may return to emptied settlements. Its named ruler, borders, and relationship to Carthara are unresolved. Do not silently make Numarius an emperor or treat the Three Seats as already governing Bakhtar.
+## Proposed independent arc
 
-**The teacher's immediate aim:** keep a school and its dependent households in their own valley through the next winter, while preventing the occupying administration from converting a temporary military presence into permanent dispossession. His military leadership grows from requests made by adults who already trust him. He remains answerable to those people rather than becoming their natural ruler by virtue of age.
+The broader story still needs space beyond Hanno's visit. The following are proposals, not established events:
 
-**His independent life and limitations:** he likes correcting copied texts, dislikes wasted lamp oil, and is reluctant to admit when younger people must repeat themselves because his hearing is worse. He knows the valley's households better than he knows the enemy's court. He can persuade a neighboring council; he cannot order it to surrender its stores. His former pupils include people who support him, people who think continued resistance will destroy their families, and a person employed by the occupying administration. His judgment can be wrong without making his commitment fraudulent.
+1. **A school and its accounts:** follow a teacher, adult learner, or household trying to keep lessons and ordinary work going while compulsory transfers disrupt both. Chuluun must answer a criticism about how he has allocated time or supplies.
+2. **A military decision with civilian dissent:** a former fighter seeks support for an operation. The people providing food or shelter set limits. Chuluun's decision changes something tangible for them; the narrative need not prove every dissenting person mistaken afterward.
+3. **Pressure on the network:** a detention, labor reassignment, intercepted request, or failed evacuation exposes the limits of his influence. Choose the specific event and responsible institution before writing it. He cannot secretly direct every action while the state inexplicably ignores him.
+4. **An outcome beyond a heroic image:** if the author later chooses capture, give his colleagues continuing decisions about the school, households, resistance, and negotiations. Capture need not mean voluntary surrender; execution is not predetermined. His followers remain people with choices after any public image of him becomes useful to others.
 
-**A real fault to develop:** he has become used to people accepting his decisions. When the school steward challenges a levy for the fighters, he initially treats disagreement as a failure of resolve. The scene must make him confront an actual cost to the school, not merely reward him with her eventual agreement. He may change the demand, accept a limit, or lose support. None of those options is settled here.
+The current scene already gives a shelter account keeper the power to refuse an overreaching promise. A longer arc could develop her life, a former pupil with competing loyalties, and a fighter whose competence exceeds Chuluun's in a particular matter. Their names, histories, and formal positions remain open. Do not make each a member of Hanno's family or a future recruit for his trade.
 
-## The movement around him
+## Connections and limits
 
-These are proposed independent roles, not additional canonical names:
+**Leonin institutions:** the Return Councils, Open Hand, Last Standard, and Scattered Hearths retain distinct priorities. Chuluun's precise relationships with them require development; adopting his leadership does not place all four under him or give every Leonin the same politics.
 
-- **The school steward**, a woman who controls the accounts and the winter food arrangement. She wants the school to remain useful to families regardless of which army holds the road. She can refuse the teacher's request for supplies and publish the costs to the household council. She may negotiate a civilian arrangement he dislikes without being revealed as a traitor.
-- **A caravan organizer**, whose workers and animals carry ordinary goods as well as relief. Her brother has accepted a permit from the occupiers. She wants safe passage and wages paid; she does not owe either side the lives of her crew. Her practical decisions change which promises the teacher can keep.
-- **A younger field commander**, who thinks the teacher's restraint costs opportunities. His military competence is real, but he needs the same households whose priorities he dismisses. He must be capable of surviving the teacher and changing the movement's direction.
-- **A former pupil in the occupying administration**, who translated land records in the hope of preserving residents' claims. His work may instead make dispossession easier to enforce. Give him a choice with an identifiable victim and an achievable alternative, rather than a secret loyalty twist.
-- **Families seeking evacuation or negotiated return**, who are neither cowardly scenery nor automatically committed supporters. Some benefit from resistance and some suffer from decisions made in its name. Their agency continues after the teacher becomes a symbol.
+**Hanno:** their existing encounter gives him obligations to report what he witnessed and respect his hosts' decisions. Later relief purchases, testimony, or requests could bring Chuluun's struggle back into his life. Such contact remains proposed. Hanno's private revenge should not silently be treated as equivalent to the Leonin's collective resistance.
 
-The opposing force should also have recruitment, pay, conflicting duties, and locally recruited personnel. An occupying institution remains responsible for what it orders; complexity among the people serving it does not erase that responsibility or make every oppressed community morally interchangeable.
+**Dyia:** a proposed order affecting displaced people or a detained messenger could echo the structure of Amara's door. Its victims must have needs beyond producing his character development. This connection remains unwritten and does not choose his final action at Hanno's door.
 
-## Proposed sequence of scenes
+**Carthara:** the power responsible for Leonin dispossession is associated with Numarius. The exact command chain, territorial reach, financing, and other Seats' responsibility are still open. No new claim that Corvo or Vael ordered every attack follows from Chuluun's adopted role.
 
-1. **Before the famous name:** the teacher is trying to resolve a dispute over a household's contribution to school stores. The argument exposes what he can persuade people to do and what he cannot command. News of a threatened land registration arrives while the dispute remains unfinished.
-2. **A decision with dissent:** resistance has made the occupation costly, but winter stores are shrinking. The steward refuses another levy. The teacher must choose between a promised operation and the ordinary institution he says he is protecting. Show the consequences of his choice through her work as well as his perspective.
-3. **Capture:** during a failed withdrawal or disrupted journey, the teacher is taken alive. He is exhausted, hurt, and concerned about people who have not been accounted for. A junior captor expects a younger commander; a superior identifies him from prior information. The scene distinguishes detention from consent. Avoid a verbatim reenactment of any alleged historical exchange.
-4. **The offered statement:** authorities want a public declaration that resistance was his private enterprise and will end with him. He can refuse to claim ownership of people he never had the right to command completely. His request for humane treatment or a civilian release is not secretly a surrender. Whether an exchange, trial, execution, or prolonged captivity follows remains a fictional decision to develop.
-5. **After the image:** the steward must keep the school open, answer bereaved families, and decide which agreements still hold. The younger commander wants the teacher's name on a new demand. She can withhold the accounts, seek another policy, or accept a limited compromise. The movement does not freeze into a monument at its leader's capture.
+## Superseded placement and remaining decisions
 
-If the author wants execution to parallel al-Mukhtar's fate, write the political purpose, the family's and colleagues' choices, and the contested aftermath. The public death cannot be the only event that gives the teacher significance. A different fictional outcome is available and would not change the researched historical fact.
+An earlier version of this note recommended a separate, unnamed teacher in contemporary Bakhtari foothills, with the Safar Peaks of Ruhania as an alternative. Those placements and that additional character are **superseded by the author's assignment to Chuluun**. They are not parallel canonical teachers or reasons to relocate the Tengeri camps. The historical research above remains provenance for the inspiration.
 
-## Connections to the current novel
-
-**Hanno:** relief purchases or treatment work can bring the consequences of the campaign to Carthara without making the teacher his relative or secret mentor. Hanno may offer aid tied to control of accounts or favorable publicity. The steward can accept useful medicine while refusing the condition. The teacher's resistance gives Hanno a moral comparison he cannot reduce to personal vengeance: injury does not entitle him to punish every civilian who lives under the offending power. Do not resolve that conflict with one improving speech.
-
-**Dyia:** an order concerning a captured courier or a displaced household can reproduce the practical structure of Amara's door. The people involved have objectives beyond teaching him a lesson. He can protect a prisoner while still serving a harmful institution, or enforce a rule and learn exactly whom it harms. This can develop his capacity to distinguish evidence, obedience, and justice without deciding what he eventually does at Hanno's door.
-
-**Carthara's institutions:** shipping permits, relief cargo, testimony, and payment disputes can connect the strand to [Corvo's harbor](../characters/corvo.md). Choose one concrete connection first. Do not make Corvo the concealed author of every distant atrocity or make the campaign another branch of the Ravash trade by default.
-
-**Bakhtari memory:** contemporary residents can disagree with the romantic Iskandar song while preserving its music. That lets the world hold both a conquest legend and accounts of dispossession. Amara's origin gives the reader a connection, but no kinship or personal acquaintance with the teacher is assumed.
-
-## Outline placement and tradeoffs
-
-**Recommended:** introduce evidence of the upland conflict during the expansion around Chapters Six–Seven, then give the school steward or teacher a separate viewpoint chapter before any capture scene. Readers first meet Hanno's family and learn to read the broader world through people with immediate needs. This placement creates a parallel political strand with space to grow into several chapters; it is not confined to the current ten-chapter scaffold.
-
-**Alternative:** place the teacher in the [Safar Peaks of recovered Ruhania](../sources/early-geography.md), with the Grand Codexium as a potential destination for displaced teachers or records. This gives the recovered geography a living conflict and reduces the amount of important history concentrated in Bakhtar. It also requires more reconciliation of borders, institutions, faiths, and travel than the Bakhtar placement. Neither location is installed as canon by this note.
-
-The main tradeoff is attention. A fully independent resistance plot can support an epic, but if introduced before Hanno has a sustained opening arc it could reproduce the original problem of an impressive world without a story to follow. Begin with one person trying to keep a school or household functioning, then widen the conflict when the reader has someone to care about.
-
-## Next integration decisions
-
-Decide the location, the external power's concrete claim, the teacher's name and faith, the date relative to Hanno, the first viewpoint, and whether capture ends in execution. Then create linked character and institution profiles, add scene plans and history entries, and update map references only for adopted places and routes. Keep historical research separate from fictional event records. The user's invitation authorizes developing this strand; these particulars remain available for refinement rather than silently settled.
+Set the scale and chronology of Chuluun's former command, his present authority, how people can reach him under forced labor, the risks to his students, and the first independent viewpoint. Reconcile the early geography's Altan-prince claim with the current elder and teacher; adopting a leadership role does not itself settle that older title. His eventual fate remains open.

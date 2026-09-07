@@ -25,6 +25,8 @@ The author's adoption of internal political diversity is implemented with these 
 
 These networks overlap. They are not four hereditary kinds of Leonin, nor a complete list of their politics. A shared flag does not erase their conflicts.
 
+The author has assigned the older teacher and resistance-leader strand to [Chuluun](../characters/chuluun.md). Chapter Three now gives him former pupils and fighters, a limited household mandate, and a dispute over supplies in which he must correct his own promise. The Last Standard retains its own commanders; Chuluun does not represent every camp or faction. His larger command history and eventual fate remain unwritten. See the [adaptation note](../ideas/the-teacher-of-the-uplands.md).
+
 ## Development questions
 
 Who commands the bombardment, finances forced labor, profits from transfers, and can issue or revoke passage? How do councils gain authority, and can dependents refuse the risks chosen by fighters? “Illegal warfare” in the initial pitch does not establish a particular attack, a complete legal code, or a blanket justification. Decide whose rules are invoked and examine specific acts, targets, coercion, and civilian consequences before applying the term as narrator fact.

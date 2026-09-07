@@ -13,9 +13,10 @@ const sections = [
 
 export default function Home() {
   const first = chapters.find((chapter) => chapter.order > 0 && isProse(chapter));
-  return <main>
-    <section className="home-hero"><Image src="/images/chronicle/house-of-measures.webp" alt="A monumental courtyard of pale stone, planted terraces and brass instruments beside a sunlit lake" fill sizes="100vw" preload className="object-cover" /><div className="home-shade" />
-      <div className="home-title"><p className="book-eyebrow">A world in the making</p><h1>The Chronicle</h1><p>Of Hanno Averroes, of Dyia, and of a city that remembers what its people try to forget.</p><div className="home-actions"><Link href={first ? `/chapters/${first.slug}` : "/story"} className="btn-primary">Read the opening</Link><Link href="/workshop" className="btn-ghost">See the story plan →</Link></div></div>
+  return <main className="editorial-home">
+    <section className="home-hero"><div className="home-art"><Image src="/images/plates/carthara-market.webp" alt="An ink and watercolor view of Carthara: shaded market awnings, planted terraces, and intricate limestone arcades" fill sizes="(max-width: 700px) 100vw, 65vw" preload className="object-contain" /></div>
+      <div className="home-title"><p className="book-eyebrow">An illustrated story · A world in the making</p><h1><span>The</span> Chronicle</h1><p>Of Hanno Averroes, of Dyia, and of a city that remembers what its people try to forget.</p><div className="home-actions"><Link href={first ? `/chapters/${first.slug}` : "/story"} className="btn-primary">Read the opening <span aria-hidden="true">↗</span></Link><Link href="#chapters" className="btn-ghost">Explore the Chronicle ↓</Link></div></div>
+      <p className="home-folio">Carthara <span>Markets, awnings, and a thousand quiet debts.</span></p>
     </section>
     <section id="chapters" className="home-sections"><ResumeReading /><p className="book-eyebrow">Four ways into the Chronicle</p><div className="home-section-grid">{sections.map((section) => <Link href={section.href} key={section.href}><span>{section.number}</span><h2>{section.title}</h2><p>{section.description}</p><strong>{section.action} →</strong></Link>)}</div></section>
   </main>;

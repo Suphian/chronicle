@@ -52,3 +52,9 @@
 - Add optional narration with a narrator and distinct character voices drawn from the profiles. The requested performance direction includes a British storyteller or period audiobook quality; individual voice assignments are auditions.
 - The author supplied an ElevenLabs account connection for a cast sample. Keep credentials private, record generation provenance, and distinguish a sample from a complete chapter recording. Narration starts only when the reader presses Listen; background music remains removed.
 - The author prefers frequent bounded sub-agent work coordinated in this task, while continuing to develop the story and pushing tested increments to GitHub.
+
+## 2026-09-07 — Chuluun is the teacher and resistance leader
+
+- The author explicitly assigns the **Omar Mukhtar-inspired older teacher and resistance-leader role to Chuluun**. The prior separate, unnamed Bakhtari/upland character is superseded. Chuluun remains a Leonin in the adopted displacement story, subject to enforced labor and bombardment.
+- Chapter Three now shows teaching between compulsory shifts, former pupils and fighters, limited household representation, and a supply dispute in which he corrects his own overreach. He does not command all Leonin factions or camps. The fuller independent arc, military chronology, capture, and eventual fate remain open; historical events are not automatically fictional canon.
+- The exact crop in Numarius's fields remains unadopted. The [current discussion](ideas/dyia-the-collection-order.md) recommends a staple grain, with wheat a candidate, and distinguishes that proposal from the established Seats' financial interest in Ravash.

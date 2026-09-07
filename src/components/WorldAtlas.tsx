@@ -64,7 +64,7 @@ export function WorldAtlas({ initialAt }: { initialAt?: string }) {
         onPointerMove={(e) => { if (!drag.current) return; const p = point(e.clientX, e.clientY); setView((v) => ({ ...v, x: drag.current!.vx + p.x - drag.current!.x, y: drag.current!.vy + p.y - drag.current!.y })); }}
         onPointerUp={() => { drag.current = null; }} onPointerCancel={() => { drag.current = null; }}>
         <g transform={`translate(${view.x} ${view.y}) scale(${view.k})`}>
-          <image href="/images/world/atlas-island-v2.webp" width="1200" height="800" />
+          <image href="/images/world/atlas-regions-v3.webp" width="1200" height="800" />
           {route && <path d={`M ${["carthara", "tengeri-wastes", "sidrat-al-muntaha", "lysandria"].map((id) => `${worldById[id].x},${worldById[id].y}`).join(" L ")}`} fill="none" stroke="#852f23" strokeWidth={3 / view.k} strokeDasharray="8 6" />}
           {world.map((location) => <g key={location.id} role="button" tabIndex={0} data-place={location.id} aria-label={`Explore ${location.name}`} aria-pressed={panelOpen && selected === location.id} aria-expanded={panelOpen && selected === location.id} aria-controls="atlas-place-details"
             onClick={(e) => pick(location.id, e.currentTarget)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(location.id, e.currentTarget); } }}

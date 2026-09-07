@@ -1,30 +1,29 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Chapter } from "@/content/types";
 import { voiceCast } from "@/content/narration";
-import { getNarrationSegments, narrationSourceHash, splitSpeechText, validateNarrationManifest, type NarrationManifest } from "@/lib/narration";
+import { getNarrationSegments, splitSpeechText } from "@/lib/narration";
+import { getNarrationPassages, narrationRequestHash } from "@/lib/narration-passages";
+import { useReaderPreferences } from "@/lib/reader-preferences";
 
-type Status = "stopped" | "playing" | "paused" | "ended";
+type Status = "stopped" | "loading" | "playing" | "paused" | "ended";
+type Mode = "ondemand" | "device";
 type Props = { chapter: Chapter; initialSceneId?: string; onActiveParagraph?: (id: string | null) => void };
 
 export function ChapterNarration(props: Props) {
-  return <NarrationPlayer key={`${props.chapter.slug}/${props.initialSceneId ?? ""}`} {...props} />;
+  const preferences = useReaderPreferences();
+  return <NarrationPlayer key={`${props.chapter.slug}/${props.initialSceneId ?? ""}/${preferences.narration}/${preferences.rate}`} {...props} mode={preferences.narration} rate={preferences.rate} />;
 }
 
-function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph }: Props) {
+function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rate }: Props & { mode: Mode; rate: number }) {
   const segments = useMemo(() => getNarrationSegments(chapter), [chapter]);
   const previewTracks = useMemo(() => segments.flatMap((segment) => splitSpeechText(segment.text).filter((text) => text.trim()).map((text) => ({ ...segment, text }))), [segments]);
-  const [manifest, setManifest] = useState<NarrationManifest | null>(null);
-  const [recordingStatus, setRecordingStatus] = useState("Checking the chapter recording…");
-  const [loaded, setLoaded] = useState(false);
-  const [retry, setRetry] = useState(0);
-  const [deviceMode, setDeviceMode] = useState(false);
+  const passages = useMemo(() => getNarrationPassages(chapter), [chapter]);
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [speechSupported, setSpeechSupported] = useState(false);
-  const [voiceChoices, setVoiceChoices] = useState<Record<string, string>>({});
-  const [rate, setRate] = useState(1);
-  const [index, setIndex] = useState(() => Math.max(0, previewTracks.findIndex((part) => part.sceneId === initialSceneId)));
+  const [index, setIndex] = useState(() => Math.max(0, (mode === "ondemand" ? passages : previewTracks).findIndex((part) => part.sceneId === initialSceneId)));
   const [status, setStatus] = useState<Status>("stopped");
   const [error, setError] = useState("");
   const audio = useRef<HTMLAudioElement | null>(null);
@@ -32,50 +31,14 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph }: Props) 
   const ownsSpeech = useRef(false);
   const generation = useRef(0);
   const position = useRef(index);
-  const usingRecording = !!manifest && !deviceMode;
-  const tracks = usingRecording ? manifest.chunks : previewTracks;
+  const pending = useRef<AbortController | null>(null);
+  const sourceHash = useRef<Promise<string> | null>(null);
+  const replay = useRef(new Map<string, string>());
+  const tracks = mode === "ondemand" ? passages : previewTracks;
   const track = tracks[index];
-  const scenes = chapter.scenes.filter((scene) => tracks.some((part) => part.sceneId === scene.id));
   const castIds = [...new Set(segments.map((segment) => segment.speaker))];
   const englishVoices = voices.filter((voice) => /^en\b/i.test(voice.lang));
   const availableVoices = englishVoices.length ? englishVoices : voices;
-
-  useEffect(() => {
-    const controller = new AbortController();
-    const timeout = window.setTimeout(() => {
-      controller.abort();
-      setRecordingStatus("The recording check timed out. Device preview is available; you can check again below.");
-      setLoaded(true);
-    }, 10000);
-    async function load() {
-      try {
-        const response = await fetch(`/audio/narration/${chapter.slug}/manifest.json`, { signal: controller.signal });
-        if (!response.ok) {
-          if (response.status !== 404) throw new Error("Recording could not be checked. Retry when your connection is available.");
-          if (!controller.signal.aborted) setRecordingStatus("The cast recording is not available for this chapter yet.");
-          return;
-        }
-        const hash = await narrationSourceHash(chapter);
-        const checked = validateNarrationManifest(await response.json(), chapter, hash);
-        if (!checked) throw new Error("The chapter has changed since this recording. A new recording is needed.");
-        if (!controller.signal.aborted) {
-          setManifest(checked);
-          setDeviceMode(false);
-          setRecordingStatus(checked.complete ? "ElevenLabs · narrated with character voices" : "ElevenLabs · cast recording sample");
-          const start = Math.max(0, checked.chunks.findIndex((chunk) => chunk.sceneId === initialSceneId));
-          position.current = start;
-          setIndex(start);
-        }
-      } catch (cause) {
-        if (!controller.signal.aborted) setRecordingStatus(cause instanceof Error ? cause.message : "Recording unavailable.");
-      } finally {
-        window.clearTimeout(timeout);
-        if (!controller.signal.aborted) setLoaded(true);
-      }
-    }
-    void load();
-    return () => { window.clearTimeout(timeout); controller.abort(); };
-  }, [chapter, initialSceneId, retry]);
 
   useEffect(() => {
     const synth = window.speechSynthesis;
@@ -88,19 +51,24 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph }: Props) 
 
   useEffect(() => () => {
     generation.current++;
+    pending.current?.abort();
     if (audio.current) { audio.current.pause(); audio.current.removeAttribute("src"); audio.current.load(); }
     if (ownsSpeech.current) window.speechSynthesis?.cancel();
     utterance.current = null;
+    for (const url of replay.current.values()) URL.revokeObjectURL(url);
+    replay.current.clear();
   }, []);
 
   useEffect(() => {
     // Prepared cast clips may span paragraphs; only device phrases have exact paragraph timing.
-    onActiveParagraph?.(!usingRecording && track && (status === "playing" || status === "paused") ? `${track.sceneId}:${track.paragraphIndex}` : null);
+    onActiveParagraph?.(mode === "device" && track && (status === "playing" || status === "paused") ? `${track.sceneId}:${track.paragraphIndex}` : null);
     return () => onActiveParagraph?.(null);
-  }, [track, status, onActiveParagraph, usingRecording]);
+  }, [track, status, onActiveParagraph, mode]);
 
   function halt() {
     generation.current++;
+    pending.current?.abort();
+    pending.current = null;
     audio.current?.pause();
     if (ownsSpeech.current) window.speechSynthesis.cancel();
     ownsSpeech.current = false;
@@ -126,6 +94,55 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph }: Props) 
     setError(message);
   }
 
+  function playAudio(src: string, at: number, token: number) {
+    if (token !== generation.current) return;
+    const player = audio.current ?? new Audio();
+    audio.current = player;
+    player.onended = () => playTrack(at + 1, token);
+    player.onerror = () => fail("This passage could not play. Press Play to retry, or change narration in Settings.", token);
+    player.src = src;
+    player.playbackRate = rate;
+    setStatus("playing");
+    void player.play().catch(() => fail("Playback was interrupted. Press Play to try again.", token));
+  }
+
+  async function preparePassage(at: number, token: number) {
+    const passage = passages[at];
+    const saved = replay.current.get(passage.id);
+    if (saved) { playAudio(saved, at, token); return; }
+    const controller = new AbortController();
+    pending.current = controller;
+    setStatus("loading");
+    try {
+      sourceHash.current ??= narrationRequestHash(chapter);
+      const hash = await sourceHash.current;
+      if (token !== generation.current) return;
+      const response = await fetch("/api/narration", {
+        method: "POST", headers: { "Content-Type": "application/json" }, signal: controller.signal,
+        body: JSON.stringify({ chapter: chapter.slug, passageId: passage.id, sourceHash: hash }),
+      });
+      if (!response.ok) {
+        const detail = await response.json().catch(() => null);
+        throw new Error(typeof detail?.error === "string" ? detail.error : "The voice service could not prepare this passage. Press Play to retry.");
+      }
+      if (!response.headers.get("content-type")?.startsWith("audio/")) throw new Error("The voice service returned no audio. Press Play to retry.");
+      const blob = await response.blob();
+      if (token !== generation.current) return;
+      const url = URL.createObjectURL(blob);
+      replay.current.set(passage.id, url);
+      // Keep a bounded local replay window; older clips remain reusable in the server cache.
+      if (replay.current.size > 24) {
+        const oldest = replay.current.keys().next().value!;
+        URL.revokeObjectURL(replay.current.get(oldest)!);
+        replay.current.delete(oldest);
+      }
+      pending.current = null;
+      playAudio(url, at, token);
+    } catch (cause) {
+      if (token === generation.current) fail(cause instanceof Error ? cause.message : "Narration stopped. Press Play to retry.", token);
+    }
+  }
+
   function playTrack(at: number, token: number) {
     if (token !== generation.current) return;
     if (at >= tracks.length) {
@@ -136,26 +153,20 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph }: Props) 
     }
     position.current = at;
     setIndex(at);
-    setStatus("playing");
-    if (usingRecording) {
-      const player = audio.current ?? new Audio();
-      audio.current = player;
-      player.onended = () => playTrack(at + 1, token);
-      player.onerror = () => fail("This recording could not play. Try Listen again, or choose Device preview below.", token);
-      player.src = manifest.chunks[at].src;
-      player.playbackRate = rate;
-      void player.play().catch(() => fail("Playback was interrupted. Press Listen to try again.", token));
+    if (mode === "ondemand") {
+      void preparePassage(at, token);
     } else {
+      setStatus("playing");
       if (!speechSupported) { fail("This browser does not offer speech preview. Try a browser with speech synthesis support.", token); return; }
       const part = previewTracks[at];
       const speaking = new SpeechSynthesisUtterance(part.text);
       const role = voiceCast[part.speaker] ?? voiceCast.narrator;
-      speaking.voice = voices.find((voice) => voice.voiceURI === voiceChoices[part.speaker]) ?? defaultVoice(part.speaker) ?? null;
+      speaking.voice = defaultVoice(part.speaker) ?? null;
       speaking.lang = speaking.voice?.lang ?? role.lang;
       speaking.pitch = role.pitch;
       speaking.rate = rate * role.rate;
       speaking.onend = () => playTrack(at + 1, token);
-      speaking.onerror = () => fail("The device voice stopped. Press Listen to retry or choose another voice.", token);
+      speaking.onerror = () => fail("The device voice stopped. Press Play to retry or change narration in Settings.", token);
       utterance.current = speaking;
       ownsSpeech.current = true;
       window.speechSynthesis.resume();
@@ -165,16 +176,17 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph }: Props) 
 
   function listen() {
     setError("");
+    if (status === "loading") { stop(); return; }
     if (status === "playing") {
-      if (usingRecording) audio.current?.pause();
+      if (mode !== "device") audio.current?.pause();
       else halt(); // Restart the current short phrase on resume; long utterance pause is unreliable on mobile.
       setStatus("paused");
       return;
     }
-    if (status === "paused" && usingRecording && audio.current) {
+    if (status === "paused" && mode !== "device" && audio.current) {
       const token = generation.current;
       setStatus("playing");
-      void audio.current.play().catch(() => fail("Press Listen to resume the recording.", token));
+      void audio.current.play().catch(() => fail("Press Play to resume the recording.", token));
       return;
     }
     halt();
@@ -182,45 +194,17 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph }: Props) 
     playTrack(start, generation.current);
   }
 
-  function move(to: number) {
-    const wasPlaying = status === "playing";
-    stop();
-    position.current = to;
-    setIndex(to);
-    if (wasPlaying) playTrack(to, generation.current);
-  }
-
-  function changeMode(device: boolean) {
-    const sceneId = track?.sceneId;
-    stop();
-    const nextTracks = device || !manifest ? previewTracks : manifest.chunks;
-    const next = Math.max(0, nextTracks.findIndex((part) => part.sceneId === sceneId));
-    position.current = next;
-    setIndex(next);
-    setDeviceMode(device);
-  }
-
-  const sceneIndex = scenes.findIndex((scene) => scene.id === track?.sceneId);
-  const currentSpeaker = track?.speaker === "cast" ? "Narrator & character cast" : voiceCast[track?.speaker ?? "narrator"]?.name ?? "Narrator";
+  const active = status === "playing" || status === "paused";
+  const currentScene = chapter.scenes.find((scene) => scene.id === track?.sceneId);
+  const label = status === "loading" ? "Cancel" : status === "playing" ? "Pause" : status === "paused" ? "Resume" : status === "ended" ? "Play again" : "Play";
   return <section className="chapter-narration" aria-label="Chapter narration">
-    <div className="narration-heading"><div><span className="book-eyebrow">Listen to the story</span><p>{usingRecording ? recordingStatus : loaded ? "Device voice preview · narrator & character parts" : recordingStatus}</p></div>
-      <button className="narration-play" onClick={listen} disabled={!loaded || !tracks.length || (!usingRecording && !speechSupported)}>{status === "playing" ? "Pause" : status === "paused" ? "Resume" : status === "ended" ? "Listen again" : usingRecording ? manifest.complete ? "Listen" : "Listen to sample" : "Listen to preview"}</button>
+    <div className="narration-row">
+      <button className="narration-play" onClick={listen} disabled={!tracks.length || (mode === "device" && !speechSupported)} aria-label={`${label} chapter narration`}><span aria-hidden="true">{status === "playing" ? "Ⅱ" : status === "loading" ? "×" : "▶"}</span> {label}</button>
+      {active && <button className="narration-stop" onClick={stop}>Stop</button>}
+      <p className="narration-now" role="status">{status === "loading" ? "Preparing your narration…" : status === "ended" ? "End of chapter." : active ? `${status === "paused" ? "Paused" : "Playing"}${currentScene?.heading ? ` · ${currentScene.heading}` : ""}` : mode === "device" && !speechSupported ? "Device voices are unavailable." : "Listen to this chapter"}</p>
+      <Link className="narration-settings-link" href="/settings" aria-label="Reading and narration settings">Settings</Link>
     </div>
-    <div className="narration-controls">
-      <button onClick={() => move(Math.max(0, tracks.findIndex((part) => part.sceneId === scenes[sceneIndex - 1]?.id)))} disabled={sceneIndex <= 0 || !loaded} aria-label="Previous narrated scene">← Scene</button>
-      <label className="narration-scene"><span className="sr-only">Narrated scene</span><select value={track?.sceneId ?? ""} onChange={(event) => move(tracks.findIndex((part) => part.sceneId === event.target.value))} disabled={!loaded || !scenes.length}>{scenes.map((scene, number) => <option value={scene.id} key={scene.id}>{scene.heading ?? `Scene ${number + 1}`}</option>)}</select></label>
-      <button onClick={() => move(tracks.findIndex((part) => part.sceneId === scenes[sceneIndex + 1]?.id))} disabled={sceneIndex < 0 || sceneIndex >= scenes.length - 1 || !loaded} aria-label="Next narrated scene">Scene →</button>
-      <button onClick={stop} disabled={status === "stopped" || status === "ended"}>Stop</button>
-    </div>
-    <p className="narration-now" aria-live="polite">{status === "ended" ? usingRecording && !manifest.complete ? "End of the cast sample. The full chapter is available in device preview." : "End of this chapter’s narration." : status === "playing" || status === "paused" ? `${status === "paused" ? "Paused · " : ""}${currentSpeaker} · ${index + 1} of ${tracks.length} passages` : "Audio starts only when you press Listen."}</p>
-    {usingRecording && <p className="narration-attribution">{manifest.complete ? "Cast recording" : "Opening scene · cast sample"} · <a href="https://elevenlabs.io" target="_blank" rel="noreferrer">elevenlabs.io</a></p>}
+    {mode === "ondemand" && <p className="narration-attribution">Voices by <a href="https://elevenlabs.io" target="_blank" rel="noreferrer">elevenlabs.io</a></p>}
     {error && <p className="narration-error" role="alert">{error}</p>}
-    <details className="narration-options"><summary>Playback & voice cast</summary>
-      <div className="narration-settings"><label>Recording<select value={usingRecording ? "recording" : "device"} disabled={!loaded} onChange={(event) => changeMode(event.target.value === "device")}><option value="recording" disabled={!manifest}>ElevenLabs cast{manifest && !manifest.complete ? " sample" : " recording"}</option><option value="device" disabled={!speechSupported}>Device preview</option></select></label>
-        <label>Speed<select value={rate} onChange={(event) => { stop(); setRate(Number(event.target.value)); }}>{[0.75, 0.9, 1, 1.1, 1.25, 1.5].map((speed) => <option key={speed} value={speed}>{speed}×</option>)}</select></label></div>
-      {!manifest && <p>{recordingStatus} <button className="narration-retry" disabled={!loaded} onClick={() => { stop(); setLoaded(false); setRetry((value) => value + 1); }}>Check again</button></p>}
-      {!usingRecording && <p>Preview voices come from your browser or device; their quality and British accents vary. Character parts use the cast directions below. Resuming repeats the current short phrase.</p>}
-      <div className="narration-cast">{castIds.map((speaker) => { const role = voiceCast[speaker] ?? voiceCast.narrator; return <div key={speaker}><strong>{role.name}</strong><p>{role.direction}</p>{!usingRecording && <label><span className="sr-only">{role.name} preview voice</span><select value={voiceChoices[speaker] ?? ""} onChange={(event) => { stop(); setVoiceChoices((choices) => ({ ...choices, [speaker]: event.target.value })); }}><option value="">Automatic{defaultVoice(speaker) ? ` · ${defaultVoice(speaker)!.name}` : " · device default"}</option>{availableVoices.map((voice) => <option key={voice.voiceURI} value={voice.voiceURI}>{voice.name} ({voice.lang})</option>)}</select></label>}</div>; })}</div>
-    </details>
   </section>;
 }

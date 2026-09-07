@@ -28,6 +28,8 @@ In Lysandria, his mother's island home beneath two enormous mountains, years of 
 
 Chuluun belongs to the Leonin, displaced from a homeland whose flag they still carry. The Tengeri Wastes contain refugee camps under repeated bombardment and forced labor. Hanno meets people maintaining shelter, schooling, food, records, and family connections while official reports misrepresent their lives. His hosts are participants in their own history; they do not exist to make him a better warrior.
 
+The author has assigned the **Omar Mukhtar-inspired teacher and resistance-leader role to Chuluun**. The current encounter now shows lessons between forced shifts, former pupils and fighters, and households limiting what he can promise to armed groups. A larger independent arc can follow his teaching, resistance, and accountability to those households. His command's full history, capture, and eventual fate remain open.
+
 The Leonin once welcomed Numarius's people after those people lost their home. That hospitality was followed by Leonin dispossession. The exact generations and institutional chain remain to be dated. Leonin factions now disagree over negotiation, continuing armed resistance, camp governance, and diaspora priorities. The [Leonin profile](../factions/the-leonin.md) links their four current working factions.
 
 This creates a present obligation for Hanno: what will he do with what he has witnessed once he benefits from Numarius's patronage? The first pass establishes the encounter; the larger consequences and independent Leonin chapters need the next structural pass.
@@ -72,7 +74,7 @@ The pilgrimage-ship atrocity inspired by Islamic history remains a [researched p
 
 ## The decisions for our next editing pass
 
-Two further author pitches now have concrete candidate strands. [The teacher of the uplands](../ideas/the-teacher-of-the-uplands.md), inspired by Omar Mukhtar, would give a resistance its own people, institutions, and moral choices. [The Surety Quarter](../ideas/the-surety-quarter.md) would follow a diverse migrant community whose residence and livelihood are constrained by sponsors. Its clinic, labor, and testimony conflicts could enter the return and rise sequences above. Both are proposed additions to the next structural pass, not events already written into these ten chapters. They do not have to share one origin, enemy, or conspiracy.
+The former [teacher of the uplands proposal](../ideas/the-teacher-of-the-uplands.md), inspired by Omar Mukhtar, now develops **Chuluun's adopted role** within the Leonin strand above; its earlier separate Bakhtari character is superseded. The wider sequence remains to be written. [The Surety Quarter](../ideas/the-surety-quarter.md) still proposes a diverse migrant community whose residence and livelihood are constrained by sponsors. Its clinic, labor, and testimony conflicts could enter the return and rise sequences. This proposed Cartharan extension need not share one origin, enemy, or conspiracy with every other strand.
 
 1. How much time should the reader spend with the family before the loss? The opening is now a narrative draft; it can expand further.
 2. Where should the travel and return split into more chapters, and whose independent stories deserve sustained viewpoints?

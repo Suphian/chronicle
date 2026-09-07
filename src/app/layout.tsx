@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Cinzel, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
+import { MotionEnhancements } from "@/components/MotionEnhancements";
 import { character } from "@/content/character";
 
 const cinzel = Cinzel({ variable: "--font-cinzel", subsets: ["latin"], weight: ["400", "600"] });
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0b0a0f",
+  themeColor: "#f3eddf",
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-full">
         <Nav />
         {children}
+        <MotionEnhancements />
       </body>
     </html>
   );

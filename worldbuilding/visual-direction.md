@@ -33,3 +33,11 @@ Make the artwork rich and the reading surface calm: warm light paper or sufficie
 ## Specificity before ornament
 
 Research a particular place, period, craft, or institution when adapting historical details. Avoid random pseudo-Arabic, sacred text used as decorative texture, or treating an entire region as one aesthetic. Religious and civic spaces should have meaningful uses. Complexity can appear in the everyday—how people wash, study, repair, cook, argue, trade, and gather—as well as in monumental halls.
+
+## 2026-09-07 — Illustrated layout and movement
+
+The author's [layout reference](https://x.com/markgadala/status/2072845156630360248) informs an editorial opening with oversized serif lettering, a large ink illustration, generous paper space, fine rules, and restrained navigation. These are layout cues; its cherry-blossom subject and promotional claims are not Chronicle content. The home page uses the existing Carthara market plate and the main navigation now sits on opaque warm paper.
+
+The [animation reference](https://x.com/DamonCrockett/status/2096694775856476231) shows smooth botanical shape transitions. The author clarified that the desired quality should run throughout the site and does not require a flower feature. Use gentle, responsive movement in illustrations, cards, and transitions, with reduced-motion support. Keep chapter prose steady, selectable, and visible without JavaScript; do not restore cinematic mode or autoplay sound.
+
+The [third atlas](../public/images/world/atlas-regions-v3.prompt.json) separates Carthara's flat-roofed neighborhoods, working piers, and angular garrison from Bakhtar's cliff settlements, Lysandria's mountain terraces, Sidrat's planted lake pavilions, and Tengeri's inhabited canyon camps. The camps sit farther east across more open hinterland, following the author's map direction. Their displacement is established; this drawing does not date a new removal order or settle the command chain. Coordinates and unnamed structures remain schematic. The earlier atlas is retained in the repository.

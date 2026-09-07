@@ -131,7 +131,7 @@ The initial version proposed a migrant neighborhood using [Ruhania's existing re
 
 Both migration and labor-transfer routes need the [geography reconciliation](../geography-reconciliation.md). One route does not establish the other. The worldwide Leonin diaspora is adopted; its particular communities, institutions, and paths still need to be drawn through evidence and deliberate invention.
 
-The [teacher of the uplands](the-teacher-of-the-uplands.md) could connect through a school, refuge, or a request for civilian relief. It is not automatically the same occupation, faction, or campaign. Residents may support aid while rejecting a military levy. The [pilgrim-ship proposal](the-pilgrim-ship.md) could connect through passage records or an endowment; it does not explain every displacement or loss.
+[Chuluun’s adopted teacher and resistance-leader role](the-teacher-of-the-uplands.md) could connect to the proposed Cartharan community through a school, refuge, or a request for civilian relief. This does not make every displaced community part of the same occupation, faction, or campaign. Residents may support aid while rejecting a military levy. The [pilgrim-ship proposal](the-pilgrim-ship.md) could connect through passage records or an endowment; it does not explain every displacement or loss.
 
 Religious life can include teaching, hospitality, arbitration, charity, and disagreement over public duty. Do not infer one faith for all Leonin, Ruhaniyya, or resistance supporters. Islamic historical inspiration is a source of researched possibilities, not proof that all existing traditions form one religion or that every crisis has one concealed author.
 
