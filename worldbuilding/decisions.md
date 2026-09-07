@@ -1,5 +1,11 @@
 # Author decisions
 
+## 2026-09-07 — Invented map bullets
+
+- The author requested invented notes for the map points and supplied the early geography Google Doc as inspiration. The preserved text in `worldbuilding/sources/early-geography.md` informs the work; a fresh online read was unavailable during this pass.
+- All 88 Mizan entries now have three proposed bullets in `worldbuilding/atlas-notes/`, rendered directly on the atlas and on individual notebook pages. Local work, household life, public space, and material disagreements give the points distinct possibilities.
+- These are authorized worldbuilding inventions, labeled **Proposed development**, not newly adopted chapter events. The old source notes remain separate. Current Leonin displacement, Chuluun's teacher/resistance role, Hanno's limited combat skill, Alethea's independent work, and the open ending remain intact. Ambiguous region labels, person titles, and island/settlement matches remain unresolved.
+
 ## 2026-09-07 — Multicultural life and Black representation
 
 - The author explicitly wants more multiculturalism and more Black people in the world. Black residents belong throughout everyday work, family life, learned professions, and civic power; Carthara's communities retain distinct practices and histories.

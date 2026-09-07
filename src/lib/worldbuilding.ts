@@ -8,7 +8,7 @@ export function getBibleEntries(): BibleEntry[] {
   const root = path.join(process.cwd(), "worldbuilding");
   if (!fs.existsSync(root)) return [];
   const entries: BibleEntry[] = [];
-  for (const group of ["characters", "places", "factions", "ideas", "story", "history", "cultures", "reviews", "mizan"]) {
+  for (const group of ["characters", "places", "factions", "ideas", "story", "history", "cultures", "reviews", "mizan", "atlas-notes"]) {
     const folder = path.join(root, group);
     if (!fs.existsSync(folder)) continue;
     for (const name of fs.readdirSync(folder).filter((name) => name.endsWith(".md")).sort()) {

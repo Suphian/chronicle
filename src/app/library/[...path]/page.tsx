@@ -28,7 +28,7 @@ export default async function NotebookPage({ params }: { params: Promise<{ path:
   if (!entry) notFound();
   const person = entry.group === "characters" ? codex.find((person) => person.kind === "person" && entry.slug === `characters/${person.id}`) : undefined;
   const portrait = person ? characterPortraits[person.id] : undefined;
-  const parent = entry.group === "characters" ? { href: "/people", label: "People" } : ["places", "factions", "history", "cultures", "mizan"].includes(entry.group) ? { href: "/world", label: "World" } : { href: "/workshop", label: "Writing room" };
+  const parent = entry.group === "characters" ? { href: "/people", label: "People" } : ["places", "factions", "history", "cultures", "mizan", "atlas-notes"].includes(entry.group) ? { href: "/world", label: "World" } : { href: "/workshop", label: "Writing room" };
   return <main className="notebook-shell"><div className="notebook-page">
     <Link className="book-location" href={parent.href}>← {parent.label}</Link>
     <ResumeReading />

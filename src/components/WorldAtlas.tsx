@@ -22,7 +22,7 @@ function bounded(v: { x: number; y: number; k: number }) {
   return { ...v, x: Math.min(0, Math.max(W * (1 - v.k), v.x)), y: Math.min(0, Math.max(H * (1 - v.k), v.y)) };
 }
 
-export function WorldAtlas({ initialAt, sourceNotes = {} }: { initialAt?: string; sourceNotes?: Record<string, string> }) {
+export function WorldAtlas({ initialAt, sourceNotes = {}, atlasNotes = {} }: { initialAt?: string; sourceNotes?: Record<string, string>; atlasNotes?: Record<string, string> }) {
   const validInitial = initialAt && (worldById[initialAt] || mizanById[initialAt]) ? initialAt : null;
   const [selected, setSelected] = useState<string | null>(validInitial);
   const [panelOpen, setPanelOpen] = useState(Boolean(validInitial));
@@ -51,6 +51,7 @@ export function WorldAtlas({ initialAt, sourceNotes = {} }: { initialAt?: string
   const title = selected && worldById[selected] ? worldById[selected].name : sourcePlace ? mapName(sourcePlace) : "";
   const art = locationArt(selected, sourcePlace);
   const note = sourcePlace?.loreSlug ? sourceNotes[sourcePlace.loreSlug] : undefined;
+  const atlasNote = sourceId ? atlasNotes[sourceId] : undefined;
   const linkedCharacter = sourceId ? sourceCharacters[sourceId] : undefined;
   const measuredMiles = measurePoints.length === 2 ? distanceMiles(measurePoints[0], measurePoints[1]) : null;
   const probeValue = probe && probeData ? terrainAt(probeData, probe) : null;
@@ -101,8 +102,8 @@ export function WorldAtlas({ initialAt, sourceNotes = {} }: { initialAt?: string
   const results = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase();
     return mizan.places.filter((p) => (category === "all" || p.kind === category) &&
-      (!needle || `${mapName(p)} ${p.name} ${sourceNotes[p.loreSlug] ?? ""}`.toLocaleLowerCase().includes(needle)));
-  }, [category, query, sourceNotes]);
+      (!needle || `${mapName(p)} ${p.name} ${sourceNotes[p.loreSlug] ?? ""} ${atlasNotes[p.id] ?? ""}`.toLocaleLowerCase().includes(needle)));
+  }, [category, query, sourceNotes, atlasNotes]);
   const resultIds = useMemo(() => new Set(results.map((p) => p.id)), [results]);
   const pins = mizan.places.filter((p) => p.id === sourceId || resultIds.has(p.id) &&
     (category !== "all" || query.trim() || p.kind === "region" || view.k >= (p.kind === "landmark" ? 1.7 : 2.5)));
@@ -142,8 +143,8 @@ export function WorldAtlas({ initialAt, sourceNotes = {} }: { initialAt?: string
   };
   return <div ref={atlasRoot} className={`atlas ${styles.atlas} ${fullScreenFallback ? styles.fullWindow : ""}`} onKeyDown={(e) => { if (e.key === "Escape") { if (panelOpen) { e.preventDefault(); close(); } else if (fullScreenFallback) setFullScreenFallback(false); } }}>
     <div className={styles.intro}>
-      <div><p className="book-eyebrow">An atlas to build a world around</p><p>From coastlines to the lives within them. Choose a region, zoom into its settlements, or search the recovered lore.</p></div>
-      <div className={styles.stats}><strong>{mizan.places.length}<span>mapped entries</span></strong><strong>{Object.keys(sourceNotes).length}<span>lore notes</span></strong><strong>1<span>shared world</span></strong></div>
+      <div><p className="book-eyebrow">An atlas to build a world around</p><p>From coastlines to the lives within them. Choose a region, zoom into its settlements, or search the map notes and recovered lore.</p></div>
+      <div className={styles.stats}><strong>{mizan.places.length}<span>mapped entries</span></strong><strong>{Object.keys(atlasNotes).length}<span>new map notes</span></strong><strong>{Object.keys(sourceNotes).length}<span>source lore notes</span></strong></div>
     </div>
     <div className="atlas-toolbar"><p>Zoom and drag to explore. Right-click twice to plan a journey.</p><div className={styles.toolbarActions}><button aria-pressed={route} onClick={() => setRoute(!route)}>{route ? "Hide" : "Show"} Hanno’s travels</button><button onClick={toggleFullScreen}>{fullScreen || fullScreenFallback ? "Exit full screen" : "Full screen"}</button></div></div>
     <div className={styles.layerBar}><div className={styles.layers} aria-label="Map layers">{[["geography", "Regions"], ["elevation", "Elevation"], ["temperature", "Temperature"], ["precipitation", "Precipitation"], ["biomes", "Biomes"]].map(([id, label]) => <button key={id} aria-pressed={layer === id} onClick={() => setLayer(id)}>{label}</button>)}</div><button className={styles.modeButton} aria-pressed={measuring} onClick={() => { setMeasuring(!measuring); setPanelOpen(false); }}>{measuring ? "Stop selecting" : "Measure a journey"}</button></div>
@@ -186,6 +187,7 @@ export function WorldAtlas({ initialAt, sourceNotes = {} }: { initialAt?: string
         <div className="atlas-detail-body" key={selected}>
           <h2 id="atlas-place-title">{title}</h2>
           {panelOpen && <figure className={styles.locationArt}><a href={art.src} target="_blank" rel="noreferrer" aria-label={`Open full picture: ${art.alt}`}><Image key={art.src} src={art.src} alt={art.alt} width={"width" in art ? art.width : 1672} height={"height" in art ? art.height : 941} sizes="(max-width: 700px) 90vw, 480px" /></a><figcaption>{art.caption}. Select the picture to open it full size.</figcaption></figure>}
+          {atlasNote && <div className={styles.atlasNotes}><h3>Map notes</h3><ReactMarkdown>{atlasNote.replace(/^# .+\r?\n+/, "").replace(/^Basis: .+$/m, "")}</ReactMarkdown><Link href={`/library/atlas-notes/${sourceId}`}>Open these map notes →</Link></div>}
           {sourcePlace?.terrain && <div className={styles.terrainStats}><p className={styles.badge}>Saved terrain & climate</p><dl><dt>Elevation / depth</dt><dd>{elevationFeet(sourcePlace.terrain.height).toLocaleString()} ft</dd><dt>Model temperature</dt><dd>{Math.round(sourcePlace.terrain.temperatureC * 9 / 5 + 32)}°F / {sourcePlace.terrain.temperatureC}°C</dd><dt>Model precipitation</dt><dd>{sourcePlace.terrain.precipitationMm.toLocaleString()} mm</dd><dt>Biome</dt><dd>{terrain.biomes[sourcePlace.terrain.biome]}</dd></dl><p>Nearest source cell to this marker. Regional anchors do not summarize the climate of an entire region.</p></div>}
           {storyPlace && <><p className={styles.badge}>Current story</p><p className="atlas-tagline">{storyPlace.tagline}</p><p>{storyPlace.description}</p><Link href={`/library/places/${storyPlace.id}`}>Open the current place dossier →</Link>
             {storyPlace.appearsIn && <><h3>Read the story here</h3>{storyPlace.appearsIn.map((ref, i) => { const chapter = getChapter(ref.chapter); return chapter && <Link key={i} href={`/chapters/${chapter.slug}${ref.scene ? `?scene=${ref.scene}` : ""}`}>{ref.label ?? chapter.title} →</Link>; })}</>}
@@ -196,7 +198,7 @@ export function WorldAtlas({ initialAt, sourceNotes = {} }: { initialAt?: string
           {sourcePlace?.kind === "person" && <p className={styles.sourceNote}>This person’s marker comes from the early map. It does not establish their current home or a chapter event.</p>}
           {linkedCharacter && <Link href={`/library/characters/${linkedCharacter.id}`}>Read {linkedCharacter.name}’s current profile →</Link>}
           {sourcePlace && <div className={styles.sourceLore}><p className={styles.badge}>Early world notes · 2023</p>
-            {note ? <><ReactMarkdown>{note.replace(/^# .+\n+/, "")}</ReactMarkdown><Link href={`/library/${sourcePlace.loreSlug}`}>Open this lore as a full page →</Link></> : <p>The map records this {sourcePlace.kind} and its position, but includes no substantial written note for this entry yet.</p>}
+            {note ? <><ReactMarkdown>{note.replace(/^# .+\n+/, "")}</ReactMarkdown><Link href={`/library/${sourcePlace.loreSlug}`}>Open this lore as a full page →</Link></> : <p>The 2023 map preserves this {sourcePlace.kind}’s name and position without a substantial written source note.</p>}
             {sourcePlace.regionId && mizanById[sourcePlace.regionId] && <button className={styles.textButton} onClick={(e) => pick(sourcePlace.regionId!, e.currentTarget)}>Explore {mapName(mizanById[sourcePlace.regionId])} →</button>}
           </div>}
         </div>
@@ -216,7 +218,7 @@ export function WorldAtlas({ initialAt, sourceNotes = {} }: { initialAt?: string
       <div className={styles.explorerHeading}><div><p className="book-eyebrow">The places, the people, the possibilities</p><h2>Explore the world notes</h2></div><label className={styles.search}>Search Mizan<input type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="A place, a person, a piece of lore…" /></label></div>
       <div className={styles.filters} aria-label="Filter map entries">{categories.map(([id, label]) => <button key={id} aria-pressed={category === id} onClick={() => setCategory(id)}>{label}<span>{id === "all" ? mizan.places.length : mizan.places.filter((p) => p.kind === id).length}</span></button>)}</div>
       <p className={styles.count} role="status">{results.length} {results.length === 1 ? "entry" : "entries"}{query ? ` matching “${query}”` : " in the atlas"}</p>
-      <div className={styles.entries}>{results.map((p) => <button key={p.id} aria-pressed={sourceId === p.id && panelOpen} onClick={(e) => pick(p.id, e.currentTarget)}>{mapPictures[p.id] && <Image className={styles.entryPicture} src={mapPictures[p.id].src} alt="" width={mapPictures[p.id].width} height={mapPictures[p.id].height} sizes="(max-width: 700px) 90vw, 300px" />}<span className={styles.entryKind}>{p.kind}{p.loreSlug ? " · lore available" : " · map entry"}</span><strong>{mapName(p)}</strong><span className={styles.entryAction}>Explore →</span></button>)}</div>
+      <div className={styles.entries}>{results.map((p) => <button key={p.id} aria-pressed={sourceId === p.id && panelOpen} onClick={(e) => pick(p.id, e.currentTarget)}>{mapPictures[p.id] && <Image className={styles.entryPicture} src={mapPictures[p.id].src} alt="" width={mapPictures[p.id].width} height={mapPictures[p.id].height} sizes="(max-width: 700px) 90vw, 300px" />}<span className={styles.entryKind}>{p.kind}{atlasNotes[p.id] ? " · new map notes" : p.loreSlug ? " · lore available" : " · map entry"}</span><strong>{mapName(p)}</strong><span className={styles.entryAction}>Explore →</span></button>)}</div>
       {!results.length && <p>No matching entries. Try another name or search term.</p>}
     </div>
     <nav className={`atlas-directory ${styles.storyDirectory}`} aria-label="Story places"><h2>Places in the current story</h2><p>The novel’s places keep their chapter links and current dossiers. Their local geography can develop alongside the wider world.</p><div className="atlas-place-list">{world.map((p) => <button key={p.id} aria-pressed={selected === p.id && panelOpen} onClick={(e) => pick(p.id, e.currentTarget)}>{p.name}<span>{storyAnchors[p.id] ? "Region located · local site open" : "Position to develop"}</span></button>)}</div></nav>
