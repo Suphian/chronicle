@@ -11,9 +11,9 @@ export const world: WorldLocation[] = [
     name: "Carthara",
     tagline: "Markets, awnings, and a thousand quiet debts.",
     description:
-      "A sun-scorched trade city on the southern coast, ruled by Lord Numarius and taxed to the bone. Its markets are loud, its alleys are quiet, and beneath both runs the Silken Chain. Hanno was born here, cured it once, and is now poisoning it.",
-    x: 600,
-    y: 540,
+      "A sun-scorched trade city on the southern coast, ruled by the Three Seats: Numarius holds the fields, Corvo the harbor, and Vael the garrison. Its markets are loud, its alleys are quiet, and beneath both runs the Silken Chain. Hanno was born here, cured it once, and is now poisoning it.",
+    x: 580,
+    y: 510,
     type: "city",
     appearsIn: [
       { chapter: "market-awnings", scene: "the-fruit-stall", label: "The fruit stall" },
@@ -28,7 +28,7 @@ export const world: WorldLocation[] = [
     description:
       "Endless plantations east of the city walls, worked by the indentured. Adil Averroes was taken here the morning his stall was seized. He died here, and was buried where he fell, to feed the crop.",
     x: 720,
-    y: 610,
+    y: 420,
     type: "ruin",
     appearsIn: [{ chapter: "market-awnings", scene: "the-fields", label: "Adil is taken" }],
   },
@@ -38,7 +38,7 @@ export const world: WorldLocation[] = [
     tagline: "Wind-carved canyons and the Leonin clans.",
     description:
       "A barren country far to the east where the wind cuts canyons through jagged cliffs. The Leonin who live here taught Hanno to track, to survive, and to shoot arrows that sing.",
-    x: 980,
+    x: 1000,
     y: 300,
     type: "wild",
     appearsIn: [{ chapter: "journeys", scene: "tengeri-wastes", label: "Archery among the Leonin" }],
@@ -50,7 +50,7 @@ export const world: WorldLocation[] = [
     description:
       "A land of luminous landscapes and sacred lakes. Beneath the soft light of Lake Siraj, master swordsmen teach that the blade and the mind must be balanced. Bioluminescent plants line moss-covered bridges.",
     x: 820,
-    y: 170,
+    y: 135,
     type: "landmark",
     appearsIn: [{ chapter: "journeys", scene: "lake-siraj", label: "The sword" }],
   },
@@ -61,7 +61,7 @@ export const world: WorldLocation[] = [
     description:
       "Highlands north of the last road: villages cut into cliff faces, valleys that close like fists, caves that play flutes at night. Every empire that marched in broke here except one. Iskandar the conqueror is buried in a cave nobody will name. Amara came down from these mountains and never spoke of them.",
     x: 640,
-    y: 270,
+    y: 215,
     type: "wild",
     appearsIn: [{ chapter: "the-conqueror", scene: "the-graveyard-of-empires", label: "The legend" }],
   },
@@ -71,8 +71,8 @@ export const world: WorldLocation[] = [
     tagline: "Mountains, rare metals, and the phalanx.",
     description:
       "A rugged mountain kingdom whose warriors prize balance above all. General Phylios rules here. Hanno trained with the spear for five years, healed the general's son, and was given Zaharaz.",
-    x: 300,
-    y: 210,
+    x: 315,
+    y: 205,
     type: "landmark",
     appearsIn: [
       { chapter: "journeys", scene: "toward-lysandria", label: "The approach" },
@@ -86,7 +86,7 @@ export const world: WorldLocation[] = [
     description:
       "A secluded island off the Lysandrian coast. Hanno and Alethea were married here under moonlight. He placed a red-and-yellow flower behind her ear that night, and recognised at once what else it could be used for.",
     x: 110,
-    y: 340,
+    y: 365,
     type: "wild",
     appearsIn: [
       { chapter: "gift-of-lysandria", scene: "the-elysian-flower", label: "The wedding" },

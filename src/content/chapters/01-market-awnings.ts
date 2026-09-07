@@ -32,7 +32,7 @@ export const marketAwnings: Chapter = {
       mood: "dawn",
       text: [
         "Home is two cramped rooms above a pottery shop, and they are warm. Amara, Hanno's mother, shapes clay with hands that are rough but gentle, humming as she works. The tune is strange and old and does not belong to Carthara. She never says where it is from.",
-        "Hanno's younger brother, Adris, plays nearby. Despite everything, their humble life holds small joys and steady love.",
+        "Hanno's younger brother, Dyia, plays nearby. Despite everything, their humble life holds small joys and steady love.",
       ],
     },
     {
@@ -75,9 +75,9 @@ export const marketAwnings: Chapter = {
       mood: "night",
       ambient: "/audio/ambient-night.wav",
       text: [
-        "Adris grows bitter and restless at home, left alone while Hanno spends long hours at the apothecary. He watches their mother's health deteriorate.",
+        "Dyia grows bitter and restless at home, left alone while Hanno spends long hours at the apothecary. He watches their mother's health deteriorate.",
         "He sees her slip quietly into the night. He sees the tremors, the quiet sobs, the silent shame. The name of it is Ravash, and it is the most addictive thing in Carthara.",
-        "Each night Adris's resentment grows, and with it a burning desire for justice and order. When a captain of the city guard sees him handle a sword in the market and offers him a post, Adris takes it. Inside the system that took his father, he tells himself, he can protect what is left.",
+        "Each night Dyia's resentment grows, and with it a burning desire for justice and order. When a captain of the city guard sees him handle a sword in the market and offers him a post, Dyia takes it. Inside the system that took his father, he tells himself, he can protect what is left.",
       ],
     },
     {
@@ -86,9 +86,9 @@ export const marketAwnings: Chapter = {
       mood: "void",
       sfx: "/audio/sfx-ember.wav",
       text: [
-        "The debt is not settled by the stall. Numarius's men come a second time, for the rooms above the pottery shop and everything in them, and Adris is on the detail.",
+        "The debt is not settled by the stall. Numarius's men come a second time, for the rooms above the pottery shop and everything in them, and Dyia is on the detail.",
         "His sergeant gives him the choice plainly. The post, or his mother's door.",
-        "Adris steps aside. Amara does not say his name as they carry her wheel down the stairs. He tells himself he will fix it from inside. He never does.",
+        "Dyia steps aside. Amara does not say his name as they carry her wheel down the stairs. He tells himself he will fix it from inside. He never does.",
       ],
     },
     {
@@ -96,8 +96,8 @@ export const marketAwnings: Chapter = {
       heading: "The Sentencing",
       mood: "storm",
       text: [
-        "At a crowded sentencing, Hanno watches helplessly as their father is formally condemned. Beside the magistrate, in a new guard's uniform, stands Adris, impassive.",
-        "Adris's eyes fall to the ground. Ashamed, but unmoving. Hanno does not know about the door yet. He only knows his brother is wearing their colors.",
+        "At a crowded sentencing, Hanno watches helplessly as their father is formally condemned. Beside the magistrate, in a new guard's uniform, stands Dyia, impassive.",
+        "Dyia's eyes fall to the ground. Ashamed, but unmoving. Hanno does not know about the door yet. He only knows his brother is wearing their colors.",
         "The crowd is silent. It is a large crowd. Hanno will remember that too.",
         "That day marks the permanent fracture between the brothers. Their paths will collide again. Neither of them knows it yet.",
       ],

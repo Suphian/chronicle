@@ -1,5 +1,9 @@
 # The Chronicle — working notes for Claude
 
+## Current direction (2026-09-06)
+
+Read `AGENTS.md` and `worldbuilding/README.md` first. The author's latest spelling is **Dyia**; Adris is an obsolete draft alias. The default reader is now a scrolling book, with cinematic mode optional. The notebook at `/outline` renders independent Markdown profiles and development notes through `/library/...`. The atlas is `WorldAtlas.tsx` with generated artwork and selectable labels. New ideas and recovered geography are proposals until adopted; the epic has no fixed chapter count. Preserve existing scene IDs while expanding the draft. Keep working increments tested, committed, and pushed to main as requested.
+
 This is an interactive storytelling site for a single D&D character:
 Hanno Averroes, a half-elf alchemist from the city of Carthara. The owner
 drops in new ideas ("write a chapter about X", "add the swamp to the map",
@@ -69,14 +73,14 @@ doc wins (e.g. the Tengeri Wastes / Sidrat Al Muntaha / Lysandria names
 rather than the real-world places in the older sheet, and Virello dying by
 Hanno's poisoned shipment rather than by his hand).
 
-Cast: Hanno (hero), Adris (younger brother; stayed, joined the guard to
+Cast: Hanno (hero), Dyia (younger brother; stayed, joined the guard to
 protect the family from inside, then stepped aside at their mother's door;
 both brothers believe the other abandoned the family, and both are right), Adil (father, dead
 in Numarius's fields), Amara (mother, dead of a Ravash overdose engineered
 by Virello), Alethea (wife, Lysandrian healer), Master Virello (dead),
 Lord Numarius (First Seat, the fields), Magistra Ilvane Corvo (Second Seat,
 the harbor, secret head of the Silken Chain), General Tarquin Vael (Third
-Seat, the garrison, Adris's commander), General Phylios, Chuluun (Leonin
+Seat, the garrison, Dyia's commander), General Phylios, Chuluun (Leonin
 elder), Iskandar (the conqueror, Hanno's ancestor), Rukhsana (his Bakhtari
 wife).
 Substances: Ravash (the old drug), Elysian Dust (Hanno's). Factions: the
@@ -90,8 +94,8 @@ Alexander); the Three Seats are a triumvirate that will turn on itself.
 The spine is "Dance with the Devil": the devil doesn't change, you do.
 That payoff is written: Chapter Ten. Alethea, who loved the student, gets
 hooked on the Dust after Hanno comes back changed, and dies in the garden
-with the flower in her hair. Hanno looks in a mirror. Adris knocks. What
-Adris does at the door (arrest his brother or cover for him, his second
+with the flower in her hair. Hanno looks in a mirror. Dyia knocks. What
+Dyia does at the door (arrest his brother or cover for him, his second
 choice) is deliberately unwritten.
 
 The Codex (`src/content/codex.ts`, page `/codex`) holds short reference
@@ -99,7 +103,7 @@ entries for people, factions, places, substances, artifacts. Add an entry
 whenever a chapter introduces something new.
 
 Chapter `status` is "draft" for everything so far. The owner considers the
-nine chapters an outline, not finished prose; restructure freely, keep scene
+existing chapters an outline, not finished prose; restructure freely, keep scene
 ids stable.
 
 ## Conventions

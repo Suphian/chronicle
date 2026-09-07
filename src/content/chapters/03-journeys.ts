@@ -6,7 +6,7 @@ export const journeys: Chapter = {
   title: "Journeys into the Unknown",
   subtitle: "Chapter Three",
   summary:
-    "Virello sends Hanno across the world for rare ingredients. He comes back with a bow, a sword, and a philosophy. Adris, patrolling the alleys at home, comes back with blood on his hands.",
+    "Virello sends Hanno across the world for rare ingredients. He comes back with a bow, a sword, and a philosophy. Dyia, patrolling the alleys at home, comes back with blood on his hands.",
   mood: "dawn",
   when: "The years abroad",
   status: "draft",
@@ -67,7 +67,7 @@ export const journeys: Chapter = {
       location: "carthara",
       image: "/images/chronicle/shadows.webp",
       text: [
-        "In Carthara, Adris rises through the guard, solitary and relentless. He patrols the alleys alone, arresting the men who prey on the vulnerable. Every captured Silker brings satisfaction, and deepens the rage underneath it.",
+        "In Carthara, Dyia rises through the guard, solitary and relentless. He patrols the alleys alone, arresting the men who prey on the vulnerable. Every captured Silker brings satisfaction, and deepens the rage underneath it.",
         "Sometimes the rage wins. He dispenses justice swiftly and brutally, bypassing trials. Sometimes he takes lives.",
         "One of them is a man he recognizes: the Silker who sold Ravash to his mother. That killing haunts him. He tells himself it was necessary. Some evils, he decides, are beyond redemption.",
       ],

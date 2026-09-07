@@ -43,6 +43,7 @@ export function SceneReader({ chapter, next, initialSceneId }: Props) {
   useEffect(() => {
     if (!started) return;
     const onKey = (e: KeyboardEvent) => {
+      if ((e.target as Element)?.closest("a, button, input, textarea, select, summary, [contenteditable]")) return;
       if (e.key === "ArrowRight" || e.key === " " || e.key === "Enter") {
         e.preventDefault();
         go(1);
@@ -83,6 +84,7 @@ export function SceneReader({ chapter, next, initialSceneId }: Props) {
   return (
     <div className="fixed inset-0 select-none" style={{ ["--accent" as string]: mood.accent }}>
       <SceneBackdrop scene={scene} fallbackMood={chapter.mood} cover={chapter.cover} />
+      <Link href={`/chapters/${chapter.slug}?scene=${scene.id}`} className="absolute right-6 top-28 z-40 rounded-full bg-ink px-4 py-2 text-sm text-parchment underline">Read as a book</Link>
 
       {/* Begin gate: needed so the browser lets us play audio. */}
       <AnimatePresence>
@@ -137,7 +139,7 @@ export function SceneReader({ chapter, next, initialSceneId }: Props) {
               <h2 className="font-display mt-2 text-4xl text-parchment md:text-5xl">{chapter.title}</h2>
               <div className="mt-10 flex flex-col items-center gap-3">
                 {next ? (
-                  <Link href={`/chapters/${next.slug}`} className="btn-primary">
+                    <Link href={`/chapters/${next.slug}?mode=cinematic`} className="btn-primary">
                     Continue → {next.title}
                   </Link>
                 ) : (

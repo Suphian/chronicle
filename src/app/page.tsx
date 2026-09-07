@@ -4,6 +4,7 @@ import { chapters } from "@/content/chapters";
 import { character } from "@/content/character";
 import { ChapterCard } from "@/components/ChapterCard";
 import { moods } from "@/lib/moods";
+import { ResumeReading } from "@/components/ResumeReading";
 
 export default function Home() {
   const first = chapters[0];
@@ -12,8 +13,8 @@ export default function Home() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative flex min-h-[92vh] items-center justify-center overflow-hidden px-6" style={{ background: hero.background }}>
-        <Image src="/images/chronicle/carthara.webp" alt="" fill sizes="100vw" preload className="object-cover object-[60%_center]" />
+      <section className="relative flex min-h-[65vh] items-center justify-center overflow-hidden px-6 pt-32 pb-16" style={{ background: hero.background }}>
+        <Image src="/images/chronicle/house-of-measures.webp" alt="" fill sizes="100vw" preload className="object-cover object-[60%_center]" />
         <div className="pointer-events-none absolute inset-0 bg-black/50" />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_50%,transparent,rgba(0,0,0,0.6))]" />
         <div className="relative max-w-3xl text-center">
@@ -33,16 +34,18 @@ export default function Home() {
                 Begin reading
               </Link>
             )}
-            <Link href="/world" className="btn-ghost">
-              Explore the world →
+            <Link href="#chapters" className="btn-ghost">
+              Browse chapters ↓
             </Link>
+            <Link href="/outline" className="btn-ghost">Story outline →</Link>
           </div>
         </div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-parchment/30">↓</div>
       </section>
 
       {/* Chapters */}
-      <section className="mx-auto max-w-6xl px-6 py-20">
+      <section id="chapters" className="mx-auto max-w-6xl scroll-mt-28 px-6 py-16">
+        <ResumeReading />
+        <p className="mb-10 max-w-2xl text-xl leading-relaxed text-parchment/85">Read the chronicle chapter by chapter, like a book. Keep the character guide nearby, or follow a place into the world map. Each chapter also has an optional cinematic view.</p>
         <div className="mb-10 flex items-end justify-between">
           <div>
             <p className="font-display text-xs tracking-[0.4em] text-parchment/50 uppercase">Chapters</p>

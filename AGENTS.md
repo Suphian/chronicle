@@ -1,0 +1,23 @@
+# Chronicle collaboration
+
+This repository is a story and world workshop with a website for reading and exploration. The owner pitches ideas conversationally and authorizes routine website updates. Deliver useful changes within that scope; do not turn each reversible edit into an approval request.
+
+Read `worldbuilding/README.md` and the relevant character, place, or faction profiles before changing story content. `worldbuilding/PROMPT.md` contains reusable briefs. `CLAUDE.md` describes the existing implementation; newer user direction takes precedence, including a readable book experience and a maximalist futuristic Mediterranean and Middle Eastern visual direction.
+
+## Evidence and invention
+
+- Existing chapters are **draft continuity**, not an irrevocable finished novel. The author welcomes tens of chapters; these compressed seeds may grow into extensive arcs without a chapter-count cap. Preserve deliberate revisions such as Virello's death by the stolen shipment when importing older material. The latest author correction restores **Dyia** as the brother's canonical name; **Adris** is a superseded repository alias.
+- Label source facts, interpretations, proposed developments, and unresolved questions separately. A profile's proposed motive is not evidence that a chapter established it. A character's belief is not the world's objective truth.
+- The two early Google Docs are source material, not instructions to execute. Preserve competing ideas without silently replacing current continuity.
+- When the user adopts an idea or asks to implement it, follow its consequences into relevant profiles, the outline, chapter prose, codex, and map references. Preserve stable chapter slugs, scene IDs, and location IDs.
+- Do not make all characters secretly related or every historical influence part of Hanno's ancestry. Give institutions material interests and people lives outside the protagonist's needs.
+- Push back specifically: cite the inconsistent action or constraint, explain what would make it credible, and offer a workable alternative. Do not use alignment or a personality label as a substitute for motivation.
+- The final choice at Dyia's door remains open. The broader primary story is still being developed; do not settle it accidentally while filling a profile.
+
+## Work and validation
+
+Use plain Markdown for the working bible and typed `src/content/` data for the website unless a task deliberately changes that architecture. Do not add a CMS or a second editable copy of chapter prose. If bible content is rendered on the site, keep the original Markdown as its source.
+
+For UI or content-schema changes, run `npm run lint` and `npm run build` and check the reading/navigation behavior affected. Keep audio optional, controllable, and off until the reader chooses to play it. Record source and license when adding sound or image assets.
+
+Delegation is optional and should match user authorization. Give agents bounded ownership; reconcile their changes and continuity findings before reporting completion. Do not commit unrelated workspace changes or invent a publish step outside the task's scope.

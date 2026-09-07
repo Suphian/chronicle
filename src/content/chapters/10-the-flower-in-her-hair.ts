@@ -50,7 +50,7 @@ export const theFlowerInHerHair: Chapter = {
       heading: "He Does Not See",
       mood: "void",
       text: [
-        "Hanno watches Adris. He watches the Seats. He watches the harbor, the merchants, the trails he has to erase. He is the most perceptive man in Carthara, and he does not look at his own house, because his house is the one place he is not lying.",
+        "Hanno watches Dyia. He watches the Seats. He watches the harbor, the merchants, the trails he has to erase. He is the most perceptive man in Carthara, and he does not look at his own house, because his house is the one place he is not lying.",
         "She hides it as well as he hides his. Two people, in the same bed, keeping the same secret from each other, and neither of them knows it is the same secret.",
       ],
       quote: { text: "You can read a whole tavern in a glance. You never once read me.", by: "Alethea, to no one" },
@@ -86,7 +86,7 @@ export const theFlowerInHerHair: Chapter = {
       text: [
         "Someone is knocking. It is not a merchant's knock.",
         "He knows before he opens it. He has known, in some room of himself, since the sentencing. He opens it anyway.",
-        "It is Adris.",
+        "It is Dyia.",
       ],
     },
   ],

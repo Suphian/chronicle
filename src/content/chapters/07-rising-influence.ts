@@ -6,7 +6,7 @@ export const risingInfluence: Chapter = {
   title: "Rising Influence and Lingering Shadows",
   subtitle: "Chapter Seven",
   summary:
-    "With Virello gone, Hanno's workshop becomes the heart of a booming city-state. Numarius basks in the glory. Adris's investigation goes cold. Nothing is resolved; everything is waiting.",
+    "With Virello gone, Hanno's workshop becomes the heart of a booming city-state. Numarius basks in the glory. Dyia's investigation goes cold. Nothing is resolved; everything is waiting.",
   mood: "gold",
   when: "The golden years",
   status: "draft",
@@ -40,7 +40,7 @@ export const risingInfluence: Chapter = {
       mood: "night",
       ambient: "/audio/ambient-night.wav",
       text: [
-        "Adris has climbed too. His reputation in the guard is for ruthless efficiency and unwavering justice. The Silker operations he dismantled have faded from public memory.",
+        "Dyia has climbed too. His reputation in the guard is for ruthless efficiency and unwavering justice. The Silker operations he dismantled have faded from public memory.",
         "But he never found the powerful figure he is sure sat behind the trade. Without evidence, he waits.",
         "The brothers keep an uneasy distance. Neither suspects the other. Their estrangement settles into a cautious neutrality that feels, from the outside, almost like peace.",
       ],

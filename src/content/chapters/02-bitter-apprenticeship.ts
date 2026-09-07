@@ -6,7 +6,7 @@ export const bitterApprenticeship: Chapter = {
   title: "The Bitter Apprenticeship",
   subtitle: "Chapter Two",
   summary:
-    "Inside Virello's labyrinth of vials, Hanno's gift outgrows his master. Outside it, Adris follows their mother into the alleys, and the brothers finally say out loud what each of them did.",
+    "Inside Virello's labyrinth of vials, Hanno's gift outgrows his master. Outside it, Dyia follows their mother into the alleys, and the brothers finally say out loud what each of them did.",
   mood: "forest",
   when: "Hanno's youth",
   status: "draft",
@@ -43,7 +43,7 @@ export const bitterApprenticeship: Chapter = {
       mood: "night",
       text: [
         "At home, Hanno's absences grow longer. He does not notice how Amara's strength drains away. He does not see what the uniform is doing to his brother.",
-        "One evening, coming off patrol, Adris follows their mother into the shadows of Carthara's alleys. Hidden, heart heavy, he watches her trade a few desperate coins for a vial of Ravash.",
+        "One evening, coming off patrol, Dyia follows their mother into the shadows of Carthara's alleys. Hidden, heart heavy, he watches her trade a few desperate coins for a vial of Ravash.",
         "The anger that surges in him is not at her. It is at the shadowy figures who sold it. Silkers, people call them. Operatives of the Silken Chain.",
       ],
     },
@@ -54,11 +54,11 @@ export const bitterApprenticeship: Chapter = {
       ambient: "/audio/ambient-ember.wav",
       sfx: "/audio/sfx-ember.wav",
       text: [
-        "Hanno comes home late to shouting and the sound of something breaking. He bursts in to find Adris confronting their mother, rage and despair twisted together in his face.",
-        "\"You abandoned us!\" Adris shouts. \"Do you even see what she has become? I stayed. I was the one who stayed.\"",
+        "Hanno comes home late to shouting and the sound of something breaking. He bursts in to find Dyia confronting their mother, rage and despair twisted together in his face.",
+        "\"You abandoned us!\" Dyia shouts. \"Do you even see what she has become? I stayed. I was the one who stayed.\"",
         "\"I was working to feed you,\" Hanno says. \"And you stood in their colors while they took him. Tell me what staying was worth.\"",
-        "Amara says, very quietly, \"He was at the door.\" And Hanno understands, and Adris lunges.",
-        "The blow sends Hanno into the wall, scattering pottery and herbs across the floor. The brothers grapple, raw and primal, years of unspoken pain in every hold. It ends with Hanno pinning Adris to the wall, both of them breathing hard, and both of them right.",
+        "Amara says, very quietly, \"He was at the door.\" And Hanno understands, and Dyia lunges.",
+        "The blow sends Hanno into the wall, scattering pottery and herbs across the floor. The brothers grapple, raw and primal, years of unspoken pain in every hold. It ends with Hanno pinning Dyia to the wall, both of them breathing hard, and both of them right.",
       ],
     },
     {
@@ -66,9 +66,9 @@ export const bitterApprenticeship: Chapter = {
       heading: "Go, Then",
       mood: "ember",
       text: [
-        "\"Go then,\" Adris finally spits, shoving Hanno away. \"Chase your dreams of glory and wealth. I'll clean up the mess you left behind.\"",
+        "\"Go then,\" Dyia finally spits, shoving Hanno away. \"Chase your dreams of glory and wealth. I'll clean up the mess you left behind.\"",
         "He storms out into the night, back to the barracks, because there is nowhere else left. Hanno stands in the wreckage of their home with a fracture between them that will not close.",
-        "Adris's path is clear now. He could not protect his own door, so he will protect everyone else's. He will burn the Silken Chain out of Carthara's streets, and the guard will be the only thing he has.",
+        "Dyia's path is clear now. He could not protect his own door, so he will protect everyone else's. He will burn the Silken Chain out of Carthara's streets, and the guard will be the only thing he has.",
         "Brothers in blood. Strangers in spirit.",
       ],
     },

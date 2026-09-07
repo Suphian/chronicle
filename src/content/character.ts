@@ -32,7 +32,7 @@ export const character: CharacterProfile = {
   bonds: [
     "Amara, his mother. He cured her once. He could not save her twice.",
     "Alethea, his wife, a healer of Lysandria. She fell in love with a student and waited for him to come back. She died in their garden with Elysian Dust on her lips and the flower in her hair.",
-    "Adris, his younger brother, who stayed when Hanno left, and stepped aside when Numarius's men came to their mother's door. Now a captain in the city guard, hunting the man behind Elysian Dust without knowing it is him.",
+    "Dyia, his younger brother, who stayed when Hanno left, and stepped aside when Numarius's men came to their mother's door. Now a captain in the city guard, hunting the man behind Elysian Dust without knowing it is him.",
     "Adil, his father, buried without a name in Lord Numarius's fields.",
   ],
   ideals: [
@@ -53,16 +53,16 @@ export const character: CharacterProfile = {
   ],
   timeline: [
     { when: "Long before", what: "Iskandar the conqueror takes Bakhtar, marries Rukhsana of the cliffs, and is abandoned by his army. Amara descends from that line.", chapter: "the-conqueror" },
-    { when: "Childhood", what: "Born in Carthara to Adil, a fruit-seller, and Amara, a potter. A younger brother, Adris, follows.", chapter: "market-awnings" },
+    { when: "Childhood", what: "Born in Carthara to Adil, a fruit-seller, and Amara, a potter. A younger brother, Dyia, follows.", chapter: "market-awnings" },
     { when: "The Drought", what: "Adil defaults on his debts to Lord Numarius and is dragged to the fields. Hanno is apprenticed to Master Virello.", chapter: "market-awnings" },
-    { when: "The Door", what: "Adris joins the guard to protect the family from inside, and steps aside when they come for Amara's rooms.", chapter: "market-awnings" },
+    { when: "The Door", what: "Dyia joins the guard to protect the family from inside, and steps aside when they come for Amara's rooms.", chapter: "market-awnings" },
     { when: "Apprenticeship", what: "His talent for alchemy outpaces his master. His mother turns to Ravash. The brothers come to blows, each accusing the other of abandoning the family.", chapter: "bitter-apprenticeship" },
     { when: "The Journeys", what: "Archery among the Leonin of the Tengeri Wastes; the sword beneath Lake Siraj in Sidrat Al Muntaha.", chapter: "journeys" },
     { when: "Lysandria", what: "Heals General Phylios's son, receives the spear Zaharaz, and marries Alethea beneath the Elysian flower.", chapter: "gift-of-lysandria" },
     { when: "The Cure", what: "Returns to Carthara, cures Amara, ends the Ravash epidemic, and is named the city's savior.", chapter: "the-cure" },
     { when: "The Betrayal", what: "Virello poisons Amara and blames the cure. Hanno answers with a shipment that kills his old master.", chapter: "shadows-and-accusations" },
     { when: "The Banquet", what: "Numarius names his father as fertilizer in front of the elite. Hanno distills Elysian Dust.", chapter: "a-dark-turn" },
-    { when: "The Closing", what: "Elysian Dust hollows out Carthara. Adris closes in on a mastermind he does not know is his brother.", chapter: "shadows-closing-in" },
-    { when: "Now", what: "Alethea dies of the Dust in their garden. Hanno looks in a mirror. Adris knocks.", chapter: "the-flower-in-her-hair" },
+    { when: "The Closing", what: "Elysian Dust hollows out Carthara. Dyia closes in on a mastermind he does not know is his brother.", chapter: "shadows-closing-in" },
+    { when: "Now", what: "Alethea dies of the Dust in their garden. Hanno looks in a mirror. Dyia knocks.", chapter: "the-flower-in-her-hair" },
   ],
 };

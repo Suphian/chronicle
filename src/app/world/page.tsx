@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { WorldMap } from "@/components/WorldMap";
+import { WorldAtlas } from "@/components/WorldAtlas";
+import { ResumeReading } from "@/components/ResumeReading";
 
 export const metadata: Metadata = { title: "World" };
 
@@ -10,11 +11,12 @@ export default async function WorldPage({
 }) {
   const { at } = await searchParams;
   return (
-    <main className="fixed inset-0 pt-14">
-      <WorldMap initialAt={typeof at === "string" ? at : undefined} />
-      <p className="font-display pointer-events-none absolute top-16 left-6 text-[10px] tracking-[0.35em] text-parchment/40 uppercase md:left-10">
-        Drag to pan · scroll to zoom · tap a pin
-      </p>
+    <main className="world-page">
+      <p className="book-eyebrow">The lands of the Chronicle</p>
+      <h1>A world worth getting lost in.</h1>
+      <p className="world-intro">Mountains that remember empires. Cities built on trade and debt. Follow Hanno’s travels, meet the people who live here, and return to the chapter where each place comes alive.</p>
+      <ResumeReading />
+      <WorldAtlas key={typeof at === "string" ? at : "default"} initialAt={typeof at === "string" ? at : undefined} />
     </main>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { chapters, getAdjacent, getChapter } from "@/content/chapters";
 import { SceneReader } from "@/components/SceneReader";
+import { BookReader } from "@/components/BookReader";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -20,10 +21,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ChapterPage({ params, searchParams }: Props) {
   const { slug } = await params;
-  const { scene } = await searchParams;
+  const { scene, mode } = await searchParams;
   const chapter = getChapter(slug);
   if (!chapter) notFound();
-  const { next } = getAdjacent(slug);
+  const { prev, next } = getAdjacent(slug);
+  if (mode !== "cinematic") {
+    return <BookReader key={slug} chapter={chapter} prev={prev} next={next} initialSceneId={typeof scene === "string" ? scene : undefined} />;
+  }
   return (
     <SceneReader
       chapter={chapter}

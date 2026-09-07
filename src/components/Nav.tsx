@@ -2,14 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { character } from "@/content/character";
 import { useAudio } from "@/lib/audio";
 
 const links = [
-  { href: "/", label: "Chronicle" },
+  { href: "/#chapters", label: "Chapters" },
+  { href: "/codex", label: "People & lore" },
   { href: "/world", label: "World" },
-  { href: "/codex", label: "Codex" },
-  { href: "/character", label: character.name.split(" ")[0] },
+  { href: "/outline", label: "Outline" },
 ];
 
 export function Nav() {
@@ -18,31 +17,30 @@ export function Nav() {
   const inReader = path.startsWith("/chapters/");
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 flex items-center justify-between px-6 py-4 md:px-10">
+    <header className="site-nav fixed inset-x-0 top-0 z-40 flex items-center justify-between px-6 py-4 md:px-10">
       <Link href="/" className="font-display text-xs tracking-[0.35em] text-parchment/70 uppercase transition hover:text-parchment">
         {inReader ? "← Chronicle" : "The Chronicle"}
       </Link>
-      <nav className="flex items-center gap-5">
-        {!inReader &&
-          links.map((l) => (
+      <nav aria-label="Main navigation" className="flex items-center gap-5">
+        {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className={`font-display hidden text-xs tracking-[0.3em] uppercase transition sm:inline ${
-                path === l.href ? "text-parchment" : "text-parchment/50 hover:text-parchment"
+              className={`font-display text-xs tracking-[0.1em] uppercase transition ${
+                path === l.href ? "text-parchment" : "text-parchment/80 hover:text-parchment"
               }`}
             >
               {l.label}
             </Link>
           ))}
-        <button
+        {inReader && <button
           onClick={audio.toggleMute}
           aria-label={audio.muted ? "Unmute" : "Mute"}
           title={audio.muted ? "Unmute" : "Mute"}
           className="flex h-8 w-8 items-center justify-center rounded-full border border-parchment/30 text-parchment/70 transition hover:border-parchment hover:text-parchment"
         >
           {audio.muted ? <MutedIcon /> : <SoundIcon />}
-        </button>
+        </button>}
       </nav>
     </header>
   );
