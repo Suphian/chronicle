@@ -1,5 +1,12 @@
 # Author decisions
 
+## 2026-09-07 — Multicultural life and Black representation
+
+- The author explicitly wants more multiculturalism and more Black people in the world. Black residents belong throughout everyday work, family life, learned professions, and civic power; Carthara's communities retain distinct practices and histories.
+- Our current implementation of that direction depicts **Idris, Hanno, and Dyia as a visibly Black family**, with **Amara remaining a brown-skinned woman**. **Alethea is a Black Lysandrian healer**, and **Corvo is a Black Cartharan magistrate**. Preserve recognizable faces and family resemblance across portraits and story illustrations.
+- These appearance decisions assign no real-world ethnicity or additional ancestry. They do not change Hanno's half-elf identity, Amara's Lysandrian origin, the unresolved earlier Bakhtari connection, or the causes of debt and Leonin displacement. Skin color does not explain anyone's loyalties, conduct, or institutional role.
+- The five character dossiers and [everyday-life direction](cultures/everyday-life.md) record the current visual implementation. Specific new community names, histories, and market encounters remain future development; existing chapter prose is unchanged in this pass.
+
 ## 2026-09-06 — Working system and direction
 
 - The brother's name is **Dyia**, exactly this spelling. Adris is a superseded draft name.

@@ -10,6 +10,10 @@ Younger brother of [Hanno](hanno.md), son of [Idris](adil.md) and [Amara](amara.
 
 Sources: Chapters [One](../../src/content/chapters/01-market-awnings.ts), [Two](../../src/content/chapters/02-bitter-apprenticeship.ts), [Three](../../src/content/chapters/03-journeys.ts), [Nine](../../src/content/chapters/09-shadows-closing-in.ts), [Ten](../../src/content/chapters/10-the-flower-in-her-hair.ts); [`codex.ts`](../../src/content/codex.ts).
 
+## Current visual portrayal — 2026-09-07
+
+Dyia is a Black man with dark brown skin and a visible family resemblance to Idris and Hanno. Childhood images and his later guard portrait should retain that continuity. His adult uniform belongs to the Cartharan institution he chose to enter; his individual expression and bearing should distinguish the younger brother from Hanno.
+
 ## Draft developments — 2026-09-06
 
 [Chapter One](../../src/content/chapters/01-market-awnings.ts) allows years to pass before recruitment; he is grown when he joins, and the formal hearing comes after a provisional assignment and postponements. In [Six](../../src/content/chapters/06-shadows-and-accusations.ts), he must distinguish the family's evidence against Sinna from what a protected suspect could overturn. In Seven, a man he killed leaves a sister seeking missing property. His own methods have damaged the old inquiry, and her claim remains an obligation independent of his ambition. Hanno gives him one of Amara's five bowls.

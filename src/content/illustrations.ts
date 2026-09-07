@@ -9,7 +9,7 @@ export interface PlateArtwork {
 }
 
 export const plateArtwork = {
-  "carthara-market": { src: "/images/plates/carthara-market.webp", caption: "Carthara · Beneath the market awnings", alt: "Ink and watercolor: Fruit stalls beneath red awnings, with carved arcades, hanging gardens, and green domes rising above Carthara.", width: 1024, height: 1536, number: "01" },
+  "carthara-market": { src: "/images/plates/carthara-market-v2.webp", caption: "Carthara · Beneath the market awnings", alt: "Ink and watercolor: Black families, traders, and neighbors at fruit stalls beneath red awnings, with carved arcades, hanging gardens, and green domes rising above Carthara.", width: 1024, height: 1536, number: "01" },
   "apothecary": { src: "/images/plates/apothecary.webp", caption: "Carthara · An apothecary’s workshop", alt: "Ink and watercolor: Ceramic vessels, brass balances, carved wooden screens, and an arched passage into a fountain courtyard.", width: 1024, height: 1536, number: "02" },
   "pottery-room": { src: "/images/plates/pottery-room.webp", caption: "Carthara · The pottery room", alt: "Ink and watercolor: A potter’s wheel beside a window, with blue-banded jugs, shelves, clay, and tools in a lived-in workshop.", width: 1536, height: 1024, number: "03" },
   "petition-court": { src: "/images/plates/petition-court.webp", caption: "Carthara · The petition court", alt: "Ink and watercolor: Petitioners waiting beneath a richly carved court arcade, with clerks behind a long table.", width: 1536, height: 1024, number: "04" },

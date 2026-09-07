@@ -2,6 +2,14 @@
 
 Status: working dossier separating actual draft evidence from proposals. Compare particular households and institutions, not a uniform temperament assigned to a species. The [visual direction](../visual-direction.md) belongs to people who build, maintain, inhabit, and sometimes lose its spaces.
 
+## A multicultural city — adopted direction, 2026-09-07
+
+The author wants a more visibly multicultural world, with more Black people throughout its ordinary life and principal cast. Carthara is a city of distinct, overlapping communities. Black residents belong across its neighborhoods, generations, incomes, and professions: raising families, trading at market, making and repairing things, studying, treating patients, administering institutions, and holding power. The Averroes father and sons, Alethea, and Corvo make that breadth visible in the named cast; their different choices and obligations remain individual.
+
+Shared streets bring people into contact without making every household culturally interchangeable. Develop differences through languages used at home and work, food, craft training, observance, family arrangements, and ties to other places. Carthara and Lysandria each contain varied communities; a region's architecture or a resident's skin color does not assign everyone the same culture. The visual direction establishes representation, not a real-world ethnicity, new genealogy, or explanation for the existing debt and displacement systems. Community names and particular histories remain open for development.
+
+**Proposed scenes:** Let a Black market vendor negotiate a routine delivery while a neighboring family prepares a meal; give a Black apprentice, practitioner, or clerk work and relationships beyond an encounter with Hanno. Show residents sharing knowledge and disagreeing over practical matters. These are opportunities for future prose and illustration, not events already written into the chapters.
+
 ## Water and food
 
 **Established in current draft:** Drought destroys Idris's fruit income; Numarius controls plantations with an unspecified staple crop. In the [Tengeri refugee camps](../places/tengeri-wastes.md), bombardment interrupts cooking and care; scarce medicinal plants cannot meet an outsider's requested purchase without depriving residents. Water routes and supplies require labor. See [Carthara](../places/carthara.md) and [the fields](../places/numarius-fields.md).

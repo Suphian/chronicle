@@ -11,7 +11,7 @@ export const character: CharacterProfile = {
   race: "Half-Elf",
   class: "Alchemist",
   alignment: "Neutral Evil",
-  portrait: "/images/chronicle/hanno.webp",
+  portrait: "/images/portraits/hanno.webp",
   tagline:
     "His skill brings relief to Carthara. His pride and careful calculations turn the city's trust into the means of his revenge.",
   bio: [

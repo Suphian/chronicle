@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-07",
+  "tool": "Built-in image_gen.imagegen",
+  "asset": "carthara-market-v2.webp",
+  "source": "C:/Users/suphi/.codex/generated_images/01a07c2d-5d90-7fe0-8f2d-902016797892/exec-0fcf2d82-4604-46ad-b5ff-ec57f4e7c349.png",
+  "reference": "public/images/plates/carthara-market.webp",
+  "prompt": "Use case: illustration-story, edit an existing fictional artwork. Revise the attached Chronicle Carthara market plate, keeping its lovely intricate pale limestone arcades, domes, lush planted terraces, red market awning, foreground figs and pomegranates, ink crosshatching and mineral watercolor on warm ivory paper, tall portrait composition 1024x1536, softly fading vignette edges. The author's explicit direction is visibly more multiculturalism and many more Black people. Make the street feel lived in with BLACK RESIDENTS clearly represented in the foreground and middle ground, not only tiny distant silhouettes: near front right a Black woman with rich deep brown skin and natural tightly coiled hair partly wrapped in an ordinary terracotta scarf, negotiating over a fruit basket with a Black middle-aged merchant in practical pale linen; a Black father in indigo tunic with a child beside him, a dark-skinned Black young adult carrying a notebook past the stall; other residents with a range of brown/olive/deep skin tones. Individual expressive human faces, varied everyday dress appropriate to this sophisticated fantasy port, ordinary work and family life, at least two foreground people large enough for clear facial detail while architecture remains dominant above. No specific named protagonist or recognizable portrait required. No generic tribal costume, exoticizing props, caricature, modern clothes, soldiers, chains, violence, text, lettering, logos or watermark. Preserve the rich architectural beauty and delicate hand-drawn folio finish; increase visual presence of people naturally, not a lineup or poster. This is original fictional world artwork, no real person identity. Keep the overall architecture and fruit-market identity intact.",
+  "width": 1024,
+  "height": 1536,
+  "conversion": "Sharp WebP quality 88; format conversion only; original PNG and earlier plate retained.",
+  "provenance": "Revision of original Chronicle AI-generated artwork, following the author's explicit request for greater multiculturalism and visible Black representation. No third-party source image or real-person photograph.",
+  "license": "AI-generated project artwork; generating service terms apply. No claim of exclusive copyright or external stock license.",
+  "inspection": "Visually inspected: richly detailed ink/watercolor city and red awning preserved; visibly Black residents prominent in foreground with distinct faces, skin tones and hair, trading and family life. No new named character, readable text, depicted violence or story outcome.",
+  "use": "Homepage hero and existing carthara-market plate placements. Stable artwork ID and chapter/scene IDs unchanged."
+}

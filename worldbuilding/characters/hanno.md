@@ -12,6 +12,10 @@ His stated faith is Aetherium Harmonia. He gardens, avoids mirrors, and needs pu
 
 Sources: [`character.ts`](../../src/content/character.ts); Chapters [Four](../../src/content/chapters/04-gift-of-lysandria.ts), [Six](../../src/content/chapters/06-shadows-and-accusations.ts), [Eight](../../src/content/chapters/08-a-dark-turn.ts), and [Ten](../../src/content/chapters/10-the-flower-in-her-hair.ts).
 
+## Current visual portrayal — 2026-09-07
+
+Hanno is a Black half-elf with dark brown skin, visibly part of the Averroes family alongside his Black father Idris, Black younger brother Dyia, and brown-skinned mother Amara. Keep the family resemblance across childhood and adult illustrations. His adult bearing and practical work clothes should express the alchemist's attentive, calculating habits.
+
 ## Draft developments — 2026-09-06
 
 The author's later correction makes the limit more specific: Hanno is a decent fighter, while his defining power is technical expertise and calculation. Chapter Four now gives him occasional basic staff practice during years devoted chiefly to alchemy and clinical work. Zaharaz is ordinary equipment with personal meaning, not an enchanted or exceptional weapon. Healing depends on colleagues, and builders and growers can refuse impossible demands. In Chapter Five he learns of Idris's death from a limited account notice, not from the banquet. In [Six](../../src/content/chapters/06-shadows-and-accusations.ts), the retained bottle, Amara's record, an apprentice's limited testimony, and Sinna's response ground his conviction about the murder; they are not a completed legal proof. He knowingly accepts the shipment's risk to bystanders. Alethea's evidence restores the cure's standing separately from his revenge.

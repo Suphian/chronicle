@@ -63,9 +63,9 @@ body {
 .home-section-grid p { font: 17px/1.8 Georgia, serif; color: #d3c7b0; }
 .home-section-grid strong { display: block; font: 12px/1.7 system-ui, sans-serif; margin-top: 24px; color: #d1b780; }
 .editorial-home { background: #f3eddf; color: #302a22; }
-.editorial-home .home-hero { min-height: max(780px, 100svh); padding: 150px max(28px, calc((100vw - 1480px) / 2)) 120px; align-items: center; overflow: hidden; }
-.home-art { position: absolute; right: -4%; top: 55px; width: 72%; height: calc(100% - 80px); mix-blend-mode: multiply; opacity: .86; mask-image: linear-gradient(90deg, transparent 2%, black 45%); animation: home-art-arrive 1.3s ease-out both; }
-.editorial-home .home-title { max-width: 1480px; }
+.editorial-home .home-hero { min-height: max(1000px, min(72vw, 1800px)); padding: clamp(150px, 19vh, 260px) max(28px, calc((100vw - 1480px) / 2)) 120px; align-items: flex-start; overflow: hidden; }
+.home-art { position: absolute; right: -8%; top: 55px; width: 80%; height: calc(100% - 80px); mix-blend-mode: multiply; opacity: .92; mask-image: linear-gradient(90deg, transparent 2%, black 42%); animation: home-art-arrive 1.3s ease-out both; }
+.editorial-home .home-title { max-width: 1480px; margin: 0 auto; }
 .editorial-home .home-title .book-eyebrow { color: #65553e; font-size: 11px; letter-spacing: .2em; }
 .editorial-home .home-title h1 { color: #302a22; font: 400 clamp(76px, 12vw, 190px)/.9 var(--font-serif); letter-spacing: -.045em; margin: 38px 0; }
 .editorial-home .home-title h1 span { display: block; font-size: .37em; font-style: italic; letter-spacing: -.03em; margin-bottom: 10px; }
@@ -77,6 +77,7 @@ body {
 .editorial-home .home-actions .btn-ghost { color: #514936; font: 13px/1.6 system-ui, sans-serif; letter-spacing: 0; text-transform: none; text-decoration: underline; text-underline-offset: 6px; }
 .home-folio { position: absolute; bottom: 28px; left: max(28px, calc((100vw - 1480px) / 2)); right: max(28px, calc((100vw - 1480px) / 2)); border-top: 1px solid #b8a98c; padding-top: 15px; font: 12px/1.6 system-ui, sans-serif; color: #65553e; display: flex; justify-content: space-between; gap: 24px; }
 .editorial-home .home-sections { max-width: 1536px; padding-top: 75px; }
+.home-living { width: min(1240px, calc(100% - 48px)); margin: 0 auto; }
 .editorial-home .home-sections > .book-eyebrow { color: #796749; }
 .editorial-home .home-section-grid { display: block; }
 .editorial-home .home-section-grid > a { display: grid; grid-template-columns: 60px minmax(180px, 1fr) minmax(240px, 1.4fr) 190px; gap: 25px; align-items: center; padding: 36px 0; border: 0; border-top: 1px solid #cbbda2; }
@@ -85,7 +86,7 @@ body {
 .editorial-home .home-section-grid h2 { font: 42px/1.15 var(--font-serif); margin: 0; }
 .editorial-home .home-section-grid p { color: #635641; font-size: 16px; max-width: 480px; }
 .editorial-home .home-section-grid strong { color: #5a4931; margin: 0; font-weight: 400; text-align: right; }
-@keyframes home-art-arrive { from { opacity: 0; transform: translateY(18px); } to { opacity: .86; transform: translateY(0); } }
+@keyframes home-art-arrive { from { opacity: 0; transform: translateY(18px); } to { opacity: .92; transform: translateY(0); } }
 @media (max-width: 1000px) { .editorial-home .home-section-grid > a { grid-template-columns: 40px minmax(170px, 1fr) minmax(240px, 1.4fr); } .editorial-home .home-section-grid strong { grid-column: 2 / -1; text-align: left; } }
 @media (max-width: 700px) { .editorial-home .home-hero { min-height: 850px; padding: 130px 24px 340px; align-items: start; } .home-art { top: auto; right: -8%; bottom: 42px; width: 105%; height: 480px; opacity: .65; mask-image: linear-gradient(0deg, black 45%, transparent 100%); } .editorial-home .home-title h1 { font-size: clamp(65px, 15vw, 100px); margin: 28px 0; } .editorial-home .home-title > p:not(.book-eyebrow) { font-size: 18px; max-width: 400px; } .editorial-home .home-actions { gap: 18px; } .home-folio { left: 24px; right: 24px; font-size: 11px; } .home-folio span { max-width: 210px; text-align: right; } .editorial-home .home-section-grid > a { grid-template-columns: 28px minmax(0, 1fr); gap: 14px; padding: 28px 0; } .editorial-home .home-section-grid h2 { font-size: 36px; } .editorial-home .home-section-grid p, .editorial-home .home-section-grid strong { grid-column: 2; } }
 @media (prefers-reduced-motion: reduce) { .home-art { animation: none; } }

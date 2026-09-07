@@ -10,6 +10,10 @@ The father's canonical name is **Idris**, following the author's latest correcti
 
 Sources: Chapter [One](../../src/content/chapters/01-market-awnings.ts), scenes `the-fruit-stall`, `the-drought`, `the-fields`, and `the-sentencing`; Chapter [Eight](../../src/content/chapters/08-a-dark-turn.ts), `fertilizer`; [`codex.ts`](../../src/content/codex.ts).
 
+## Current visual portrayal — 2026-09-07
+
+Idris is a Black man with dark brown skin. Portraits and family scenes should make his resemblance to Hanno and Dyia visible, while preserving each man's individual face. His everyday appearance belongs to the capable Cartharan fruit trader already established in the story: a working stall, familiar customers, and clothes used through a full market day.
+
 ## Draft developments — 2026-09-06
 
 [Chapter One](../../src/content/chapters/01-market-awnings.ts) now distinguishes provisional debt recovery from a later hearing. Postponements and maintenance charges extend the family's bind; the hearing eventually confirms the labor assignment. In [Five](../../src/content/chapters/05-the-cure.ts), Amara gives the returning Hanno a notice closing Idris's labor account by death. Word she sent missed him on the journey. It specifies no cause, grave, or final words; Dyia's request for more was refused. Thus the banquet's cruelty concerns the particular degrading account of Idris's fate, not Hanno first learning that his father died. The world bible's unnamed burial remains supporting draft continuity, not knowledge supplied by that notice.

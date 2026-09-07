@@ -8,6 +8,10 @@ Corvo controls Carthara's docks and customs house. She profits from Ravash; `CLA
 
 Sources: [`CLAUDE.md`](../../CLAUDE.md), canon section; [`codex.ts`](../../src/content/codex.ts), `corvo`; Chapters [Five](../../src/content/chapters/05-the-cure.ts) and [Nine](../../src/content/chapters/09-shadows-closing-in.ts).
 
+## Current visual portrayal — 2026-09-07
+
+Corvo is a Black woman with deep brown skin. Her portrait should convey an experienced magistrate through composed bearing, refined civic dress, and the working surroundings of the harbor's customs authority. She belongs among the city's powerful public figures as fully as Black residents belong among its families, traders, and learned professionals.
+
 ## Interpretation
 
 Her power is control over circulation and records rather than ownership of every object. She can benefit from a predictable city without feeling personal loyalty to either colleague. The cure removes illicit revenue; the Dust undermines confidence in the institutions that make trade possible. Those are different threats and may call for different responses.

@@ -25,6 +25,7 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rat
   const [speechSupported, setSpeechSupported] = useState(false);
   const [index, setIndex] = useState(() => Math.max(0, (mode === "ondemand" ? passages : previewTracks).findIndex((part) => part.sceneId === initialSceneId)));
   const [status, setStatus] = useState<Status>("stopped");
+  const [loadingMessage, setLoadingMessage] = useState("Preparing your narration…");
   const [error, setError] = useState("");
   const audio = useRef<HTMLAudioElement | null>(null);
   const utterance = useRef<SpeechSynthesisUtterance | null>(null);
@@ -48,6 +49,13 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rat
     synth.addEventListener("voiceschanged", update);
     return () => synth.removeEventListener("voiceschanged", update);
   }, []);
+
+  useEffect(() => {
+    if (status !== "loading") return;
+    const explain = window.setTimeout(() => setLoadingMessage("Preparing the voices… This can take a moment."), 6000);
+    const reassure = window.setTimeout(() => setLoadingMessage("Still preparing… You can cancel and keep reading."), 20000);
+    return () => { window.clearTimeout(explain); window.clearTimeout(reassure); };
+  }, [status]);
 
   useEffect(() => () => {
     generation.current++;
@@ -112,7 +120,12 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rat
     if (saved) { playAudio(saved, at, token); return; }
     const controller = new AbortController();
     pending.current = controller;
+    setLoadingMessage("Preparing your narration…");
     setStatus("loading");
+    const timeout = window.setTimeout(() => {
+      if (token !== generation.current) return;
+      fail("The voices are taking too long to prepare. Press Play to try again.", token);
+    }, 60000);
     try {
       sourceHash.current ??= narrationRequestHash(chapter);
       const hash = await sourceHash.current;
@@ -140,6 +153,8 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rat
       playAudio(url, at, token);
     } catch (cause) {
       if (token === generation.current) fail(cause instanceof Error ? cause.message : "Narration stopped. Press Play to retry.", token);
+    } finally {
+      window.clearTimeout(timeout);
     }
   }
 
@@ -201,7 +216,7 @@ function NarrationPlayer({ chapter, initialSceneId, onActiveParagraph, mode, rat
     <div className="narration-row">
       <button className="narration-play" onClick={listen} disabled={!tracks.length || (mode === "device" && !speechSupported)} aria-label={`${label} chapter narration`}><span aria-hidden="true">{status === "playing" ? "Ⅱ" : status === "loading" ? "×" : "▶"}</span> {label}</button>
       {active && <button className="narration-stop" onClick={stop}>Stop</button>}
-      <p className="narration-now" role="status">{status === "loading" ? "Preparing your narration…" : status === "ended" ? "End of chapter." : active ? `${status === "paused" ? "Paused" : "Playing"}${currentScene?.heading ? ` · ${currentScene.heading}` : ""}` : mode === "device" && !speechSupported ? "Device voices are unavailable." : "Listen to this chapter"}</p>
+      <p className="narration-now" role="status">{status === "loading" ? loadingMessage : status === "ended" ? "End of chapter." : active ? `${status === "paused" ? "Paused" : "Playing"}${currentScene?.heading ? ` · ${currentScene.heading}` : ""}` : mode === "device" && !speechSupported ? "Device voices are unavailable." : "Listen to this chapter"}</p>
       <Link className="narration-settings-link" href="/settings" aria-label="Reading and narration settings">Settings</Link>
     </div>
     {mode === "ondemand" && <p className="narration-attribution">Voices by <a href="https://elevenlabs.io" target="_blank" rel="noreferrer">elevenlabs.io</a></p>}

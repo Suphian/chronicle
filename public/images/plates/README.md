@@ -1,5 +1,7 @@
 # Chapter illustrations
 
+The current Carthara market image is [`carthara-market-v2.webp`](carthara-market-v2.webp), following the author's request for more visible Black representation. Black families, traders, and neighbors now occupy the foreground beneath the existing arcades. [Revision prompt and provenance](carthara-market-v2.prompt.json) record the built-in generation edit and visual review. The stable `carthara-market` artwork ID, scene placements, and number remain unchanged; the earlier image is retained.
+
 The illustrated reader has 70 curated placements across all 63 prose scenes in the ten numbered chapters and optional historical tale. There are 25 distinct artworks. Every scene has a relevant illustration; seven additional placements accompany meaningful changes of place within a scene. Returning places and objects may recall an earlier image, including within the same chapter. A scene never repeats the same artwork.
 
 ## Asset register
@@ -8,7 +10,7 @@ All paths below are relative to this directory. Originals remain untouched in th
 
 | Asset | Dimensions | Prompt set |
 |---|---|---|
-| [carthara-market.webp](carthara-market.webp) | 1024 × 1536 | [Full prompt & provenance](prompts.json) |
+| [carthara-market-v2.webp](carthara-market-v2.webp) | 1024 × 1536 | [Revision prompt & provenance](carthara-market-v2.prompt.json); [earlier study](prompts.json) |
 | [apothecary.webp](apothecary.webp) | 1024 × 1536 | [Full prompt & provenance](prompts.json) |
 | [pottery-room.webp](pottery-room.webp) | 1536 × 1024 | [Full prompt & provenance](household-prompts.json) |
 | [petition-court.webp](petition-court.webp) | 1536 × 1024 | [Full prompt & provenance](household-prompts.json) |

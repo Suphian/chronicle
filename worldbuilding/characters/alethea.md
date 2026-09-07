@@ -8,6 +8,10 @@ A respected Lysandrian healer. She loves [Hanno](hanno.md) after witnessing his 
 
 Sources: Chapters [Four](../../src/content/chapters/04-gift-of-lysandria.ts), [Five](../../src/content/chapters/05-the-cure.ts), [Nine](../../src/content/chapters/09-shadows-closing-in.ts), and [Ten](../../src/content/chapters/10-the-flower-in-her-hair.ts).
 
+## Current visual portrayal — 2026-09-07
+
+Alethea is a Black woman with dark brown skin. Depict her as the practicing Lysandrian healer she is: attentive to patients and colleagues, comfortable with her tools, and dressed for the work of a clinic. Her portrait and scenes should preserve her recognizable face through her life on Lysandria and in Carthara.
+
 ## Draft developments — 2026-09-06
 
 In [Four](../../src/content/chapters/04-gift-of-lysandria.ts), her existing practice serves lower-street and foundry families. She arranges a handover before leaving, and agrees with Hanno that shared work requires discussion, disagreement is not disloyalty, and she may leave if necessary. In Five she establishes patient consent, stop conditions, separate dispensing/follow-up records, and affordable access supported by paying patients. She also brings independent practitioners into the post-Amara review.

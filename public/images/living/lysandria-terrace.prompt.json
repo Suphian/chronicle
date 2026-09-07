@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-09-07T15:25:21.780Z",
+  "tool": "image_gen.imagegen (built-in)",
+  "file": "lysandria-terrace.webp",
+  "source": "C:\\Users\\suphi\\.codex\\generated_images\\01a07c31-bd34-7b71-8db9-e110a0389024\\exec-a6ca2ee8-060b-497e-9f49-5252df8fe9aa.png",
+  "sourceRetained": true,
+  "prompt": "Use case: illustration-story. Generate ONE original finished landscape painting, wide 16:9 composition, for an atmospheric window into Lysandria in The Chronicle. A serene sunlit Mediterranean and Middle Eastern fantasy island, softly hand-painted animation-background aesthetic: luminous chalk-white limestone, weathered timber and aged brass, lush green foliage, summer cobalt-blue sky with big soft white clouds, turquoise sea. View from a quiet sea-facing pottery terrace: simple workbench near the left edge with a few handmade bowls and two blue-banded jugs, a folded cloth and quiet traces of ordinary craft; low carved stone wall and worn brass-and-wood railing descend diagonally toward a sheltered inlet; leafy vines and a cypress frame the edges. Across the bay on the SAME island, EXACTLY TWO immense distinct mountain peaks rise beyond layered pale coastal terraces, separated by a low saddle. Both peaks clearly visible in the central middle distance and uncut by the image edge; do not add a third tall peak or connect island to a mainland. Balance intimate foreground craft and grand distant terrain. Eye level slightly low, plentiful sky in upper third; bright warm afternoon light, soft brushwork, delicate painterly textures, gentle shadow, quiet air. An ORIGINAL composition from this textual brief, not a reconstruction of any video frame. No people, faces, readable writing, signage, logos, watermark, border, futuristic machinery, dark grim fantasy, photorealism, glowing magic, monumental palace or battle. This is a visual interpretation of an unspecified terrace, not a new canonical named site. Keep the central view uncluttered. Static painting only; the website will supply separately controllable subtle atmospheric motion.",
+  "sourceProfile": "worldbuilding/places/lysandria.md",
+  "inspection": "Inspected generated PNG: original sunny pottery terrace, blue-banded vessels, white coastal architecture, foreground vine/cypress, bright summer sky and turquoise water; exactly two dominant mountain peaks. No people, readable text or new named site.",
+  "provenance": "Original AI-generated landscape commissioned for Chronicle from a textual brief. User-shared videos supplied mood references through visual observation by the lead agent; no video frame or remote media was downloaded, copied, composited or used as an image-generation input.",
+  "references": [
+    {
+      "url": "https://x.com/HakimiHamizi/status/2096837207059567015",
+      "role": "Mood reference observed by lead: fixed view, sunlit pale terrace and aged railing, greenery and blue summer sky."
+    },
+    {
+      "url": "https://x.com/cozyycabin/status/2096845734733631889",
+      "role": "Motion reference observed by lead: sheltered opening, warm garden light and a gently billowing ivory curtain."
+    }
+  ],
+  "motion": {
+    "kind": "Original interactive animated landscape, not generated video footage",
+    "implementation": [
+      "src/components/LivingLandscape.tsx",
+      "src/components/LivingLandscape.module.css"
+    ],
+    "layers": "Static original raster painting with original SVG linen curtain, slow CSS fabric billow, light and airborne pollen. No source-video frames or audio.",
+    "controls": "Explicit play/pause. Reduced-motion preference defaults to a still scene, with voluntary playback available. Motion pauses outside the viewport and while the document is hidden. No audio."
+  },
+  "conversion": {
+    "library": "sharp",
+    "format": "WebP",
+    "quality": 90,
+    "effort": 6,
+    "operations": "Format conversion only. No resize, crop, composite, paint, color transformation or retouching."
+  },
+  "license": "AI-generated project artwork and project-authored animation code; no third-party stock license applies. Image use is governed by the generating service terms; no assertion of exclusive copyright. Reference videos remain with their respective creators and have not been rehosted.",
+  "continuity": "The terrace is an atmospheric visual interpretation, not a newly named canonical location. Lysandria remains an island with two enormous mountains. Pottery recalls the established regional craft without asserting this is Amara's specific former workplace.",
+  "width": 1672,
+  "height": 941,
+  "bytes": 326460,
+  "sourceSha256": "2c603e7b18fca7cd64660772abd3073bd4744f949bbcfee93784763c82e7c477",
+  "fileSha256": "cd79595e8d8530f7a2501520ad8569c8d000da8509beaae61447bb54ecf2bbb2"
+}

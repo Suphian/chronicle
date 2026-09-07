@@ -7,6 +7,7 @@ import { createHash } from 'node:crypto';
 
 const { getNarrationSegments, narrationText, narrationSourceHash, dialogueSignature, splitSpeechText, validateNarrationManifest } = await import('../src/lib/narration.ts');
 const { voiceCast, dialogueSpeakers, dialogueRevisions } = await import('../src/content/narration.ts');
+const { getNarrationPassages, OPENING_PASSAGE_CHARACTER_LIMIT, PASSAGE_CHARACTER_LIMIT } = await import('../src/lib/narration-passages.ts');
 
 let paragraphCount = 0;
 let characterParts = 0;
@@ -17,6 +18,20 @@ for (const file of fs.readdirSync('src/content/chapters').filter((file) => /^\d.
   const chapter = Object.values(chapterModule).find((value) => value?.slug && value?.scenes);
   chapters.push(chapter);
   const segments = getNarrationSegments(chapter);
+  const passages = getNarrationPassages(chapter);
+  let previousParagraph = '';
+  const canonicalText = segments.map(segment => {
+    const paragraph = `${segment.sceneId}:${segment.paragraphIndex}`;
+    const text = previousParagraph && previousParagraph !== paragraph ? `\n\n${segment.text}` : segment.text;
+    previousParagraph = paragraph;
+    return text;
+  }).join('');
+  assert.equal(passages.flatMap(part => part.inputs.map(input => input.text)).join(''), canonicalText, chapter.slug + ': passage splitting must preserve exact prose and paragraph spacing');
+  for (const sceneId of new Set(passages.map(part => part.sceneId))) {
+    const scenePassages = passages.filter(part => part.sceneId === sceneId);
+    assert(scenePassages[0].characters <= OPENING_PASSAGE_CHARACTER_LIMIT, `${chapter.slug}/${sceneId}: opening should prepare a short clip`);
+    assert(scenePassages.every(part => part.characters > 0 && part.characters <= PASSAGE_CHARACTER_LIMIT), `${chapter.slug}/${sceneId}: all clips remain bounded and nonempty`);
+  }
   assert.equal(new Set(segments.map((segment) => segment.id)).size, segments.length, 'segment IDs must be unique');
   assert(segments.every((segment) => voiceCast[segment.speaker]), 'all parts have a known speaker');
   characterParts += segments.filter((segment) => segment.speaker !== 'narrator').length;
@@ -45,6 +60,12 @@ for (const file of fs.readdirSync('src/content/chapters').filter((file) => /^\d.
   }
 }
 assert(characterParts > 0, 'cast must include character dialogue');
+const sentenceFixture = structuredClone(chapters[0]);
+sentenceFixture.scenes = [{ id: 'quick-start', kind: 'prose', text: ['A short opening sentence. ' + 'The rest of the account continues with ordinary words and a clear ending. '.repeat(15)] }];
+const fixturePassages = getNarrationPassages(sentenceFixture);
+assert.match(fixturePassages[0].inputs.map(input => input.text).join(''), /\.\s*$/, 'opening clips prefer a complete sentence when one fits');
+sentenceFixture.scenes[0].text = ['An unusually long sentence ' + 'with more words '.repeat(60) + 'finally ends.'];
+assert.equal(getNarrationPassages(sentenceFixture).flatMap(part => part.inputs.map(input => input.text)).join(''), sentenceFixture.scenes[0].text[0], 'a long first sentence loses no words when bounded');
 const example = chapters.find((chapter) => getNarrationSegments(chapter).some((part) => part.speaker !== 'narrator'));
 const revised = structuredClone(example);
 const voiced = getNarrationSegments(example).find((part) => part.speaker !== 'narrator');
