@@ -14,6 +14,8 @@ Copy the brief below into a future session, then add the idea or scene you want 
 >
 > Give characters independent goals, conflicting loyalties, skills with limits, specific relationships, a material position in society, and choices that cost them something. Do not make complexity synonymous with secret cruelty or traumatic backstory. Let decent people disagree for good reasons and let antagonists have understandable motives without excusing their actions.
 >
+> Whenever you add or import a named character, add them to People in the same change with a linked Markdown profile, a major/minor classification, and an explicit current-draft, imported-lore, or proposed status. Keep minor characters collapsible and searchable. Reuse existing IDs for aliases; listing an imported or proposed person does not adopt their history as canon.
+>
 > When I ask you to incorporate an idea, update the relevant Markdown profiles and outline and the website's content where needed. Keep chapter and scene IDs stable. Maintain readable chapter navigation and useful links among people, scenes, and places. Keep new alternatives explicitly proposed. Tell me what changed and what remains unresolved.
 >
 > Use subagents if I authorize them and the work can be divided usefully. Give each one a bounded file scope and integrate their findings into one coherent result. Routine reversible changes do not need repeated permission.

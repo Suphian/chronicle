@@ -113,3 +113,10 @@ The author adopted the November 2023 Mizan map for the whole World section, with
 ## 2026-09-07 — Every map point has its own picture
 
 The author requires an individual picture for every map point and asks that completed artwork be added and pushed as work progresses. Include the 88 Mizan markers and nine story-place selections. Shared regional placeholders are superseded by explicit per-ID assignments; person markers use portraits. Preserve IDs, source geometry, and the distinction between visual proposals and chapter continuity. The Carthara panorama remains the common style reference.
+
+## 2026-09-07 — Keep People complete and manageable
+
+- Every character added or imported into working material must also appear in People, with a linked Markdown profile. This applies to the map's imported people and proposed rulers as well as the chapter cast.
+- Classify characters as major or minor according to the current story's focus. Major characters start expanded; minor characters start collapsed in an accordion and remain searchable. These editorial classifications may change as arcs grow.
+- The directory now includes the thirteen existing codex people, seventeen additional imported map people, and twenty-four already proposed officeholders. Existing identities are deduplicated; Bilegt's disputed ordinal remains open. Imported history and proposals are labeled separately from current draft continuity. This directory update adopts no new biography or political office.
+- `src/content/people.ts` maintains the directory metadata; Markdown profiles hold the character notes and link to their atlas sources and the existing Areas to think about inventory.

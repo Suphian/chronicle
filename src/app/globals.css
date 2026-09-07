@@ -133,6 +133,15 @@ body {
 .people-portrait img { object-position: center 24%; }
 .people-card-copy { padding: 20px; }
 .people-card-copy h2 { margin: 8px 0 0; }
+.people-card-copy h3 { margin: 8px 0 0; font: 24px/1.4 Georgia, serif; }
+.people-card-copy .people-status { margin: 12px 0 0; font: 12px/1.6 system-ui, sans-serif; color: #716049; }
+.people-group { margin-top: 24px; border-top: 1px solid #c7b696; }
+.people-group > h2 { margin: 0; }
+.people-group-toggle { display: flex; align-items: center; justify-content: space-between; gap: 16px; width: 100%; padding: 20px 0; border: 0; background: transparent; color: #302a22; font: inherit; text-align: left; cursor: pointer; }
+.people-group-toggle small { font: 14px/1.6 system-ui, sans-serif; color: #716049; }
+.people-group-toggle:focus-visible { outline: 2px solid #74602e; outline-offset: 4px; }
+.people-group-minor .people-card-copy { padding: 16px 20px; }
+.people-group-minor .people-card-copy h3 { font-size: 20px; }
 .people-directory > input { margin-bottom: 24px; }
 .pitch-stages { display: grid; grid-template-columns: repeat(6, 1fr); border: 1px solid #cdbfa7; }
 .pitch-stages li { padding: 18px; font: 14px/1.6 system-ui, sans-serif; }

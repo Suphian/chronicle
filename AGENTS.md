@@ -8,6 +8,8 @@ The four primary website sections are Story, People, World, and Writing room. Ch
 
 ## Evidence and invention
 
+- Every named character added or imported into current working material must appear in **People** in the same change, with a linked Markdown profile and a major/minor classification in `src/content/people.ts`. Keep imported source lore and proposed characters explicitly labeled; inclusion is not canon adoption. Major characters open by default, minor characters remain collapsible, and search must find both. Reuse stable IDs and existing characters rather than duplicating aliases. Add adopted story characters to the codex as well.
+
 - Map notes should describe geography, the ruler or institution in control, ownership where relevant, and important settlements, landmarks, or resources. New area and character proposals must also be recorded in the outline's **Areas to think about** section (`worldbuilding/story/area-development.md`, linked from `overall-outline.md`), with adopted facts and proposals distinguished.
 
 - Existing chapters are **draft continuity**, not an irrevocable finished novel. The author welcomes tens of chapters; these compressed seeds may grow into extensive arcs without a chapter-count cap. Preserve deliberate revisions such as Sinna's death by the stolen shipment when importing older material. The latest author correction restores **Dyia** as the brother's canonical name; **Adris** is a superseded repository alias.

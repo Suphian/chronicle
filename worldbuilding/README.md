@@ -12,7 +12,7 @@ The current material already has a strong tragedy: a healer who needs a city's l
 - **Writing room** (`/workshop`): the [overall story outline](story/overall-outline.md), [writing direction](story/writing-direction.md), architecture, chapter and scene plans, proposals, reviews, and original materials.
 
 - [Collaboration prompt](PROMPT.md): a ready-to-use brief for the lead and optional specialist agents.
-- [Characters](characters/hanno.md): individual profiles for all thirteen named people in the codex. Follow their relationship links.
+- [Characters](characters/hanno.md): individual profiles for the current cast, imported map people, and proposed characters. The [People directory](/people) groups major and minor characters and labels current draft, imported lore, and proposals; minor characters can be collapsed. Its typed inventory is `src/content/people.ts`. Every new or imported named character needs a directory entry and linked profile in the same change.
 - [Places](places/carthara.md) and [factions](factions/the-three-seats.md): existing geography and institutions, with explicit questions for development.
 - [Visual direction](visual-direction.md): the reference aesthetic translated into world and interface choices.
 - [Atlas descriptions](atlas-notes/region-5.md): geography, control, ownership, and landmarks for the 88 Mizan entries and nine current story places. Current draft, source lore, proposals, and open questions are labeled separately. Every new proposal is recorded under [areas to think about](story/area-development.md) in the outline.
