@@ -20,7 +20,7 @@ export default async function WorldPage({
       <p className="world-intro">Mountains that remember empires. Cities built on trade and debt. Follow Hanno’s travels, meet the people who live here, and return to the chapter where each place comes alive.</p>
       <ResumeReading />
       <nav className="section-subnav" aria-label="World sections"><a href="#atlas">Atlas</a><a href="#history">History</a><a href="#institutions">Institutions & power</a><a href="#everyday">Everyday life</a><Link href="/codex#substance">Beliefs, substances & artifacts</Link></nav>
-      <section id="atlas" className="section-block"><h2>The atlas</h2>
+      <section id="atlas" className="section-block world-atlas-section"><h2>The atlas</h2>
       <WorldAtlas key={typeof at === "string" ? at : "default"} initialAt={typeof at === "string" ? at : undefined} />
       </section>
       <section id="history" className="section-block"><h2>History & memory</h2><p>What the chapters establish, what the old songs dispute, and what survives in the early world notes.</p><div className="notebook-cards"><Link href="/library/history/current-timeline"><h3>A relative history of the world</h3><p>Events, legendary accounts, and gaps in the chronology →</p></Link><Link href="/library/geography-reconciliation"><h3>The wider world recovered</h3><p>Ruhania, the seven lakes, and the fragmented Khanate →</p></Link></div></section>

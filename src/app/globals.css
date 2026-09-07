@@ -163,25 +163,37 @@ body {
 .world-page { background: #eee7d8; color: #302a22; min-height: 100vh; padding: 120px max(22px, calc((100vw - 1240px) / 2)) 70px; }
 .world-page > h1 { font: clamp(30px, 4vw, 48px)/1.25 var(--font-display); max-width: 900px; margin: 15px 0; }
 .world-intro { font: 19px/1.75 Georgia, serif; max-width: 800px; margin-bottom: 30px; }
+.world-atlas-section { width: min(calc(100vw - 40px), 1760px); position: relative; left: 50%; transform: translateX(-50%); }
 .atlas-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; font: 13px/1.6 system-ui, sans-serif; padding: 16px 0; }
 .atlas-toolbar button { border: 1px solid #a08a66; padding: 8px 14px; cursor: pointer; }
-.atlas-map { position: relative; overflow: hidden; background: #bdb097; border: 1px solid #ae9260; border-radius: 4px; }
+.atlas-map { position: relative; overflow: hidden; isolation: isolate; background: #bdb097; border: 1px solid #ae9260; border-radius: 8px; scroll-margin-top: 86px; }
+.atlas-viewport { overflow: auto; }
 .atlas-map svg { width: 100%; display: block; }
 .atlas-pin { cursor: pointer; }
 .atlas-pin:hover rect, .atlas-pin:focus rect { fill: white; stroke: #873f2b; stroke-width: 2; }
-.atlas-controls { position: absolute; right: 16px; bottom: 16px; display: flex; gap: 6px; }
+.atlas-controls { position: absolute; left: 16px; top: 16px; z-index: 2; display: flex; gap: 6px; }
 .atlas-controls button { background: #fcf3df; color: #302a22; border: 1px solid #97825b; min-width: 42px; height: 42px; padding: 0 10px; cursor: pointer; font: 16px system-ui, sans-serif; }
 .atlas-caption { font: 13px/1.6 system-ui, sans-serif; margin-top: 14px; }
-.atlas-directory { display: grid; grid-template-columns: 300px 1fr; gap: 48px; margin-top: 40px; }
+.atlas-directory { margin-top: 28px; }
+.atlas-place-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 8px; }
 .atlas-directory h2 { font: 28px/1.4 var(--font-display); margin-bottom: 18px; }
 .atlas-directory nav button { width: 100%; text-align: left; padding: 14px; border-bottom: 1px solid #cdbfa7; font: 17px/1.4 Georgia, serif; cursor: pointer; }
 .atlas-directory nav button[aria-pressed="true"] { background: #dfd1b9; border-left: 3px solid #873f2b; }
 .atlas-directory nav button span { display: block; font: 11px/1.8 system-ui, sans-serif; color: #716049; text-transform: uppercase; letter-spacing: .1em; }
-.atlas-detail { border: 1px solid #cdbfa7; padding: 32px; font: 19px/1.8 Georgia, serif; }
+.atlas-detail { position: absolute; z-index: 3; top: 18px; right: 18px; height: calc(100% - 36px); max-height: calc(100svh - 130px); width: min(420px, calc(100% - 40px)); display: flex; flex-direction: column; background: #faf3e6; border: 1px solid #b59b74; border-radius: 6px; box-shadow: -16px 10px 55px #32241445; font: 18px/1.75 Georgia, serif; transform: translateX(calc(100% + 28px)); visibility: hidden; transition: transform 260ms ease, visibility 0s linear 260ms; }
+.atlas-detail[data-open="true"] { transform: translateX(0); visibility: visible; transition-delay: 0s; }
+.atlas-detail-heading { display: flex; flex-shrink: 0; justify-content: space-between; align-items: center; gap: 12px; padding: 18px 24px; border-bottom: 1px solid #d8c8ad; }
+.atlas-detail-heading p { margin: 0; }
+.atlas-detail-heading button { display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 6px 10px; font: 13px/1.4 system-ui, sans-serif; cursor: pointer; }
+.atlas-detail-heading button span { font-size: 26px; line-height: 1; }
+.atlas-detail-body { padding: 24px; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable; }
+.atlas-detail h2 { font: clamp(26px, 2.6vw, 34px)/1.2 var(--font-display); margin: 0 0 18px; }
+.atlas-detail :focus-visible, .atlas-directory button:focus-visible, .atlas-controls button:focus-visible { outline: 2px solid #873f2b; outline-offset: 3px; }
 .atlas-detail .atlas-tagline { font-style: italic; color: #716049; margin-bottom: 20px; }
 .atlas-detail h3 { font: 12px/1.6 system-ui, sans-serif; text-transform: uppercase; letter-spacing: .1em; margin-top: 24px; }
 .atlas-detail a { display: block; margin-top: 10px; font-size: 16px; text-decoration: underline; text-underline-offset: 4px; }
-@media (max-width: 700px) { .atlas-directory { grid-template-columns: 1fr; gap: 24px; } .atlas-directory nav { display: flex; overflow-x: auto; align-items: stretch; } .atlas-directory nav h2 { display: none; } .atlas-directory nav button { min-width: 150px; } .atlas-map { overflow-x: auto; } .atlas-map svg { min-width: 680px; } .atlas-detail { padding: 24px; } }
+@media (max-width: 700px) { .world-atlas-section { width: calc(100vw - 24px); } .atlas-place-list { display: flex; overflow-x: auto; align-items: stretch; } .atlas-directory nav button { min-width: 165px; } .atlas-map svg { min-width: 800px; } .atlas-detail { top: 66px; right: 12px; height: calc(100% - 78px); max-height: calc(100svh - 172px); width: min(380px, calc(100% - 36px)); font-size: 16px; } .atlas-detail-heading { padding: 10px 16px; } .atlas-detail-body { padding: 20px; } .atlas-controls { top: 12px; left: 12px; } }
+@media (prefers-reduced-motion: reduce) { .atlas-detail { transition: none; } }
 .site-nav { background: #141413f5; border-bottom: 1px solid #e8dcc422; min-height: 64px; font-family: system-ui, sans-serif; }
 .book-shell { background: #eee7d8; color: #302a22; min-height: 100vh; padding: 100px 28px 80px; }
 .book-layout { max-width: 1220px; margin: auto; display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 64px; }
