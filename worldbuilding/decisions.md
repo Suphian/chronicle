@@ -1,5 +1,11 @@
 # Author decisions
 
+## 2026-09-07 — Remove picture-motion controls and effects
+
+- The author finds the pause-motion button excessive and rejects moving a still picture with flickering light as the vignette approach.
+- Remove the motion controls, pan/zoom, light and particle effects, and artificial curtain overlay from chapter artwork, plus the equivalent homepage effects and control. Retain chapter placements, original images, captions, and prose.
+- The pictures currently render still. A suitable replacement animation approach remains an open design question; this supersedes the earlier stronger-motion implementation notes.
+
 ## 2026-09-07 — Vignettes belong inside chapters only
 
 - The author clarified that the vignettes were placed in unusual locations and were intended only for chapters. This supersedes the earlier site-wide placement notes in this file and `visual-direction.md`.

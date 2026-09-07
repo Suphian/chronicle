@@ -9,10 +9,10 @@ export function livingArtwork(id: LivingArtworkId) {
     title: "A moment in Lysandria",
     caption: "Sea air through an open curtain. A potter’s work waiting in the sun.",
     note: "Lysandria · An imagined pottery terrace",
-    width: 1672, height: 941, curtain: true, night: false,
+    width: 1672, height: 941,
   };
   const plate = plateArtwork[id];
-  return { ...plate, title: plate.caption, caption: "", note: "Ink & watercolor · The Chronicle", curtain: false, night: ["lantern-alley", "lake-siraj", "courtyard-garden", "moonlit-wedding"].includes(id) };
+  return { ...plate, title: plate.caption, caption: "", note: "Ink & watercolor · The Chronicle" };
 }
 
 /** Atmospheric artwork placements; paragraph counts are one-based. */
@@ -20,7 +20,7 @@ export const livingVignettes: Record<string, { artwork: "lysandria-terrace"; aft
   "gift-of-lysandria/ancient-guardians": { artwork: "lysandria-terrace", afterParagraph: 2 },
 };
 
-/** Animate an existing plate in place, keeping its manuscript position and caption. */
+/** Chapter vignette placements retain their manuscript positions and captions; currently still. */
 export const livingBookPlates: Record<string, PlateId> = {
   "the-conqueror/the-graveyard-of-empires": "bakhtar-cliffs",
   "market-awnings/above-the-pottery-shop": "pottery-room",

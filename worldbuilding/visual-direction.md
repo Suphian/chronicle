@@ -1,5 +1,9 @@
 # Visual direction
 
+## Current vignette direction — 2026-09-07
+
+Vignettes belong only inside chapters. The author rejected the pause-motion buttons and moving a still picture with flickering light. The earlier pan/zoom, light, particle, and curtain effects documented below are superseded and removed, including the equivalent homepage effects. Existing artwork currently renders still at its chapter placements. A replacement animation approach remains unresolved; these still pictures do not fulfill the intended animated vignette. Preserve the original media and provenance.
+
 ## Painted atlas with the full explorer — 2026-09-07
 
 The author prefers the first atlas's illustrated design and wants that presentation combined with the current atlas's information and flexibility. The default **Painted atlas** layer uses the original atlas's ink, mineral watercolor, warm parchment, and teal water, with framed SVG labels, a brass-colored compass and an ornamental frame. The Mizan file remains the geographic data source; its imported elevation view is no longer the default artwork.

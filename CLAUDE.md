@@ -10,6 +10,8 @@ The only active chapter experience is `BookReader.tsx`: continuous prose, text s
 
 Living vignettes belong only inside chapters. The author removed them from Home, Story, People, World, and Writing room; this supersedes the earlier site-wide placement notes in `visual-direction.md`.
 
+The author rejected pause-motion buttons and moving still pictures with flickering light. Chapter vignettes and the homepage artwork currently render still, without camera movement, particle/light effects, or artificial curtain overlays. A replacement animation approach remains unresolved; do not treat the still presentation as a completed animated vignette.
+
 The author now also requests optional narration with character voices. `ChapterNarration.tsx` offers prepared ElevenLabs recordings when their source hash matches and full device voice previews. Speaker assignments and performance directions live in `src/content/narration.ts`; chapter prose remains the only manuscript. See `worldbuilding/narration.md` for generation, attribution, limits, and the distinction between samples and completed recordings. Never expose the private API key in browser code.
 
 ## Stack and sources
