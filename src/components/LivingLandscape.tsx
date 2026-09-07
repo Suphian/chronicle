@@ -8,9 +8,9 @@ import { livingArtwork, type LivingArtworkId } from "@/content/living-vignettes"
 const motes = Array.from({ length: 14 }, (_, index) => ({
   left: `${12 + (index * 29) % 76}%`,
   top: `${14 + (index * 17) % 65}%`,
-  "--duration": `${8 + (index * 7) % 8}s`,
+  "--duration": `${5 + (index * 7) % 5}s`,
   "--delay": `${-index * 3.7}s`,
-  "--drift": `${65 + (index * 11) % 65}px`,
+  "--drift": `${140 + (index * 11) % 100}px`,
 } as CSSProperties));
 
 /** Original painted atmosphere with separately controlled fabric, light and air. */

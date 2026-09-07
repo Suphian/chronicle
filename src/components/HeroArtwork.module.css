@@ -1,16 +1,16 @@
 .artwork { overflow: hidden; }
-.painting { object-fit: cover; transform-origin: 50% 55%; animation: wander 24s ease-in-out infinite alternate; }
-.light { position: absolute; inset: -12%; background: radial-gradient(ellipse at 52% 26%, #fff3cc40, transparent 55%), linear-gradient(115deg, transparent 25%, #ffeac322 46%, transparent 65%); animation: sunlight 13s ease-in-out infinite alternate; }
+.painting { object-fit: cover; transform-origin: 50% 55%; animation: wander 8s ease-in-out -3s infinite alternate; }
+.light { position: absolute; inset: -25%; background: radial-gradient(ellipse at 52% 26%, #fff3cc70, transparent 55%), linear-gradient(115deg, transparent 25%, #ffeac355 46%, transparent 65%); animation: sunlight 5s ease-in-out -2s infinite alternate; }
 .air { position: absolute; inset: 0; }
-.mote { position: absolute; width: 3px; height: 3px; border-radius: 50%; background: #fff4cc; box-shadow: 0 0 6px #fff3cb80; opacity: 0; animation: drift var(--duration) linear var(--delay) infinite; }
+.mote { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: #fff4cc; box-shadow: 0 0 9px #fff3cb; opacity: 0; animation: drift var(--duration) linear var(--delay) infinite; }
 .painting, .light, .mote { animation-play-state: paused; }
 .artwork[data-motion="running"] .painting, .artwork[data-motion="running"] .light, .artwork[data-motion="running"] .mote { animation-play-state: running; }
 .control { position: absolute; top: 14px; right: clamp(24px, 4vw, 80px); display: inline-flex; align-items: center; gap: 7px; min-height: 44px; padding: 9px 12px; border: 1px solid #85715370; background: #f3eddfdc; color: #403729; font: 11px/1.4 system-ui, sans-serif; cursor: pointer; }
 .control:hover { background: #f3eddf; }
 .control svg { width: 14px; height: 14px; }
-@keyframes wander { from { transform: scale(1.025) translate(-.5%, .25%); } to { transform: scale(1.065) translate(.5%, -.4%); } }
-@keyframes sunlight { from { opacity: .3; transform: translate(-3%, -1%); } to { opacity: .85; transform: translate(3%, 1%); } }
-@keyframes drift { 0% { opacity: 0; transform: translate(0, 20px); } 20%, 65% { opacity: .6; } 100% { opacity: 0; transform: translate(65px, -75px); } }
+@keyframes wander { from { transform: scale(1.12) translate(-3.5%, 1%); } to { transform: scale(1.23) translate(3.5%, -2%); } }
+@keyframes sunlight { from { opacity: .4; transform: translate(-15%, -5%); } to { opacity: .9; transform: translate(15%, 5%); } }
+@keyframes drift { 0% { opacity: 0; transform: translate(-35px, 65px); } 20%, 65% { opacity: .85; } 100% { opacity: 0; transform: translate(180px, -150px); } }
 @media (max-width: 700px) {
   .control { top: 8px; right: 12px; font-size: 10px; }
   .mote:nth-child(n + 7) { display: none; }

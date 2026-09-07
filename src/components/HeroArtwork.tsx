@@ -7,7 +7,7 @@ import styles from "./HeroArtwork.module.css";
 const motes = Array.from({ length: 12 }, (_, index) => ({
   left: `${8 + (index * 23) % 84}%`,
   top: `${28 + (index * 17) % 52}%`,
-  "--duration": `${12 + (index * 7) % 13}s`,
+  "--duration": `${5 + (index * 7) % 5}s`,
   "--delay": `${-index * 2.7}s`,
 } as CSSProperties));
 
