@@ -460,5 +460,33 @@
     "caption": "Smyrneleu · location study",
     "width": 1672,
     "height": 941
+  },
+  "marker0": {
+    "src": "/images/world/points/marker0-v1.webp",
+    "alt": "Individual landscape and architecture study of Aegis",
+    "caption": "Aegis · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker1": {
+    "src": "/images/world/points/marker1-v1.webp",
+    "alt": "Individual landscape and architecture study of Tijara",
+    "caption": "Tijara · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker2": {
+    "src": "/images/world/points/marker2-v1.webp",
+    "alt": "Individual landscape and architecture study of Bahar Oasis",
+    "caption": "Bahar Oasis · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker3": {
+    "src": "/images/world/points/marker3-v1.webp",
+    "alt": "Individual landscape and architecture study of The Veil of Sirocco",
+    "caption": "The Veil of Sirocco · location study",
+    "width": 1672,
+    "height": 941
   }
 }
