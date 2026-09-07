@@ -236,5 +236,33 @@
     "caption": "Majlis Gate · location study",
     "width": 1672,
     "height": 941
+  },
+  "burg-14": {
+    "src": "/images/world/points/burg-14-v1.webp",
+    "alt": "Individual landscape and architecture study of Titanus",
+    "caption": "Titanus · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-15": {
+    "src": "/images/world/points/burg-15-v1.webp",
+    "alt": "Individual landscape and architecture study of Pallas",
+    "caption": "Pallas · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-16": {
+    "src": "/images/world/points/burg-16-v1.webp",
+    "alt": "Individual landscape and architecture study of Lustria",
+    "caption": "Lustria · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-17": {
+    "src": "/images/world/points/burg-17-v1.webp",
+    "alt": "Individual landscape and architecture study of Elarion",
+    "caption": "Elarion · location study",
+    "width": 1672,
+    "height": 940
   }
 }
