@@ -5,5 +5,145 @@
     "caption": "Corvo’s Harbor · location study",
     "width": 1672,
     "height": 941
+  },
+  "carthara": {
+    "src": "/images/world/carthara-grand-study-v1.webp",
+    "alt": "Sunlit terraces, ivory domes, and aqueducts above Carthara’s cobalt harbor",
+    "caption": "Carthara · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "region-1": {
+    "src": "/images/world/mizan-lysandria-v1.webp",
+    "alt": "Lysandria’s two enormous mountains above island harbors",
+    "caption": "Lysandria · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "region-3": {
+    "src": "/images/world/mizan-sidrat-v1.webp",
+    "alt": "Sacred lakes and planted bridges in Sidrat Al Muntaha",
+    "caption": "Sidrat Al Muntaha · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "region-4": {
+    "src": "/images/world/mizan-tengeri-v1.webp",
+    "alt": "Displaced Leonin civilian life among Tengeri’s canyon shelters",
+    "caption": "Tengeri Wastes · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "region-5": {
+    "src": "/images/world/mizan-ruhania-v1.webp",
+    "alt": "Highland settlements amid Ruhania’s forested cliffs",
+    "caption": "Ruhania · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "region-6": {
+    "src": "/images/world/mizan-tijara-v1.webp",
+    "alt": "The inland oasis architecture of Cathara’s capital Tijara",
+    "caption": "Cathara · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "region-8": {
+    "src": "/images/world/mizan-zorig-v1.webp",
+    "alt": "Planted terraces and inhabited architecture in Zorig’s wooded uplands",
+    "caption": "Shogunate of Zorig · location study",
+    "width": 1672,
+    "height": 940
+  },
+  "region-9": {
+    "src": "/images/world/mizan-hikari-v1.webp",
+    "alt": "Hikari’s hillside monasteries among lush terraces",
+    "caption": "Hikari no Kuni · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker8": {
+    "src": "/images/portraits/hanno.webp",
+    "alt": "Hanno, a Black half-elf alchemist with tied curls, studies an amber vial",
+    "caption": "Hanno Averroes · portrait study",
+    "width": 1024,
+    "height": 1536
+  },
+  "marker10": {
+    "src": "/images/portraits/chuluun.webp",
+    "alt": "Chuluun, a graying Leonin teacher, with a notebook in his repaired camp shelter",
+    "caption": "Chuluun · portrait study",
+    "width": 1024,
+    "height": 1536
+  },
+  "marker12": {
+    "src": "/images/portraits/numarius.webp",
+    "alt": "Numarius in embroidered civic robes beside a grain measure",
+    "caption": "Lord Numarius · portrait study",
+    "width": 1024,
+    "height": 1536
+  },
+  "marker13": {
+    "src": "/images/portraits/alethea-v2.webp",
+    "alt": "Alethea, a Black physician with gathered curls, attending to a patient",
+    "caption": "Alethea · portrait study",
+    "width": 1024,
+    "height": 1536
+  },
+  "carthara-garrison": {
+    "src": "/images/world/points/carthara-garrison-v1.webp",
+    "alt": "Individual landscape and architecture study of Vael’s Garrison",
+    "caption": "Vael’s Garrison · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "numarius-fields": {
+    "src": "/images/world/points/numarius-fields-v1.webp",
+    "alt": "Individual landscape and architecture study of The Fields of Numarius",
+    "caption": "The Fields of Numarius · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "moonlit-isle": {
+    "src": "/images/world/points/moonlit-isle-v1.webp",
+    "alt": "Individual landscape and architecture study of The Moonlit Isle",
+    "caption": "The Moonlit Isle · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "bakhtar": {
+    "src": "/images/world/points/bakhtar-v1.webp",
+    "alt": "Individual landscape and architecture study of Bakhtar",
+    "caption": "Bakhtar · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "lysandria": {
+    "src": "/images/world/points/lysandria-v1.webp",
+    "alt": "Individual landscape and architecture study of Lysandria",
+    "caption": "Lysandria · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "tengeri-wastes": {
+    "src": "/images/world/points/tengeri-wastes-v1.webp",
+    "alt": "Individual landscape and architecture study of The Tengeri Wastes",
+    "caption": "The Tengeri Wastes · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "sidrat-al-muntaha": {
+    "src": "/images/world/points/sidrat-al-muntaha-v1.webp",
+    "alt": "Individual landscape and architecture study of Sidrat Al Muntaha",
+    "caption": "Sidrat Al Muntaha · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "region-2": {
+    "src": "/images/world/points/region-2-v1.webp",
+    "alt": "Individual landscape and architecture study of Zeon",
+    "caption": "Zeon · location study",
+    "width": 1672,
+    "height": 941
   }
 }

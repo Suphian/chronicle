@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { locationArt } from "@/content/mizan-art";
+import { locationArt, mapPictures } from "@/content/mizan-art";
 import { useEffect, useMemo, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { world, worldById } from "@/content/world";
@@ -185,7 +185,7 @@ export function WorldAtlas({ initialAt, sourceNotes = {} }: { initialAt?: string
         <div className="atlas-detail-heading"><p className="book-eyebrow">{sourcePlace?.kind ?? "Story place"}</p><button ref={closeButton} onClick={close} aria-label="Close place details">Close <span aria-hidden="true">×</span></button></div>
         <div className="atlas-detail-body" key={selected}>
           <h2 id="atlas-place-title">{title}</h2>
-          {panelOpen && <figure className={styles.locationArt}><a href={art.src} target="_blank" rel="noreferrer" aria-label={`Open full picture: ${art.alt}`}><Image src={art.src} alt={art.alt} width={1672} height={941} sizes="(max-width: 700px) 90vw, 480px" /></a><figcaption>{art.caption}. Select the picture to open it full size.</figcaption></figure>}
+          {panelOpen && <figure className={styles.locationArt}><a href={art.src} target="_blank" rel="noreferrer" aria-label={`Open full picture: ${art.alt}`}><Image key={art.src} src={art.src} alt={art.alt} width={"width" in art ? art.width : 1672} height={"height" in art ? art.height : 941} sizes="(max-width: 700px) 90vw, 480px" /></a><figcaption>{art.caption}. Select the picture to open it full size.</figcaption></figure>}
           {sourcePlace?.terrain && <div className={styles.terrainStats}><p className={styles.badge}>Saved terrain & climate</p><dl><dt>Elevation / depth</dt><dd>{elevationFeet(sourcePlace.terrain.height).toLocaleString()} ft</dd><dt>Model temperature</dt><dd>{Math.round(sourcePlace.terrain.temperatureC * 9 / 5 + 32)}°F / {sourcePlace.terrain.temperatureC}°C</dd><dt>Model precipitation</dt><dd>{sourcePlace.terrain.precipitationMm.toLocaleString()} mm</dd><dt>Biome</dt><dd>{terrain.biomes[sourcePlace.terrain.biome]}</dd></dl><p>Nearest source cell to this marker. Regional anchors do not summarize the climate of an entire region.</p></div>}
           {storyPlace && <><p className={styles.badge}>Current story</p><p className="atlas-tagline">{storyPlace.tagline}</p><p>{storyPlace.description}</p><Link href={`/library/places/${storyPlace.id}`}>Open the current place dossier →</Link>
             {storyPlace.appearsIn && <><h3>Read the story here</h3>{storyPlace.appearsIn.map((ref, i) => { const chapter = getChapter(ref.chapter); return chapter && <Link key={i} href={`/chapters/${chapter.slug}${ref.scene ? `?scene=${ref.scene}` : ""}`}>{ref.label ?? chapter.title} →</Link>; })}</>}
@@ -216,7 +216,7 @@ export function WorldAtlas({ initialAt, sourceNotes = {} }: { initialAt?: string
       <div className={styles.explorerHeading}><div><p className="book-eyebrow">The places, the people, the possibilities</p><h2>Explore the world notes</h2></div><label className={styles.search}>Search Mizan<input type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="A place, a person, a piece of lore…" /></label></div>
       <div className={styles.filters} aria-label="Filter map entries">{categories.map(([id, label]) => <button key={id} aria-pressed={category === id} onClick={() => setCategory(id)}>{label}<span>{id === "all" ? mizan.places.length : mizan.places.filter((p) => p.kind === id).length}</span></button>)}</div>
       <p className={styles.count} role="status">{results.length} {results.length === 1 ? "entry" : "entries"}{query ? ` matching “${query}”` : " in the atlas"}</p>
-      <div className={styles.entries}>{results.map((p) => <button key={p.id} aria-pressed={sourceId === p.id && panelOpen} onClick={(e) => pick(p.id, e.currentTarget)}><span className={styles.entryKind}>{p.kind}{p.loreSlug ? " · lore available" : " · map entry"}</span><strong>{mapName(p)}</strong><span className={styles.entryAction}>Explore →</span></button>)}</div>
+      <div className={styles.entries}>{results.map((p) => <button key={p.id} aria-pressed={sourceId === p.id && panelOpen} onClick={(e) => pick(p.id, e.currentTarget)}>{mapPictures[p.id] && <Image className={styles.entryPicture} src={mapPictures[p.id].src} alt="" width={mapPictures[p.id].width} height={mapPictures[p.id].height} sizes="(max-width: 700px) 90vw, 300px" />}<span className={styles.entryKind}>{p.kind}{p.loreSlug ? " · lore available" : " · map entry"}</span><strong>{mapName(p)}</strong><span className={styles.entryAction}>Explore →</span></button>)}</div>
       {!results.length && <p>No matching entries. Try another name or search term.</p>}
     </div>
     <nav className={`atlas-directory ${styles.storyDirectory}`} aria-label="Story places"><h2>Places in the current story</h2><p>The novel’s places keep their chapter links and current dossiers. Their local geography can develop alongside the wider world.</p><div className="atlas-place-list">{world.map((p) => <button key={p.id} aria-pressed={selected === p.id && panelOpen} onClick={(e) => pick(p.id, e.currentTarget)}>{p.name}<span>{storyAnchors[p.id] ? "Region located · local site open" : "Position to develop"}</span></button>)}</div></nav>

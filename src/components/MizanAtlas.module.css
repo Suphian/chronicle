@@ -89,3 +89,5 @@
   .entries strong { font-size: 19px; overflow-wrap: anywhere; }
   .filters button { padding: 8px 11px; }
 }
+
+.entryPicture { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 30%; margin-bottom: 16px; border-radius: 2px; }
