@@ -264,5 +264,40 @@
     "caption": "Elarion · location study",
     "width": 1672,
     "height": 940
+  },
+  "burg-18": {
+    "src": "/images/world/points/burg-18-v1.webp",
+    "alt": "Individual landscape and architecture study of Zorig",
+    "caption": "Zorig · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-19": {
+    "src": "/images/world/points/burg-19-v1.webp",
+    "alt": "Individual landscape and architecture study of Melameaion",
+    "caption": "Melameaion · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-20": {
+    "src": "/images/world/points/burg-20-v1.webp",
+    "alt": "Individual landscape and architecture study of Chalcis",
+    "caption": "Chalcis · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-21": {
+    "src": "/images/world/points/burg-21-v1.webp",
+    "alt": "Individual landscape and architecture study of Eleusis",
+    "caption": "Eleusis · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-22": {
+    "src": "/images/world/points/burg-22-v1.webp",
+    "alt": "Individual landscape and architecture study of Egeleukemi",
+    "caption": "Egeleukemi · location study",
+    "width": 1672,
+    "height": 941
   }
 }
