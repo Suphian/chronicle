@@ -1,4 +1,3 @@
-import { LivingLandscape } from "@/components/LivingLandscape";
 import type { Metadata } from "next";
 import { WorldAtlas } from "@/components/WorldAtlas";
 import Link from "next/link";
@@ -47,7 +46,6 @@ export default async function WorldPage({
           </figcaption>
         </figure>
       </section>
-      <LivingLandscape />
       <section id="history" className="section-block"><h2>History & memory</h2><div className="notebook-cards"><Link href="/library/history/current-timeline"><h3>A relative history of the world</h3></Link><Link href="/library/geography-reconciliation"><h3>The wider world recovered</h3></Link></div></section>
       <section id="institutions" className="section-block"><h2>Institutions & power</h2><div className="notebook-cards">{entries.filter((entry) => entry.group === "factions").map((entry) => <Link key={entry.slug} href={`/library/${entry.slug}`}><h3>{entry.title}</h3></Link>)}</div></section>
       <section id="everyday" className="section-block"><h2>Everyday life</h2><div className="notebook-cards"><Link href="/library/cultures/everyday-life"><h3>Life beneath the architecture</h3></Link><Link href="/library/visual-direction"><h3>Architecture & technology</h3></Link></div></section>

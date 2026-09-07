@@ -1,5 +1,11 @@
 # Author decisions
 
+## 2026-09-07 — Vignettes belong inside chapters only
+
+- The author clarified that the vignettes were placed in unusual locations and were intended only for chapters. This supersedes the earlier site-wide placement notes in this file and `visual-direction.md`.
+- Remove the vignette panels from Home, Story, People, World, and Writing room. Retain the existing chapter vignettes and their paragraph placements.
+- No story events, prose, scene IDs, or location IDs change.
+
 ## 2026-09-07 — Atlas descriptions and areas to think about
 
 - The author clarified that map notes should describe **the area, who controls or owns it, and its significant places**, rather than small scenes, workshop disputes, or character vignettes. Existing regional and character material should supply the foundation.

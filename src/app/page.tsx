@@ -3,7 +3,6 @@ import { HeroArtwork } from "@/components/HeroArtwork";
 import { chapters } from "@/content/chapters";
 import { isProse } from "@/lib/reading";
 import { ResumeReading } from "@/components/ResumeReading";
-import { LivingLandscape } from "@/components/LivingLandscape";
 
 const sections = [
   { href: "/story", number: "I", title: "Story", description: "Read the chapters." },
@@ -23,6 +22,6 @@ export default function Home() {
 
       </div>
     </section>
-    <section id="chapters" className="home-sections"><ResumeReading /><div className="home-section-grid">{sections.map((section) => <Link href={section.href} key={section.href}><span>{section.number}</span><h2>{section.title}</h2><p>{section.description}</p><strong aria-hidden="true">→</strong></Link>)}</div><LivingLandscape artwork="courtyard-garden" /></section>
+    <section id="chapters" className="home-sections"><ResumeReading /><div className="home-section-grid">{sections.map((section) => <Link href={section.href} key={section.href}><span>{section.number}</span><h2>{section.title}</h2><p>{section.description}</p><strong aria-hidden="true">→</strong></Link>)}</div></section>
   </main>;
 }

@@ -1,4 +1,3 @@
-import { LivingLandscape } from "@/components/LivingLandscape";
 import Link from "next/link";
 import Image from "next/image";
 import { chapters } from "@/content/chapters";
@@ -14,7 +13,6 @@ export default function StoryPage() {
     <p className="section-lead">A family in a city of debts. Two brothers who each believe the other left.</p>
     <ResumeReading />
     <div className="section-subnav"><Link href="/settings">Reading settings</Link></div>
-    <LivingLandscape artwork="pottery-room" />
     <section id="chapters" className="section-block"><h2>Chapters</h2>
       <ol className="story-list">{prose.map((chapter) => <li key={chapter.slug}><Link href={`/chapters/${chapter.slug}`}>
         {chapter.cover && <div className="story-thumbnail"><Image src={chapter.cover} alt="" fill sizes="(max-width: 600px) 90px, 150px" className="object-cover" /></div>}
