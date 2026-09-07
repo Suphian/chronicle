@@ -201,5 +201,40 @@
     "caption": "Deleurias · location study",
     "width": 1672,
     "height": 941
+  },
+  "burg-7": {
+    "src": "/images/world/points/burg-7-v1.webp",
+    "alt": "Individual landscape and architecture study of Erdene Zuu",
+    "caption": "Erdene Zuu · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-9": {
+    "src": "/images/world/points/burg-9-v1.webp",
+    "alt": "Individual landscape and architecture study of Al-Rutbah",
+    "caption": "Al-Rutbah · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-10": {
+    "src": "/images/world/points/burg-10-v1.webp",
+    "alt": "Individual landscape and architecture study of Tijara",
+    "caption": "Tijara · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-11": {
+    "src": "/images/world/points/burg-11-v1.webp",
+    "alt": "Individual landscape and architecture study of Sipopos",
+    "caption": "Sipopos · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-13": {
+    "src": "/images/world/points/burg-13-v1.webp",
+    "alt": "Individual landscape and architecture study of Majlis Gate",
+    "caption": "Majlis Gate · location study",
+    "width": 1672,
+    "height": 941
   }
 }

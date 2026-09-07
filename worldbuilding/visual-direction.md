@@ -83,3 +83,9 @@ The author clarified that the pictures load but their movement is too subtle, an
 ## Mizan location pictures — September 2026
 
 Location panels use the adopted Carthara panorama and eight new regional studies in its richly detailed painterly realism. Each region retains its own climate and architecture: inland Tijara is an oasis, Lysandria has two enormous island mountains, and Tengeri depicts displaced Leonin civilian life. Regional references are explicitly captioned when reused for a place without its own view. Earlier schematic atlas artwork, including the eastern Tengeri placement, is superseded by imported Mizan source geometry and the author’s southwest Tengeri decision. Prompts and provenance: public/images/world/mizan-art-provenance.json.
+
+### Individual pictures for every point — 2026-09-07
+
+The author now requires each map point to have its own picture, added to the website as the artwork finishes. This supersedes sharing a regional reference among multiple points. The scope includes all 88 Mizan markers and the nine current-story place selections, including distinct views of Carthara, its harbor, its garrison, and Numarius's fields. Person markers receive individual portraits. Repeated source names retain their stable IDs and receive separate compositions.
+
+`src/content/mizan-pictures.json` assigns the images, alt text, captions, and actual dimensions. The atlas panel opens each picture at full size, and the searchable directory includes thumbnails. Existing regional studies belong to their region markers; existing character portraits keep their original provenance. New original pictures and their exact generation prompts are saved together in `public/images/world/points/`. They follow the adopted Carthara style while preserving regional climate, ordinary residents, and current continuity. Unwritten architecture and appearances remain visual proposals.
