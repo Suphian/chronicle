@@ -8,21 +8,23 @@
 .control svg { width: 18px; height: 18px; }
 .figure { margin: 0; }
 .window { position: relative; isolation: isolate; overflow: hidden; aspect-ratio: 16 / 9; background: #b5d1d9; border: 1px solid #b49b73; border-radius: 5px; box-shadow: 0 10px 30px #3d2b1714; }
-.painting { object-fit: cover; object-position: 50% 50%; }
-.sunlight { position: absolute; z-index: 1; inset: -8%; background: radial-gradient(ellipse at 62% 18%, #fff8da2e 0, transparent 53%), linear-gradient(115deg, transparent 36%, #fffbee17 53%, transparent 70%); pointer-events: none; animation: warmLight 16s ease-in-out infinite alternate; animation-play-state: paused; }
+.painting { object-fit: cover; object-position: 50% 50%; transform-origin: 50% 55%; animation: explorePainting 14s ease-in-out -3.5s infinite alternate; animation-play-state: paused; }
+.sunlight { position: absolute; z-index: 1; inset: -12%; background: radial-gradient(ellipse at 62% 18%, #fff8da66 0, transparent 53%), linear-gradient(115deg, transparent 30%, #fffbee40 53%, transparent 73%); pointer-events: none; animation: warmLight 9s ease-in-out -3s infinite alternate; animation-play-state: paused; }
 .air { position: absolute; z-index: 2; inset: 0; pointer-events: none; }
-.mote { position: absolute; width: 3px; height: 3px; border-radius: 50%; background: #fff6d8; opacity: .12; box-shadow: 0 0 3px #fff9e3; animation: drift var(--duration) linear var(--delay) infinite; animation-play-state: paused; }
-.mote:nth-child(3n) { width: 2px; height: 2px; }
+.mote { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: #fff6d8; opacity: 0; box-shadow: 0 0 6px #fff9e3; animation: drift var(--duration) linear var(--delay) infinite; animation-play-state: paused; }
+.mote:nth-child(3n) { width: 3px; height: 3px; }
 .curtain { position: absolute; z-index: 3; top: -1%; bottom: -3%; left: -4%; width: 25%; height: 105%; pointer-events: none; transform-origin: 8% 0%; transform: scaleX(.84) rotate(-1deg); animation: billow 10s ease-in-out infinite; animation-play-state: paused; filter: drop-shadow(4px 3px 7px #6d5a3714); }
 .sill { position: absolute; z-index: 4; inset: 0; pointer-events: none; box-shadow: inset 5px 0 12px #3c2b1f1f, inset 0 -3px 5px #47381d21; }
-.running .curtain, .running .mote, .running .sunlight { animation-play-state: running; }
-.night .sunlight { background: radial-gradient(ellipse at 45% 55%, #edbb582b 0, transparent 65%); }
+.running .painting, .running .curtain, .running .mote, .running .sunlight { animation-play-state: running; }
+.night .sunlight { background: radial-gradient(ellipse at 45% 55%, #edbb5852 0, transparent 65%); }
 .night .mote { background: #f9dd93; }
 .caption { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 32px; margin: 16px 2px 0; font: 16px/1.7 Georgia, serif; color: #5d513f; }
 .study { flex: none; font: 11px/1.6 system-ui, sans-serif; color: #796c56; }
 @keyframes billow { 0%, 100% { transform: scaleX(.84) skewX(-1deg) rotate(-1deg); } 46% { transform: scaleX(1.05) skewX(2.5deg) rotate(-.2deg); } 72% { transform: scaleX(.98) skewX(.5deg) rotate(-.6deg); } }
-@keyframes drift { 0% { opacity: 0; transform: translate(0, 18px); } 18% { opacity: .55; } 72% { opacity: .4; } 100% { opacity: 0; transform: translate(var(--drift), -45px); } }
-@keyframes warmLight { from { opacity: .42; transform: translate(-1%, 0); } to { opacity: .88; transform: translate(1%, .8%); } }
+@keyframes explorePainting { from { transform: scale(1.045) translate(-1.2%, .4%); } to { transform: scale(1.10) translate(1.2%, -.8%); } }
+@keyframes drift { 0% { opacity: 0; transform: translate(0, 28px); } 18% { opacity: .85; } 72% { opacity: .65; } 100% { opacity: 0; transform: translate(var(--drift), -85px); } }
+@keyframes warmLight { from { opacity: .4; transform: translate(-5%, -2%); } to { opacity: .95; transform: translate(5%, 2%); } }
+.motionNote { margin: -6px 0 16px; font: 12px/1.6 system-ui, sans-serif; color: #63543e; }
 @media (max-width: 760px) {
   .landscape { margin-block: 46px; }
   .heading { gap: 16px; }
@@ -31,6 +33,6 @@
   .caption { flex-direction: column; gap: 6px; font-size: 15px; }
   .study { flex: auto; }
   .curtain { width: 28%; }
-  .mote { width: 2px; height: 2px; }
+  .mote { width: 3px; height: 3px; }
 }
 @media (max-width: 400px) { .heading { align-items: flex-start; flex-direction: column; gap: 14px; } }

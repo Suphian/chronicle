@@ -8,38 +8,39 @@ import { livingArtwork, type LivingArtworkId } from "@/content/living-vignettes"
 const motes = Array.from({ length: 14 }, (_, index) => ({
   left: `${12 + (index * 29) % 76}%`,
   top: `${14 + (index * 17) % 65}%`,
-  "--duration": `${15 + (index * 7) % 17}s`,
+  "--duration": `${8 + (index * 7) % 8}s`,
   "--delay": `${-index * 3.7}s`,
-  "--drift": `${34 + (index * 11) % 55}px`,
+  "--drift": `${65 + (index * 11) % 65}px`,
 } as CSSProperties));
 
 /** Original painted atmosphere with separately controlled fabric, light and air. */
 export function LivingLandscape({ artwork = "lysandria-terrace", title, headingLevel = 2 }: { artwork?: LivingArtworkId; title?: string; headingLevel?: 2 | 3 }) {
   const art = livingArtwork(artwork);
   const Heading = headingLevel === 3 ? "h3" : "h2";
-  const section = useRef<HTMLElement>(null);
-  const [reducedMotion, setReducedMotion] = useState(true);
+  const picture = useRef<HTMLDivElement>(null);
+  const [reducedMotion, setReducedMotion] = useState<boolean | null>(null);
   const [userChoice, setUserChoice] = useState<boolean | null>(null);
   const [onScreen, setOnScreen] = useState(false);
   const [pageVisible, setPageVisible] = useState(false);
   const identifier = useId().replace(/:/g, "");
   const titleId = `${identifier}-title`;
   const linenId = `${identifier}-linen`;
-  const wantsMotion = userChoice ?? !reducedMotion;
+  const pictureId = `${identifier}-picture`;
+  const wantsMotion = userChoice ?? (reducedMotion === false);
   const running = wantsMotion && onScreen && pageVisible;
 
   useEffect(() => {
     const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
     let active = true;
-    const updatePreference = () => { if (active) setReducedMotion(preference.matches); };
+    const updatePreference = () => { if (active) { setReducedMotion(preference.matches); setUserChoice(null); } };
     const updateVisibility = () => { if (active) setPageVisible(document.visibilityState === "visible"); };
     queueMicrotask(() => { updatePreference(); updateVisibility(); });
     preference.addEventListener("change", updatePreference);
     document.addEventListener("visibilitychange", updateVisibility);
     const observer = typeof IntersectionObserver === "undefined" ? null : new IntersectionObserver(
-      ([entry]) => setOnScreen(entry.isIntersecting), { threshold: 0.05 },
+      ([entry]) => { if (active) setOnScreen(entry.isIntersecting); },
     );
-    if (observer && section.current) observer.observe(section.current);
+    if (observer && picture.current) observer.observe(picture.current);
     else queueMicrotask(() => { if (active) setOnScreen(true); });
     return () => {
       active = false;
@@ -49,16 +50,17 @@ export function LivingLandscape({ artwork = "lysandria-terrace", title, headingL
     };
   }, []);
 
-  return <section className={`${styles.landscape}${art.night ? ` ${styles.night}` : ""}`} ref={section} aria-labelledby={titleId} data-living-vignette={artwork}>
+  return <section className={`${styles.landscape}${art.night ? ` ${styles.night}` : ""}`} aria-labelledby={titleId} data-living-vignette={artwork} data-motion={running ? "running" : "paused"}>
     <div className={styles.heading}>
       <div><p className={styles.eyebrow}>A living vignette</p><Heading className={styles.title} id={titleId}>{title ?? art.title}</Heading></div>
-      <button className={styles.control} type="button" aria-pressed={wantsMotion} onClick={() => setUserChoice(!wantsMotion)}>
+      <button className={styles.control} type="button" aria-controls={pictureId} aria-pressed={wantsMotion} onClick={() => setUserChoice(!wantsMotion)}>
         <svg viewBox="0 0 20 20" aria-hidden="true">{wantsMotion ? <path d="M6 4v12M14 4v12" fill="none" stroke="currentColor" strokeWidth="2" /> : <path d="m6 3 11 7-11 7z" fill="currentColor" />}</svg>
         {wantsMotion ? "Pause motion" : "Play motion"}
       </button>
     </div>
+    {reducedMotion && userChoice === null && <p className={styles.motionNote}>Motion is off to match your device preference. Choose Play motion to animate this picture.</p>}
     <figure className={styles.figure}>
-      <div className={`${styles.window} ${running ? styles.running : ""}`} style={{ aspectRatio: `${art.width} / ${art.height}` }}>
+      <div id={pictureId} ref={picture} className={`${styles.window} ${running ? styles.running : ""}`} style={{ aspectRatio: `${art.width} / ${art.height}` }}>
         <Image src={art.src} alt={art.alt} fill sizes="(min-width: 1300px) 900px, (min-width: 901px) 70vw, 95vw" className={styles.painting} />
         <div className={styles.sunlight} aria-hidden="true" />
         <div className={styles.air} aria-hidden="true">{motes.map((style, index) => <span className={styles.mote} style={style} key={index} />)}</div>
