@@ -1,4 +1,15 @@
 import { mizanById, type MizanPlace } from "./mizan";
+import pictures from "./mizan-pictures.json";
+
+interface MapPicture {
+  src: string;
+  alt: string;
+  caption: string;
+  width: number;
+  height: number;
+}
+
+export const mapPictures: Record<string, MapPicture> = pictures;
 
 const regions: Record<string, [string, string]> = {
   "region-1": ["lysandria", "Lysandria’s two mountains and harbor"],
@@ -11,6 +22,8 @@ const regions: Record<string, [string, string]> = {
 };
 
 export function locationArt(selected: string | null, place?: MizanPlace) {
+  const picture = selected ? mapPictures[selected] : undefined;
+  if (picture) return picture;
   if (selected && ["carthara", "carthara-harbor", "carthara-garrison", "numarius-fields"].includes(selected)) {
     return { src: "/images/world/carthara-grand-study-v1.webp", alt: "Carthara’s sunlit harbor, terraces, domes and blue sea", caption: "Carthara · city panorama and visual reference" };
   }

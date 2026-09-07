@@ -1,0 +1,13 @@
+{
+  "id": "carthara-harbor",
+  "name": "Corvo’s Harbor",
+  "created": "2026-09-07",
+  "generator": "OpenAI built-in image_gen",
+  "sourceOutput": "exec-4bd38aa6-ae34-484b-862e-7923c0a8b7cb.png",
+  "asset": "/images/world/points/carthara-harbor-v1.webp",
+  "reference": "/images/world/carthara-grand-study-v1.webp",
+  "rights": "AI-generated for this project using OpenAI image generation. No third-party stock artwork added; no separate third-party license asserted.",
+  "continuityStatus": "Visual interpretation. Unwritten architecture and character appearance remain proposals; source notes do not override current story continuity.",
+  "processing": "Converted to WebP at quality 88 without compositional edits.",
+  "prompt": "Use case: stylized-concept. Generate one original wide landscape illustration for Chronicle's map point Corvo's Harbor. Match the attached Carthara picture's richly textured painterly realism, luminous cobalt and turquoise water, ivory limestone, mineral-green gardens, aged brass, spectacular Mediterranean and Middle Eastern futuristic architecture. This is a DIFFERENT original street-level harbor view: foreground Black dockworkers unloading ceramic jars and crates at a working quay, a customs clerk at a shaded stone counter, richly layered warehouse arcades, timber cargo boats and rigging with monumental Carthara terraces high behind them. Actual ordinary working lives. No text, labels, logos or watermark. No modern vehicles or spacecraft. Architectural visual proposal, not surveyed geography. Compose full-bleed 16:9 landscape."
+}
