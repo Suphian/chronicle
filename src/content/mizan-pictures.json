@@ -544,5 +544,47 @@
     "caption": "Ancestral Skywatcher · location study",
     "width": 1672,
     "height": 941
+  },
+  "marker16": {
+    "src": "/images/world/points/marker16-v1.webp",
+    "alt": "Portrait study of King Jirgal the Fifth in a richly detailed regional setting",
+    "caption": "King Jirgal the Fifth · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker17": {
+    "src": "/images/world/points/marker17-v1.webp",
+    "alt": "Individual landscape and architecture study of Tengeri Uul",
+    "caption": "Tengeri Uul · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker19": {
+    "src": "/images/world/points/marker19-v1.webp",
+    "alt": "Portrait study of Commander Boldsaikhan (meaning \"steel axe\") in a richly detailed regional setting",
+    "caption": "Commander Boldsaikhan (meaning \"steel axe\") · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker20": {
+    "src": "/images/world/points/marker20-v1.webp",
+    "alt": "Portrait study of Brother Altangerel (meaning \"golden light\") in a richly detailed regional setting",
+    "caption": "Brother Altangerel (meaning \"golden light\") · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker21": {
+    "src": "/images/world/points/marker21-v1.webp",
+    "alt": "Portrait study of Brother Gerelchuluun (meaning \"light of wisdom\") in a richly detailed regional setting",
+    "caption": "Brother Gerelchuluun (meaning \"light of wisdom\") · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker22": {
+    "src": "/images/world/points/marker22-v1.webp",
+    "alt": "Portrait study of Brother Erkhemsaikhan (meaning \"mighty and wise\") in a richly detailed regional setting",
+    "caption": "Brother Erkhemsaikhan (meaning \"mighty and wise\") · portrait study",
+    "width": 1672,
+    "height": 941
   }
 }
