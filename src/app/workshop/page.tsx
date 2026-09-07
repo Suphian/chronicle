@@ -1,3 +1,4 @@
+import { LivingLandscape } from "@/components/LivingLandscape";
 import Link from "next/link";
 import { chapters } from "@/content/chapters";
 import { getBibleEntries } from "@/lib/worldbuilding";
@@ -21,6 +22,7 @@ export default function WorkshopPage() {
   return <main className="section-shell"><div className="section-inner"><p className="book-eyebrow">The Chronicle / Writing room</p><h1>Where an idea becomes a story.</h1><p className="section-lead">Work from a possibility to a plan, from a plan to a scene, and from a scene to a chapter worth reading. The larger epic remains open to discovery.</p>
     <div className="section-subnav"><Link href="/library/story/overall-outline">Overall story outline</Link><a href="#chapter-plan">Chapter outline</a><a href="#ideas">Ideas</a><a href="#reviews">Draft reviews</a><Link href="/library/PROMPT">Collaboration prompt</Link></div>
     <section className="section-block" id="desks"><h2>The writing desk</h2><div className="notebook-cards">{desks.map((desk) => <Link href={desk.href} key={desk.href}><h3>{desk.title}</h3><p>{desk.detail}</p></Link>)}</div></section>
+    <LivingLandscape artwork="travel-letters" />
     <section className="section-block"><p className="book-eyebrow">How we work</p><ol className="pitch-stages">{["Pitch an idea", "Find its connections", "Plan the scenes", "Write the chapter", "Check continuity", "Revise together"].map((stage, i) => <li key={stage}><span>{i + 1}</span>{stage}</li>)}</ol><p className="section-footnote">Pitch ideas in our conversation. Each gets a note with possible homes, affected people, and consequences. Proposals stay distinguishable from events already written.</p></section>
     <section className="section-block" id="chapter-plan"><p className="book-eyebrow">Current sequence · Full-story spoilers</p><h2>Chapter outline</h2><p>This is the current draft sequence, not a limit on the epic. Any of these units can later split into several chapters. Open one to see its scenes.</p>
       <div className="stage-legend"><span>Idea — a possibility</span><span>Story sketch — planned beats</span><span>Prose draft — narrative to edit</span><span>Revised chapter — reviewed prose</span></div>

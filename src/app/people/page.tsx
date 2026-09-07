@@ -1,3 +1,4 @@
+import { LivingLandscape } from "@/components/LivingLandscape";
 import Link from "next/link";
 import { codex } from "@/content/codex";
 import { PeopleDirectory } from "@/components/PeopleDirectory";
@@ -11,5 +12,6 @@ export default function PeoplePage() {
     <div className="section-subnav"><a href="#directory">Character dossiers</a><Link href="/character">Hanno’s character sheet</Link><Link href="/codex">Quick reference & lore</Link></div>
     <p className="section-footnote">Dossiers contain full-story spoilers, including secrets and later events. Names in this directory do not reveal their outcomes.</p>
     <section id="directory"><PeopleDirectory people={codex.filter((entry) => entry.kind === "person").map((entry) => ({ id: entry.id, name: entry.name, group: groups[entry.id] ?? "The Chronicle" }))} /></section>
+    <LivingLandscape artwork="clinic-courtyard" />
   </div></main>;
 }

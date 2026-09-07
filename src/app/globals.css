@@ -77,7 +77,6 @@ body {
 .editorial-home .home-actions .btn-ghost { color: #514936; font: 13px/1.6 system-ui, sans-serif; letter-spacing: 0; text-transform: none; text-decoration: underline; text-underline-offset: 6px; }
 .home-folio { position: absolute; bottom: 28px; left: max(28px, calc((100vw - 1480px) / 2)); right: max(28px, calc((100vw - 1480px) / 2)); border-top: 1px solid #b8a98c; padding-top: 15px; font: 12px/1.6 system-ui, sans-serif; color: #65553e; display: flex; justify-content: space-between; gap: 24px; }
 .editorial-home .home-sections { max-width: 1536px; padding-top: 75px; }
-.home-living { width: min(1240px, calc(100% - 48px)); margin: 0 auto; }
 .editorial-home .home-sections > .book-eyebrow { color: #796749; }
 .editorial-home .home-section-grid { display: block; }
 .editorial-home .home-section-grid > a { display: grid; grid-template-columns: 60px minmax(180px, 1fr) minmax(240px, 1.4fr) 190px; gap: 25px; align-items: center; padding: 36px 0; border: 0; border-top: 1px solid #cbbda2; }

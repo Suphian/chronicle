@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useId, useRef, useState, type CSSProperties } from "react";
 import styles from "./LivingLandscape.module.css";
+import { livingArtwork, type LivingArtworkId } from "@/content/living-vignettes";
 
 const motes = Array.from({ length: 14 }, (_, index) => ({
   left: `${12 + (index * 29) % 76}%`,
@@ -13,7 +14,9 @@ const motes = Array.from({ length: 14 }, (_, index) => ({
 } as CSSProperties));
 
 /** Original painted atmosphere with separately controlled fabric, light and air. */
-export function LivingLandscape() {
+export function LivingLandscape({ artwork = "lysandria-terrace", title, headingLevel = 2 }: { artwork?: LivingArtworkId; title?: string; headingLevel?: 2 | 3 }) {
+  const art = livingArtwork(artwork);
+  const Heading = headingLevel === 3 ? "h3" : "h2";
   const section = useRef<HTMLElement>(null);
   const [reducedMotion, setReducedMotion] = useState(true);
   const [userChoice, setUserChoice] = useState<boolean | null>(null);
@@ -46,20 +49,20 @@ export function LivingLandscape() {
     };
   }, []);
 
-  return <section className={styles.landscape} ref={section} aria-labelledby={titleId}>
+  return <section className={`${styles.landscape}${art.night ? ` ${styles.night}` : ""}`} ref={section} aria-labelledby={titleId} data-living-vignette={artwork}>
     <div className={styles.heading}>
-      <div><p className={styles.eyebrow}>A living vignette</p><h2 id={titleId}>A moment in Lysandria</h2></div>
+      <div><p className={styles.eyebrow}>A living vignette</p><Heading className={styles.title} id={titleId}>{title ?? art.title}</Heading></div>
       <button className={styles.control} type="button" aria-pressed={wantsMotion} onClick={() => setUserChoice(!wantsMotion)}>
         <svg viewBox="0 0 20 20" aria-hidden="true">{wantsMotion ? <path d="M6 4v12M14 4v12" fill="none" stroke="currentColor" strokeWidth="2" /> : <path d="m6 3 11 7-11 7z" fill="currentColor" />}</svg>
         {wantsMotion ? "Pause motion" : "Play motion"}
       </button>
     </div>
     <figure className={styles.figure}>
-      <div className={`${styles.window} ${running ? styles.running : ""}`}>
-        <Image src="/images/living/lysandria-terrace.webp" alt="A sunlit pottery terrace above turquoise water, with blue-banded jugs, leafy vines, white coastal homes, and Lysandria’s two enormous mountains beneath summer clouds." fill sizes="(max-width: 760px) 100vw, (max-width: 1280px) 94vw, 1240px" className={styles.painting} />
+      <div className={`${styles.window} ${running ? styles.running : ""}`} style={{ aspectRatio: `${art.width} / ${art.height}` }}>
+        <Image src={art.src} alt={art.alt} fill sizes="(min-width: 1300px) 900px, (min-width: 901px) 70vw, 95vw" className={styles.painting} />
         <div className={styles.sunlight} aria-hidden="true" />
         <div className={styles.air} aria-hidden="true">{motes.map((style, index) => <span className={styles.mote} style={style} key={index} />)}</div>
-        <svg className={styles.curtain} viewBox="0 0 260 660" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        {art.curtain && <svg className={styles.curtain} viewBox="0 0 260 660" preserveAspectRatio="none" aria-hidden="true" focusable="false">
           <defs><linearGradient id={linenId} x1="0" y1="0" x2="1" y2="0">
             <stop offset="0" stopColor="#f5edda" stopOpacity=".82" /><stop offset=".18" stopColor="#fffbed" stopOpacity=".48" />
             <stop offset=".35" stopColor="#e6dcc4" stopOpacity=".7" /><stop offset=".53" stopColor="#fffdf4" stopOpacity=".32" />
@@ -73,10 +76,10 @@ export function LivingLandscape() {
             <path d="M124 0C104 129 128 201 163 296S220 496 167 643" />
           </g>
           <path d="M166 0C146 112 150 191 182 276C215 366 245 405 241 488C238 561 202 616 180 660" fill="none" stroke="#fff8e8" strokeWidth="3" opacity=".62" />
-        </svg>
+        </svg>}
         <div className={styles.sill} aria-hidden="true" />
       </div>
-      <figcaption className={styles.caption}><span>Sea air through an open curtain. A potter’s work waiting in the sun.</span><span className={styles.study}>An imagined terrace · Silent atmosphere study</span></figcaption>
+      <figcaption className={styles.caption}>{art.caption && <span>{art.caption}</span>}<span className={styles.study}>{art.note}</span></figcaption>
     </figure>
   </section>;
 }

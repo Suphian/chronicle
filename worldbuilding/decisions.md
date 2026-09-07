@@ -65,3 +65,9 @@
 - The author explicitly assigns the **Omar Mukhtar-inspired older teacher and resistance-leader role to Chuluun**. The prior separate, unnamed Bakhtari/upland character is superseded. Chuluun remains a Leonin in the adopted displacement story, subject to enforced labor and bombardment.
 - Chapter Three now shows teaching between compulsory shifts, former pupils and fighters, limited household representation, and a supply dispute in which he corrects his own overreach. He does not command all Leonin factions or camps. The fuller independent arc, military chronology, capture, and eventual fate remain open; historical events are not automatically fictional canon.
 - The exact crop in Numarius's fields remains unadopted. The [current discussion](ideas/dyia-the-collection-order.md) recommends a staple grain, with wheat a candidate, and distinguishes that proposal from the established Seats' financial interest in Ravash.
+
+## 2026-09-07 — Living vignettes throughout the site
+
+- The author wants vignettes within chapters and throughout the website. Every numbered chapter and the optional historical tale now has a contextual living illustration. Home, Story, People, World, and Writing room also carry vignettes suited to their setting.
+- The Lysandrian pottery terrace appears after paragraph two of Chapter Four's stable `ancient-guardians` scene and on World. It remains an imagined terrace, not Amara's confirmed former workshop. Other chapter vignettes animate existing plates in their original positions, retaining their captions and all prose and scene links.
+- Existing project artwork receives subtle light and airborne motes; only the terrace has a moving curtain. Each vignette has an independent pause control, respects reduced-motion preferences, and stops offscreen or in background tabs. No audio is added.

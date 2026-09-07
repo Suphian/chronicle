@@ -19,7 +19,6 @@ export default function Home() {
       <div className="home-title"><p className="book-eyebrow">An illustrated story · A world in the making</p><h1><span>The</span> Chronicle</h1><p>Of Hanno Averroes, of Dyia, and of a city that remembers what its people try to forget.</p><div className="home-actions"><Link href={first ? `/chapters/${first.slug}` : "/story"} className="btn-primary">Read the opening <span aria-hidden="true">↗</span></Link><Link href="#chapters" className="btn-ghost">Explore the Chronicle ↓</Link></div></div>
       <p className="home-folio">Carthara <span>Markets, awnings, and a thousand quiet debts.</span></p>
     </section>
-    <div className="home-living"><LivingLandscape /></div>
-    <section id="chapters" className="home-sections"><ResumeReading /><p className="book-eyebrow">Four ways into the Chronicle</p><div className="home-section-grid">{sections.map((section) => <Link href={section.href} key={section.href}><span>{section.number}</span><h2>{section.title}</h2><p>{section.description}</p><strong>{section.action} →</strong></Link>)}</div></section>
+    <section id="chapters" className="home-sections"><ResumeReading /><p className="book-eyebrow">Four ways into the Chronicle</p><div className="home-section-grid">{sections.map((section) => <Link href={section.href} key={section.href}><span>{section.number}</span><h2>{section.title}</h2><p>{section.description}</p><strong>{section.action} →</strong></Link>)}</div><LivingLandscape artwork="courtyard-garden" /></section>
   </main>;
 }

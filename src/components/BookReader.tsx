@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Fragment, useEffect, useState, type ReactNode } from "react";
 import type { Chapter, Scene } from "@/content/types";
 import { bookPlates, type BookPlate } from "@/content/illustrations";
+import { livingVignettes, livingBookPlates } from "@/content/living-vignettes";
+import { LivingLandscape } from "./LivingLandscape";
 import { codex } from "@/content/codex";
 import { worldById } from "@/content/world";
 import { saveReadingPlace } from "./ResumeReading";
@@ -22,6 +24,7 @@ export function BookReader({ chapter, prev, next, initialSceneId }: {
   const text = scenes.flatMap((scene) => [scene.heading, ...(scene.text ?? []), scene.quote?.text]).join(" ");
   const people = codex.filter((entry) => entry.kind === "person" && text.includes(entry.name.split(" ").filter((word) => !["Master", "Lord", "General", "Magistra"].includes(word))[0]));
   const places = [...new Set(scenes.map((scene) => scene.location).filter(Boolean))].map((id) => worldById[id!]).filter(Boolean);
+
   useEffect(() => {
     if (initialSceneId) document.getElementById(initialSceneId)?.scrollIntoView();
     saveReadingPlace(chapter.slug, initialSceneId && chapter.scenes.some((scene) => scene.id === initialSceneId) ? initialSceneId : chapter.scenes[0].id);
@@ -49,7 +52,7 @@ export function BookReader({ chapter, prev, next, initialSceneId }: {
               {prose && sceneIndex > 0 && <div className="scene-divider" aria-hidden="true">✦</div>}
               {scene.pov && (sceneIndex === 0 || scene.pov !== scenes[sceneIndex - 1].pov) && <p className="scene-pov">{scene.pov}</p>}
               {scene.heading && <h2 className={prose ? "sr-only" : undefined}>{scene.heading}</h2>}
-              <SceneProse scene={scene} plates={bookPlates[`${chapter.slug}/${scene.id}`]} narrating={narrating} />
+              <SceneProse scene={scene} plates={bookPlates[`${chapter.slug}/${scene.id}`]} vignette={livingVignettes[`${chapter.slug}/${scene.id}`]} livingPlate={livingBookPlates[`${chapter.slug}/${scene.id}`]} narrating={narrating} />
               {scene.quote && <blockquote><p>“{scene.quote.text}”</p>{scene.quote.by && <cite>— {scene.quote.by}</cite>}</blockquote>}
               {!prose && scene.location && worldById[scene.location] && <Link className="book-location" href={`/world?at=${scene.location}`}>Explore {worldById[scene.location].name} →</Link>}
             </section>)}
@@ -81,10 +84,13 @@ export function BookReader({ chapter, prev, next, initialSceneId }: {
   );
 }
 
-function SceneProse({ scene, plates = [], narrating }: { scene: Scene; plates?: BookPlate[]; narrating: string | null }) {
+function SceneProse({ scene, plates = [], vignette, livingPlate, narrating }: { scene: Scene; plates?: BookPlate[]; vignette?: (typeof livingVignettes)[string]; livingPlate?: BookPlate["artwork"]; narrating: string | null }) {
   const paragraphs = scene.text ?? [];
   const passage = (start: number, end: number) => paragraphs.slice(start, end).map((paragraph, i) =>
-    <p key={start + i} data-prose-id={`${scene.id}:${start + i}`} data-narrating={narrating === `${scene.id}:${start + i}` ? true : undefined}>{paragraph}</p>);
+    <Fragment key={start + i}>
+      <p data-prose-id={`${scene.id}:${start + i}`} data-narrating={narrating === `${scene.id}:${start + i}` ? true : undefined}>{paragraph}</p>
+      {vignette?.afterParagraph === start + i + 1 && <LivingLandscape artwork={vignette.artwork} headingLevel={3} />}
+    </Fragment>);
   let cursor = 0;
   const blocks: ReactNode[] = [];
   for (let index = 0; index < plates.length; index++) {
@@ -92,7 +98,7 @@ function SceneProse({ scene, plates = [], narrating }: { scene: Scene; plates?: 
       const before = passage(cursor, plate.afterParagraph);
       cursor = plate.afterParagraph;
       if (plate.layout !== "folio") {
-        blocks.push(<Fragment key={plate.artwork}>{before}<PlateFigure plate={plate} /></Fragment>);
+        blocks.push(<Fragment key={plate.artwork}>{before}{plate.artwork === livingPlate ? <LivingLandscape artwork={plate.artwork} title={plate.caption} headingLevel={3} /> : <PlateFigure plate={plate} />}</Fragment>);
         continue;
       }
       // Never split a paragraph or consume text belonging to the next illustration.
