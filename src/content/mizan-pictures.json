@@ -488,5 +488,33 @@
     "caption": "The Veil of Sirocco · location study",
     "width": 1672,
     "height": 941
+  },
+  "marker4": {
+    "src": "/images/world/points/marker4-v1.webp",
+    "alt": "Individual landscape and architecture study of Qal'a Ruins",
+    "caption": "Qal'a Ruins · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker5": {
+    "src": "/images/world/points/marker5-v1.webp",
+    "alt": "Individual landscape and architecture study of Spear of Poseidon Peak",
+    "caption": "Spear of Poseidon Peak · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker6": {
+    "src": "/images/world/points/marker6-v1.webp",
+    "alt": "Individual landscape and architecture study of The Elysium Fields",
+    "caption": "The Elysium Fields · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker7": {
+    "src": "/images/world/points/marker7-v1.webp",
+    "alt": "Individual landscape and architecture study of Harmony Lagoon",
+    "caption": "Harmony Lagoon · location study",
+    "width": 1672,
+    "height": 941
   }
 }
