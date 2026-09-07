@@ -516,5 +516,33 @@
     "caption": "Harmony Lagoon · location study",
     "width": 1672,
     "height": 941
+  },
+  "marker9": {
+    "src": "/images/world/points/marker9-v1.webp",
+    "alt": "Portrait study of Jibreel in a richly detailed regional setting",
+    "caption": "Jibreel · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker11": {
+    "src": "/images/world/points/marker11-v1.webp",
+    "alt": "Individual landscape and architecture study of Erdene Zuu",
+    "caption": "Erdene Zuu · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker14": {
+    "src": "/images/world/points/marker14-v1.webp",
+    "alt": "Individual landscape and architecture study of The Altar of Windswept Watchers",
+    "caption": "The Altar of Windswept Watchers · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker15": {
+    "src": "/images/world/points/marker15-v1.webp",
+    "alt": "Individual landscape and architecture study of Ancestral Skywatcher",
+    "caption": "Ancestral Skywatcher · location study",
+    "width": 1672,
+    "height": 941
   }
 }
