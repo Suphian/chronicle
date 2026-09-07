@@ -11,6 +11,7 @@ export const theFlowerInHerHair: Chapter = {
   when: "The reckoning",
   status: "draft",
   music: "/audio/ambient-night.wav",
+  cover: "/images/chronicle/apothecary.webp",
   scenes: [
     { id: "title", kind: "title", heading: "The Flower in Her Hair", text: ["Chapter Ten"], mood: "void" },
     {

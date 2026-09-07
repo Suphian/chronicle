@@ -11,6 +11,7 @@ export const risingInfluence: Chapter = {
   when: "The golden years",
   status: "draft",
   music: "/audio/ambient-market.wav",
+  cover: "/images/chronicle/carthara.webp",
   scenes: [
     { id: "title", kind: "title", heading: "Rising Influence", text: ["Chapter Seven"], mood: "gold" },
     {
@@ -18,6 +19,7 @@ export const risingInfluence: Chapter = {
       heading: "The Heart of Carthara",
       mood: "gold",
       location: "carthara",
+      image: "/images/chronicle/carthara.webp",
       text: [
         "Hanno's workshop grows into a prominent establishment at the center of the city, crowded with patrons seeking remedies. His wealth and influence make him indispensable.",
         "With Ravash gone, Carthara flourishes into an economic powerhouse, a city-state in all but name. Trade surges. Numarius takes the credit, invites Hanno to every prestigious gathering, and basks in the reflected light.",

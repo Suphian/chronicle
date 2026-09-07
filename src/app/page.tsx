@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { chapters } from "@/content/chapters";
 import { character } from "@/content/character";
 import { ChapterCard } from "@/components/ChapterCard";
@@ -12,6 +13,8 @@ export default function Home() {
     <main>
       {/* Hero */}
       <section className="relative flex min-h-[92vh] items-center justify-center overflow-hidden px-6" style={{ background: hero.background }}>
+        <Image src="/images/chronicle/carthara.webp" alt="" fill sizes="100vw" preload className="object-cover object-[60%_center]" />
+        <div className="pointer-events-none absolute inset-0 bg-black/50" />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_50%,transparent,rgba(0,0,0,0.6))]" />
         <div className="relative max-w-3xl text-center">
           <p className="font-display text-xs tracking-[0.5em] text-parchment/50 uppercase">The Chronicle of</p>

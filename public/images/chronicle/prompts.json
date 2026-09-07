@@ -1,0 +1,29 @@
+{
+  "generator": "Built-in image_gen",
+  "assets": [
+    {
+      "file": "carthara.webp",
+      "prompt": "Use case: illustration-story. Create one finished cinematic dark fantasy oil-painting illustration for a literary D&D chronicle. Rich painterly textures, grounded ancient Mediterranean / Central Asian world, restrained chiaroscuro, amber highlights and deep blue-black shadows, premium illustrated novel art, no text, lettering, borders or watermarks. Landscape 1536x1024, composition readable as wide cropped chapter cover and full-screen backdrop with central text overlay. Sweeping view of Carthara, an ancient Mediterranean harbor city of sandstone arcades and terracotta rooftops, seen from a shadowed balcony above the market at dusk. Saffron market awnings, tiny figures, distant ships, bronze haze, beautiful yet quietly ominous. City skyline in upper half, shaded foreground. No modern architecture."
+    },
+    {
+      "file": "bakhtar.webp",
+      "prompt": "Use case: illustration-story. Create one finished cinematic dark fantasy oil-painting illustration for a literary D&D chronicle. Rich painterly textures, grounded ancient Mediterranean / Central Asian world, restrained chiaroscuro, amber highlights and deep blue-black shadows, premium illustrated novel art, no text, lettering, borders or watermarks. Landscape 1536x1024, composition readable as wide cropped chapter cover and full-screen backdrop with central text overlay. The graveyard of empires: immense jagged Central Asian highlands, ancient fortress perched above a precipitous mountain pass, a tiny departing bronze-age army far below, tattered crimson banner in foreground at right. Cold storm clouds with a single warm break of light. Majestic desolate painterly landscape."
+    },
+    {
+      "file": "apothecary.webp",
+      "prompt": "Use case: illustration-story. Create one finished cinematic dark fantasy oil-painting illustration for a literary D&D chronicle. Rich painterly textures, grounded ancient Mediterranean / Central Asian world, restrained chiaroscuro, amber highlights and deep blue-black shadows, premium illustrated novel art, no text, lettering, borders or watermarks. Landscape 1536x1024, composition readable as wide cropped chapter cover and full-screen backdrop with central text overlay. An ancient alchemist's workshop in Carthara: scarred dark wooden workbench, copper alembic, amber glass vials, mortar and pestle, dried herbs suspended from rafters. A small red-and-yellow flower beside a bowl of crushed botanical powder. Thin steam catches window light. Intimate amber and forest green, deep shadows, no people."
+    },
+    {
+      "file": "lysandria.webp",
+      "prompt": "Use case: illustration-story. Create one finished cinematic dark fantasy oil-painting illustration for a literary D&D chronicle. Rich painterly textures, grounded ancient Mediterranean / Central Asian world, restrained chiaroscuro, amber highlights and deep blue-black shadows, premium illustrated novel art, no text, lettering, borders or watermarks. Landscape 1536x1024, composition readable as wide cropped chapter cover and full-screen backdrop with central text overlay. Lysandria, a rugged mountain kingdom of disciplined spear-fighters. Elegant ancient stone citadel terraced into immense mountains, mist through cypress gardens, stone steps and wild red-and-yellow flowers in foreground, dawn glimmering on distant peaks. Hopeful but solemn, muted sage and pale gold."
+    },
+    {
+      "file": "shadows.webp",
+      "prompt": "Use case: illustration-story. Create one finished cinematic dark fantasy oil-painting illustration for a literary D&D chronicle. Rich painterly textures, grounded ancient Mediterranean / Central Asian world, restrained chiaroscuro, amber highlights and deep blue-black shadows, premium illustrated novel art, no text, lettering, borders or watermarks. Landscape 1536x1024, composition readable as wide cropped chapter cover and full-screen backdrop with central text overlay. Night in the ancient Mediterranean port of Carthara, narrow stone alley descending toward harbor ships, wet cobbles reflecting a single amber lantern, a distant anonymous city guard in cloak and bronze helmet beneath an arch. Closed apothecary shutters, ominous deep indigo atmosphere, painterly readable silhouettes, no modern elements."
+    },
+    {
+      "file": "hanno.webp",
+      "prompt": "Use case: illustration-story. Create one finished cinematic dark fantasy oil-painting illustration for a literary D&D chronicle. Rich painterly textures, grounded ancient Mediterranean / Central Asian world, restrained chiaroscuro, amber highlights and deep blue-black shadows, premium illustrated novel art, no text, lettering, borders or watermarks. Landscape 1536x1024, composition readable as wide cropped chapter cover and full-screen backdrop with central text overlay. Vertical 1024x1536 character portrait, waist up. Hanno Averroes, a 115-year-old half-elf alchemist who appears a mature man in his thirties, Bakhtari ancestry evoking Central Asian and eastern Mediterranean features, olive complexion, dark swept-back hair, short dark beard, subtle pointed ears, deep green eyes flecked with gold. Intelligent composed expression with hidden moral darkness. Charcoal layered robes, worn leather alchemist straps and small botanical vials, restrained bronze details. Standing in shadowed apothecary with blurred warm lamplight; one hand holding a small amber vial. Face in upper third, believable anatomy, no crown or extravagant armor."
+    }
+  ]
+}

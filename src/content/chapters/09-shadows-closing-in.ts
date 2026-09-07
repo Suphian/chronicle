@@ -11,6 +11,7 @@ export const shadowsClosingIn: Chapter = {
   when: "Now",
   status: "draft",
   music: "/audio/ambient-night.wav",
+  cover: "/images/chronicle/shadows.webp",
   scenes: [
     { id: "title", kind: "title", heading: "Shadows Closing In", text: ["Chapter Nine"], mood: "night" },
     {
@@ -26,6 +27,7 @@ export const shadowsClosingIn: Chapter = {
       heading: "Dead Ends",
       mood: "night",
       location: "carthara",
+      image: "/images/chronicle/shadows.webp",
       text: [
         "Adris becomes consumed. He tracks distribution patterns, conducts interrogations, pieces together clues. Every lead dissolves. The network behind the Dust is sophisticated, elusive, and frighteningly efficient.",
         "He does not know that his brother watches every step of his investigation, hiding evidence and bending trails. Watching Adris's persistence fills Hanno with pride, sadness, and fear, all at once.",

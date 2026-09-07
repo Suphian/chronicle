@@ -11,6 +11,7 @@ export const shadowsAndAccusations: Chapter = {
   when: "The betrayal",
   status: "draft",
   music: "/audio/ambient-night.wav",
+  cover: "/images/chronicle/shadows.webp",
   scenes: [
     { id: "title", kind: "title", heading: "Shadows and Accusations", text: ["Chapter Six"], mood: "void" },
     {

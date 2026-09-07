@@ -11,6 +11,7 @@ export const giftOfLysandria: Chapter = {
   when: "Five years in the mountains",
   status: "draft",
   music: "/audio/ambient-wind.wav",
+  cover: "/images/chronicle/lysandria.webp",
   scenes: [
     { id: "title", kind: "title", heading: "The Gift of Lysandria", text: ["Chapter Four"], mood: "storm" },
     {
@@ -18,6 +19,7 @@ export const giftOfLysandria: Chapter = {
       heading: "Ancient Guardians",
       mood: "storm",
       location: "lysandria",
+      image: "/images/chronicle/lysandria.webp",
       text: [
         "The mountains of Lysandria loom like guardians of old secrets. The kingdom is famous for its warriors and for rare metals coveted by every alchemist alive. Hanno comes for the metals.",
         "General Phylios, grey-eyed, stern and fair, sees something else in him.",
@@ -32,6 +34,7 @@ export const giftOfLysandria: Chapter = {
       heading: "Zaharaz",
       mood: "gold",
       location: "lysandria",
+      image: "/images/chronicle/lysandria.webp",
       ambient: "/audio/ambient-ember.wav",
       sfx: "/audio/sfx-ember.wav",
       text: [
