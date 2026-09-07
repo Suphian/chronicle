@@ -92,547 +92,589 @@
   },
   "carthara-garrison": {
     "src": "/images/world/points/carthara-garrison-v1.webp",
-    "alt": "Individual landscape and architecture study of Vael’s Garrison",
+    "alt": "Soldiers, civilian petitioners, and a duty clerk beneath the shaded arcades of Vael’s stone courtyard",
     "caption": "Vael’s Garrison · location study",
     "width": 1672,
     "height": 941
   },
   "numarius-fields": {
     "src": "/images/world/points/numarius-fields-v1.webp",
-    "alt": "Individual landscape and architecture study of The Fields of Numarius",
+    "alt": "Exhausted workers sharing water beside an irrigation ditch amid vast fields outside Carthara",
     "caption": "The Fields of Numarius · location study",
     "width": 1672,
     "height": 941
   },
   "moonlit-isle": {
     "src": "/images/world/points/moonlit-isle-v1.webp",
-    "alt": "Individual landscape and architecture study of The Moonlit Isle",
+    "alt": "Red-and-yellow flowers on a moonlit island shore, with Lysandria’s two mountains across the water",
     "caption": "The Moonlit Isle · location study",
     "width": 1672,
     "height": 941
   },
   "bakhtar": {
     "src": "/images/world/points/bakhtar-v1.webp",
-    "alt": "Individual landscape and architecture study of Bakhtar",
+    "alt": "Craftspeople on a stone terrace beneath cliff homes and caves overlooking a deep highland valley",
     "caption": "Bakhtar · location study",
     "width": 1672,
     "height": 941
   },
   "lysandria": {
     "src": "/images/world/points/lysandria-v1.webp",
-    "alt": "Individual landscape and architecture study of Lysandria",
+    "alt": "A potter working among bowls and jars above an island harbor and two enormous mountains",
     "caption": "Lysandria · location study",
     "width": 1672,
     "height": 941
   },
   "tengeri-wastes": {
     "src": "/images/world/points/tengeri-wastes-v1.webp",
-    "alt": "Individual landscape and architecture study of The Tengeri Wastes",
+    "alt": "Leonin adults and children repairing and using a classroom among patched canyon camp shelters",
     "caption": "The Tengeri Wastes · location study",
     "width": 1672,
     "height": 941
   },
   "sidrat-al-muntaha": {
     "src": "/images/world/points/sidrat-al-muntaha-v1.webp",
-    "alt": "Individual landscape and architecture study of Sidrat Al Muntaha",
+    "alt": "People crossing a mossy bridge over turquoise water, surrounded by glowing plants at twilight",
     "caption": "Sidrat Al Muntaha · location study",
     "width": 1672,
     "height": 941
   },
   "region-2": {
     "src": "/images/world/points/region-2-v1.webp",
-    "alt": "Individual landscape and architecture study of Zeon",
+    "alt": "Residents on a shaded terrace overlooking Zeon’s open grasslands, mesas, and scattered settlements",
     "caption": "Zeon · location study",
     "width": 1672,
     "height": 941
   },
   "region-7": {
     "src": "/images/world/points/region-7-v1.webp",
-    "alt": "Individual landscape and architecture study of Yáolán",
+    "alt": "People descending a narrow sunlit staircase through Yáolán’s layered desert townscape",
     "caption": "Yáolán · location study",
     "width": 1672,
     "height": 941
   },
   "region-12": {
     "src": "/images/world/points/region-12-v1.webp",
-    "alt": "Individual landscape and architecture study of Fairy",
+    "alt": "A caravan beneath immense trees, with Fairy’s stone settlements emerging from dense woodland",
     "caption": "Fairy · location study",
     "width": 1672,
     "height": 941
   },
   "region-15": {
     "src": "/images/world/points/region-15-v1.webp",
-    "alt": "Individual landscape and architecture study of Heretics",
+    "alt": "A public water court and garden terraces overlooking the Heretics region’s broad green plains",
     "caption": "Heretics · location study",
     "width": 1672,
     "height": 941
   },
   "region-18": {
     "src": "/images/world/points/region-18-v1.webp",
-    "alt": "Individual landscape and architecture study of V B",
+    "alt": "Rain-darkened market stairs and planted arcades rising into the misty forest of V B",
     "caption": "V B · location study",
     "width": 1672,
     "height": 941
   },
   "region-19": {
     "src": "/images/world/points/region-19-v1.webp",
-    "alt": "Individual landscape and architecture study of V W",
+    "alt": "Residents tending rooftop containers above the snow-covered terraces and mountains of V W",
     "caption": "V W · location study",
     "width": 1672,
     "height": 941
   },
   "burg-1": {
     "src": "/images/world/points/burg-1-v1.webp",
-    "alt": "Individual landscape and architecture study of Aegis",
+    "alt": "A family entering Aegis through a worn stone gateway beneath large trees and planted galleries",
     "caption": "Aegis · location study",
     "width": 1672,
     "height": 941
   },
   "burg-5": {
     "src": "/images/world/points/burg-5-v1.webp",
-    "alt": "Individual landscape and architecture study of Telheiro",
+    "alt": "Pottery and woven goods on a shaded Telheiro terrace above dry rolling hills",
     "caption": "Telheiro · location study",
     "width": 1672,
     "height": 941
   },
   "burg-6": {
     "src": "/images/world/points/burg-6-v1.webp",
-    "alt": "Individual landscape and architecture study of Deleurias",
+    "alt": "People beneath the long planted arcades of Deleurias, with palms and wooded hills behind",
     "caption": "Deleurias · location study",
     "width": 1672,
     "height": 941
   },
   "burg-7": {
     "src": "/images/world/points/burg-7-v1.webp",
-    "alt": "Individual landscape and architecture study of Erdene Zuu",
+    "alt": "Travelers and a pack animal crossing a stone bridge between Erdene Zuu’s rugged canyon buildings",
     "caption": "Erdene Zuu · location study",
     "width": 1672,
     "height": 941
   },
   "burg-9": {
     "src": "/images/world/points/burg-9-v1.webp",
-    "alt": "Individual landscape and architecture study of Al-Rutbah",
+    "alt": "Residents sharing a shaded courtyard overlooking Al-Rutbah’s domes and open highland countryside",
     "caption": "Al-Rutbah · location study",
     "width": 1672,
     "height": 941
   },
   "burg-10": {
     "src": "/images/world/points/burg-10-v1.webp",
-    "alt": "Individual landscape and architecture study of Tijara",
+    "alt": "A steep market street in Tijara, crowded with plants, hanging textiles, pottery, and residents",
     "caption": "Tijara · location study",
     "width": 1672,
     "height": 941
   },
   "burg-11": {
     "src": "/images/world/points/burg-11-v1.webp",
-    "alt": "Individual landscape and architecture study of Sipopos",
+    "alt": "Pack animals and workers in a busy Sipopos caravan yard beneath forested hills",
     "caption": "Sipopos · location study",
     "width": 1672,
     "height": 941
   },
   "burg-13": {
     "src": "/images/world/points/burg-13-v1.webp",
-    "alt": "Individual landscape and architecture study of Majlis Gate",
+    "alt": "People gathering beside water steps before the immense carved entrance of Majlis Gate",
     "caption": "Majlis Gate · location study",
     "width": 1672,
     "height": 941
   },
   "burg-14": {
     "src": "/images/world/points/burg-14-v1.webp",
-    "alt": "Individual landscape and architecture study of Titanus",
+    "alt": "A crowded market stairway descending toward Titanus’s immense arena and rocky mountains",
     "caption": "Titanus · location study",
     "width": 1672,
     "height": 941
   },
   "burg-15": {
     "src": "/images/world/points/burg-15-v1.webp",
-    "alt": "Individual landscape and architecture study of Pallas",
+    "alt": "Scholars among books and planted terraces overlooking Pallas’s domed library and coastal hills",
     "caption": "Pallas · location study",
     "width": 1672,
     "height": 941
   },
   "burg-16": {
     "src": "/images/world/points/burg-16-v1.webp",
-    "alt": "Individual landscape and architecture study of Lustria",
+    "alt": "A porter and residents passing beneath a shaded Lustria archway toward bright water gardens",
     "caption": "Lustria · location study",
     "width": 1672,
     "height": 941
   },
   "burg-17": {
     "src": "/images/world/points/burg-17-v1.webp",
-    "alt": "Individual landscape and architecture study of Elarion",
+    "alt": "Craftspeople and pottery on an Elarion terrace overlooking gardens, hillside villas, and distant water",
     "caption": "Elarion · location study",
     "width": 1672,
     "height": 940
   },
   "burg-18": {
     "src": "/images/world/points/burg-18-v1.webp",
-    "alt": "Individual landscape and architecture study of Zorig",
+    "alt": "Residents climbing damp stone steps beneath Zorig’s long arcades and misty forest slopes",
     "caption": "Zorig · location study",
     "width": 1672,
     "height": 941
   },
   "burg-19": {
     "src": "/images/world/points/burg-19-v1.webp",
-    "alt": "Individual landscape and architecture study of Melameaion",
+    "alt": "People crossing a high stone bridge above Melameaion’s dry ravine and mountain plain",
     "caption": "Melameaion · location study",
     "width": 1672,
     "height": 941
   },
   "burg-20": {
     "src": "/images/world/points/burg-20-v1.webp",
-    "alt": "Individual landscape and architecture study of Chalcis",
+    "alt": "Two people seated on a Chalcis terrace overlooking a town among conifers and snowy peaks",
     "caption": "Chalcis · location study",
     "width": 1672,
     "height": 941
   },
   "burg-21": {
     "src": "/images/world/points/burg-21-v1.webp",
-    "alt": "Individual landscape and architecture study of Eleusis",
+    "alt": "A winding staircase between inhabited Eleusis balconies overlooking a pale, dry plain",
     "caption": "Eleusis · location study",
     "width": 1672,
     "height": 941
   },
   "burg-22": {
     "src": "/images/world/points/burg-22-v1.webp",
-    "alt": "Individual landscape and architecture study of Egeleukemi",
+    "alt": "People and loaded carts in Egeleukemi’s caravan yard beneath trees and stone domes",
     "caption": "Egeleukemi · location study",
     "width": 1672,
     "height": 941
   },
   "burg-23": {
     "src": "/images/world/points/burg-23-v1.webp",
-    "alt": "Individual landscape and architecture study of Paphidnapon",
+    "alt": "Residents around Paphidnapon’s partly frozen water court, with domes and snowy mountains behind",
     "caption": "Paphidnapon · location study",
     "width": 1672,
     "height": 941
   },
   "burg-24": {
     "src": "/images/world/points/burg-24-v1.webp",
-    "alt": "Individual landscape and architecture study of Zakra",
+    "alt": "Bundled residents descending Zakra’s market steps beneath awnings and snow-covered rooftops",
     "caption": "Zakra · location study",
     "width": 1672,
     "height": 941
   },
   "burg-25": {
     "src": "/images/world/points/burg-25-v1.webp",
-    "alt": "Individual landscape and architecture study of Redclesbury",
+    "alt": "Gardeners on a planted Redclesbury terrace above conifer woods and snowy mountain settlements",
     "caption": "Redclesbury · location study",
     "width": 1672,
     "height": 941
   },
   "burg-26": {
     "src": "/images/world/points/burg-26-v1.webp",
-    "alt": "Individual landscape and architecture study of Castford",
+    "alt": "Travelers entering Castford through a tall blue-tiled gateway in a snowy townscape",
     "caption": "Castford · location study",
     "width": 1672,
     "height": 941
   },
   "burg-27": {
     "src": "/images/world/points/burg-27-v1.webp",
-    "alt": "Individual landscape and architecture study of Byreum",
+    "alt": "People working among pottery and textiles on a leafy Byreum terrace above wooded hills",
     "caption": "Byreum · location study",
     "width": 1672,
     "height": 941
   },
   "burg-28": {
     "src": "/images/world/points/burg-28-v1.webp",
-    "alt": "Individual landscape and architecture study of Stanskirk",
+    "alt": "Bundled residents and a frozen water court beneath Stanskirk’s snowy arcades and mountains",
     "caption": "Stanskirk · location study",
     "width": 1672,
     "height": 941
   },
   "burg-29": {
     "src": "/images/world/points/burg-29-v1.webp",
-    "alt": "Individual landscape and architecture study of Domis",
+    "alt": "A procession of residents and pack animals crossing Domis’s planted bridge through dense forest",
     "caption": "Domis · location study",
     "width": 1672,
     "height": 941
   },
   "burg-30": {
     "src": "/images/world/points/burg-30-v1.webp",
-    "alt": "Individual landscape and architecture study of Menos",
+    "alt": "People on a shaded Menos terrace overlooking shallow wetlands, greenery, and scattered pavilions",
     "caption": "Menos · location study",
     "width": 1672,
     "height": 941
   },
   "burg-31": {
     "src": "/images/world/points/burg-31-v1.webp",
-    "alt": "Individual landscape and architecture study of Dioscusai",
+    "alt": "Residents on a steep, planted staircase between Dioscusai’s shaded homes and galleries",
     "caption": "Dioscusai · location study",
     "width": 1672,
     "height": 941
   },
   "burg-32": {
     "src": "/images/world/points/burg-32-v1.webp",
-    "alt": "Individual landscape and architecture study of Lenaicorint",
+    "alt": "A loaded wagon, animals, and traders in Lenaicorint’s snowy caravan yard beneath forested mountains",
     "caption": "Lenaicorint · location study",
     "width": 1672,
     "height": 941
   },
   "burg-33": {
     "src": "/images/world/points/burg-33-v1.webp",
-    "alt": "Individual landscape and architecture study of Juklena",
+    "alt": "Residents around a partly frozen Juklena courtyard among dark conifers and lantern-lit stone buildings",
     "caption": "Juklena · location study",
     "width": 1672,
     "height": 941
   },
   "burg-34": {
     "src": "/images/world/points/burg-34-v1.webp",
-    "alt": "Individual landscape and architecture study of Esmos",
+    "alt": "Bundled shoppers beneath Esmos’s patterned market awnings, with snowy forest slopes behind",
     "caption": "Esmos · location study",
     "width": 1672,
     "height": 941
   },
   "burg-35": {
     "src": "/images/world/points/burg-35-v1.webp",
-    "alt": "Individual landscape and architecture study of Braurias",
+    "alt": "A resident tending planted Braurias rooftops above a broad green plain and distant mountains",
     "caption": "Braurias · location study",
     "width": 1672,
     "height": 941
   },
   "burg-36": {
     "src": "/images/world/points/burg-36-v1.webp",
-    "alt": "Individual landscape and architecture study of Henekionti",
+    "alt": "A porter and family passing through Henekionti’s carved gateway toward its sunlit streets",
     "caption": "Henekionti · location study",
     "width": 1672,
     "height": 941
   },
   "burg-37": {
     "src": "/images/world/points/burg-37-v1.webp",
-    "alt": "Individual landscape and architecture study of Suriris",
+    "alt": "Craftspeople on a cold Suriris terrace above snow-dusted homes, conifers, and mountain slopes",
     "caption": "Suriris · location study",
     "width": 1672,
     "height": 941
   },
   "burg-38": {
     "src": "/images/world/points/burg-38-v1.webp",
-    "alt": "Individual landscape and architecture study of Oreos",
+    "alt": "Residents and workers beneath a long, partly worn Oreos arcade beside a sunlit public square",
     "caption": "Oreos · location study",
     "width": 1672,
     "height": 941
   },
   "burg-39": {
     "src": "/images/world/points/burg-39-v1.webp",
-    "alt": "Individual landscape and architecture study of Polis",
+    "alt": "People crossing an elevated Polis walkway above warm, tree-dotted plains and inhabited terraces",
     "caption": "Polis · location study",
     "width": 1672,
     "height": 941
   },
   "burg-40": {
     "src": "/images/world/points/burg-40-v1.webp",
-    "alt": "Individual landscape and architecture study of Thege",
+    "alt": "People seated on a shaded Thege terrace looking across dense forest toward mountain waterfalls",
     "caption": "Thege · location study",
     "width": 1672,
     "height": 941
   },
   "burg-41": {
     "src": "/images/world/points/burg-41-v1.webp",
-    "alt": "Individual landscape and architecture study of Qa'hir Sands",
+    "alt": "Residents descending Qa’hir Sands’ sunlit stone stairs between blue textiles and desert homes",
     "caption": "Qa'hir Sands · location study",
     "width": 1672,
     "height": 941
   },
   "burg-42": {
     "src": "/images/world/points/burg-42-v1.webp",
-    "alt": "Individual landscape and architecture study of Oncheracra",
+    "alt": "Traders and pack animals in Oncheracra’s busy courtyard beneath a lush forest canopy",
     "caption": "Oncheracra · location study",
     "width": 1672,
     "height": 941
   },
   "burg-43": {
     "src": "/images/world/points/burg-43-v1.webp",
-    "alt": "Individual landscape and architecture study of Hemaris",
+    "alt": "Residents beside wet stone steps and water gardens among Hemaris’s misty forest terraces",
     "caption": "Hemaris · location study",
     "width": 1672,
     "height": 941
   },
   "burg-44": {
     "src": "/images/world/points/burg-44-v1.webp",
-    "alt": "Individual landscape and architecture study of Bingraleton",
+    "alt": "Shoppers among Bingraleton’s snowy market stalls, with a tower and conifer-covered hills behind",
     "caption": "Bingraleton · location study",
     "width": 1672,
     "height": 941
   },
   "burg-45": {
     "src": "/images/world/points/burg-45-v1.webp",
-    "alt": "Individual landscape and architecture study of Smyrneleu",
+    "alt": "A planted Smyrneleu terrace above water, stone homes, and a wooded hillside waterfall",
     "caption": "Smyrneleu · location study",
     "width": 1672,
     "height": 941
   },
   "marker0": {
     "src": "/images/world/points/marker0-v1.webp",
-    "alt": "Individual landscape and architecture study of Aegis",
+    "alt": "A family entering Aegis through a shaded monumental gate toward densely planted hillside homes",
     "caption": "Aegis · location study",
     "width": 1672,
     "height": 941
   },
   "marker1": {
     "src": "/images/world/points/marker1-v1.webp",
-    "alt": "Individual landscape and architecture study of Tijara",
+    "alt": "Potters on a shaded Tijara terrace overlooking an oasis city and surrounding desert ridges",
     "caption": "Tijara · location study",
     "width": 1672,
     "height": 941
   },
   "marker2": {
     "src": "/images/world/points/marker2-v1.webp",
-    "alt": "Individual landscape and architecture study of Bahar Oasis",
+    "alt": "People gathering beside Bahar Oasis beneath the immense canopy of the Hikaya Tree",
     "caption": "Bahar Oasis · location study",
     "width": 1672,
     "height": 941
   },
   "marker3": {
     "src": "/images/world/points/marker3-v1.webp",
-    "alt": "Individual landscape and architecture study of The Veil of Sirocco",
+    "alt": "Travelers on a high stone bridge facing the towering sandstorm of the Veil of Sirocco",
     "caption": "The Veil of Sirocco · location study",
     "width": 1672,
     "height": 941
   },
   "marker4": {
     "src": "/images/world/points/marker4-v1.webp",
-    "alt": "Individual landscape and architecture study of Qal'a Ruins",
+    "alt": "Visitors on a shaded terrace overlooking the broken walls and tall towers of Qal’a Ruins",
     "caption": "Qal'a Ruins · location study",
     "width": 1672,
     "height": 941
   },
   "marker5": {
     "src": "/images/world/points/marker5-v1.webp",
-    "alt": "Individual landscape and architecture study of Spear of Poseidon Peak",
+    "alt": "Residents on planted stone stairs beneath the narrow, soaring Spear of Poseidon Peak",
     "caption": "Spear of Poseidon Peak · location study",
     "width": 1672,
     "height": 941
   },
   "marker6": {
     "src": "/images/world/points/marker6-v1.webp",
-    "alt": "Individual landscape and architecture study of The Elysium Fields",
+    "alt": "People and laden pack animals among flower-covered terraces in the Elysium Fields",
     "caption": "The Elysium Fields · location study",
     "width": 1672,
     "height": 941
   },
   "marker7": {
     "src": "/images/world/points/marker7-v1.webp",
-    "alt": "Individual landscape and architecture study of Harmony Lagoon",
+    "alt": "People resting beside Harmony Lagoon’s turquoise water, with domes and Lysandria’s mountains beyond",
     "caption": "Harmony Lagoon · location study",
     "width": 1672,
     "height": 941
   },
   "marker9": {
     "src": "/images/world/points/marker9-v1.webp",
-    "alt": "Portrait study of Jibreel in a richly detailed regional setting",
+    "alt": "Jibreel, a Black man in layered green robes, standing beneath a sunlit forest arcade",
     "caption": "Jibreel · portrait study",
     "width": 1672,
     "height": 941
   },
   "marker11": {
     "src": "/images/world/points/marker11-v1.webp",
-    "alt": "Individual landscape and architecture study of Erdene Zuu",
+    "alt": "Residents tending a planted terrace above Erdene Zuu’s repaired shelters and red canyon walls",
     "caption": "Erdene Zuu · location study",
     "width": 1672,
     "height": 941
   },
   "marker14": {
     "src": "/images/world/points/marker14-v1.webp",
-    "alt": "Individual landscape and architecture study of The Altar of Windswept Watchers",
+    "alt": "Visitors approaching a sunlit shrine surrounded by slender obelisks and hanging banners",
     "caption": "The Altar of Windswept Watchers · location study",
     "width": 1672,
     "height": 941
   },
   "marker15": {
     "src": "/images/world/points/marker15-v1.webp",
-    "alt": "Individual landscape and architecture study of Ancestral Skywatcher",
+    "alt": "A monumental vulture with spread wings above a carved tower, seen from a populated terrace",
     "caption": "Ancestral Skywatcher · location study",
     "width": 1672,
     "height": 941
   },
   "marker16": {
     "src": "/images/world/points/marker16-v1.webp",
-    "alt": "Portrait study of King Jirgal the Fifth in a richly detailed regional setting",
+    "alt": "King Jirgal, a gray-furred simian royal in embroidered green robes, seated beside a book overlooking a forest city",
     "caption": "King Jirgal the Fifth · portrait study",
     "width": 1672,
     "height": 941
   },
   "marker17": {
     "src": "/images/world/points/marker17-v1.webp",
-    "alt": "Individual landscape and architecture study of Tengeri Uul",
+    "alt": "People and pack animals crossing a narrow bridge between Tengeri Uul’s cliff homes above a deep mountain ravine",
     "caption": "Tengeri Uul · location study",
     "width": 1672,
     "height": 941
   },
   "marker19": {
     "src": "/images/world/points/marker19-v1.webp",
-    "alt": "Portrait study of Commander Boldsaikhan (meaning \"steel axe\") in a richly detailed regional setting",
+    "alt": "Boldsaikhan, a scarred Leonin with a dark mane, leaning on a stone balustrade above a snowy forest",
     "caption": "Commander Boldsaikhan (meaning \"steel axe\") · portrait study",
     "width": 1672,
     "height": 941
   },
   "marker20": {
     "src": "/images/world/points/marker20-v1.webp",
-    "alt": "Portrait study of Brother Altangerel (meaning \"golden light\") in a richly detailed regional setting",
+    "alt": "Altangerel, a golden-maned Leonin in pale robes, writing at a table above a mountain town",
     "caption": "Brother Altangerel (meaning \"golden light\") · portrait study",
     "width": 1672,
     "height": 941
   },
   "marker21": {
     "src": "/images/world/points/marker21-v1.webp",
-    "alt": "Portrait study of Brother Gerelchuluun (meaning \"light of wisdom\") in a richly detailed regional setting",
+    "alt": "Gerelchuluun, a graying Leonin in blue robes, walking beneath trees through a planted courtyard",
     "caption": "Brother Gerelchuluun (meaning \"light of wisdom\") · portrait study",
     "width": 1672,
     "height": 941
   },
   "marker22": {
     "src": "/images/world/points/marker22-v1.webp",
-    "alt": "Portrait study of Brother Erkhemsaikhan (meaning \"mighty and wise\") in a richly detailed regional setting",
+    "alt": "Erkhemsaikhan, a dark-maned Leonin in olive robes, seated beside a window overlooking an autumn garden",
     "caption": "Brother Erkhemsaikhan (meaning \"mighty and wise\") · portrait study",
     "width": 1672,
     "height": 941
   },
   "marker23": {
     "src": "/images/world/points/marker23-v1.webp",
-    "alt": "Portrait study of Brother Orgilmaa (meaning \"sovereign beauty\") in a richly detailed regional setting",
+    "alt": "Orgilmaa, a long-maned Leonin in green and gold robes, standing beneath a forest arcade",
     "caption": "Brother Orgilmaa (meaning \"sovereign beauty\") · portrait study",
     "width": 1672,
     "height": 941
   },
   "marker24": {
     "src": "/images/world/points/marker24-v1.webp",
-    "alt": "Portrait study of Brother Oyuunchimeg (meaning \"wisdom ornament\") in a richly detailed regional setting",
+    "alt": "Oyuunchimeg, a brown-maned Leonin in deep red robes, resting folded hands on a river terrace",
     "caption": "Brother Oyuunchimeg (meaning \"wisdom ornament\") · portrait study",
     "width": 1672,
     "height": 941
   },
   "marker25": {
     "src": "/images/world/points/marker25-v1.webp",
-    "alt": "Portrait study of Brother Togtokh (meaning \"enduring\") in a richly detailed regional setting",
+    "alt": "Togtokh, a golden-brown Leonin in green robes, writing beneath an awning above an open-country town",
     "caption": "Brother Togtokh (meaning \"enduring\") · portrait study",
     "width": 1672,
     "height": 941
   },
   "marker26": {
     "src": "/images/world/points/marker26-v1.webp",
-    "alt": "Portrait study of Brother Enkhjargal (meaning \"peace and happiness\") in a richly detailed regional setting",
+    "alt": "Enkhjargal, a graying Leonin in blue robes, walking through a snow-dusted courtyard",
     "caption": "Brother Enkhjargal (meaning \"peace and happiness\") · portrait study",
     "width": 1672,
     "height": 941
   },
   "marker27": {
     "src": "/images/world/points/marker27-v1.webp",
-    "alt": "Portrait study of Brother Munkhbat (meaning \"eternal firmness\") in a richly detailed regional setting",
+    "alt": "Munkhbat, a golden-maned Leonin in blue-gray robes, seated beside an open window overlooking sea and mountains",
     "caption": "Brother Munkhbat (meaning \"eternal firmness\") · portrait study",
     "width": 1672,
     "height": 941
   },
   "marker28": {
     "src": "/images/world/points/marker28-v1.webp",
-    "alt": "Portrait study of Tserendorj Mergen the Fifth in a richly detailed regional setting",
+    "alt": "Tserendorj, a brown-maned Leonin in blue robes, standing beneath carved arcades above a pale mountain town",
     "caption": "Tserendorj Mergen the Fifth · portrait study",
     "width": 1672,
     "height": 941
   },
   "marker29": {
     "src": "/images/world/points/marker29-v1.webp",
-    "alt": "Portrait study of Erdenechimeg Mergen the Fifth in a richly detailed regional setting",
+    "alt": "Erdenechimeg, a copper-maned Leonin with amber beads and green robes, resting a hand on a forest terrace",
     "caption": "Erdenechimeg Mergen the Fifth · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker30": {
+    "src": "/images/world/points/marker30-v1.webp",
+    "alt": "Bilegt, a golden-maned Leonin in deep blue robes, seated at a writing table above a snowy town square",
+    "caption": "Bilegt Mergen the Fifth · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker31": {
+    "src": "/images/world/points/marker31-v1.webp",
+    "alt": "Adiyabold, a pale-maned Leonin in blue and gold robes, walking between frost-covered garden beds",
+    "caption": "Adiyabold Mergen the Fifth · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker32": {
+    "src": "/images/world/points/marker32-v1.webp",
+    "alt": "Barsbold Khulan, a dark-maned Leonin in brown robes and beads, seated beside a window overlooking a dry plain",
+    "caption": "Barsbold Khulan of the Tsagaan-Amgalan Tribe · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker44": {
+    "src": "/images/world/points/marker44-v1.webp",
+    "alt": "Arban Naran, a long-maned Leonin in blue robes, standing beneath an arch above a sunlit mountain town",
+    "caption": "Arban Naran of the Uulyn-Khökh Tribe · portrait study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker47": {
+    "src": "/images/world/points/marker47-v1.webp",
+    "alt": "Readers and books on a planted terrace below the Grand Codexium’s enormous domes and gardens",
+    "caption": "Ilm Ki Dunya · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "marker48": {
+    "src": "/images/world/points/marker48-v1.webp",
+    "alt": "A family entering a crowded market street facing the monumental courthouse of the Hall of Scales",
+    "caption": "The Hall of Scales · location study",
     "width": 1672,
     "height": 941
   }

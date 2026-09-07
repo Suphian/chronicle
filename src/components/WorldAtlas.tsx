@@ -49,7 +49,7 @@ export function WorldAtlas({ initialAt, sourceNotes = {}, atlasNotes = {} }: { i
   const storyId = selected && worldById[selected] ? selected : sourceId ? regionStory[sourceId] : undefined;
   const storyPlace = storyId ? worldById[storyId] : undefined;
   const title = selected && worldById[selected] ? worldById[selected].name : sourcePlace ? mapName(sourcePlace) : "";
-  const art = locationArt(selected, sourcePlace);
+  const art = locationArt(selected);
   const note = sourcePlace?.loreSlug ? sourceNotes[sourcePlace.loreSlug] : undefined;
   const atlasNote = sourceId ? atlasNotes[sourceId] : undefined;
   const linkedCharacter = sourceId ? sourceCharacters[sourceId] : undefined;
@@ -186,7 +186,7 @@ export function WorldAtlas({ initialAt, sourceNotes = {}, atlasNotes = {} }: { i
         <div className="atlas-detail-heading"><p className="book-eyebrow">{sourcePlace?.kind ?? "Story place"}</p><button ref={closeButton} onClick={close} aria-label="Close place details">Close <span aria-hidden="true">×</span></button></div>
         <div className="atlas-detail-body" key={selected}>
           <h2 id="atlas-place-title">{title}</h2>
-          {panelOpen && <figure className={styles.locationArt}><a href={art.src} target="_blank" rel="noreferrer" aria-label={`Open full picture: ${art.alt}`}><Image key={art.src} src={art.src} alt={art.alt} width={"width" in art ? art.width : 1672} height={"height" in art ? art.height : 941} sizes="(max-width: 700px) 90vw, 480px" /></a><figcaption>{art.caption}. Select the picture to open it full size.</figcaption></figure>}
+          {panelOpen && art && <figure className={styles.locationArt}><a href={art.src} target="_blank" rel="noreferrer" aria-label={`Open full picture: ${art.alt}`}><Image key={art.src} src={art.src} alt={art.alt} width={art.width} height={art.height} sizes="(max-width: 700px) 90vw, 480px" /></a><figcaption>{art.caption}. Select the picture to open it full size.</figcaption></figure>}
           {atlasNote && <div className={styles.atlasNotes}><h3>Map notes</h3><ReactMarkdown>{atlasNote.replace(/^# .+\r?\n+/, "").replace(/^Basis: .+$/m, "")}</ReactMarkdown><Link href={`/library/atlas-notes/${sourceId}`}>Open these map notes →</Link></div>}
           {sourcePlace?.terrain && <div className={styles.terrainStats}><p className={styles.badge}>Saved terrain & climate</p><dl><dt>Elevation / depth</dt><dd>{elevationFeet(sourcePlace.terrain.height).toLocaleString()} ft</dd><dt>Model temperature</dt><dd>{Math.round(sourcePlace.terrain.temperatureC * 9 / 5 + 32)}°F / {sourcePlace.terrain.temperatureC}°C</dd><dt>Model precipitation</dt><dd>{sourcePlace.terrain.precipitationMm.toLocaleString()} mm</dd><dt>Biome</dt><dd>{terrain.biomes[sourcePlace.terrain.biome]}</dd></dl><p>Nearest source cell to this marker. Regional anchors do not summarize the climate of an entire region.</p></div>}
           {storyPlace && <><p className={styles.badge}>Current story</p><p className="atlas-tagline">{storyPlace.tagline}</p><p>{storyPlace.description}</p><Link href={`/library/places/${storyPlace.id}`}>Open the current place dossier →</Link>
