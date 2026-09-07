@@ -10,11 +10,13 @@ import { codex } from "@/content/codex";
 import { worldById } from "@/content/world";
 import { saveReadingPlace } from "./ResumeReading";
 import { chapterWords, chapterStage, isProse } from "@/lib/reading";
+import { ChapterNarration } from "./ChapterNarration";
 
 export function BookReader({ chapter, prev, next, initialSceneId }: {
   chapter: Chapter; prev?: Chapter; next?: Chapter; initialSceneId?: string;
 }) {
   const [largeText, setLargeText] = useState(false);
+  const [narrating, setNarrating] = useState<string | null>(null);
   const contents = useRef<HTMLDetailsElement>(null);
   const prose = isProse(chapter);
   const scenes = chapter.scenes.filter((scene) => scene.kind !== "title");
@@ -70,6 +72,7 @@ export function BookReader({ chapter, prev, next, initialSceneId }: {
             <button aria-pressed={largeText} onClick={() => setLargeText(!largeText)}>{largeText ? "Standard text" : "Larger text"}</button>
             <Link href="/library/story/overall-outline">Overall story outline</Link>
           </div>
+          <ChapterNarration chapter={chapter} initialSceneId={initialSceneId} onActiveParagraph={setNarrating} />
           {!prose && <div className="sketch-notice"><strong>This is a story sketch.</strong><p>These are planned beats awaiting narrative development. <Link href="/story">Read available prose drafts →</Link></p></div>}
           <article className={`book-prose${largeText ? " book-prose-large" : ""}${prose ? " book-narrative" : ""}`}>
             <header id="title" className="book-title">
@@ -88,7 +91,7 @@ export function BookReader({ chapter, prev, next, initialSceneId }: {
               {prose && sceneIndex > 0 && <div className="scene-divider" aria-hidden="true">✦</div>}
               {scene.pov && (sceneIndex === 0 || scene.pov !== scenes[sceneIndex - 1].pov) && <p className="scene-pov">{scene.pov}</p>}
               {scene.heading && <h2 className={prose ? "sr-only" : undefined}>{scene.heading}</h2>}
-              <SceneProse scene={scene} plates={bookPlates[`${chapter.slug}/${scene.id}`]} />
+              <SceneProse scene={scene} plates={bookPlates[`${chapter.slug}/${scene.id}`]} narrating={narrating} />
               {scene.quote && <blockquote><p>“{scene.quote.text}”</p>{scene.quote.by && <cite>— {scene.quote.by}</cite>}</blockquote>}
               {!prose && scene.location && worldById[scene.location] && <Link className="book-location" href={`/world?at=${scene.location}`}>Explore {worldById[scene.location].name} →</Link>}
             </section>)}
@@ -116,10 +119,10 @@ export function BookReader({ chapter, prev, next, initialSceneId }: {
   );
 }
 
-function SceneProse({ scene, plates = [] }: { scene: Scene; plates?: BookPlate[] }) {
+function SceneProse({ scene, plates = [], narrating }: { scene: Scene; plates?: BookPlate[]; narrating: string | null }) {
   const paragraphs = scene.text ?? [];
   const passage = (start: number, end: number) => paragraphs.slice(start, end).map((paragraph, i) =>
-    <p key={start + i} data-prose-id={`${scene.id}:${start + i}`}>{paragraph}</p>);
+    <p key={start + i} data-prose-id={`${scene.id}:${start + i}`} data-narrating={narrating === `${scene.id}:${start + i}` ? true : undefined}>{paragraph}</p>);
   let cursor = 0;
   const blocks: ReactNode[] = [];
   for (let index = 0; index < plates.length; index++) {

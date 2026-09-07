@@ -66,9 +66,12 @@ for (const [key, plates] of Object.entries(bookPlates)) {
   }
 }
 for (const chapter of chapters) {
-  const plates = chapter.scenes.flatMap(s => bookPlates[`${chapter.slug}/${s.id}`] ?? []);
-  assert(plates.length >= (chapter.order === 0 ? 2 : 3), `${chapter.slug}: needs more illustrations`);
-  unique(plates.map(p => p.artwork), `${chapter.slug} illustration`);
+  for (const scene of chapter.scenes.filter(s => s.kind !== 'title' && (s.text?.length || s.quote?.text))) {
+    const key = `${chapter.slug}/${scene.id}`;
+    assert(bookPlates[key]?.length, `${key}: every prose scene needs an illustration`);
+  }
+  // A return to a place or object may recall its earlier plate, even in the same
+  // chapter. Per-scene uniqueness and paragraph order are checked above.
 }
 const entries = getBibleEntries();
 const notebookPaths = new Set(entries.map(e => `/library/${e.slug}`));

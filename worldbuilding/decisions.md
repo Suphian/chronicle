@@ -45,3 +45,10 @@
 
 - Rename the father **Idris Averroes**. **Adil** is the superseded display name; preserve the stable `adil` ID and profile filename. Historical source snapshots keep their original name. **Dyia** remains the brother; his old alias **Adris** is separate from the father's new name.
 - Continue developing the story alongside illustration and narration. Chapters Two, Three, and Five now show Hanno's innovations supporting Sinna's commercial growth, Hanno negotiating recurring supply arrangements, and Sinna seeking control of those relationships when Hanno returns. Later independent help from a contact remains proposed, not an event already installed in the plot.
+
+## 2026-09-07 — Illustrated scenes and optional narration
+
+- Illustrate each scene and meaningful change of place, rather than every word or paragraph.
+- Add optional narration with a narrator and distinct character voices drawn from the profiles. The requested performance direction includes a British storyteller or period audiobook quality; individual voice assignments are auditions.
+- The author supplied an ElevenLabs account connection for a cast sample. Keep credentials private, record generation provenance, and distinguish a sample from a complete chapter recording. Narration starts only when the reader presses Listen; background music remains removed.
+- The author prefers frequent bounded sub-agent work coordinated in this task, while continuing to develop the story and pushing tested increments to GitHub.

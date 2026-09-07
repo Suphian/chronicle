@@ -8,6 +8,8 @@ Four primary sections: Story (`/story`), People (`/people`), World (`/world`), a
 
 The only active chapter experience is `BookReader.tsx`: continuous prose, text sizing, saved passage, previous/next navigation, and occasional illustrated folios. The author removed cinematic mode and background music. Legacy cinematic query parameters still open the book. Audio assets can be auditioned using native controls on `/workshop/materials`; do not autoplay audio.
 
+The author now also requests optional narration with character voices. `ChapterNarration.tsx` offers prepared ElevenLabs recordings when their source hash matches and full device voice previews. Speaker assignments and performance directions live in `src/content/narration.ts`; chapter prose remains the only manuscript. See `worldbuilding/narration.md` for generation, attribution, limits, and the distinction between samples and completed recordings. Never expose the private API key in browser code.
+
 ## Stack and sources
 
 Next.js App Router, React, TypeScript, Tailwind. Typed chapter content lives in `src/content/chapters/`, registered in `index.ts`. The content model is `src/content/types.ts`. Individual Markdown character/place/faction profiles and editorial files live in `worldbuilding/`. There is no CMS or duplicate editable chapter manuscript.

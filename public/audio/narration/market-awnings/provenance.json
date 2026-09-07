@@ -1,0 +1,54 @@
+{
+  "provider": "ElevenLabs",
+  "assets": [
+    {
+      "file": "the-fruit-stall-9a32c8b111a0c941.mp3",
+      "inputHash": "9a32c8b111a0c941cb684c009de3a1c28e8f74a7b4d2195da2c341a25ec0936d",
+      "bytes": 2107812,
+      "characters": 1745,
+      "generatedAt": "2026-09-07T14:17:43.762Z",
+      "model": "eleven_v3",
+      "voiceIds": [
+        "JBFqnCBsd6RMkjVDRZzb",
+        "onwK4e9ZLuTAKqWW03F9",
+        "Xb7hH8MSUJpSbSDYk0k2",
+        "TX3LPaxmHKxFdv7VOQHJ"
+      ],
+      "tier": "free",
+      "license": "Noncommercial only; attribution elevenlabs.io in published title.",
+      "licenseSource": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform"
+    },
+    {
+      "file": "the-fruit-stall-0a71bae37dc3e6ae.mp3",
+      "inputHash": "0a71bae37dc3e6ae66a9f6a0f466f22a9515bd132d76bf2cfc39294cff3412a6",
+      "bytes": 1979916,
+      "characters": 1735,
+      "generatedAt": "2026-09-07T14:18:34.578Z",
+      "model": "eleven_v3",
+      "voiceIds": [
+        "JBFqnCBsd6RMkjVDRZzb",
+        "onwK4e9ZLuTAKqWW03F9",
+        "TX3LPaxmHKxFdv7VOQHJ"
+      ],
+      "tier": "free",
+      "license": "Noncommercial only; attribution elevenlabs.io in published title.",
+      "licenseSource": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform"
+    },
+    {
+      "file": "the-fruit-stall-619575777e98f8c1.mp3",
+      "inputHash": "619575777e98f8c13933b23370618190714f7fbe991c62ee010afaf797c44f7b",
+      "bytes": 717679,
+      "characters": 605,
+      "generatedAt": "2026-09-07T14:18:52.247Z",
+      "model": "eleven_v3",
+      "voiceIds": [
+        "JBFqnCBsd6RMkjVDRZzb",
+        "IKne3meq5aSn9XLyUdCD",
+        "TX3LPaxmHKxFdv7VOQHJ"
+      ],
+      "tier": "free",
+      "license": "Noncommercial only; attribution elevenlabs.io in published title.",
+      "licenseSource": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform"
+    }
+  ]
+}

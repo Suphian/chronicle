@@ -16,6 +16,7 @@ The current material already has a strong tragedy: a healer who needs a city's l
 - [Places](places/carthara.md) and [factions](factions/the-three-seats.md): existing geography and institutions, with explicit questions for development.
 - [Visual direction](visual-direction.md): the reference aesthetic translated into world and interface choices.
 - [Sound cues](sound-cues.md): an intake ledger for future audio.
+- [Narration](narration.md): optional chapter playback, character casting, and the ElevenLabs opening sample.
 - [Pitch template](templates/pitch.md), [character template](templates/character.md), [place template](templates/place.md), and [faction template](templates/faction.md): small formats that preserve both evidence and possibility.
 - The website's chapter sequence lives in [`src/content/chapters/index.ts`](../src/content/chapters/index.ts). The codex lives in [`src/content/codex.ts`](../src/content/codex.ts); geographical pins live in [`src/content/world.ts`](../src/content/world.ts). Profiles supplement these files rather than replacing their chapter prose.
 

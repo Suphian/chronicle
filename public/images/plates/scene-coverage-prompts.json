@@ -1,0 +1,82 @@
+{
+  "generatedAt": "2026-09-07T14:14:38.882Z",
+  "tool": "image_gen.imagegen (built-in)",
+  "intent": "Five original book plates expanding illustration coverage to every prose scene and meaningful place transition",
+  "assets": [
+    {
+      "file": "drought-fields.webp",
+      "prompt": "Use case: illustration-story. Generate ONE finished illustrated book plate for The Chronicle, a fictional Mediterranean and Middle Eastern world. Delicate hand-drawn pen-and-ink etching, dense architectural crosshatching, restrained muted mineral teal, terracotta and ochre watercolor on warm ivory paper (#eee7d8), irregular outer edges dissolve into untouched paper margins. Extremely accomplished travel-folio draftsmanship and material texture, human-scale intimacy within layered ornate craft. No photorealism, 3D render, typography, legible writing, captions, logos, watermark, page mockup or border. Visual staging only, do not add new plot events. Landscape 3:2 composition. A dry orchard and fields in the hinterland of Carthara after failed rains: low terraced plots, dusty irrigation channels without flowing water, sparse fruit trees, a shallow wicker basket of withered pomegranates and figs in the foreground beside a sun-worn stone channel gate. Worn paths and a distant modest arched farm storehouse show this is worked land; no lush fountains, no city skyline, no slave spectacle, no named character or invented flags. Sparse distant workers may be barely visible, but primary subjects are diminished harvest and the infrastructure that cannot summon rain. Warm severe summer light, delicate desaturated ochres; rich detail in dry soil and bark, quiet and unsentimental.",
+      "source": "C:\\Users\\suphi\\.codex\\generated_images\\01a07c31-bd34-7b71-8db9-e110a0389024\\exec-286a279e-c9a3-4094-92ef-70cc0281b12c.png",
+      "sourceRetained": true,
+      "inspection": "Inspected generated PNG: dry terraced orchard, empty irrigation channel, diminished fruit basket, anonymous distant laborers; no violent scene or new political insignia.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 594372,
+      "originalFormat": "png",
+      "sourceSha256": "c55cac99914aa8f1470ad99188b1528ed2050e457af510714f69565f7da53fad",
+      "fileSha256": "c9ed32313676384ff0c972e74b81ad5f3705d6dfdc4f1a3361d121ce13cef575"
+    },
+    {
+      "file": "travel-letters.webp",
+      "prompt": "Use case: illustration-story. Generate ONE finished illustrated book plate for The Chronicle, a fictional Mediterranean and Middle Eastern world. Delicate hand-drawn pen-and-ink etching, dense architectural crosshatching, restrained muted mineral teal, terracotta and ochre watercolor on warm ivory paper (#eee7d8), irregular outer edges dissolve into untouched paper margins. Extremely accomplished travel-folio draftsmanship and material texture, human-scale intimacy within layered ornate craft. No photorealism, 3D render, typography, legible writing, captions, logos, watermark, page mockup or border. Visual staging only, do not add new plot events. Landscape 3:2 intimate still life. Several folded travel letters and one partly open uncompleted letter on a worn wooden table, a tied account book, a small whetstone, ink pot and a simple brass oil lamp. A soft stain runs across one paper fold. All handwriting is tiny indistinct hatching, NEVER readable letters or words. A closed cloth travel bag partly visible in background, softly suggested carved window screen. Plain unsealed paper without official emblems or royal seals. Focus on the wear of distance and the intimacy of unfinished communication, lamplight, no people, no named character portrait, no weapon.",
+      "source": "C:\\Users\\suphi\\.codex\\generated_images\\01a07c31-bd34-7b71-8db9-e110a0389024\\exec-ae76ee59-8b96-4295-bbed-9d5aea860b6a.png",
+      "sourceRetained": true,
+      "inspection": "Inspected generated PNG: folded stained correspondence, account book, whetstone, lamp and travel bag; written marks remain indistinct and supply no invented prose.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 591556,
+      "originalFormat": "png",
+      "sourceSha256": "f999909e2adf53ddb368c21e52d80f59c40469efbb238ba46f96db72f1992601",
+      "fileSha256": "af7360480c5affce6e473e7196ffaea75bc0b6ea119c74adb6794f1dd00305cb"
+    },
+    {
+      "file": "broken-pottery.webp",
+      "prompt": "Use case: illustration-story. Generate ONE finished illustrated book plate for The Chronicle, a fictional Mediterranean and Middle Eastern world. Delicate hand-drawn pen-and-ink etching, dense architectural crosshatching, restrained muted mineral teal, terracotta and ochre watercolor on warm ivory paper (#eee7d8), irregular outer edges dissolve into untouched paper margins. Extremely accomplished travel-folio draftsmanship and material texture, human-scale intimacy within layered ornate craft. No photorealism, 3D render, typography, legible writing, captions, logos, watermark, page mockup or border. Visual staging only, do not add new plot events. Square intimate still-life illustration. A broken handmade clay cup and fragments of an earthenware bowl scattered on a simple stone floor beneath the edge of a worn wooden table, a small hand broom and gathered dust nearby. Fine clay fragments with one restrained blue glazed line on the cup, everyday pottery made with care. No blood, injured hands, people, villain, smashed entire room, glossy treasure or violent action. Quiet aftermath; emotional weight comes from the ordinary labor represented by the objects. Soft light from outside the composition. Detailed crosshatching and tender small-scale watercolor.",
+      "source": "C:\\Users\\suphi\\.codex\\generated_images\\01a07c31-bd34-7b71-8db9-e110a0389024\\exec-3e9b5d72-3024-47f9-a19a-bdc102064088.png",
+      "sourceRetained": true,
+      "inspection": "Inspected generated PNG: broken earthenware bowl and a blue-banded vessel, floor fragments and broom; no people, injury, or added violence.",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 515460,
+      "originalFormat": "png",
+      "sourceSha256": "d99c26c70cb103b7f4cddab6b0692328489ef9a8562f87563e138cf42b464369",
+      "fileSha256": "7f92eb518f1ff2ce25cb224a198aa5454f9254e74ab73aec9700d9aea3a6a9f2"
+    },
+    {
+      "file": "highland-flute.webp",
+      "prompt": "Use case: illustration-story. Generate ONE finished illustrated book plate for The Chronicle, a fictional Mediterranean and Middle Eastern world. Delicate hand-drawn pen-and-ink etching, dense architectural crosshatching, restrained muted mineral teal, terracotta and ochre watercolor on warm ivory paper (#eee7d8), irregular outer edges dissolve into untouched paper margins. Extremely accomplished travel-folio draftsmanship and material texture, human-scale intimacy within layered ornate craft. No photorealism, 3D render, typography, legible writing, captions, logos, watermark, page mockup or border. Visual staging only, do not add new plot events. Landscape 3:2 composition. From inside a sheltered Bakhtari highland cave passage looking out over distant cliffs at dusk: in foreground a plain wooden flute with finger holes rests on a folded wool cloth on a rock shelf, a small basin catches drops beside it, further into cave simple rolled bedding and grain sacks barely suggested. Outside are layered pale limestone terraces, narrow stairs and distant inhabited cliff dwellings, with tiny warm lights. Main subject is cave acoustics and ordinary refuge, no visible musician, no magical music shapes, no army count, no tomb, body, wedding, or battle; the same shelter could hold different tellings. Intricate cliff architecture, rough cave stone and subtle muted teal dusk, restful and watchful.",
+      "source": "C:\\Users\\suphi\\.codex\\generated_images\\01a07c31-bd34-7b71-8db9-e110a0389024\\exec-2c5f135b-6f04-473c-a871-c04808706862.png",
+      "sourceRetained": true,
+      "inspection": "Inspected generated PNG: plain wooden flute, folded cloth, drip basin and shelter bedding within a cave overlooking inhabited cliffs; no death or disputed legend outcome depicted.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 590662,
+      "originalFormat": "png",
+      "sourceSha256": "ab3c662f62058ba2d1d9c4c1ff9b721311599839b94a58a79fd7ac08e532053a",
+      "fileSha256": "bd2623cb8846be23d90f8944b9893ae2215f8380a8a72e0f5a4f97d77eb48994"
+    },
+    {
+      "file": "lysandria-foundry.webp",
+      "prompt": "Use case: illustration-story. Generate ONE finished illustrated book plate for The Chronicle, a fictional Mediterranean and Middle Eastern world. Delicate hand-drawn pen-and-ink etching, dense architectural crosshatching, restrained muted mineral teal, terracotta and ochre watercolor on warm ivory paper (#eee7d8), irregular outer edges dissolve into untouched paper margins. Extremely accomplished travel-folio draftsmanship and material texture, human-scale intimacy within layered ornate craft. No photorealism, 3D render, typography, legible writing, captions, logos, watermark, page mockup or border. Visual staging only, do not add new plot events. Landscape 3:2 architectural plate. A working foundry courtyard on Lysandria, an island: shaded pale limestone arches, carved screens, sophisticated but mechanical ventilation shafts, workbenches holding small ore samples, brass balances, crucibles and plain notebooks with unreadable marks; a modest furnace glow in an adjacent open-sided workshop, no dramatic molten river. Distant anonymous adult craftspeople perform ordinary work, no named character portrait. Beyond stepped roofs, EXACTLY TWO enormous mountain masses dominate the island interior view. No mainland bridge, modern industrial equipment, electricity, magic beams, weapons display or glowing mystical crystals. An alchemist's workplace and its labor conditions, beautiful elaborate Mediterranean and Middle Eastern craft that remains visibly maintained and used.",
+      "source": "C:\\Users\\suphi\\.codex\\generated_images\\01a07c31-bd34-7b71-8db9-e110a0389024\\exec-7e140f45-5401-4da6-8c6a-9f08ccc2ae8a.png",
+      "sourceRetained": true,
+      "inspection": "Inspected generated PNG: two dominant mountains behind an inhabited craft courtyard, mechanical ventilation, balances, ore and working adults; no weapon or extraordinary fighter depiction.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 568820,
+      "originalFormat": "png",
+      "sourceSha256": "b75953ba9a10c7a57c5d44f6a408138a88e434df5987e27c5be45ca448070b90",
+      "fileSha256": "ef36e5ed8de36c9044e09918bd5577e36cb66f17bb93fde1a58827740fdf27a5"
+    }
+  ],
+  "conversion": {
+    "library": "sharp",
+    "format": "WebP",
+    "quality": 88,
+    "effort": 6,
+    "operations": "Format conversion only. No resize, crop, composite, paint, color transformation, or retouching."
+  },
+  "provenance": "Original AI-generated illustrations commissioned for Chronicle. No external stock images or historical scans were used.",
+  "license": "AI-generated project artwork; no third-party stock license applies. Use is governed by the generating service terms; no assertion of exclusive copyright.",
+  "notes": "Architectural and object staging are visual proposals. Letters contain no readable manuscript text. The highland cave does not resolve the competing accounts of Iskandar's death. Drought artwork is contextual when the scene stays in Carthara."
+}

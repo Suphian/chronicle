@@ -29,6 +29,11 @@ export const plateArtwork = {
   "banquet-court": { src: "/images/plates/banquet-court.webp", caption: "Carthara · The banquet court", alt: "Ink and watercolor: An opulent colonnaded dining court with water channels, patterned textiles, laden tables, and distant guests.", width: 1536, height: 1024, number: "18" },
   "moonlit-wedding": { src: "/images/plates/moonlit-wedding.webp", caption: "The Moonlit Isle · A wedding by the water", alt: "Ink and watercolor: A couple seen from behind in a moonlit shore garden, with a red and yellow flower and the sea beyond.", width: 1536, height: 1024, number: "19" },
   "zaharaz-staff": { src: "/images/plates/zaharaz-staff.webp", caption: "Zaharaz · A traveling staff", alt: "Ink and watercolor: A plain wooden staff with a worn grip and blunt metal ferrule rests beside a travel bag and books.", width: 1254, height: 1254, number: "20" },
+  "drought-fields": { src: "/images/plates/drought-fields.webp", caption: "Beyond Carthara · When the rains fail", alt: "Ink and watercolor: Dry orchard terraces, an empty irrigation channel, and a shallow basket of withered fruit, with small distant workers.", width: 1536, height: 1024, number: "21" },
+  "travel-letters": { src: "/images/plates/travel-letters.webp", caption: "Across the water · Letters and unfinished answers", alt: "Ink and watercolor: Stained folded letters, an account book, a whetstone, and a brass lamp on a worn table; the written marks are indistinct.", width: 1536, height: 1024, number: "22" },
+  "broken-pottery": { src: "/images/plates/broken-pottery.webp", caption: "Amara’s work · What the quarrel breaks", alt: "Ink and watercolor: Fragments of a handmade bowl and a blue-banded vessel lie on the floor beside a small broom.", width: 1254, height: 1254, number: "23" },
+  "highland-flute": { src: "/images/plates/highland-flute.webp", caption: "Bakhtar · Sound within the stone", alt: "Ink and watercolor: A wooden flute on folded wool inside a cave, with a basin catching drips, rolled bedding, and inhabited cliffs beyond.", width: 1536, height: 1024, number: "24" },
+  "lysandria-foundry": { src: "/images/plates/lysandria-foundry.webp", caption: "Lysandria · The foundry courtyard", alt: "Ink and watercolor: Craftspeople at work among ore samples, balances, crucibles, and ventilated furnaces, with two enormous mountains above the roofs.", width: 1536, height: 1024, number: "25" },
 } satisfies Record<string, PlateArtwork>;
 
 export type PlateId = keyof typeof plateArtwork;
@@ -39,42 +44,73 @@ export interface BookPlate extends PlateArtwork {
   afterParagraph: number;
 }
 
-function plate(artwork: PlateId, layout: BookPlate["layout"], afterParagraph: number): BookPlate {
-  return { ...plateArtwork[artwork], artwork, layout, afterParagraph };
+function plate(artwork: PlateId, layout: BookPlate["layout"], afterParagraph: number, caption?: string): BookPlate {
+  return { ...plateArtwork[artwork], artwork, layout, afterParagraph, ...(caption ? { caption } : {}) };
 }
 
 /** Multiple plates may belong to a scene; keep them in paragraph order. Captions add no events. */
 export const bookPlates: Record<string, BookPlate[]> = {
   "the-conqueror/the-graveyard-of-empires": [plate("bakhtar-cliffs", "wide", 5)],
+  "the-conqueror/the-flutes": [plate("highland-flute", "wide", 8)],
   "the-conqueror/iskandar": [plate("highland-council", "wide", 9)],
+  "the-conqueror/rukhsana": [plate("bakhtar-cliffs", "wide", 7), plate("highland-flute", "vignette", 13, "Bakhtar · The shelter in the song")],
+  "the-conqueror/the-mutiny": [plate("travel-letters", "vignette", 6, "Bakhtar · Requests to go home")],
+  "the-conqueror/he-stayed": [plate("highland-council", "wide", 7, "Bakhtar · Witnesses to the grain agreement")],
+  "the-conqueror/the-line": [plate("pottery-room", "wide", 3)],
   "market-awnings/the-fruit-stall": [plate("carthara-market", "folio", 0)],
   "market-awnings/above-the-pottery-shop": [plate("pottery-room", "wide", 3)],
+  "market-awnings/the-drought": [plate("drought-fields", "wide", 2)],
+  "market-awnings/the-fields": [plate("carthara-market", "vignette", 10, "Carthara · The lane after the wagon leaves")],
+  "market-awnings/the-apothecary": [plate("apothecary", "folio", 12)],
+  "market-awnings/ravash": [plate("travel-letters", "vignette", 1, "The household papers · A hearing still to come")],
+  "market-awnings/the-door": [plate("threshold", "vignette", 1, "Carthara · The household threshold")],
   "market-awnings/the-sentencing": [plate("petition-court", "wide", 4)],
   "bitter-apprenticeship/a-world-unto-itself": [plate("apothecary", "folio", 0)],
   "bitter-apprenticeship/respect-every-ingredient": [plate("case-notebook", "vignette", 8)],
   "bitter-apprenticeship/the-alleys": [plate("lantern-alley", "wide", 2)],
+  "bitter-apprenticeship/something-breaking": [plate("broken-pottery", "vignette", 7)],
+  "bitter-apprenticeship/go-then": [plate("broken-pottery", "vignette", 1), plate("lantern-alley", "wide", 6)],
+  "journeys/sent-away": [plate("travel-letters", "vignette", 5, "Carthara · The papers and the parting gifts"), plate("sealed-cargo", "vignette", 6)],
   "journeys/tengeri-wastes": [plate("tengeri-shelters", "wide", 12)],
   "journeys/lake-siraj": [plate("lake-siraj", "wide", 3)],
-  "journeys/toward-lysandria": [plate("lysandria-harbor", "wide", 2)],
+  "journeys/toward-lysandria": [plate("lysandria-harbor", "wide", 2), plate("lysandria-foundry", "wide", 7)],
+  "journeys/nightly-patrols": [plate("lantern-alley", "wide", 2)],
+  "journeys/collision-course": [plate("travel-letters", "vignette", 3)],
+  "gift-of-lysandria/ancient-guardians": [plate("lysandria-foundry", "wide", 6)],
   "gift-of-lysandria/the-spear": [plate("zaharaz-staff", "vignette", 6)],
+  "gift-of-lysandria/alethea": [plate("case-notebook", "vignette", 5, "Lysandria · The work of a practice")],
   "gift-of-lysandria/the-elysian-flower": [plate("moonlit-wedding", "wide", 5)],
   "gift-of-lysandria/hand-in-hand": [plate("lysandria-harbor", "wide", 6)],
   "the-cure/return": [plate("apothecary", "vignette", 4)],
+  "the-cure/a-city-in-despair": [plate("case-notebook", "vignette", 4)],
   "the-cure/trials": [plate("case-notebook", "vignette", 4)],
   "the-cure/the-savior-of-carthara": [plate("clinic-courtyard", "wide", 2)],
+  "the-cure/seeds-of-conflict": [plate("three-seats-hall", "wide", 6)],
   "shadows-and-accusations/false-kindness": [plate("unfinished-bowls", "vignette", 2)],
+  "shadows-and-accusations/amara": [plate("unfinished-bowls", "vignette", 6)],
   "shadows-and-accusations/whispers": [plate("case-notebook", "vignette", 4)],
   "shadows-and-accusations/the-shipment": [plate("sealed-cargo", "wide", 3)],
+  "shadows-and-accusations/a-public-demise": [plate("sealed-cargo", "vignette", 1, "Carthara · The stolen shipping case")],
   "rising-influence/the-heart-of-carthara": [plate("clinic-courtyard", "wide", 6)],
   "rising-influence/the-clinic-ledger": [plate("case-notebook", "vignette", 17)],
   "rising-influence/courtesies": [plate("banquet-court", "wide", 2)],
+  "rising-influence/patient-vigilance": [plate("travel-letters", "vignette", 12, "Carthara · Statements and unanswered requests")],
+  "a-dark-turn/hollow": [plate("courtyard-garden", "wide", 2, "Carthara · Through the open garden door")],
   "a-dark-turn/fertilizer": [plate("banquet-court", "wide", 11)],
+  "a-dark-turn/witnesses": [plate("lantern-alley", "wide", 4)],
   "a-dark-turn/elysian-dust": [plate("courtyard-garden", "wide", 2)],
   "a-dark-turn/a-network-of-shadows": [plate("sealed-cargo", "vignette", 3)],
+  "shadows-closing-in/beneath-the-veneer": [plate("clinic-courtyard", "wide", 2)],
   "shadows-closing-in/dead-ends": [plate("sealed-cargo", "wide", 3)],
   "shadows-closing-in/numarius-stirs": [plate("three-seats-hall", "wide", 14)],
+  "shadows-closing-in/closer-than-he-imagines": [plate("sealed-cargo", "vignette", 6), plate("travel-letters", "vignette", 12, "Carthara · Beside the travel journals")],
   "shadows-closing-in/alethea-watches": [plate("case-notebook", "vignette", 3)],
+  "shadows-closing-in/reckoning": [plate("travel-letters", "vignette", 6, "Carthara · An appointment accepted"), plate("lantern-alley", "wide", 8)],
+  "the-flower-in-her-hair/a-stranger-at-the-table": [plate("courtyard-garden", "wide", 1, "Carthara · The repaired garden latch")],
   "the-flower-in-her-hair/the-clinic": [plate("clinic-courtyard", "wide", 3)],
+  "the-flower-in-her-hair/relief": [plate("travel-letters", "vignette", 7, "Alethea · The unfinished letter")],
+  "the-flower-in-her-hair/he-does-not-see": [plate("case-notebook", "vignette", 6, "Alethea · Arranging care"), plate("threshold", "vignette", 8, "Carthara · Waiting at home")],
   "the-flower-in-her-hair/the-garden": [plate("courtyard-garden", "wide", 7)],
+  "the-flower-in-her-hair/the-mirror": [plate("zaharaz-staff", "vignette", 7)],
   "the-flower-in-her-hair/the-door-again": [plate("threshold", "vignette", 5)],
 };

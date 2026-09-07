@@ -16,7 +16,7 @@ export function getBibleEntries(): BibleEntry[] {
       entries.push({ slug: `${group}/${name.slice(0, -3)}`, title: content.match(/^#\s+(.+)$/m)?.[1] ?? name.slice(0, -3), group, content });
     }
   }
-  for (const name of ["README", "PROMPT", "decisions", "continuity", "story-options", "geography-reconciliation", "visual-direction", "sound-cues"]) {
+  for (const name of ["README", "PROMPT", "decisions", "continuity", "story-options", "geography-reconciliation", "visual-direction", "sound-cues", "narration"]) {
     const file = path.join(root, `${name}.md`);
     if (!fs.existsSync(file)) continue;
     const content = fs.readFileSync(file, "utf8");

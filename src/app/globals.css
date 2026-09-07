@@ -241,6 +241,38 @@ body {
 .book-plate figcaption { margin: 12px 24px 0; padding-top: 16px; border-top: 1px solid #cdbfa7; font: 13px/1.8 ui-monospace, monospace; color: #66563f; }
 .book-plate figcaption span { display: block; text-transform: uppercase; letter-spacing: .15em; font-size: 10px; margin-bottom: 4px; }
 .book-plate figcaption small { display: block; font-size: 10px; color: #716049; margin-top: 4px; }
+
+/* Optional narration stays beside the reader; manuscript paragraphs remain selectable. */
+.chapter-narration { border: 1px solid #cdbfa7; background: #f0e8d8; color: #433a2c; padding: 20px; margin: 22px 0 30px; border-radius: 3px; }
+.narration-heading { display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+.chapter-narration p { font-size: 12px; line-height: 1.65; margin: 5px 0 0; }
+.chapter-narration button, .chapter-narration select { font: inherit; font-size: 12px; border: 1px solid #ae9c7b; border-radius: 3px; padding: 9px 11px; min-height: 40px; color: #433a2c; background: #fffaf0; }
+.chapter-narration button { cursor: pointer; }
+.chapter-narration button:hover:not(:disabled) { background: #e8dbc3; }
+.chapter-narration button:disabled { opacity: .45; cursor: default; }
+.chapter-narration :is(button, select, summary, a):focus-visible { outline: 2px solid #806039; outline-offset: 4px; }
+.chapter-narration .narration-play { background: #50452f; color: #fff7e9; min-width: 116px; flex-shrink: 0; }
+.chapter-narration .narration-play:hover:not(:disabled) { background: #6a5734; }
+.narration-controls { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 10px; align-items: center; }
+.narration-scene { flex: 1; min-width: 120px; }
+.narration-scene select { width: 100%; text-overflow: ellipsis; }
+.narration-now, .narration-attribution { color: #62543f; }
+.narration-attribution a { text-decoration: underline; text-underline-offset: 3px; }
+.narration-options { border-top: 1px solid #cdbfa7; margin-top: 14px; padding-top: 12px; font-size: 12px; }
+.narration-options summary { cursor: pointer; width: fit-content; }
+.narration-settings { display: flex; gap: 14px; flex-wrap: wrap; margin: 14px 0; }
+.narration-settings label { display: grid; gap: 5px; }
+.narration-cast { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 22px; margin: 16px 0 2px; }
+.narration-cast select { width: 100%; margin-top: 7px; }
+.chapter-narration .narration-error { color: #8e3027; }
+.chapter-narration .narration-retry { border: 0; background: transparent; padding: 0 5px; text-decoration: underline; }
+.book-prose [data-narrating="true"] { background: #e8dcc4; outline: 7px solid #e8dcc4; border-radius: 1px; }
+@media (max-width: 600px) {
+  .chapter-narration { padding: 16px; }
+  .narration-heading { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .narration-cast { grid-template-columns: 1fr; }
+  .narration-scene { flex-basis: calc(100% - 80px); order: -1; }
+}
 @media (max-width: 1100px) {
   .book-folio .book-layout { grid-template-columns: 180px minmax(0, 1fr); gap: 28px; }
   .illustrated-spread { display: block; }

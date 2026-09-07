@@ -4,7 +4,7 @@ ID: `chuluun` · Displaced Leonin elder · Under enforced labor obligations in t
 
 ## Established by the author's latest revision
 
-Chuluun is a lion-person and a member of the displaced, largely enslaved Leonin community. He lives in the Tengeri Wastes' refugee camps, which endure repeated bombardment and restricted movement. He is not a free outsider helping refugees: his own labor account compels him to work and limits his choices. He carries the flag of the lost Leonin homeland, as every Leonin does.
+Chuluun is a member of the displaced, largely enslaved Leonin community. He lives in the Tengeri Wastes' refugee camps, which endure repeated bombardment and restricted movement. He is not a free outsider helping refugees: his own labor account compels him to work and limits his choices. He carries the flag of the lost Leonin homeland, as every Leonin does.
 
 The Leonin originally received Numarius's people as refugees after the destruction of those people's homeland. Their guests later dispossessed them; Lord Numarius now leads the hostile power. Whether the original arrival belongs to the incumbent lord's lifetime or an earlier generation is unresolved. The camps are not the Leonin's freely chosen ancestral homeland. Displaced communities also exist throughout the world.
 

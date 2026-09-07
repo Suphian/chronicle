@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "sourceHash": "b8c6978bd125618773847888112c181292964ee8b5b69af2733a08ee6b1a0f51",
+  "provider": "ElevenLabs",
+  "complete": false,
+  "completedScenes": [
+    "the-fruit-stall"
+  ],
+  "title": "Cast recording sample · elevenlabs.io",
+  "chunks": [
+    {
+      "src": "/audio/narration/market-awnings/the-fruit-stall-9a32c8b111a0c941.mp3",
+      "sceneId": "the-fruit-stall",
+      "paragraphIndex": 0,
+      "speaker": "cast"
+    },
+    {
+      "src": "/audio/narration/market-awnings/the-fruit-stall-0a71bae37dc3e6ae.mp3",
+      "sceneId": "the-fruit-stall",
+      "paragraphIndex": 14,
+      "speaker": "cast"
+    },
+    {
+      "src": "/audio/narration/market-awnings/the-fruit-stall-619575777e98f8c1.mp3",
+      "sceneId": "the-fruit-stall",
+      "paragraphIndex": 19,
+      "speaker": "cast"
+    }
+  ]
+}
