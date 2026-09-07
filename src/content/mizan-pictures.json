@@ -334,5 +334,33 @@
     "caption": "Byreum · location study",
     "width": 1672,
     "height": 941
+  },
+  "burg-28": {
+    "src": "/images/world/points/burg-28-v1.webp",
+    "alt": "Individual landscape and architecture study of Stanskirk",
+    "caption": "Stanskirk · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-29": {
+    "src": "/images/world/points/burg-29-v1.webp",
+    "alt": "Individual landscape and architecture study of Domis",
+    "caption": "Domis · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-30": {
+    "src": "/images/world/points/burg-30-v1.webp",
+    "alt": "Individual landscape and architecture study of Menos",
+    "caption": "Menos · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-31": {
+    "src": "/images/world/points/burg-31-v1.webp",
+    "alt": "Individual landscape and architecture study of Dioscusai",
+    "caption": "Dioscusai · location study",
+    "width": 1672,
+    "height": 941
   }
 }
