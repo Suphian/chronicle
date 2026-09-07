@@ -362,5 +362,33 @@
     "caption": "Dioscusai · location study",
     "width": 1672,
     "height": 941
+  },
+  "burg-32": {
+    "src": "/images/world/points/burg-32-v1.webp",
+    "alt": "Individual landscape and architecture study of Lenaicorint",
+    "caption": "Lenaicorint · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-33": {
+    "src": "/images/world/points/burg-33-v1.webp",
+    "alt": "Individual landscape and architecture study of Juklena",
+    "caption": "Juklena · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-34": {
+    "src": "/images/world/points/burg-34-v1.webp",
+    "alt": "Individual landscape and architecture study of Esmos",
+    "caption": "Esmos · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-35": {
+    "src": "/images/world/points/burg-35-v1.webp",
+    "alt": "Individual landscape and architecture study of Braurias",
+    "caption": "Braurias · location study",
+    "width": 1672,
+    "height": 941
   }
 }
