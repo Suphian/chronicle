@@ -1,6 +1,6 @@
 # Integrated continuity review
 
-**Integration status:** The consequential items identified below were repaired in this increment: Chapter Five supplies Adil's death notice; Chapter Eight limits knowledge of the broker's beliefs; Chapter Six gives Sinna preliminary checks, public pressure, and bystander risk Hanno knowingly accepts. Later author direction further revises Hanno to an ordinary competent fighter carrying a staff. The profiles and codex now match. The review below remains a record of what was found during drafting, not a list of still-unfixed defects. See the current [continuity audit](../continuity.md) for remaining issues.
+**Integration status:** The consequential items identified below were repaired in this increment: Chapter Five supplies Idris's death notice; Chapter Eight limits knowledge of the broker's beliefs; Chapter Six gives Sinna preliminary checks, public pressure, and bystander risk Hanno knowingly accepts. Later author direction further revises Hanno to an ordinary competent fighter carrying a staff. The profiles and codex now match. The review below remains a record of what was found during drafting, not a list of still-unfixed defects. See the current [continuity audit](../continuity.md) for remaining issues.
 
 Reviewed the expanded prose of Chapters One–Four and Six–Eight against the working bible, character profiles, codex, and relevant place data. Chapter Five was checked only for the missing-news bridge described below; its prose expansion was still in progress. This is a snapshot taken while other agents are integrating their work, not a declaration that their pending fixes have failed.
 
@@ -14,9 +14,9 @@ Priority: **P1** blocks a coherent reading; **P2** is a consequential correction
 
 **Recommended repair:** Revise the supporting claim to skilled training with stronger peers, unless the author deliberately wants a later contest or reputation to explain the old superlative. Do not restore effortless superiority merely to preserve an older summary. Sent to the lead and both relevant owners.
 
-## P2 — Missing knowledge bridge: when Hanno learns Adil died
+## P2 — Missing knowledge bridge: when Hanno learns Idris died
 
-**Evidence:** Chapter Three, [`collision-course`](../../src/content/chapters/03-journeys.ts), supplies no news of Adil beyond another unanswered inquiry. The Chapter Five text available during review contains no report of his death. Chapter Seven, [`the-heart-of-carthara`](../../src/content/chapters/07-rising-influence.ts), already has Hanno think of Adil among the dead. Chapter Eight, [`fertilizer`](../../src/content/chapters/08-a-dark-turn.ts), supplies Numarius's explicit degrading account.
+**Evidence:** Chapter Three, [`collision-course`](../../src/content/chapters/03-journeys.ts), supplies no news of Idris beyond another unanswered inquiry. The Chapter Five text available during review contains no report of his death. Chapter Seven, [`the-heart-of-carthara`](../../src/content/chapters/07-rising-influence.ts), already has Hanno think of Idris among the dead. Chapter Eight, [`fertilizer`](../../src/content/chapters/08-a-dark-turn.ts), supplies Numarius's explicit degrading account.
 
 **Classification:** This is a missing event in Hanno's knowledge, **not** an observed resurrection or contradictory date of death. It is possible to fill it without altering the main chronology.
 
@@ -40,7 +40,7 @@ The poison parcel also risks reaching someone other than Sinna. The narrative al
 
 Chapter Eight's `elysian-dust` action occurs in the Cartharan garden and workshop, but the existing scene tag points to `moonlit-isle`. Chapter One's `the-fields` similarly stages departure from the Cartharan market while pointing to the destination `numarius-fields`.
 
-The actual book companion labels its list **Places in this chapter**, so these links are legitimate associations and **not literal statements that the character is physically there**. A clear atlas link label such as “Wedding remembered” or “Adil is taken” preserves that distinction. Moving the Dust scene's primary tag to Carthara is also possible if the remembered island remains reachable. An initial stronger concern was corrected after inspecting the reader.
+The actual book companion labels its list **Places in this chapter**, so these links are legitimate associations and **not literal statements that the character is physically there**. A clear atlas link label such as “Wedding remembered” or “Idris is taken” preserves that distinction. Moving the Dust scene's primary tag to Carthara is also possible if the remembered island remains reachable. An initial stronger concern was corrected after inspecting the reader.
 
 ## P3 — Supporting questions partly answered by the new prose
 
@@ -54,7 +54,7 @@ Once the chapter edits settle, reconcile the profiles so the website does not co
 ## Checks passed and questions intentionally left open
 
 - Hanno does not witness Dyia's participation in the eviction. Amara's Chapter Two disclosure still changes what he knows. Dyia's Chapter Two memory briefly imagines carrying the wheel but immediately corrects itself; that is an explicit self-correction, not a continuity error.
-- The brothers reach adult working life before Dyia's recruitment. Adil remains alive at the Chapter One hearing. No reviewed scene restores Sinna's superseded direct killing or makes Amara die before the cure.
+- The brothers reach adult working life before Dyia's recruitment. Idris remains alive at the Chapter One hearing. No reviewed scene restores Sinna's superseded direct killing or makes Amara die before the cure.
 - Viewpoint changes between Hanno, Dyia, and Alethea are labeled and generally maintained. Alethea's interpretation of her husband's expressions is supported by their dialogue; it need not be classified as omniscient access.
 - Sinna's actual teaching and exploitation coexist. Hanno's increasing awareness of unfair accounts does not mean he already knows the full extent of the theft.
 - Chuluun remains the elder. The recovered prince biography is not silently adopted. No exact ages or new species lifespans are invented to resolve Hanno's 115-year figure.

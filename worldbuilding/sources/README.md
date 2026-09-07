@@ -11,6 +11,8 @@ These are snapshots of the owner's early Google Docs, read on 2026-09-06 (Americ
 
 Latest explicit author decisions take precedence. The author restored **Dyia** as the brother's spelling on 2026-09-06, superseding the intervening Adris revision. Both early documents also use Dyia.
 
+On 2026-09-07 the author renamed the father **Idris Averroes**. Source snapshots retain **Adil**, while current chapters and profiles use Idris. His stable `adil` ID and profile filename remain unchanged. The brother's former alias Adris belongs to a separate naming history.
+
 Current repository chapters contain later draft additions: the Bakhtari ancestry/prologue, the Three Seats, the brother's choice at Amara's door, and Chapter Ten. Preserve those as existing draft continuity unless the author revises them. They are not claims about what the original Google narrative said.
 
 For conflicts between the two early sources alone, the narrative is the better story baseline; keep abandoned alternatives in the continuity register. Do not silently import old mechanics or world names into the current story. Original snapshots stay verbatim.

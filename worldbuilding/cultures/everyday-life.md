@@ -4,7 +4,7 @@ Status: working dossier separating actual draft evidence from proposals. Compare
 
 ## Water and food
 
-**Established in current draft:** Drought destroys Adil's fruit income; Numarius controls plantations with an unspecified staple crop. In the [Tengeri refugee camps](../places/tengeri-wastes.md), bombardment interrupts cooking and care; scarce medicinal plants cannot meet an outsider's requested purchase without depriving residents. Water routes and supplies require labor. See [Carthara](../places/carthara.md) and [the fields](../places/numarius-fields.md).
+**Established in current draft:** Drought destroys Idris's fruit income; Numarius controls plantations with an unspecified staple crop. In the [Tengeri refugee camps](../places/tengeri-wastes.md), bombardment interrupts cooking and care; scarce medicinal plants cannot meet an outsider's requested purchase without depriving residents. Water routes and supplies require labor. See [Carthara](../places/carthara.md) and [the fields](../places/numarius-fields.md).
 
 **Proposed development:** Give one neighborhood a shared cistern and a paid maintenance rota. Choose a staple crop for the plantations and show its route through a weighing yard to bakers or household buyers. During a shortage, a potter needing water to work and a household needing it to drink have competing claims without either becoming a villain.
 

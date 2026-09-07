@@ -25,7 +25,7 @@ export const shadowsAndAccusations: Chapter = {
     { id: "amara", heading: "Amara", pov: "hanno", mood: "night", sfx: "/audio/sfx-ember.wav", text: [
       "The boy who comes for Hanno has run through spilled charcoal. Black dust marks his knees. Hanno catches his shoulders to make him speak, then releases him because the boy is trying to breathe and cannot do both things at once.",
       "\"Your mother. The courtyard.\"",
-      "He follows the boy through the passage. Alethea kneels beside the bench. When she looks up he knows how far away he is. Not in streets or minutes. He has been working at the front of the same building. A woman brought her father, and the father thanked him twice, and Hanno took time to ask whether the old man remembered buying fruit from Adil.",
+      "He follows the boy through the passage. Alethea kneels beside the bench. When she looks up he knows how far away he is. Not in streets or minutes. He has been working at the front of the same building. A woman brought her father, and the father thanked him twice, and Hanno took time to ask whether the old man remembered buying fruit from Idris.",
       "He says his mother's name. Her hand is cool where the clay has dried. He searches her face for the small annoyance with which she receives his interruptions. Alethea catches his wrist before he lifts her.",
       "\"Let me finish,\" she says, although there is nothing left that will bring Amara back.",
       "He kneels. Five bowls stand above him. One carries a thumbprint just below the rim, a crescent she would have smoothed away before firing. He wants to touch it and knows touching it would destroy it.",

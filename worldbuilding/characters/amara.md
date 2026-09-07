@@ -4,7 +4,7 @@ ID: `amara` · Draft endpoint: Chapter Ten · Dead
 
 ## Established in current draft
 
-A potter from [Lysandria](../places/lysandria.md), the island with two enormous mountains, wife of [Adil](adil.md), and mother of [Hanno](hanno.md) and [Dyia](dyia.md). This origin follows the author's latest correction. She hums songs but does not explain their origin to her sons. She arranges Hanno's apprenticeship. Dyia steps aside when the household and her wheel are seized. She uses Ravash, undergoes Hanno's experimental treatment, and recovers. [Sinna](virello.md) later deceives her into taking potent Ravash disguised as a stronger remedy, killing her.
+A potter from [Lysandria](../places/lysandria.md), the island with two enormous mountains, wife of [Idris](adil.md), and mother of [Hanno](hanno.md) and [Dyia](dyia.md). This origin follows the author's latest correction. She hums songs but does not explain their origin to her sons. She arranges Hanno's apprenticeship. Dyia steps aside when the household and her wheel are seized. She uses Ravash, undergoes Hanno's experimental treatment, and recovers. [Sinna](virello.md) later deceives her into taking potent Ravash disguised as a stronger remedy, killing her.
 
 The earlier draft describes Bakhtari ancestry through [Rukhsana](rukhsana.md) and [Iskandar](iskandar.md), with songs linked to that highland legend. Preserve this as an earlier lineage claim awaiting reconciliation with her adopted Lysandrian origin. It does not establish that she was born in or emigrated from Bakhtar, that Lysandria is part of Bakhtar, or that the song originated where she learned it.
 

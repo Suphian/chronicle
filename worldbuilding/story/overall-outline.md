@@ -8,9 +8,9 @@ Two brothers grow up above their mother's pottery workshop in Carthara. When deb
 
 ## I. A family worth knowing
 
-**Current Chapters One–Two.** Start with Hanno at his father's fruit stall. Let us live with Adil's small compromises, Amara's pottery work, the brothers' quarrels, and the hope that a little more money might improve their lives. Carthara emerges through that work: scales, credit, water, rent, and the people who enforce payment.
+**Current Chapters One–Two.** Start with Hanno at his father's fruit stall. Idris has risen from selling out of a basket to a stall and regular customers. He protects that achievement while believing he can grow into a larger trader; his mistake is overestimating his bargaining power and what bigger orders will earn. The opening now gives him and Amara a concrete disagreement over spoilage, expansion, and preserving their livelihoods. Let us live with their work, the brothers' quarrels, and the hope of improving their lives. Carthara emerges through that work: scales, credit, water, rent, and the people who enforce payment.
 
-Drought and debt take Adil into coerced field labor. Amara bargains for Hanno's apprenticeship with Sinna; Dyia eventually earns a guard wage. Sinna is a capable teacher who also profits from Hanno's dependence. The brothers' different forms of submission become unbearable to each other. Dyia is present when the family's home is seized and fails to prevent it. When Hanno learns this, an argument becomes a rupture. Their father dies in the fields.
+Drought and debt take Idris into coerced field labor. Amara bargains for Hanno's apprenticeship with Sinna; Dyia eventually earns a guard wage. Sinna is a capable teacher who also profits from Hanno's dependence. The brothers' different forms of submission become unbearable to each other. Dyia is present when the family's home is seized and fails to prevent it. When Hanno learns this, an argument becomes a rupture. Their father dies in the fields.
 
 **What changes:** a shared family hope becomes two competing ideas of protection. Both brothers carry real responsibility; neither has the whole account of the other's life.
 
@@ -18,13 +18,15 @@ Drought and debt take Adil into coerced field labor. Amara bargains for Hanno's 
 
 **Current Chapters Three–Four.** Sinna sends Hanno abroad for knowledge and materials. The journey through Tengeri, Sidrat Al Muntaha, and Lysandria takes work, failure, obligations, and help from people who know more than he does. These places can eventually sustain their own stories.
 
+**Adopted premise, now begun in the draft:** Hanno's innovations enrich Sinna, and his journeys establish trade routes whose contacts know Hanno personally. Repeat orders fund the master's expansion; Hanno negotiates recurring supply and carriage terms; on his return, their dispute extends to who should receive a supplier's letters. These initial scenes can grow into a longer commercial relationship. Those contacts could later help Hanno independently, but their later use remains proposed; travel does not automatically recruit accomplices or guarantee loyalty.
+
 In Lysandria, his mother's island home beneath two enormous mountains, years of medical study develop Hanno's strongest abilities. He learns decent self-defense but remains vulnerable to experienced fighters. Treating General Phylios's son brings him into a different circle. He receives Zaharaz, a travelling staff, and meets Alethea, a healer with patients, commitments, and ambitions of her own. Their relationship offers him a future that is more than repayment for the past. They marry on the Moonlit Isle and choose to return to Carthara.
 
 **What changes:** Hanno has knowledge, love, and a credible alternative life. Returning is a choice whose cost must become visible.
 
 ### The Leonin story running beside his journey
 
-Chuluun belongs to lion people displaced from a homeland whose flag they still carry. The Tengeri Wastes contain refugee camps under repeated bombardment and forced labor. Hanno meets people maintaining shelter, schooling, food, records, and family connections while official reports misrepresent their lives. His hosts are participants in their own history; they do not exist to make him a better warrior.
+Chuluun belongs to the Leonin, displaced from a homeland whose flag they still carry. The Tengeri Wastes contain refugee camps under repeated bombardment and forced labor. Hanno meets people maintaining shelter, schooling, food, records, and family connections while official reports misrepresent their lives. His hosts are participants in their own history; they do not exist to make him a better warrior.
 
 The Leonin once welcomed Numarius's people after those people lost their home. That hospitality was followed by Leonin dispossession. The exact generations and institutional chain remain to be dated. Leonin factions now disagree over negotiation, continuing armed resistance, camp governance, and diaspora priorities. The [Leonin profile](../factions/the-leonin.md) links their four current working factions.
 

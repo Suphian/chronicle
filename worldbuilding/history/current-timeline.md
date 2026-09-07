@@ -32,16 +32,16 @@ The Leonin are lion-people driven into refugee camps in the Tengeri Wastes and d
 
 | Anchor | Draft events | Wider consequence or unresolved interval |
 | --- | --- | --- |
-| Before the drought | Adil sells fruit; Amara works clay; their sons live above the pottery shop. | Markets, craft labor, taxation, and household debt already support and constrain the family. |
-| Drought and dispossession | Failed rains reduce fruit supply. Adil's stall is seized and he is provisionally assigned to Numarius's fields. Hanno enters Sinna's service. | Postponements and maintenance charges prolong the debt; a later hearing confirms the assignment. Exact elapsed years remain unset. |
-| The family fracture | Amara uses Ravash. A grown Dyia joins the guard, steps aside at her eviction, and stands at Adil's hearing. The brothers later fight. | Amara moves into the pottery shop's borrowed back room. Hanno knows they moved before learning his brother's involvement. |
+| Before the drought | Idris sells fruit; Amara works clay; their sons live above the pottery shop. | Markets, craft labor, taxation, and household debt already support and constrain the family. |
+| Drought and dispossession | Failed rains reduce fruit supply. Idris's stall is seized and he is provisionally assigned to Numarius's fields. Hanno enters Sinna's service. | Postponements and maintenance charges prolong the debt; a later hearing confirms the assignment. Exact elapsed years remain unset. |
+| The family fracture | Amara uses Ravash. A grown Dyia joins the guard, steps aside at her eviction, and stands at Idris's hearing. The brothers later fight. | Amara moves into the pottery shop's borrowed back room. Hanno knows they moved before learning his brother's involvement. |
 | The years abroad | Hanno witnesses the Tengeri camps, learns limited practical skills, then studies in Sidrat and spends five years in Lysandria. Dyia advances and kills some Silkers without trial. | The journey includes a commitment to truthful testimony; full duration and later fulfillment are unresolved. |
-| Marriage and return | Hanno helps save Phylios's son, receives Zaharaz, marries Alethea on the Moonlit Isle, and returns with her. Amara shows him Adil's death notice. | Their skills and relationships enable a new healing practice. The notice gives no cause of death, grave, or final testimony. |
+| Marriage and return | Hanno helps save Phylios's son, receives Zaharaz, marries Alethea on the Moonlit Isle, and returns with her. Amara shows him Idris's death notice. | Their skills and relationships enable a new healing practice. The notice gives no cause of death, grave, or final testimony. |
 | The cure and its backlash | Hanno and Alethea develop the Ravash remedy. Amara recovers. Sinna then murders her with disguised Ravash; Hanno engineers Sinna's death through a stolen shipment. | Treatment damages the Chain's revenue. Rumors threaten trust in the remedy. Sinna's death does not itself settle its medical credibility. |
 | Prosperity, then the Dust | Hanno's workshop expands. Numarius humiliates him at a banquet and orders more debtor punishments. Hanno creates Elysian Dust. | Elite prosperity coexists with coercion; Hanno's judgment of the whole city becomes a new source of harm. |
 | The investigation and the door | Dyia pursues the Dust; Corvo and Vael reconsider Numarius. Alethea treats its victims, develops dependence, and dies. Dyia arrives at Hanno's door. | The final confrontation, Dyia's knowledge at arrival, and the political settlement remain open. |
 
-Sources: [chapter sequence](../../src/content/chapters/index.ts), [continuity audit](../continuity.md). Adil's death precedes the banquet; its date and circumstances remain open despite the notice.
+Sources: [chapter sequence](../../src/content/chapters/index.ts), [continuity audit](../continuity.md). Idris's death precedes the banquet; its date and circumstances remain open despite the notice.
 
 ## Recovered histories awaiting placement
 

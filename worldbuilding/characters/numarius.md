@@ -4,7 +4,7 @@ ID: `numarius` · First Seat, holder of the fields · Alive at the draft endpoin
 
 ## Established in current draft
 
-Numarius owns plantations east of Carthara and the debtors compelled to work them. His agents take [Adil](adil.md) and later the Averroes household. He profits from Ravash with the other Seats, celebrates Hanno publicly, tolerates Sinna's accusations, and recognizes danger after Sinna's death. At the banquet he deliberately humiliates Hanno with Adil's fate. Later the Dust threatens elite stability and productivity; he presses Dyia to stop it while [Corvo](corvo.md) and [Vael](vael.md) consider his weakness.
+Numarius owns plantations east of Carthara and the debtors compelled to work them. His agents take [Idris](adil.md) and later the Averroes household. He profits from Ravash with the other Seats, celebrates Hanno publicly, tolerates Sinna's accusations, and recognizes danger after Sinna's death. At the banquet he deliberately humiliates Hanno with Idris's fate. Later the Dust threatens elite stability and productivity; he presses Dyia to stop it while [Corvo](corvo.md) and [Vael](vael.md) consider his weakness.
 
 Sources: Chapters [One](../../src/content/chapters/01-market-awnings.ts), [Five](../../src/content/chapters/05-the-cure.ts), [Six](../../src/content/chapters/06-shadows-and-accusations.ts), [Eight](../../src/content/chapters/08-a-dark-turn.ts), [Nine](../../src/content/chapters/09-shadows-closing-in.ts).
 

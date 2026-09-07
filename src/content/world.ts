@@ -26,18 +26,18 @@ export const world: WorldLocation[] = [
     name: "The Fields of Numarius",
     tagline: "Where debtors go, and do not come back.",
     description:
-      "Endless plantations east of the city walls, worked by the indentured. Adil Averroes was taken here the morning his stall was seized. He died here, and was buried where he fell, to feed the crop.",
+      "Endless plantations east of the city walls, worked by the indentured. Idris Averroes was taken here the morning his stall was seized. He died here, and was buried where he fell, to feed the crop.",
     x: 720,
     y: 420,
     type: "ruin",
-    appearsIn: [{ chapter: "market-awnings", scene: "the-fields", label: "Adil is taken" }],
+    appearsIn: [{ chapter: "market-awnings", scene: "the-fields", label: "Idris is taken" }],
   },
   {
     id: "tengeri-wastes",
     name: "The Tengeri Wastes",
     tagline: "Leonin refugee camps beneath the bombardment.",
     description:
-      "Canyon camps far east of Carthara shelter lion-folk driven from their homeland by the power now ruled under Numarius's name. Enslavement, enforced labor transfers, restricted movement, and repeated bombardment shape daily life. Displaced Leonin also live across the world, each carrying the lost home's flag. Camp councils, peace advocates, armed resistance, and diaspora networks disagree about the future. Chuluun is a displaced elder under a labor account himself; Hanno learns limited practical skills while helping his hosts.",
+      "Canyon camps far east of Carthara shelter Leonin driven from their homeland by the power now ruled under Numarius's name. Enslavement, enforced labor transfers, restricted movement, and repeated bombardment shape daily life. Displaced Leonin also live across the world, each carrying the lost home's flag. Camp councils, peace advocates, armed resistance, and diaspora networks disagree about the future. Chuluun is a displaced elder under a labor account himself; Hanno learns limited practical skills while helping his hosts.",
     x: 1000,
     y: 300,
     type: "landmark",

@@ -41,7 +41,7 @@ Use one close viewpoint per scene. Hanno, Dyia, Amara, and Alethea can carry sus
 
 ## Causal movement across the present material
 
-1. Drought reduces Adil's margin; debt enforcement takes the stall and his labor. The loss of earnings drives Amara's apprenticeship bargain and Dyia's search for paid authority.
+1. Drought reduces Idris's margin; debt enforcement takes the stall and his labor. The loss of earnings drives Amara's apprenticeship bargain and Dyia's search for paid authority.
 2. Apprenticeship keeps Hanno useful but dependent. Guard service keeps Dyia employed but complicit. Their incompatible accounts of sacrifice break the household's ability to cooperate.
 3. Travel brings knowledge, commercial obligations, and relationships. The Leonin camps confront Hanno with displacement, enslavement, and the gap between lived events and an official account. On Lysandria, an island with two enormous mountains and Amara's place of origin, his alchemical work gives him an opportunity to care without owning the recipient. His relationship with Alethea begins there; shared island origin does not establish kinship between her and Amara.
 4. Returning to Carthara makes independence urgent. The cure changes who receives money, credit, and public gratitude. Alethea and Amara must have choices within that success.

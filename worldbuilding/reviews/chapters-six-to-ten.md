@@ -13,7 +13,7 @@ These chapters are a first prose draft, not a finished epic. Six in particular c
 - Dyia retains the author's exact spelling. No brother is renamed or added.
 - Amara recovers before Sinna deceives and murders her. Her death is not a relapse, a failed cure, or a punishment for wanting privacy.
 - Hanno kills Sinna through the deliberately prepared stolen shipment; he does not kill him directly with the spear.
-- Numarius humiliates Hanno with Adil's fate at the banquet and orders further debtor labor. Hanno creates Elysian Dust afterward and conceals his role from Alethea and Dyia.
+- Numarius humiliates Hanno with Idris's fate at the banquet and orders further debtor labor. Hanno creates Elysian Dust afterward and conceals his role from Alethea and Dyia.
 - The Dust reaches influential households and harms people beyond Hanno's intended targets. The Three Seats are neither omniscient nor responsible for every individual act.
 - Alethea develops dependence and dies in the garden. Chapter Ten ends with Hanno opening the door and finding Dyia. It chooses no arrest, protection, bargain, redemption, or final political outcome.
 
@@ -36,7 +36,7 @@ These chapters are a first prose draft, not a finished epic. Six in particular c
 ## Unresolved work
 
 - Absolute ages and chronology remain open. Added intervals use seasons and relative elapsed time, not a chosen calendar or a solution to Hanno's stated age of 115.
-- Chapter Five supplies limited notice of Adil's death; the banquet weaponizes his specific fate. Neither chapter establishes a grave, eyewitness account of burial, or complete evidence for every part of Numarius's boast.
+- Chapter Five supplies limited notice of Idris's death; the banquet weaponizes his specific fate. Neither chapter establishes a grave, eyewitness account of burial, or complete evidence for every part of Numarius's boast.
 - Chapter Eight's `elysian-dust` retains its original Moonlit Isle association because the wedding is explicitly remembered there; physical action is in Carthara's garden/workshop. The reader/map label should identify the island as remembered context, not assert a new journey.
 - The exact duration, capacity, and failure conditions of the fictional Ravash remedy and Dust remain open. The draft establishes follow-up care and access needs, not a real medical claim or universal cure.
 - Dyia suspects the circle financing medicines and experiments by the end of Nine. He has not identified Hanno as maker. His appointment with a potential witness is written; what he learns before the final door remains unwritten.

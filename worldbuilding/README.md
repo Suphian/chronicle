@@ -33,6 +33,8 @@ The [early narrative](https://docs.google.com/document/d/15yBJhMt-ZnlQByomvJn9YZ
 
 The author's latest decision restores **Dyia**, replacing the intervening repository alias Adris. Other current revisions include **Tengeri Wastes, Sidrat Al Muntaha, and Lysandria**, rather than literal Mongolia, Japan, and Macedonia; Amara's death after the cure; and Sinna's death through a stolen shipment rather than an earlier direct killing. The Three Seats, Bakhtari ancestry, prologue, and Chapter Ten extend the early narrative. The questionnaire's wish for a fruit cart or simpler agricultural life remains useful *early-source material*, not a new event in the chapters.
 
+The father's current name is **Idris Averroes**, replacing Adil on 2026-09-07. The `adil` ID and profile filename preserve existing links; original source snapshots keep Adil. Idris and the brother's old alias Adris are separate naming decisions.
+
 Repository copies preserve the [early narrative](sources/early-narrative.md), [questionnaire](sources/early-questionnaire.md), and newly recovered [geography document](sources/early-geography.md). The geography includes Ruhania, the Solunari sanctuary, the Grand Codexium, a more developed Sidrat Al Muntaha, and the fragmented Leonin Khanate. These are author-created source concepts worth recovering; their exact relationship to the current story still needs reconciliation. In particular, its **Chuluun, prince of the Altan Tribe**, conflicts with or substantially extends the current **Leonin elder** role. Do not silently merge those biographies.
 
 ## How a pitch becomes part of the story

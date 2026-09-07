@@ -6,7 +6,7 @@ The author's latest explicit decision restores **Dyia** as the canonical name. A
 
 ## Established in current draft
 
-Younger brother of [Hanno](hanno.md), son of [Adil](adil.md) and [Amara](amara.md). Dyia joins the city guard hoping to protect his family from inside. Ordered to choose between his post and his mother's door, he steps aside. He later confronts Amara over Ravash and fights Hanno after she reveals his part in the eviction. He rises to captain, kills some Silkers without trial, and hunts the Dust's maker under [Vael's](vael.md) command. At the end of Chapter Nine he suspects Numarius's circle, not Hanno. Chapter Ten ends with his arrival at Hanno's door.
+Younger brother of [Hanno](hanno.md), son of [Idris](adil.md) and [Amara](amara.md). Dyia joins the city guard hoping to protect his family from inside. Ordered to choose between his post and his mother's door, he steps aside. He later confronts Amara over Ravash and fights Hanno after she reveals his part in the eviction. He rises to captain, kills some Silkers without trial, and hunts the Dust's maker under [Vael's](vael.md) command. At the end of Chapter Nine he suspects Numarius's circle, not Hanno. Chapter Ten ends with his arrival at Hanno's door.
 
 Sources: Chapters [One](../../src/content/chapters/01-market-awnings.ts), [Two](../../src/content/chapters/02-bitter-apprenticeship.ts), [Three](../../src/content/chapters/03-journeys.ts), [Nine](../../src/content/chapters/09-shadows-closing-in.ts), [Ten](../../src/content/chapters/10-the-flower-in-her-hair.ts); [`codex.ts`](../../src/content/codex.ts).
 

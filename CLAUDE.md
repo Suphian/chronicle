@@ -24,7 +24,9 @@ Hanno is primarily a schemer, with the ambition and rationalization the author a
 
 The final action at Dyia's door remains open. Sinna's intent behind Amara's death is under editorial discussion; the sabotage/intended-rescue alternative has not replaced the current deliberate-murder draft.
 
-Chuluun belongs to displaced Leonin lion people, with refugee camps in Tengeri, forced labor, bombardment, competing factions, a dispersed population, and a shared homeland flag. Latest author history connects their dispossession to Numarius's people, whom they initially welcomed as displaced arrivals. Avoid reducing civilian society to its fighters. The Three Seats' precise constitutional history remains in development.
+Chuluun belongs to displaced Leonin, with refugee camps in Tengeri, forced labor, bombardment, competing factions, a dispersed population, and a shared homeland flag. Latest author history connects their dispossession to Numarius's people, whom they initially welcomed as displaced arrivals. Avoid reducing civilian society to its fighters. The Three Seats' precise constitutional history remains in development.
+
+The father's current display name is **Idris Averroes**; the stable `adil` ID and profile filename preserve links under his old name, Adil. Dyia remains the brother, whose superseded alias Adris is a separate naming history. Historical source snapshots retain their original names.
 
 Lysandria is an island with two enormous mountains, and Amara comes from there. Reconcile earlier Bakhtari-origin claims explicitly; do not invent a family relationship between Amara and Alethea.
 

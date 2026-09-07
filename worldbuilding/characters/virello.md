@@ -16,6 +16,12 @@ The first prose pass preserves genuine competence: [One](../../src/content/chapt
 
 The public demonstration is a professional gamble under pressure: preliminary examinations do not establish safety, clients are leaving, and he has promised the result before waiting for adequate observation. Hanno recognizes that familiar pattern and knowingly accepts the danger to others if Sinna does not act as expected. The inquiry exposes theft and misrepresentation; Alethea's separate clinical review restores confidence in the cure. No chemical mechanism or practical poison recipe is established.
 
+## Adopted trade premise — 2026-09-07
+
+Hanno's discoveries and innovations make Sinna wealthy, and Hanno's travels establish trade routes that benefit the master's business. This expands the existing appropriation of inventions into a material source of commercial growth. The people along those routes know Hanno personally through the work; Sinna's claim to the profits does not give him ownership of every relationship.
+
+The premise now has initial **draft scenes**: repeat orders fund the adjoining room in Chapter Two; Hanno negotiates a recurring nursery shipment and transport terms in Three; on his return in Five he finds the business and property enlarged, and Sinna asks him to redirect a supplier's correspondence. Later assistance to Hanno through these contacts remains **proposed development**. The complete scale of Sinna's holdings, other supplier arrangements, and individual contacts' later obligations still need writing.
+
 ## Adopted historical influence: Ibn Sina
 
 The author chose Sinna with **Ibn Sina / Avicenna**, the medieval physician and philosopher who died in 1037, in mind. The [research and adaptation brief](../ideas/sinna-and-ibn-sina.md) separates the historical evidence from the fictional character.

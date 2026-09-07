@@ -1,6 +1,6 @@
 # The Surety Quarter: Leonin displacement and enslavement
 
-Status: **the Leonin premise is adopted; the Cartharan extension remains proposed.** The author's clarification places Chuluun and the lion-folk at the center of this strand. Their homeland has been destroyed; the Tengeri Wastes contain refugee camps subjected to recurring bombardment, coerced labor, and dehumanizing propaganda. Chuluun is part of the enslaved community, not an outside observer.
+Status: **the Leonin premise is adopted; the Cartharan extension remains proposed.** The author's clarification places Chuluun and the Leonin at the center of this strand. Their homeland has been destroyed; the Tengeri Wastes contain refugee camps subjected to recurring bombardment, coerced labor, and dehumanizing propaganda. Chuluun is part of the enslaved community, not an outside observer.
 
 The proposed Surety Quarter could receive displaced Leonin households and labor detainees, connecting their experience to Carthara. The quarter, route, local rules, and additional characters below remain **proposed**. The earlier Ruhaniyya migrant community remains a **distinct proposal**, not a replacement identity for the Leonin and not already canon.
 
@@ -35,14 +35,14 @@ The history of Numarius's people also needs precise responsibility. The earlier 
 
 ## A community before and beyond victimhood
 
-These details are **proposed development**, not universal traits of lion-folk:
+These details are **proposed development**, not universal traits of Leonin:
 
 - Residents remember work as builders, teachers, potters, water specialists, herders, performers, traders, and clerks. Captivity interrupts those occupations without making physical strength their only useful quality.
 - A shelter's evening lessons include comic stories, arithmetic, repaired instruments, and disputed versions of old songs. Younger people who know the homeland through other people's memories can ask unwelcome questions about the life being promised to them.
 - Every Leonin carries the lost-home flag, but uses can differ: a hidden scrap in a work coat, an openly worn emblem, a ceremonial banner. A negotiator, a militant, and somebody chiefly trying to reunite a household may honor the same flag.
 - Missing-person records belong to families as well as campaigns. Some want names published; others fear exposing relatives to those controlling labor transfers. A recorder must negotiate consent rather than turning every grief into a public resource.
 - The recovered clan history supplies differences to explore. Altan, Tsetseg, the empty Golden Yurt, and the missing fifteenth tribe need a timeline in relation to destruction and displacement. Do not automatically turn every older mystery into another result of the same event.
-- Leonin differ in class, belief, gender, age, disability, profession, and allegiance. Enslavement is imposed by institutions, not caused by Leonin nature. Claims that lion-folk are inherently dangerous or suited to servitude belong to the dehumanizing account being challenged.
+- Leonin differ in class, belief, gender, age, disability, profession, and allegiance. Enslavement is imposed by institutions, not caused by Leonin nature. Claims that Leonin are inherently dangerous or suited to servitude belong to the dehumanizing account being challenged.
 
 The working factions should remain distinguishable: **Return Councils** pursue camp representation, releases, and home claims; **Open Hand** seeks negotiated peace with Numarius; **Last Standard** rejects surrender and supports armed resistance; **Scattered Hearths** organizes diaspora aid, testimony, and work rights. Membership, overlap, local branches, and individual disagreements need scenes. None automatically speaks for everyone bearing the flag.
 
@@ -77,7 +77,7 @@ The inheritance, duration, transfer, and local legal recognition of enslavement 
 
 ## Beneficiaries and limits
 
-**Numarius:** his people's dispossession of the Leonin is part of the adopted history. The connection between the current lord's fields, overseas or regional authorities, and particular labor contractors needs a clear chain of responsibility. Keep Leonin captivity distinct from the local debtor process that took [Adil](../characters/adil.md); similar coercion does not establish identical legal status.
+**Numarius:** his people's dispossession of the Leonin is part of the adopted history. The connection between the current lord's fields, overseas or regional authorities, and particular labor contractors needs a clear chain of responsibility. Keep Leonin captivity distinct from the local debtor process that took [Idris](../characters/adil.md); similar coercion does not establish identical legal status.
 
 **Corvo:** harbor contractors may profit from transfers and permits. She also needs skilled maintenance and reliable trade. Her [existing control of customs](../characters/corvo.md) does not automatically establish authorship of bombardments or complete knowledge of every contractor's practices.
 

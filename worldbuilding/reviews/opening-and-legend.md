@@ -6,18 +6,18 @@ The author's interest in *The Count of Monte Cristo* supports a story built thro
 
 ## Narrative drafts delivered
 
-- [`Beneath the Market Awnings`](../../src/content/chapters/01-market-awnings.ts): approximately 4,218 prose words. The opening starts with Hanno concealing a damaged fig and being corrected by Adil. A later failed preparation returns to that small incident through Hanno's choice to expose his own mistake. His immediate ambition is to earn enough to replace the family's scale. Amara negotiates the terms of his apprenticeship and protects the working capital of her craft. Dyia wants regular pay and the practical authority he has seen a watchman exercise.
+- [`Beneath the Market Awnings`](../../src/content/chapters/01-market-awnings.ts): approximately 4,218 prose words. The opening starts with Hanno concealing a damaged fig and being corrected by Idris. A later failed preparation returns to that small incident through Hanno's choice to expose his own mistake. His immediate ambition is to earn enough to replace the family's scale. Amara negotiates the terms of his apprenticeship and protects the working capital of her craft. Dyia wants regular pay and the practical authority he has seen a watchman exercise.
 - [`The Conqueror`](../../src/content/chapters/00-the-conqueror.ts): approximately 1,690 prose words, an optional world legend rather than the novel's required beginning. Rukhsana's household evacuates, negotiates grain and access, repairs a watercourse, and lives with disagreements about her marriage. Iskandar's army refuses another campaign for material reasons. These are developments within a fictional telling, not newly verified history.
 
 Both remain `draft`; all chapter slugs, existing scene IDs, and existing location IDs are preserved. Chapter Zero keeps `order: 0` for compatibility. The lead controls its removal from the main reading path. Chapter One has explicit viewpoint labels at the initial Hanno scene, the Dyia eviction scene, and the return to Hanno at sentencing. The legend labels its Rukhsana and Iskandar perspectives.
 
 ## Continuity changes established in the revised opening draft
 
-- Adil is initially removed under a provisional debt assignment. Hearings are postponed while maintenance charges accumulate. The final hearing confirms continued servitude without a discharge date. This explains why formal sentencing follows the boys' childhood and Dyia's entry into service; it does not define all Cartharan debt law.
+- Idris is initially removed under a provisional debt assignment. Hearings are postponed while maintenance charges accumulate. The final hearing confirms continued servitude without a discharge date. This explains why formal sentencing follows the boys' childhood and Dyia's entry into service; it does not define all Cartharan debt law.
 - The apprenticeship lasts years. Physical and working-life changes establish adulthood before Dyia becomes a guard. No numerical ages, dates, or species lifespan rules are supplied.
 - The pottery shopkeeper offers Amara a borrowed back room after the eviction. Some bowls claimed as shop stock, two rejected cracked jugs, and the boys' cups remain. She works by hand without her wheel. This supplies the later home scene's pottery and herbs.
 - Hanno learns the family has moved but does **not** learn Dyia was at the eviction. The reader sees that event through Dyia. Amara's disclosure in Chapter Two remains necessary.
-- Adil is alive at the sentencing. His later death in the fields, Sinna's later death through the stolen shipment, and the final unresolved choice at Dyia's door remain intact.
+- Idris is alive at the sentencing. His later death in the fields, Sinna's later death through the stolen shipment, and the final unresolved choice at Dyia's door remain intact.
 - No new named characters, numerical financial system, technological capability, ancestry revelation to Hanno, or final story outcome has been added.
 
 ## Legend: narration and limits
