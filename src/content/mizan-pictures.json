@@ -418,5 +418,33 @@
     "caption": "Polis · location study",
     "width": 1672,
     "height": 941
+  },
+  "burg-40": {
+    "src": "/images/world/points/burg-40-v1.webp",
+    "alt": "Individual landscape and architecture study of Thege",
+    "caption": "Thege · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-41": {
+    "src": "/images/world/points/burg-41-v1.webp",
+    "alt": "Individual landscape and architecture study of Qa'hir Sands",
+    "caption": "Qa'hir Sands · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-42": {
+    "src": "/images/world/points/burg-42-v1.webp",
+    "alt": "Individual landscape and architecture study of Oncheracra",
+    "caption": "Oncheracra · location study",
+    "width": 1672,
+    "height": 941
+  },
+  "burg-43": {
+    "src": "/images/world/points/burg-43-v1.webp",
+    "alt": "Individual landscape and architecture study of Hemaris",
+    "caption": "Hemaris · location study",
+    "width": 1672,
+    "height": 941
   }
 }
