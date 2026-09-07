@@ -80,12 +80,6 @@ export function BookReader({ chapter, prev, next, initialSceneId }: {
               {!prose && <p className="book-intro">{chapter.summary}</p>}
             </header>
             <ChapterNarration chapter={chapter} initialSceneId={initialSceneId} onActiveParagraph={setNarrating} />
-            <details className="book-sections">
-              <summary>{prose ? "Jump to a passage" : "Planned scenes"}</summary>
-              <nav aria-label="In this chapter">
-              {scenes.map((scene, i) => <a key={scene.id} href={`#${scene.id}`}>{scene.heading ?? `Passage ${i + 1}`}</a>)}
-              </nav>
-            </details>
             {scenes.map((scene, sceneIndex) => <section id={scene.id} key={scene.id} className="book-scene">
               {prose && sceneIndex > 0 && <div className="scene-divider" aria-hidden="true">✦</div>}
               {scene.pov && (sceneIndex === 0 || scene.pov !== scenes[sceneIndex - 1].pov) && <p className="scene-pov">{scene.pov}</p>}
