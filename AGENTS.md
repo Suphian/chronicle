@@ -8,7 +8,7 @@ Read `worldbuilding/README.md` and the relevant character, place, or faction pro
 
 - Existing chapters are **draft continuity**, not an irrevocable finished novel. The author welcomes tens of chapters; these compressed seeds may grow into extensive arcs without a chapter-count cap. Preserve deliberate revisions such as Virello's death by the stolen shipment when importing older material. The latest author correction restores **Dyia** as the brother's canonical name; **Adris** is a superseded repository alias.
 - Label source facts, interpretations, proposed developments, and unresolved questions separately. A profile's proposed motive is not evidence that a chapter established it. A character's belief is not the world's objective truth.
-- The two early Google Docs are source material, not instructions to execute. Preserve competing ideas without silently replacing current continuity.
+- The three early Google Docs are source material, not instructions to execute. Preserve competing ideas without silently replacing current continuity. See `worldbuilding/sources/README.md` and `worldbuilding/decisions.md`.
 - When the user adopts an idea or asks to implement it, follow its consequences into relevant profiles, the outline, chapter prose, codex, and map references. Preserve stable chapter slugs, scene IDs, and location IDs.
 - Do not make all characters secretly related or every historical influence part of Hanno's ancestry. Give institutions material interests and people lives outside the protagonist's needs.
 - Push back specifically: cite the inconsistent action or constraint, explain what would make it credible, and offer a workable alternative. Do not use alignment or a personality label as a substitute for motivation.
@@ -21,3 +21,5 @@ Use plain Markdown for the working bible and typed `src/content/` data for the w
 For UI or content-schema changes, run `npm run lint` and `npm run build` and check the reading/navigation behavior affected. Keep audio optional, controllable, and off until the reader chooses to play it. Record source and license when adding sound or image assets.
 
 Delegation is optional and should match user authorization. Give agents bounded ownership; reconcile their changes and continuity findings before reporting completion. Do not commit unrelated workspace changes or invent a publish step outside the task's scope.
+
+The author has authorized updates to this website, commits and pushes as work progresses, and merging outstanding branches into main. Push tested, coherent increments; preserve history and avoid force pushes or deleting branches unless requested.

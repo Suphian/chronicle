@@ -54,4 +54,4 @@ The proposed pilgrimage-ship atrocity belongs first in historical research and t
 - The conqueror arrives with fifty thousand, loses many soldiers, then fifty thousand leave. Clarify whether the song exaggerates or revise the literal count. His cause of death already intentionally varies by telling.
 - Corvo controls customs, yet Hanno's network leaves no trace. Define her jurisdiction's limits, imperfect records, or a bargain; do not retroactively grant everyone omniscience.
 - Distinguish relief from withdrawal, recovery, relapse, and overdose in the fictional Ravash cure. Alethea's knowledgeable self-experiment and subsequent concealment require credible progression, not an assertion that all healers behave that way.
-- The codex describes the Three Seats; the map still describes Carthara as ruled by Numarius. Specify his primacy without erasing Corvo and Vael. Carthara's relationship to an unnamed larger empire is unresolved.
+- The map now names all Three Seats consistently with the codex. Carthara's relationship to an unnamed larger empire and the precise balance of power among its Seats remain unresolved.

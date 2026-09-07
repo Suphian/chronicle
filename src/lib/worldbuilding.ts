@@ -25,13 +25,16 @@ export function getBibleEntries(): BibleEntry[] {
   return entries;
 }
 
-export function notebookHref(href: string, currentSlug: string): string {
+export function notebookHref(href: string, currentSlug: string, entries = getBibleEntries()): string {
   if (/^(https?:|mailto:|#|\/)/.test(href)) return href;
   const [file, anchor] = href.split("#");
-  if (!file.endsWith(".md")) return href;
   const relative = path.posix.normalize(path.posix.join(path.posix.dirname(currentSlug), file));
   const suffix = anchor ? `#${anchor}` : "";
-  if (getBibleEntries().some((entry) => entry.slug === relative.slice(0, -3))) return `/library/${relative.slice(0, -3)}${suffix}`;
+  if (file.endsWith(".md") && entries.some((entry) => entry.slug === relative.slice(0, -3))) return `/library/${relative.slice(0, -3)}${suffix}`;
   const repoPath = path.posix.normalize(`worldbuilding/${relative}`);
+  const chapter = repoPath.match(/^src\/content\/chapters\/\d+-(.+)\.ts$/);
+  if (chapter) return `/chapters/${chapter[1]}`;
+  const contentPages: Record<string, string> = { "src/content/character.ts": "/character", "src/content/codex.ts": "/codex", "src/content/world.ts": "/world", "src/content/chapters/index.ts": "/#chapters" };
+  if (contentPages[repoPath]) return contentPages[repoPath];
   return `https://github.com/Suphian/chronicle/blob/main/${repoPath}${suffix}`;
 }

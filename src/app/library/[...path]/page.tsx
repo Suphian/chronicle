@@ -20,14 +20,15 @@ export async function generateMetadata({ params }: { params: Promise<{ path: str
 
 export default async function NotebookPage({ params }: { params: Promise<{ path: string[] }> }) {
   const { path } = await params;
-  const entry = getBibleEntries().find((entry) => entry.slug === path.join("/"));
+  const entries = getBibleEntries();
+  const entry = entries.find((entry) => entry.slug === path.join("/"));
   if (!entry) notFound();
   return <main className="notebook-shell"><div className="notebook-page">
     <Link className="book-location" href="/outline">← Story outline & notebook</Link>
     <ResumeReading />
     <p className="book-eyebrow notebook-label">Author’s notebook / {entry.group} · Full-story spoilers</p>
     <article className="notebook-markdown"><Markdown remarkPlugins={[remarkGfm]} components={{
-      a: ({ href, children }) => <a href={href ? notebookHref(href, entry.slug) : undefined}>{children}</a>,
+      a: ({ href, children }) => <a href={href ? notebookHref(href, entry.slug, entries) : undefined}>{children}</a>,
       h2: ({ children }) => <h2 id={headingId(children)}>{children}</h2>,
       h3: ({ children }) => <h3 id={headingId(children)}>{children}</h3>,
     }}>{entry.content}</Markdown></article>

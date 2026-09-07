@@ -61,9 +61,11 @@ export function WorldAtlas({ initialAt }: { initialAt?: string }) {
       <section className="atlas-detail" aria-live="polite" aria-atomic="true">
         <p className="book-eyebrow">{place.type}</p><h2>{place.name}</h2>
         <p className="atlas-tagline">{place.tagline}</p><p>{place.description}</p>
+        <Link href={`/library/places/${place.id}`}>History, institutions & open questions →</Link>
         <h3>Read the story here</h3>
         {place.appearsIn?.map((ref, i) => { const chapter = getChapter(ref.chapter); return chapter && <Link key={i} href={`/chapters/${chapter.slug}${ref.scene ? `?scene=${ref.scene}` : ""}`}>{chapter.title}{ref.label ? ` · ${ref.label}` : ""} →</Link>; })}
       </section>
     </div>
+    <p className="atlas-caption">This atlas covers the current story’s locations. <Link className="book-location" href="/library/geography-reconciliation">Explore the recovered geography of Ruhania, Sidrat, and the Leonin Khanate →</Link></p>
   </div>;
 }
