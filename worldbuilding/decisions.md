@@ -72,6 +72,10 @@
 - The Lysandrian pottery terrace appears after paragraph two of Chapter Four's stable `ancient-guardians` scene and on World. It remains an imagined terrace, not Amara's confirmed former workshop. Other chapter vignettes animate existing plates in their original positions, retaining their captions and all prose and scene links.
 - Existing project artwork receives subtle light and airborne motes; only the terrace has a moving curtain. Each vignette has an independent pause control, respects reduced-motion preferences, and stops offscreen or in background tabs. No audio is added.
 
+## 2026-09-07 — Harbor artwork as the shared style reference
+
+- The author confirmed the **Carthara city panorama** (`public/images/world/carthara-grand-study-v1.webp`) as their favorite harbor picture and the primary style reference throughout the artwork. Adopt its luminous blue water and sky, ivory stone, lush gardens, intricate inhabited architecture, and richly textured painterly finish; see [visual direction](visual-direction.md). This supersedes ink-and-watercolor as the universal default while retaining occasional hand-drawn book plates. No artwork replacement has been made by this decision note.
+
 ## 2026-09-07 — Voices shaped from character profiles
 
 - Every named character should have a distinct ElevenLabs voice molded from the character profiles, including Idris. Performance directions must affect generated delivery rather than exist only as notes.

@@ -1,5 +1,13 @@
 # Visual direction
 
+## Latest author preference — the harbor as the shared reference
+
+On 2026-09-07 the author singled out **the Carthara city panorama** as their favorite and confirmed it as the shared style reference: [view the selected artwork](../public/images/world/carthara-grand-study-v1.webp). Use this image as the primary reference for future visual work and revisions, including the homepage, places, chapter illustrations, and portraits. Match its medium, palette, lighting, texture, and level of detail while retaining regional differences, individual character designs, and each scene's circumstances.
+
+**Adopted treatment:** luminous cobalt and turquoise water, clear blue skies, sculptural white clouds, sunlit ivory limestone, nuanced cool shadows, mineral-green gardens, aged brass, and richly textured painterly realism. Layer immense arcades, domes, waterworks, and terraces above convincing ordinary neighborhoods. Carry the same attention to light and material into faces, clothes, workrooms, and small objects. Night, poverty, displacement, and intimate scenes still need their own truthful conditions; shared style does not require perpetual sunshine or monumental buildings in every image. Preserve visible Black residents and distinct multicultural character designs at a human scale.
+
+This selection takes precedence over earlier instructions that made muted ink-and-watercolor the default finish for all artwork. Occasional hand-drawn architectural plates remain part of the readable book experience. Existing assets and historical generation prompts retain their provenance; this direction note does not claim a completed restyling. The panorama's [generation record](../public/images/world/carthara-grand-study-v1.prompt.json) supplies its source and rights information. Its imagined architecture remains a visual study, not surveyed geography or a newly established institution.
+
 The user's phrase is the brief: **maximalist futuristic Mediterranean and Middle Eastern**. The supplied images combine immense architectural scale with intimate places to rest: an ornate domed hall and illuminated tree; pale cliff stairways; a white terrace, patterned rug, plants, and reflective blue water. These are references for atmosphere and composition, not evidence of a particular real building, period, or author.
 
 ## A useful visual vocabulary
